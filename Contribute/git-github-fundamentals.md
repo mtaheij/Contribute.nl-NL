@@ -8,11 +8,11 @@ ms.date: 06/30/2017
 ms.prod: non-product-specific
 ms.topic: contributor-guide
 ms.custom: external-contributor-guide
-ms.openlocfilehash: 5ad2ca323b680078c2bfd2fc4cac6fb1883c411f
-ms.sourcegitcommit: dd1b4e915f4996ac029d2a0704ced785438d3484
+ms.openlocfilehash: 5f7f90b69953e23833906202c739d2168b139d7e
+ms.sourcegitcommit: 3ec397fab57ea582edb03a59609f62d886410ee8
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 04/23/2018
+ms.lasthandoff: 04/28/2018
 ---
 # <a name="git-and-github-essentials-for-docs"></a>Essentiële informatie over Git en GitHub voor Docs
 
@@ -80,7 +80,7 @@ Voor het gemak bevat de hoofdmap van elke opslagplaats meestal een sjabloon voor
 
 Een *pull-aanvraag* biedt een handige manier voor een inzender om een set wijzigingen voor te stellen die op de standaardvertakking moet worden toegepast. De wijzigingen (ook wel *doorvoeracties* genoemd) worden opgeslagen in de vertakking van de inzender, zodat GitHub eerst de impact van het *samenvoegen* van deze wijzigingen met de standaardvertakking kan verwerken. Een pull-aanvraag dient ook als mechanisme om de inzender feedback te verschaffen van een build-/validatieproces, de revisor van de pull-aanvraag, om mogelijke problemen op te lossen of vragen te beantwoorden voordat de wijzigingen met de hoofdvertakking worden samengevoegd.
 
-Er zijn twee manieren om bij te dragen via een pull-aanvraag, afhankelijk van de grootte van de wijzigingen die u wilt voorstellen. Dit wordt later in de secties [GitHub-werkstroom](light-workflow.md) van deze gids gedetailleerd besproken.
+Er zijn twee manieren om bij te dragen via een pull-aanvraag, afhankelijk van de grootte van de wijzigingen die u wilt voorstellen. Dit wordt later in de secties [GitHub-werkstroom](how-to-write-workflows-major.md) van deze gids gedetailleerd besproken.
 
 <!---- Reference links for Docs landing pages, associated GitHub repositories, and related Forums matrix. ------------------>
 <!---- PLEASE INSERT URLS IN ASCENDING SORT ORDER, AND REMOVE LOCALE SEGMENT FROM URLS (that is, en-us) FOR LOCALIZED FORUMS! -->
