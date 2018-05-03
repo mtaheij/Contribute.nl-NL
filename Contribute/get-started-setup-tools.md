@@ -1,18 +1,18 @@
 ---
 title: Hulpprogramma's installeren om inhoud aan te passen
 description: In dit artikel leert u hoe u clienthulpprogramma's downloadt en installeert die u nodig hebt voor Git en het bewerken van Markdown-bestanden.
-author: bryanla
-ms.author: bryanla
-manager: mbaldwin
-ms.date: 01/04/2018
+author: jasonwhowell
+ms.author: jasonh
+manager: kfile
+ms.date: 04/30/2018
 ms.prod: non-product-specific
 ms.topic: contributor-guide
 ms.custom: external-contributor-guide
-ms.openlocfilehash: 0ca942e557640db1ba36d3f5b1064656ed3dea8d
-ms.sourcegitcommit: 3ec397fab57ea582edb03a59609f62d886410ee8
+ms.openlocfilehash: 1011c3fc829202a3df134ddc80eb05b8959b7bf6
+ms.sourcegitcommit: 7b668124f25b8ad0442937a3ad05b19a47af5970
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 04/28/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="install-content-authoring-tools"></a>Hulpprogramma's installeren om inhoud aan te passen
 
@@ -20,6 +20,7 @@ Dit artikel beschrijft de stappen om interactief Git-clienthulpprogramma's en Vi
 > [!div class="checklist"]
 > * [Git voor Windows](https://git-scm.com/download/win) installeren
 > * [Visual Studio Code](https://code.visualstudio.com/) installeren
+> * [Docs Authoring Pack](https://marketplace.visualstudio.com/items?itemName=docsmsft.docs-authoring-pack) installeren
 
 >[!IMPORTANT]
 > Als u alleen kleine wijzigingen aanbrengt in een artikel, hoeft u de stappen in dit artikel *niet* uit te voeren en kunt u rechtstreeks doorgaan naar de [werkstroom voor kleine wijzigingen](index.md#quick-edits-to-existing-documents).
@@ -58,6 +59,16 @@ Download en installeer [VS Code](https://code.visualstudio.com/). Als het goed i
 
 > [!TIP]
 > Voer de opdracht `code .` uit via de opdrachtregel of Bash-shell om VS Code te starten en de huidige map te openen. Als de huidige map deel uitmaakt van een lokale Git-opslagplaats, wordt de GitHub-integratie automatisch in Visual Studio Code weergegeven.
+
+## <a name="docs-authoring-pack"></a>Docs Authoring Pack
+Installeer het Docs Authoring Pack voor Visual Studio Code. Deze set extensies bevat beknopte ontwerphulp bij het schrijven van Markdown, evenals een preview-functie zodat u kunt zien hoe de Markdown wordt weergegeven in de stijl van de docs.microsoft.com-pagina.
+
+   Bezoek deze [marktplaats-pagina](https://marketplace.visualstudio.com/items?itemName=docsmsft.docs-authoring-pack) en selecteer **Installeren**, of zoek in de extensielijst van uw VS Code-venster naar `docsmsft.docs-authoring-pack`. 
+
+   Het Docs Authoring Pack is toegankelijk door in VS Code de toetsencombinatie Alt+M te gebruiken. De werkbalk wordt standaard verborgen, maar kan ook worden weergegeven. U kunt de weergave van de werkbalk inschakelen door in de instellingen voor VS Code (sneltoets Ctrl+,) de gebruikersinstelling `"markdown.showToolbar": true` toe te voegen.
+
+   Raadpleeg voor meer informatie de pagina [Docs Authoring Pack](how-to-write-docs-auth-pack.md).
+
 
 ## <a name="next-steps"></a>Volgende stappen
 
