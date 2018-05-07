@@ -8,11 +8,11 @@ ms.date: 01/18/2018
 ms.prod: non-product-specific
 ms.topic: contributor-guide
 ms.custom: external-contributor-guide
-ms.openlocfilehash: d9c7211641fb05aaca8a76e10c7216ff61a5d23c
-ms.sourcegitcommit: dd1b4e915f4996ac029d2a0704ced785438d3484
+ms.openlocfilehash: f702d0d29ee7dc9c69cb26b79bf6283d91b6b6bc
+ms.sourcegitcommit: 3ec397fab57ea582edb03a59609f62d886410ee8
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 04/23/2018
+ms.lasthandoff: 04/28/2018
 ---
 # <a name="set-up-git-repository-locally-for-documentation"></a>Een lokale Git-opslagplaats voor documentatie instellen
 
@@ -27,7 +27,7 @@ Voor u kunt bijdragen, moet u de volgende eenmalige installatiestappen uitvoeren
 > * De externe upstreamwaarde configureren
 
 > [!IMPORTANT]
-> Als u slechts kleine wijzigingen aan een artikel aanbrengt, hoeft u de stappen in dit artikel *niet* te voltooien. U kunt meteen doorgaan naar de [werkstroom voor kleine/onregelmatige wijzigingen](light-workflow.md).
+> Als u slechts kleine wijzigingen aan een artikel aanbrengt, hoeft u de stappen in dit artikel *niet* te voltooien. U kunt meteen doorgaan naar de [werkstroom voor snelle wijzigingen](index.md#quick-edits-to-existing-documents).
 >
 
 ## <a name="overview"></a>Overzicht
@@ -46,7 +46,7 @@ De documentatie die op [docs.microsoft.com](https://docs.microsoft.com) wordt ge
 
 1. Als u niet zeker weet welke opslagplaats u moet gebruiken, zoekt u in uw webbrowser naar het betreffende artikel op docs.microsoft.com. Selecteer de koppeling **Edit** (potloodpictogram) in de rechterbovenhoek van het artikel.
 
-   ![Klik op Edit om de opslagplaats en de bestandslocatie te bepalen.](media/edit-article.png)
+   ![Klik op Edit om de opslagplaats en de bestandslocatie te bepalen.](media/index/edit-article.png)
 
 2. De koppeling brengt u naar de github.com-locatie van het bijbehorende Markdown-bestand in de juiste opslagplaats. Bekijk de URL om de naam van de opslagplaats te bepalen.
 

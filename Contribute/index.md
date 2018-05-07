@@ -4,46 +4,68 @@ description: In de handleiding wordt beschreven hoe u kunt bijdragen aan de Micr
 author: bryanla
 ms.author: bryanla
 manager: mbaldwin
-ms.date: 01/25/2018
+ms.date: 04/17/2018
 ms.prod: non-product-specific
 ms.topic: contributor-guide
 ms.custom: external-contributor-guide
-ms.openlocfilehash: af07ddaaf196f6913c4c0a4816621535c3193ba0
-ms.sourcegitcommit: dd1b4e915f4996ac029d2a0704ced785438d3484
+ms.openlocfilehash: 1cda40c890e5b30e6e1e10f3bcee0278f8004653
+ms.sourcegitcommit: 3ec397fab57ea582edb03a59609f62d886410ee8
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 04/23/2018
+ms.lasthandoff: 04/28/2018
 ---
 # <a name="microsoft-docs-contributor-guide-overview"></a>Gids voor inzenders van Microsoft Docs: overzicht
 
 Welkom bij de stijlgids voor [docs.microsoft.com](https://docs.microsoft.com) (ook bekend als Docs).
 
-## <a name="about-this-guide"></a>Informatie over deze gids
+Meerdere van onze documentatiesets zijn opensourcesets die worden gehost op GitHub. Er zijn steeds meer teams die dit model invoeren. Zelfs documentatiessets die niet volledig open source zijn, hebben een openbare opslagplaats waarvoor u pull-aanvragen kunt maken. Zo kan de communicatie tussen productengineers, de inhoudsteams en onze klanten worden gestroomlijnd en verbeterd. In het openbaar werken biedt verschillende voordelen:
 
-Hier vindt u alle informatie die u nodig hebt om inzendingen te doen voor Docs-artikelen via het Open Publishing Services-platform (OPS) van Microsoft en de ondersteunende hulpprogramma’s en procedures.
+- Met openbare planning in opensourceopslagplaatsen kan feedback worden verkregen over welke documenten het meest nodig zijn.
+- Met openbare controles in opensourceopslagplaatsen kan de inhoud die het nuttigst is, in de eerste versie worden gepubliceerd.
+- Met openbare updates in opensourceopslagplaatsen is het eenvoudiger om de inhoud doorlopend te verbeteren.
 
-De inhoudsopgave aan de linkerkant is bedoeld om u makkelijker en productiever te laten bijdragen aan Microsoft Docs. De inleidende artikelen vormen een snelstartgids voor de taken die bij elke bijdrage-activiteit voorkomen. De latere artikelen gaan specifiek over verschillende taken. U kunt zich dan ook het beste richten op die secties waarin activiteiten worden beschreven waarover u meer wilt weten. Veel van de artikelen kunnen ook dienen als referentie-inhoud die u mogelijk wilt opslaan als favoriet/bladwijzer in uw browser. Let ook op dat er meerdere koppelingen naar andere sites zijn, waarmee u naar pagina's gaat die buiten het domein docs.microsoft.com en buiten deze gids vallen.
+De gebruikerservaring op [docs.microsoft.com](https://docs.microsoft.com) is rechtstreeks geïntegreerd met werkstromen van [GitHub](https://github.com) om dit nog eenvoudiger te maken. U kunt beginnen door [het document te bewerken dat u bekijkt](#quick-edits-to-existing-documents). Of u kunt helpen door [nieuwe onderwerpen te beoordelen](#review-open-prs) of [kwaliteitsproblemen te melden](#create-quality-issues).
 
-## <a name="contribution-tasks"></a>Taken om bij te dragen
+> [!IMPORTANT]
+> Op alle opslagplaatsen die naar docs.microsoft.com publiceren, is de [Microsoft Open Source-gedragscode](https://opensource.microsoft.com/codeofconduct/) of de [.NET Foundation-gedragscode](https://dotnetfoundation.org/code-of-conduct) van toepassing. Zie [Veelgestelde vragen over de gedragscode](https://opensource.microsoft.com/codeofconduct/faq/) voor meer informatie. Of neem contact op via [opencode@microsoft.com](mailto:opencode@microsoft.com) of [conduct@dotnetfoundation.org](mailto:conduct@dotnetfoundation.org) als u vragen of opmerkingen hebt.<br>
+>
+> Kleine correcties of verduidelijkingen voor de documentatie en codevoorbeelden in de openbare opslagplaatsen vallen onder de [gebruiksvoorwaarden van docs.microsoft.com](https://docs.microsoft.com/legal/termsofuse). Bij nieuwe inhoud of belangrijke wijzigingen wordt een opmerking gegenereerd in de pull-aanvraag, waarin u wordt gevraagd om online een gebruiksrechtovereenkomst voor bijdrage (CLA) in te dienen als u geen werknemer van Microsoft bent. U moet het onlineformulier invullen voordat we uw pull-aanvraag kunnen beoordelen of accepteren.
 
-U kunt op verschillende manieren bijdragen aan documenten:
+## <a name="quick-edits-to-existing-documents"></a>Snelle bewerkingen van bestaande documenten
 
-- U kunt [problemen maken](how-to-contribute.md#create-issues) om nieuwe artikelen voor te stellen of bestaande artikelen verbeteren.
-- U kunt [snel artikelen bewerken](how-to-contribute.md#quick-edits) in de online GitHub-editor om kleine wijzigingen aan te brengen.
-- U kunt [conceptversies van nieuwe artikelen controleren](how-to-contribute.md#review-new-articles) om de kwaliteit en technische nauwkeurigheid te bewaken.
-- U kunt [nieuwe artikelen maken](how-to-contribute.md#create-new-articles) over onderwerpen waarvan u de inhoud wilt helpen ontwikkelen.
-- U kunt voorbeelden [bijwerken](how-to-contribute.md#update-samples) of [maken](how-to-contribute.md#create-samples) en zo bijdragen aan de codevoorbeelden die belangrijke concepten illustreren.
+Met snelle bewerkingen wordt het proces voor het rapporteren en herstellen van kleine fouten en weglatingen in documenten gestroomlijnd. Ondanks alle moeite kunnen toch kleine grammatica- en spelfouten in uw gepubliceerde documenten opduiken. Hoewel u fouten kunt rapporteren via probleemmeldingen, kunt u dit sneller en eenvoudiger doen door een pull-aanvraag (PR) te maken om het probleem te verhelpen. Bij bijna elk artikel wordt een knop Bewerken weergegeven, zoals in de volgende afbeelding wordt getoond. Wanneer u op de knop **Bewerken** klikt, gaat u naar het bronbestand op GitHub.
 
-Onze openbare opslagplaatsen worden gehost op GitHub en geschreven in Markdown. U hebt het volgende nodig om bijdragen te kunnen doen:
+![Locatie van de link Bewerken](./media/index/edit-article.png)
 
-1. Als u nog geen account hebt, moet u een [GitHub-account maken](https://github.com/join).
-2. Docs-artikelen worden geschreven in een opmaakcodetaal met de naam Markdown. U moet basiskennis hebben van de [Markdown](https://daringfireball.net/projects/markdown/syntax)-syntaxis.
+Klik op het potloodpictogram dat is weergegeven in de volgende afbeelding om het artikel te bewerken.
 
-## <a name="quick-start-to-propose-an-article-change"></a>Snel aan de slag met een artikelwijziging voorstellen
+> [!NOTE]
+> Als het potloodpictogram grijs wordt weergegeven, moet u bij uw GitHub-account aanmelden of een nieuw account maken. Breng uw wijzigingen aan in de webeditor. U kunt op het tabblad **Voorbeeld van wijzigingen** klikken om de opmaak van uw wijziging te controleren.
 
-Als u geen tijd hebt om de volledige gids door te werken of hulpprogramma's te installeren en alleen een kleine bijdrage wilt doen, kunt u de belangrijkste informatie hier raadplegen. Gebruik de [werkstroom voor online bewerken](how-to-contribute.md#quick-edits) om uw inzending in te dienen via een pull-aanvraag van GitHub. U zult in deze werkstroom de inhoud bewerken en de pull-aanvraag verzenden in de browser.
+![Locatie van het potloodpictogram](./media/index/editicon.png)
 
-## <a name="additional-ways-to-contribute-to-docsmicrosoftcom-content"></a>Aanvullende manieren om een bijdrage te leveren aan docs.microsoft.com-inhoud
+Zodra u uw wijzigingen hebt aangebracht, scrolt u naar de onderkant van de pagina. Voer een titel en een beschrijving in voor uw PR en klik op **Bestandswijziging voorstellen**, zoals is weergegeven in de volgende afbeelding:
 
-Voor meer informatie over de verschillende taken raadpleegt u ons artikel over [hoe u kunt bijdragen](how-to-contribute.md).
+![uw wijziging voorstellen](./media/index/submit-pull-request.png)
 
+Dat is alles. Uw PR wordt door leden van het inhoudsteam gecontroleerd en samengevoegd. Als u grotere wijzigingen hebt aangebracht, krijgt u misschien feedback waarin u wordt gevraagd om wijzigingen aan te brengen.
+
+De gebruikersinterface voor GitHub-bewerkingen reageert op uw machtigingen voor de opslagplaats. De voorgaande afbeeldingen gelden voor inzenders die geen schrijfmachtigingen hebben voor de doelopslagplaats. In GitHub wordt automatisch een fork van de doelopslagplaats gemaakt in uw account. Als u schrijfrechten hebt voor de doelopslagplaats, wordt in GitHub een nieuwe vertakking in de doelopslagplaats gemaakt. De naam van de vertakking heeft de indeling **\<GitHubId\>-patch-n**, waarbij uw GitHub-id en een numerieke id worden gebruikt voor de vertakking van de patch.
+
+De PR's worden gebruikt voor alle wijzigingen en dus ook voor inzenders die over schrijfrechten beschikken. Bij de meeste opslagplaatsen is de `master`-vertakking beschermd, zodat updates als PR's moeten worden verzonden.
+
+Voor kleinere of incidentele wijzigingen kunt u het beste de bewerkingservaring binnen browsers gebruiken. Als u grote bijdrage levert of geavanceerde Git-functies gebruikt (zoals vertakkingsbeheer of geavanceerde oplossingen voor samenvoegingsconflicten), moet u de [opslagplaats splitsen en lokaal werken](how-to-write-workflows-major.md).
+
+## <a name="review-open-prs"></a>Openstaande PR's controleren
+
+U kunt nieuwe onderwerpen lezen voordat deze zijn gepubliceerd door de momenteel openstaande PR's te controleren. Bij controles wordt het proces van de [GitHub-workflow](https://guides.github.com/introduction/flow/) gevolgd. U kunt voorgestelde updates of nieuwe artikelen in openbare opslagplaatsen bekijken. Controleer deze en voeg uw opmerkingen toe. Ga naar onze opslagplaatsen voor documentatie en bekijk de openstaande pull-aanvragen voor gebieden die interessant zijn voor u. Feedback uit de community over voorgestelde updates is nuttig voor de gehele community.
+
+## <a name="create-quality-issues"></a>Kwaliteitsproblemen maken
+
+Onze documentatie wordt doorlopend aangevuld en verbeterd. Dankzij goede probleemmeldingen kunnen we onze inspanningen richten op de hoogste prioriteiten van de community. Hoe gedetailleerder deze zijn, des te nuttiger is de probleemmelding. Vertel ons naar welke informatie u op zoek was. Vertel ons welke zoektermen u hebt gebruikt. Vertel ons, als u niet aan de slag kunt, hoe u wilt beginnen met het verkennen van onbekende technologie.
+
+Probleemmeldingen zijn het startpunt om te bespreken wat er nodig is. Het inhoudsteam reageert op deze probleemmeldingen met ideeën over wat we kunnen toevoegen, en vraagt om uw mening. Wanneer we een concept maken, vragen we u om [de PR te beoordelen](#review-open-prs).
+
+## <a name="get-more-involved"></a>Meer betrokken raken
+
+Er zijn onderwerpen beschikbaar die u kunt gebruiken om productief bij te dragen aan Microsoft Docs. In deze onderwerpen wordt uitgelegd hoe u werkt met GitHub-opslagplaatsen, Markdown-hulpprogramma's en de extensies die worden gebruikt voor het Microsoft Docs-platform.
