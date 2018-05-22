@@ -1,0 +1,7 @@
+- name: Docs
+  href: /
+  homepage: /
+  items:
+    - name: Gids voor inzenders
+      href: /contribute/
+      homepage: /contribute/
