@@ -8,17 +8,22 @@ ms.date: 07/13/2017
 ms.prod: non-product-specific
 ms.topic: contributor-guide
 ms.custom: external-contributor-guide
-ms.openlocfilehash: 96d00abc052c3b23ca62201dccdbe590a927e72d
-ms.sourcegitcommit: de6e6b6ca641fdd5b30eb46deee9ac3a500089ef
+ms.openlocfilehash: 041398361aef90c44bdf3a0dad4aaa2d40a38289
+ms.sourcegitcommit: 782b689882cce3ce07f5613763322989f2d0d63f
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 05/23/2018
 ---
 # <a name="how-to-use-markdown-for-writing-docs"></a>Markdown gebruiken voor het schrijven van documenten
 
 Artikelen op docs.microsoft.com worden geschreven in de toegankelijke opmaakcodetaal [Markdown](https://daringfireball.net/projects/markdown/), die eenvoudig te lezen en eenvoudig te leren is. Daarom is het al snel een standaardopmaaktaal geworden.
 
-Omdat Docs-inhoud wordt opgeslagen in GitHub, kan een hoofdverzameling van Markdown, [GitHub Flavored Markdown (GFM)](https://help.github.com/categories/writing-on-github/), worden gebruikt. Deze biedt aanvullende functionaliteit voor algemene opmaakbehoeften. Daarnaast wordt met OPS (Open Publishing Services) DFM (DocFX Flavored Markdown) geïmplementeerd, dat zeer compatibel is met GitHub Flavored Markdown (GFM). Hiermee wordt aanvullende functionaliteit toegevoegd om voor Docs specifieke functies in te schakelen.
+Omdat Docs-inhoud wordt opgeslagen in GitHub, kan een hoofdverzameling van Markdown, [GitHub Flavored Markdown (GFM)](https://help.github.com/categories/writing-on-github/), worden gebruikt. Deze biedt aanvullende functionaliteit voor algemene opmaakbehoeften. Daarnaast wordt met OPS (Open Publishing Services) Markdig Markdown Parser geïmplementeerd, Markdig is zeer compatibel met GitHub Flavored Markdown (GFM). Hiermee wordt aanvullende functionaliteit toegevoegd om voor Docs specifieke functies in te schakelen.
+
+* Markdig is een snelle, krachtige, CommonMark-compatibele, extensible Markdown-processor voor .NET.
+* https://github.com/lunet-io/markdig
+* Betere ondersteuning voor community
+* Betere ondersteuning voor standaarden
 
 ## <a name="markdown-basics"></a>Basisbeginselen van Markdown
 
@@ -145,7 +150,7 @@ weergegeven als:
 
 Ga voor meer informatie over het maken van tabellen naar:
 
-- De [functie voor tabelterugloop](#table-wrapping) van DFM biedt ondersteuning bij het opmaken van brede tabellen
+- De [functie voor tabelterugloop](#table-wrapping) van Markdig biedt ondersteuning bij het opmaken van brede tabellen
 - [Informatie ordenen met tabellen](https://help.github.com/articles/organizing-information-with-tables/) in GitHub
 - De web-app [Markdown-tabelgenerator](https://www.tablesgenerator.com/markdown_tables)
 - [Referentiemateriaal voor Markdown van Adam Pritchard](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet#wiki-tables)
@@ -161,7 +166,7 @@ De Markdown-syntaxis voor een inlinekoppeling bestaat uit het gedeelte `[link te
 Ga voor meer informatie over koppelen naar:
 
 - De [Markdown-syntaxishandleiding](https://daringfireball.net/projects/markdown/syntax#link) voor informatie over basisondersteuning voor koppelen van Markdown.
-- De sectie [Koppelingen](how-to-write-links.md) van deze handleiding voor meer informatie over aanvullende syntaxis voor koppelen, zoals ondersteund door DFM.
+- De sectie [Koppelingen](how-to-write-links.md) van deze handleiding voor meer informatie over aanvullende syntaxis voor koppelen, zoals ondersteund door Markdig.
 
 ### <a name="code-snippets"></a>Codefragmenten
 
@@ -272,9 +277,9 @@ CREATE TABLE T1 (
 ## <a name="ops-custom-markdown-extensions"></a>Aangepaste OPS-extensies voor Markdown
 
 > [!NOTE]
-> Met OPS (Open Publishing Services) wordt DFM (DocFX Flavored Markdown) geïmplementeerd, dat zeer compatibel is met GFM (GitHub Flavored Markdown). Met DFM wordt extra functionaliteit toegevoegd via Markdown-extensies. Om die reden zijn voor naslagdoeleinden bepaalde artikelen uit de OPS-ontwerphandleiding opgenomen in deze handleiding. (Zie bijvoorbeeld Extensies voor DFM en Markdown en Codefragmenten in de inhoudsopgave.)
+> Met OPS (Open Publishing Services) wordt Markdig Parser for Markdown geïmplementeerd, dat zeer compatibel is met GFM (GitHub Flavored Markdown). Met Markdig wordt extra functionaliteit toegevoegd via Markdown-extensies. Om die reden zijn voor naslagdoeleinden bepaalde artikelen uit de OPS-ontwerphandleiding opgenomen in deze handleiding. (Zie bijvoorbeeld Extensies voor Markdig en Markdown en Codefragmenten in de inhoudsopgave.)
 
-GFM wordt gebruikt voor de opmaak van docs-artikelen, zoals alinea’s, koppelingen, lijsten en koppen. Voor rijkere opmaak kunnen in artikelen DFM-functies worden gebruikt, zoals:
+GFM wordt gebruikt voor de opmaak van docs-artikelen, zoals alinea’s, koppelingen, lijsten en koppen. Voor rijkere opmaak kunnen in artikelen Markdig-functies worden gebruikt, zoals:
 
 - Notitieblokken
 - Omvat
@@ -282,7 +287,7 @@ GFM wordt gebruikt voor de opmaak van docs-artikelen, zoals alinea’s, koppelin
 - Ingebedde video's
 - Codefragmenten/voorbeelden
 
-Raadpleeg Extensies voor DFM en Markdown en Codefragmenten in de inhoudsopgave voor de volledige lijst.
+Raadpleeg Extensies voor Markdig en Markdown en Codefragmenten in de inhoudsopgave voor de volledige lijst.
 
 ### <a name="note-blocks"></a>Notitieblokken
 
@@ -297,7 +302,7 @@ Notitieblokken dienen met beleid te worden gebruikt, omdat ze als storend kunnen
 
 ### <a name="includes"></a>Omvat
 
-Als u herbruikbare tekst- of afbeeldingsbestanden hebt die moeten worden ingesloten in artikelbestanden, kunt u een verwijzing naar het in te sluiten bestand gebruiken via de DFM-functie voor het insluiten van bestanden. Met deze functie wordt aan OPS de opdracht gegeven het betreffende bestand tijdens het opbouwen in uw artikelbestand in te sluiten, zodat dit onderdeel wordt van het gepubliceerde artikel. Er zijn drie soorten insluitingen beschikbaar waarmee u inhoud opnieuw kunt gebruiken:
+Als u herbruikbare tekst- of afbeeldingsbestanden hebt die moeten worden ingesloten in artikelbestanden, kunt u een verwijzing naar het in te sluiten bestand gebruiken via de Markdig-functie voor het insluiten van bestanden. Met deze functie wordt aan OPS de opdracht gegeven het betreffende bestand tijdens het opbouwen in uw artikelbestand in te sluiten, zodat dit onderdeel wordt van het gepubliceerde artikel. Er zijn drie soorten insluitingen beschikbaar waarmee u inhoud opnieuw kunt gebruiken:
 
 - Inline: een gewoon stuk tekst inline hergebruiken in een andere zin.
 - Blok: een volledig Markdown-bestand als blok hergebruiken, genest in een sectie van een artikel.
@@ -309,7 +314,7 @@ Dit zijn de vereisten en overwegingen voor insluitingen:
 
 - Gebruik insluitingen wanneer u dezelfde tekst in meerdere artikelen wilt gebruiken.
 - Gebruik blokinsluitingen voor aanzienlijke hoeveelheden inhoud: enkele alinea’s, een gedeelde procedure of een gedeelde sectie. Gebruik deze niet voor content die minder lang is dan een zin.
-- Insluitingen worden niet weergegeven in het GitHub-weergaveoverzicht van uw artikelen, omdat ze afhankelijk zijn van DFM-extensies. Ze worden pas weergegeven na publicatie.
+- Insluitingen worden niet weergegeven in het GitHub-weergaveoverzicht van uw artikelen, omdat ze afhankelijk zijn van Markdig-extensies. Ze worden pas weergegeven na publicatie.
 - Zorg ervoor dat de tekst in een insluiting uit volledige zinnen bestaat die niet afhankelijk zijn van voorafgaande of volgende tekst in het artikel waarin naar de insluiting wordt verwezen. Als u deze richtlijn negeert, ontstaat niet te vertalen tekst in het artikel waardoor de gelokaliseerde ervaring wordt onderbroken.
 - Voeg geen insluitingen in andere insluitingen in. Dit wordt niet ondersteund.
 - Plaats mediabestanden in een mediamap die specifiek is voor de submap met insluitingen, bijvoorbeeld de map `<repo>`/includes/media. In de hoofdmap van de mediamap mogen zich geen afbeeldingen bevinden. Als de insluiting geen afbeeldingen bevat, hoeft er geen bijbehorende mediamap te worden gemaakt.
@@ -318,13 +323,13 @@ Dit zijn de vereisten en overwegingen voor insluitingen:
 
 ### <a name="selectors"></a>Selectors
 
-Gebruik selectors in technische artikelen als u van een artikel meerdere versies maakt voor implementatie in verschillende technologieën of platformen. Dit is doorgaans het meest van toepassing voor onze inhoud voor mobiele platformen voor ontwikkelaars. Er zijn momenteel twee verschillende soorten selectors in DFM, een enkelvoudige selector en een meervoudige selector.
+Gebruik selectors in technische artikelen als u van een artikel meerdere versies maakt voor implementatie in verschillende technologieën of platformen. Dit is doorgaans het meest van toepassing voor onze inhoud voor mobiele platformen voor ontwikkelaars. Er zijn momenteel twee verschillende soorten selectors in Markdig, een enkelvoudige selector en een meervoudige selector.
 
 Omdat dezelfde selector Markdown in elk onderwerp in de selectie wordt geplaatst, wordt aanbevolen de selector voor uw onderwerp op te nemen in een insluiting. Deze kan vervolgens naar deze insluiting verwijzen in alle onderwerpen waarin dezelfde selector wordt gebruikt.
 
 ### <a name="code-snippets"></a>Codefragmenten
 
-DFM ondersteunt geavanceerde insluiting van code in een artikel, via de extensie voor codefragmenten. Dit biedt een geavanceerde weergave die gebruikmaakt van GFM-functies, zoals keuze van programmeertaal en syntaxiskleuren, plus leuke functies als:
+Markdig ondersteunt geavanceerde insluiting van code in een artikel, via de extensie voor codefragmenten. Dit biedt een geavanceerde weergave die gebruikmaakt van GFM-functies, zoals keuze van programmeertaal en syntaxiskleuren, plus leuke functies als:
 
 - Insluiting van gecentraliseerde codevoorbeelden/-fragmenten uit een externe opslagplaats.
 - Gebruikersinterface met tabbladen voor weergave van meerdere versies van codevoorbeelden in verschillende talen.
