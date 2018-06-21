@@ -1,19 +1,13 @@
 ---
 title: GitHub-bijdragewerkstroom voor belangrijke of langdurige wijzigingen
 description: In dit artikel wordt beschreven hoe u de werkstroom voor belangrijke bijdragen gebruikt om bijdragen te leveren aan artikelen op docs.microsoft.com.
-author: bryanla
-ms.author: bryanla
-manager: mbaldwin
 ms.date: 08/30/2017
-ms.prod: non-product-specific
-ms.topic: contributor-guide
-ms.custom: external-contributor-guide
-ms.openlocfilehash: e26b62923eed22d5b2005b1d84dc4ae240d262b1
-ms.sourcegitcommit: 782b689882cce3ce07f5613763322989f2d0d63f
+ms.openlocfilehash: 31f9421fc5edbc2f65c5ff20a86da08c70211ec7
+ms.sourcegitcommit: 92aef5ea8bdd692c5c393d5c8f99b9e4f672ef2b
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 06/05/2018
-ms.locfileid: "34469550"
+ms.lasthandoff: 06/19/2018
+ms.locfileid: "36239820"
 ---
 # <a name="github-contribution-workflow-for-major-or-long-running-changes"></a>GitHub-bijdragewerkstroom voor belangrijke of langdurige wijzigingen
 
