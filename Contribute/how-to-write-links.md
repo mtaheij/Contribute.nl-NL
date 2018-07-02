@@ -1,19 +1,13 @@
 ---
 title: Koppelingen in documentatie gebruiken
 description: Dit artikel biedt ondersteuning voor het maken van koppelingen naar inhoud in docs.microsoft.com.
-author: bryanla
-ms.author: bryanla
-manager: mbaldwin
 ms.date: 06/29/2017
-ms.prod: non-product-specific
-ms.topic: contributor-guide
-ms.custom: external-contributor-guide
-ms.openlocfilehash: 1699e57ac6a4dc4c5a1ef099ea183b3cbc6307cd
-ms.sourcegitcommit: 782b689882cce3ce07f5613763322989f2d0d63f
+ms.openlocfilehash: a66e2fb4febf1947afe01919b96b1c10873cf57d
+ms.sourcegitcommit: 92aef5ea8bdd692c5c393d5c8f99b9e4f672ef2b
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 06/05/2018
-ms.locfileid: "34469527"
+ms.lasthandoff: 06/19/2018
+ms.locfileid: "36239721"
 ---
 # <a name="using-links-in-documentation"></a>Koppelingen in documentatie gebruiken
 In dit artikel wordt beschreven hoe u hyperlinks gebruikt van pagina's die op docs.microsoft.com worden gehost. Koppelingen kunnen eenvoudig in Markdown worden toegevoegd, met een aantal afwijkende conventies. Koppelingen verwijzen gebruikers naar inhoud op dezelfde pagina, naar omliggende pagina's of naar externe websites en URL's.
@@ -63,7 +57,10 @@ Als u een inlinekoppeling wilt maken van een technisch Docs-artikel naar een and
   `[link text](../directory/article-name.md)`
 
 - Een artikel dat naar meerder docsets koppelt (zelfs in dezelfde opslagplaats): `[link text](./directory/article-name)`
-  
+
+> [!IMPORTANT]
+> Geen van de bovenstaande voorbeelden gebruikt de `~/` als onderdeel van de koppeling. Als u een koppeling maakt naar een pad in de hoofdmap van de opslagplaats, begint u met de `/`. Als u de `~/` opneemt, worden de koppelingen ongeldig als er wordt verwezen naar bronopslagplaatsen in GitHub. Als u het pad begint met `/`, wordt het correct omgezet.
+
 ## <a name="links-to-anchors"></a>Koppelingen naar ankers
 
 U hoeft geen ankers te maken. Deze worden automatisch gegenereerd tijdens de publicatie van alle H2-koppen. U hoeft alleen maar koppelingen naar de H2-secties te maken.

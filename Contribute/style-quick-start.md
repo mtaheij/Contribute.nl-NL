@@ -1,19 +1,13 @@
 ---
 title: 'Stijlgids: snel starten met Docs'
 description: Dit artikel is een beknopte gids met stijlrichtlijnen die alleen de essentiële onderwerpen bevat om aan de slag te gaan met docs.microsoft.com.
-author: bryanla
-ms.author: bryanla
-manager: mbaldwin
 ms.date: 07/25/2017
-ms.prod: non-product-specific
-ms.topic: contributor-guide
-ms.custom: external-contributor-guide
-ms.openlocfilehash: 74f78b72f61cfebddb0cb03b73a3a806f4fe4a10
-ms.sourcegitcommit: 782b689882cce3ce07f5613763322989f2d0d63f
+ms.openlocfilehash: 34cd0dc1760f2a569f8bfec782f04b2691a74470
+ms.sourcegitcommit: 92aef5ea8bdd692c5c393d5c8f99b9e4f672ef2b
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 06/05/2018
-ms.locfileid: "34469389"
+ms.lasthandoff: 06/19/2018
+ms.locfileid: "36239598"
 ---
 # <a name="docs-style-and-voice-quick-start"></a>Snel aan de slag met stijl en toon in Docs
 
@@ -56,5 +50,6 @@ Onze technische artikelen worden in diverse talen vertaald en sommige worden aan
 ## <a name="localized-documentation"></a>Gelokaliseerde documentatie
 
 - Raadpleeg de [Microsoft Language Portal](https://www.microsoft.com/Language/Default.aspx), als u een bijdrage levert aan gelokaliseerde documentatie.
-- Download de [stijlgids](https://www.microsoft.com/Language/StyleGuides.aspx) in uw taal voor lokalisatierichtlijnen, informatie over de stijl en het gebruik van taal in technische publicaties en informatie over marktspecifieke opmaak van gegevens.
-- Voor gelokaliseerde Microsoft-terminologie kunt u zoeken naar [productspecifieke goedgekeurde terminologie](https://www.microsoft.com/Language/Search.aspx) of de [Microsoft Terminology Collection](https://www.microsoft.com/Language/Terminology.aspx) in uw taal downloaden.
+- Download de [stijlgids](https://www.microsoft.com/Language/StyleGuides) in uw taal voor lokalisatierichtlijnen, informatie over de stijl en het gebruik van taal in technische publicaties en informatie over marktspecifieke opmaak van gegevens.
+- Voor gelokaliseerde Microsoft-terminologie kunt u zoeken naar [productspecifieke goedgekeurde terminologie](https://www.microsoft.com/Language/Default.aspx) of de [Microsoft Terminology Collection](https://www.microsoft.com/Language/Terminology.aspx) in uw taal downloaden.
+- U kunt meer vinden in de [lokalisatiesectie](https://docs.microsoft.com/style-guide/global-communications/) van de Microsoft-stijlgids.
