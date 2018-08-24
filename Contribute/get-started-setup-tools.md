@@ -5,18 +5,18 @@ author: jasonwhowell
 ms.author: jasonh
 manager: kfile
 ms.date: 04/30/2018
-ms.openlocfilehash: 00631485f1f4eed9e0de2f6df98d973a819dfe4d
-ms.sourcegitcommit: 92aef5ea8bdd692c5c393d5c8f99b9e4f672ef2b
+ms.openlocfilehash: 9f22a416810711c076645a9483f022112a3a7642
+ms.sourcegitcommit: 886ca76086a302d1d6124967df12a5bcfe4fd4b5
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 06/19/2018
-ms.locfileid: "36238915"
+ms.lasthandoff: 08/10/2018
+ms.locfileid: "40251428"
 ---
 # <a name="install-content-authoring-tools"></a>Hulpprogramma's installeren om inhoud aan te passen
 
 Dit artikel beschrijft de stappen om interactief Git-clienthulpprogramma's en Visual Studio Code te installeren.
 > [!div class="checklist"]
-> * [Git voor Windows](https://git-scm.com/download/win) installeren
+> * [Git](https://git-scm.com/) installeren
 > * [Visual Studio Code](https://code.visualstudio.com/) installeren
 > * [Docs Authoring Pack](https://marketplace.visualstudio.com/items?itemName=docsmsft.docs-authoring-pack) installeren
 
@@ -25,9 +25,13 @@ Dit artikel beschrijft de stappen om interactief Git-clienthulpprogramma's en Vi
 >
 > Belangrijke inzenders wordt aangeraden deze stappen uit te voeren, zodat ze de [werkstroom voor belangrijke/langdurige wijzigingen](how-to-write-workflows-major.md) kunnen gebruiken. Zelfs als u over schrijfmachtigingen beschikt in de hoofdopslagplaats, *is het raadzaam (en wordt dit in deze handleiding aangenomen) dat u de opslagplaats splitst en kloont*, zodat u over lees-/schrijfmachtigingen beschikt om de door u voorgestelde wijzigingen in uw fork op te slaan.
 
-## <a name="install-git-client-tools-on-windows"></a>Git-clienthulpprogramma's in Windows installeren
+## <a name="install-git-client-tools"></a>Git-clienttools installeren 
 
- Installeer de nieuwste versie van [de Git-clienttools van Software Freedom Conservancy](https://git-scm.com/download/). Deze installatie bevat het Git-versiebeheersysteem en Git Bash, de opdrachtregel-app die u gebruikt voor interactie met uw lokale Git-opslagplaats.
+ Installeer de nieuwste versie van [de Git-clienttools van Software Freedom Conservancy](https://git-scm.com/download/) voor uw platform. 
+
+* [Git voor Windows](https://git-scm.com/download/win). Deze installatie bevat het Git-versiebeheersysteem en Git Bash, de opdrachtregel-app die u gebruikt voor interactie met uw lokale Git-opslagplaats.
+* Git voor Mac wordt aangeboden als onderdeel van de Xcode Command Line Tools. Voer `git` uit vanaf de opdrachtregel. Indien nodig wordt u gevraagd om de opdrachtregelhulpprogramma's te installeren. U kunt [Git voor Mac](https://git-scm.com/download/mac) ook downloaden op de website van de Software Freedom Conservancy.
+* [Git voor Linux en Unix](https://git-scm.com/download/linux)
 
 Als u de voorkeur geeft aan een grafische gebruikersinterface (GUI) boven een opdrachtregelinterface (CLI), raadpleegt u [de pagina met beschikbare GUI-clients van Software Freedom Conservancy](https://git-scm.com/downloads/guis), [GitHub Desktop van GitHub ](https://desktop.github.com/) of [Visual Studio Code](https://www.visualstudio.com/products/code-vs.aspx) voor een aantal veelgebruikte opties.
 

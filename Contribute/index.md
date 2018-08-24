@@ -5,18 +5,18 @@ author: billwagner
 ms.author: wiwagn
 manager: wpickett
 ms.date: 04/17/2018
-ms.openlocfilehash: a0c52fea8f3a57cdfe89c2cd7a24ef7b511ada7c
-ms.sourcegitcommit: 92aef5ea8bdd692c5c393d5c8f99b9e4f672ef2b
+ms.openlocfilehash: 6206f61a69c14575a726da9ce64ad0b765c7aa87
+ms.sourcegitcommit: 886ca76086a302d1d6124967df12a5bcfe4fd4b5
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 06/19/2018
-ms.locfileid: "36239764"
+ms.lasthandoff: 08/10/2018
+ms.locfileid: "40251449"
 ---
 # <a name="microsoft-docs-contributor-guide-overview"></a>Gids voor inzenders van Microsoft Docs: overzicht
 
 Welkom bij de stijlgids voor [docs.microsoft.com](https://docs.microsoft.com) (ook bekend als Docs).
 
-Meerdere van onze documentatiesets zijn opensourcesets die worden gehost op GitHub. Er zijn steeds meer teams die dit model invoeren. Zelfs documentatiessets die niet volledig open source zijn, hebben een openbare opslagplaats waarvoor u pull-aanvragen kunt maken. Zo kan de communicatie tussen productengineers, de inhoudsteams en onze klanten worden gestroomlijnd en verbeterd. In het openbaar werken biedt verschillende voordelen:
+Meerdere van onze documentatiesets zijn opensourcesets die worden gehost op GitHub. Steeds meer teams bij Microsoft stappen over op dit model. Zelfs documentatiessets die niet volledig open source zijn, hebben een openbare opslagplaats waarvoor u pull-aanvragen kunt maken. Zo kan de communicatie tussen productengineers, de inhoudsteams en onze klanten worden gestroomlijnd en verbeterd. In het openbaar werken biedt verschillende voordelen:
 
 - Met openbare planning in opensourceopslagplaatsen kan feedback worden verkregen over welke documenten het meest nodig zijn.
 - Met openbare controles in opensourceopslagplaatsen kan de inhoud die het nuttigst is, in de eerste versie worden gepubliceerd.

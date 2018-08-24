@@ -2,22 +2,22 @@
 title: 'Stijlgids: snel starten met Docs'
 description: Dit artikel is een beknopte gids met stijlrichtlijnen die alleen de essentiële onderwerpen bevat om aan de slag te gaan met docs.microsoft.com.
 ms.date: 07/25/2017
-ms.openlocfilehash: 34cd0dc1760f2a569f8bfec782f04b2691a74470
-ms.sourcegitcommit: 92aef5ea8bdd692c5c393d5c8f99b9e4f672ef2b
+ms.openlocfilehash: 3a91669ba9ad6711bcc436952d1d6cb311b9d4f6
+ms.sourcegitcommit: 886ca76086a302d1d6124967df12a5bcfe4fd4b5
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 06/19/2018
-ms.locfileid: "36239598"
+ms.lasthandoff: 08/10/2018
+ms.locfileid: "40243018"
 ---
 # <a name="docs-style-and-voice-quick-start"></a>Snel aan de slag met stijl en toon in Docs
 
-Deze stijlgids om snel aan de slag te gaan vereist weinig tijd, maar geeft een goed inzicht in hoe u de belangrijkste concepten voor de Docs-stijl toepast bij het schrijven van artikelen voor docs.microsoft.com. Deze richtlijnen gelden voor nieuwe documentatie en voor het bijwerken van bestaande documentatie.
+Deze snelstart biedt een beknopte handleiding voor het schrijven van technische inhoud voor publicatie op docs.microsoft.com. Deze richtlijnen gelden voor nieuwe documentatie en voor het bijwerken van bestaande documentatie.
 
-Houd u minimaal aan de volgende vereisten:
+Best practices:
 
 - Controleer de spelling en grammatica in uw artikelen. Hiervoor kunt u de tekst kopiëren en plakken in Word.
 - Gebruik een alledaagse, vriendelijke toon alsof u tegen een persoon praat.
-- Gebruik eenvoudige zinnen. Deze zijn gemakkelijker te begrijpen en kunnen beter worden vertaald door zowel mensen als systemen.
+- Gebruik eenvoudige zinnen. Als u gemakkelijk leesbare zinnen gebruikt, kan de lezer de instructies die u geeft, snel in de praktijk brengen.
 
 ## <a name="use-the-microsoft-voice-principles"></a>De Microsoft-principes voor de toon gebruiken
 
