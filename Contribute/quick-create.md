@@ -6,14 +6,14 @@ author: syntaxc4
 manager: erifkin
 ms.date: 07/24/2018
 ms.author: cfowler
-zone_pivot_groups: keyvault-languages, keyvault-platforms
+zone_pivot_groups: keyvault-languages
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: 8b758274203748bb6e04c03dec5de38fb77947b4
-ms.sourcegitcommit: b0105f322f91bb4dbde47f6da35b3c12271d5b03
+ms.openlocfilehash: 27ebd3e348fc231d8b82e6c17f282bd9ca4afb9f
+ms.sourcegitcommit: 5e508a7ad2991632a38f302e4769b36e3bf37eb2
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 08/29/2018
-ms.locfileid: "43239575"
+ms.lasthandoff: 08/30/2018
+ms.locfileid: "43308819"
 ---
 # <a name="quickstart-set-and-retrieve-a-secret-from-azure-key-vault"></a>Snelstart: een geheim instellen en ophalen uit Azure Key Vault
 
@@ -30,24 +30,17 @@ In deze snelstart ziet u hoe u een geheim kunt opslaan in Key Vault en dit gehei
 
 Controleer voordat u verdergaat of u bekend bent met de [basisbeginselen](https://docs.microsoft.com/azure/key-vault/key-vault-whatis#basic-concepts).
 
->[!NOTE]
-U moet een aantal concepten kennen om te begrijpen waarom de onderstaande zelfstudie de best practice is. Key Vault is een centrale opslagplaats voor het opslaan van geheimen via een programma. Maar hiervoor moeten toepassingen/gebruikers eerst worden geverifieerd bij Key Vault, dat wil zeggen een geheim presenteren. Als u de best practices voor beveiliging wilt volgen, moet dit eerste geheim ook periodiek worden gerouleerd. Maar met [Managed Service Identity](https://docs.microsoft.com/azure/active-directory/managed-service-identity/overview) krijgen toepassingen die worden uitgevoerd in Azure, een identiteit die automatisch wordt beheerd in Azure. Dit helpt bij het oplossen van het **probleem van het introduceren van geheimen** waar gebruikers/toepassingen best practices kunnen volgen zonder dat het eerste geheim hoeft te worden gerouleerd
+> [!NOTE]
+> U moet een aantal concepten kennen om te begrijpen waarom de onderstaande zelfstudie de best practice is. Key Vault is een centrale opslagplaats voor het opslaan van geheimen via een programma. Maar hiervoor moeten toepassingen/gebruikers eerst worden geverifieerd bij Key Vault, dat wil zeggen een geheim presenteren. Als u de best practices voor beveiliging wilt volgen, moet dit eerste geheim ook periodiek worden gerouleerd. Maar met [Managed Service Identity](https://docs.microsoft.com/azure/active-directory/managed-service-identity/overview) krijgen toepassingen die worden uitgevoerd in Azure, een identiteit die automatisch wordt beheerd in Azure. Dit helpt bij het oplossen van het **probleem van het introduceren van geheimen** waar gebruikers/toepassingen best practices kunnen volgen zonder dat het eerste geheim hoeft te worden gerouleerd
 
 ## <a name="prerequisites"></a>Vereisten
 
 ::: zone pivot="nodejs"
-* [Node JS](https://nodejs.org/en/) ::: zone-end
-
-::: zone pivot="dotnet, windows"
+* [Node JS](https://nodejs.org/en/) ::: zone-end ::: zone pivot="dotnet"
 * [Visual Studio 2017 versie 15.7.3 of hoger](https://www.microsoft.com/net/download/windows) met de volgende workloads:
   * ASP.NET-ontwikkeling en webontwikkeling
   * Platformoverschrijdende ontwikkeling met .NET Core
 * [.NET Core 2.1 SDK of later](https://www.microsoft.com/net/download/windows) :::zone-end
-
-::: zone pivot="dotnet, mac"
-* Zie [Nieuwe functies in Visual Studio voor Mac](https://visualstudio.microsoft.com/vs/mac/).
-:::zone-end
-
 * Git ([download](https://git-scm.com/downloads)).
 * Een Azure-abonnement. Als u nog geen Azure-abonnement hebt, maakt u eerst een [gratis account](https://azure.microsoft.com/free/?WT.mc_id=A261C142F) aan voordat u begint.
 * Versie [Azure CLI](https://docs.microsoft.com/cli/azure/install-azure-cli?view=azure-cli-latest) 2.0.4 of later. Deze versie is beschikbaar voor Windows, Mac en Linux.
@@ -169,10 +162,10 @@ Hieronder vindt u de paar stappen die moeten worden uitgevoerd
     ```bash
     git remote add azure <url>
     ```
+    
 ::: zone-end
 
 ::: zone pivot="dotnet"
-
 ## <a name="open-and-edit-the-solution"></a>De oplossing openen en bewerken
 
 Bewerk het bestand program.cs om het voorbeeld uit te voeren met de naam van uw specifieke sleutelkluis:
@@ -198,7 +191,6 @@ Publiceer de app in Azure om deze live als web-app in actie te zien en om te con
 5. Selecteer **Maken**.
 
 >[!VIDEO https://sec.ch9.ms/ch9/e93d/a6ac417f-2e63-4125-a37a-8f34bf0fe93d/KeyVault_high.mp4]
-
 ::: zone-end
 
 ## <a name="enable-managed-service-identities"></a>Beheerde service-identiteiten inschakelen
@@ -243,7 +235,9 @@ git push azure master
 ```
 
 Als u hierna naar https://<app_name>.azurewebsites.net bladert, ziet u de geheime waarde.
-Controleer of u de naam <YourKeyVaultName> hebt vervangen door de naam van de kluis ::: zone-end
+Controleer of u de naam <YourKeyVaultName> hebt vervangen door de naam van de kluis
+
+::: zone-end
 
 ::: zone pivot="dotnet" Tijdens het uitvoeren van de toepassing ziet u nu de geheime waarde die is opgehaald.
 ::: zone-end
