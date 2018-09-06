@@ -5,24 +5,26 @@ author: meganbradley
 ms.author: mbradley
 manager: jemash
 ms.date: 04/06/2018
-ms.openlocfilehash: 0a6a793f568771347efce5d7b2d347210f9e5c70
-ms.sourcegitcommit: 92aef5ea8bdd692c5c393d5c8f99b9e4f672ef2b
+ms.openlocfilehash: b9fedce0a73c5c4212ffd0893c745fab56677c8c
+ms.sourcegitcommit: 5e508a7ad2991632a38f302e4769b36e3bf37eb2
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 06/19/2018
-ms.locfileid: "36238892"
+ms.lasthandoff: 08/30/2018
+ms.locfileid: "43308911"
 ---
 # <a name="docs-authoring-pack-for-vs-code"></a>Docs-ontwerppakket voor VS Code
 
 Het Docs-ontwerppakket is een verzameling extensies voor VS Code die u kunt gebruiken bij het schrijven van Markdown voor docs.microsoft.com. Het pakket is [verkrijgbaar via de VS Code Marketplace](https://marketplace.visualstudio.com/items?itemName=docsmsft.docs-authoring-pack) en bevat de volgende extensies:
 
-- **DocFX:** biedt een specifieke Markdown-preview voor docs.microsoft.com. Zie [DocFX](https://marketplace.visualstudio.com/items?itemName=ms-docfx.DocFX) voor meer informatie.
-- **markdownlint:** een populaire Markdown-linter van David Anson zodat u zeker weet dat u voor uw Markdown de best practices gebruikt. Zie [markdownlint](https://marketplace.visualstudio.com/items?itemName=DavidAnson.vscode-markdownlint) voor meer informatie.
-- **Docs Markdown:** biedt hulp bij het schrijven van Markdown voor inhoud van docs.microsoft.com in het Open Publishing System (OPS), inclusief fundamentele Markdown-ondersteuning en ondersteuning voor aangepaste Markdown-syntaxis in OPS. De rest van dit onderwerp gaat over de Docs Markdown-extensie.
+- [markdownlint:](https://marketplace.visualstudio.com/items?itemName=DavidAnson.vscode-markdownlint) een populaire Markdown-linter van David Anson zodat u zeker weet dat u voor uw Markdown de best practices gebruikt.
+- [Code Spell Checker](https://marketplace.visualstudio.com/items?itemName=streetsidesoftware.code-spell-checker): een spellingcontrole van Street Side Software die volledig offline is.
+- [Docs Preview](https://marketplace.visualstudio.com/items?itemName=docsmsft.docs-preview): gebruikt de CSS op docs.microsoft.com voor een nauwkeuriger Markdown-voorbeeld, inclusief aangepaste Markdown.
+- [Docs Markdown:](https://marketplace.visualstudio.com/items?itemName=docsmsft.docs-markdown) biedt hulp bij het schrijven van Markdown voor inhoud op docs.microsoft.com in het OPS (Open Publishing System), inclusief fundamentele Markdown-ondersteuning en ondersteuning voor aangepaste Markdown-syntaxis in OPS. De rest van dit onderwerp gaat over de Docs Markdown-extensie.
+- [Docs Article Templates](https://marketplace.visualstudio.com/items?itemName=docsmsft.docs-article-templates): hiermee kunnen gebruikers inhoud uit het Markdown-geraamte toepassen op nieuwe bestanden.
 
 ## <a name="prerequisites-and-assumptions"></a>Vereisten en aannames
 
-Voor het nauwkeurig invoegen van relatieve koppelingen, afbeeldingen en andere ingesloten inhoud met de Docs Markdown-extensie moet uw VS Code-werkruimte op de hoofdmap van uw gekloonde OPS-opslagplaats zijn gericht.
+Voor het nauwkeurig invoegen van relatieve koppelingen, afbeeldingen en andere ingesloten inhoud met de Docs Markdown-extensie moet de VS Code-werkruimte zijn ingesteld op de hoofdmap van de gekloonde OPS-opslagplaats (Open Publishing System).
 
 Sommige syntaxissen die door de extensie worden ondersteund, zoals waarschuwingen en codefragmenten, bestaan uit aangepaste Markdown voor OPS en worden niet goed weergegeven, tenzij u deze via OPS publiceert.
 
@@ -30,22 +32,24 @@ Sommige syntaxissen die door de extensie worden ondersteund, zoals waarschuwinge
 
 Typ `ALT+M` voor toegang tot het menu van Docs Markdown. U kunt klikken of de pijltjes omhoog/omlaag gebruiken om de gewenste functie te selecteren, of begin te typen om te filteren. Kies vervolgens `ENTER` wanneer de gewenste functie in het menu wordt gemarkeerd. De volgende functies zijn beschikbaar:
 
-|Functie     |Opdracht             |Beschrijving           |
-|-------------|--------------------|----------------------|
-|Vet         |`formatBold`        |Hiermee wordt tekst **vetgedrukt** weergegeven.|
-|Cursief       |`formatItalic`      |Hiermee wordt tekst *cursief* weergegeven.|
-|Code         |`formatCode`        |Als er één regel of minder is geselecteerd, wordt tekst als `inline code` weergegeven.<br><br>Als er meerdere regels zijn geselecteerd, worden deze als afgeschermd codeblok opgemaakt. U hebt nu de mogelijkheid om een programmeertaal te selecteren die door OPS wordt ondersteund.|
-|Waarschuwing        |`insertAlert`       |Hiermee voegt u een notitie of de aanduiding Belangrijk, Waarschuwing of Tip toe.<br><br>Selecteer Waarschuwing in het menu en selecteer het waarschuwingstype. Als u al eerder tekst hebt geselecteerd, wordt deze omringd door de geselecteerde waarschuwingssyntaxis. Is er geen tekst geselecteerd, dan wordt een nieuwe waarschuwing toegevoegd met tijdelijke tekst.|
-|Genummerde lijst|`insertNumberedList` |Hiermee voegt u een nieuwe genummerde lijst in.<br><br> Als er meerdere regels zijn geselecteerd, wordt elke regel als lijstitem weergegeven. Houd er rekening mee dat genummerde lijsten worden in Markdown met alleen enen (1) worden weergegeven, maar met opeenvolgende nummers of (voor geneste lijsten) letters worden weergegeven op docs.microsoft.com. Als u een geneste genummerde lijst wilt maken, drukt u in de bovenliggende lijst op de Tab-toets.|
-|Lijst met opsommingstekens|`insertBulletedList` |Hiermee voegt u een nieuwe lijst met opsommingstekens in.|
-|Tabel        |`insertTable`        |Hiermee voegt u een Markdown-tabelstructuur in.<br><br>Nadat u de tabelopdracht hebt geselecteerd, geeft u het aantal kolommen en rijen op in de notatie kolommen:rijen, zoals 3:4. Het maximum aantal kolommen dat u via deze extensie kunt opgeven is 5. Dit is het aanbevolen maximum om de tabel nog goed leesbaar te houden.|
-|Koppeling         |`selectLinkType`      |Hiermee voegt u een koppeling in. Wanneer u deze opdracht selecteert, wordt het volgende submenu weergegeven.<br><br>`External`: Koppeling naar een webpagina via URI. Moet http of https bevatten.<br>`Internal`: Hiermee voegt u een relatieve koppeling naar een ander bestand in dezelfde opslagplaats in. Nadat u deze optie hebt gekozen, voert u tekst in het opdrachtvenster in om bestanden op naam te filteren. Kies daarna het gewenste bestand. <br>`Bookmark in this file`: kies een van de titels in het huidige bestand uit de lijst om een bladwijzer met de juiste indeling in te voegen.<br>`Bookmark in another file`: filter eerst op bestandsnaam en selecteer dan het bestand waarnaar u wilt koppelen. Kies vervolgens de juiste titel in het geselecteerde bestand.|
-|Afbeelding        |`insertImage`     |Typ alternatieve tekst (vereist voor toegankelijkheid) en selecteer deze tekst. Roep vervolgens deze opdracht aan om de lijst met ondersteunde afbeeldingsbestanden in de opslagplaats te filteren en selecteer het gewenste bestand. Als u geen alternatieve tekst hebt geselecteerd wanneer u deze opdracht aanroept, wordt u gevraagd dit in te voeren voordat u een afbeeldingsbestand kunt selecteren.|
-|Opnemen      |`insertInclude`   |Vind een bestand om in het huidige bestand in te sluiten.|
-|Codefragment      |`insertSnippet`   |Vind een codefragment in de opslagplaats om in het huidige bestand in te sluiten.|
-|Video        |`insertVideo`     |Voeg een ingesloten video toe.|
-|Preview      |`previewTopic`    |Bekijk met behulp van de extensie DocFX een preview van het actieve onderwerp in een naastgelegen venster.  Als de extensie DocFX niet is geïnstalleerd, of wel is geïnstalleerd maar is uitgeschakeld, wordt het onderwerp niet weergegeven.
-
+|Functie     |Beschrijving           |
+|-------------|----------------------|
+|Preview      |Bekijk met behulp van Docs Preview-extensie een voorbeeld van het actieve onderwerp in een naastgelegen venster. Deze optie is alleen beschikbaar als Docs Preview is geïnstalleerd.|
+|Vet         |Hiermee wordt tekst **vetgedrukt** weergegeven.|
+|Cursief       |Hiermee wordt tekst *cursief* weergegeven.|
+|Code         |Als er één regel of minder is geselecteerd, wordt tekst als `inline code` weergegeven.<br><br>Als er meerdere regels zijn geselecteerd, worden deze als afgeschermd codeblok opgemaakt. U hebt nu de mogelijkheid om een programmeertaal te selecteren die door OPS wordt ondersteund.|
+|Waarschuwing        |Hiermee voegt u een notitie of de aanduiding Belangrijk, Waarschuwing of Tip toe.<br><br>Selecteer Waarschuwing in het menu en selecteer het waarschuwingstype. Als u al eerder tekst hebt geselecteerd, wordt deze omringd door de geselecteerde waarschuwingssyntaxis. Is er geen tekst geselecteerd, dan wordt een nieuwe waarschuwing toegevoegd met tijdelijke tekst.|
+|Genummerde lijst|Hiermee voegt u een nieuwe genummerde lijst in.<br><br> Als er meerdere regels zijn geselecteerd, wordt elke regel als lijstitem weergegeven. Houd er rekening mee dat genummerde lijsten worden in Markdown met alleen enen (1) worden weergegeven, maar met opeenvolgende nummers of (voor geneste lijsten) letters worden weergegeven op docs.microsoft.com. Als u een geneste genummerde lijst wilt maken, drukt u in de bovenliggende lijst op de Tab-toets.|
+|Lijst met opsommingstekens|Hiermee voegt u een nieuwe lijst met opsommingstekens in.|
+|Tabel        |Hiermee voegt u een Markdown-tabelstructuur in.<br><br>Nadat u de tabelopdracht hebt geselecteerd, geeft u het aantal kolommen en rijen op in de notatie kolommen:rijen, zoals 3:4. Het maximum aantal kolommen dat u via deze extensie kunt opgeven is 5. Dit is het aanbevolen maximum om de tabel nog goed leesbaar te houden.|
+|Koppeling naar een bestand in de opslagplaats|Hiermee voegt u een relatieve koppeling naar een ander bestand in de huidige opslagplaats in. Nadat u deze optie hebt gekozen, voert u tekst in het opdrachtvenster in om bestanden op naam te filteren. Kies daarna het gewenste bestand. Als u eerder tekst hebt geselecteerd, wordt dit de koppelingstekst. Anders wordt de H1 van het doelbestand gebruikt als de koppelingstekst.|
+|Koppeling naar een webpagina    |Hiermee voegt u een koppeling naar een webpagina in. Nadat u deze optie hebt geselecteerd, plakt of typt u de URI in het opdrachtvenster. `https://` is vereist. Als u eerder tekst hebt geselecteerd, wordt dit de koppelingstekst. Anders wordt de URI gebruikt als de koppelingstekst.|
+|Koppeling naar koptekst     |Voegt een koppeling naar een bladwijzer in het huidige bestand of een ander bestand in de opslagplaats in.<br>`Bookmark in this file`: kies een van de titels in het huidige bestand uit de lijst om een bladwijzer met de juiste indeling in te voegen.<br>`Bookmark in another file`: filter eerst op bestandsnaam en selecteer dan het bestand waarnaar u wilt koppelen. Kies vervolgens de juiste titel in het geselecteerde bestand.|
+|Afbeelding        |Typ alternatieve tekst (vereist voor toegankelijkheid) en selecteer deze tekst. Roep vervolgens deze opdracht aan om de lijst met ondersteunde afbeeldingsbestanden in de opslagplaats te filteren en selecteer het gewenste bestand. Als u geen alternatieve tekst hebt geselecteerd wanneer u deze opdracht aanroept, wordt u gevraagd dit in te voeren voordat u een afbeeldingsbestand kunt selecteren.|
+|Opnemen      |Vind een bestand om in het huidige bestand in te sluiten.|
+|Codefragment      |Vind een codefragment in de opslagplaats om in het huidige bestand in te sluiten.|
+|Video        |Voeg een ingesloten video toe.|
+|Sjabloon     |Maak een nieuw bestand en pas een Markdown-sjabloon toe. Zie [Sjablonen](#how-to-use-docs-templates) hieronder voor meer informatie.|
 
 ## <a name="how-to-assign-keyboard-shortcuts"></a>Sneltoetsen toewijzen
 
@@ -74,17 +78,39 @@ Typ `ALT+M` voor toegang tot het menu van Docs Markdown. U kunt klikken of de pi
 
 Zie [Toetsencombinaties](https://code.visualstudio.com/docs/getstarted/keybindings) in de VS Code-documenten voor meer informatie.
 
-## <a name="how-to-show-the-legacy-gauntlet-toolbar"></a>De verouderde werkbalk Gauntlet weergeven
+## <a name="how-to-show-the-legacy-toolbar"></a>De verouderde werkbalk weergeven
 
-Voormalige gebruikers van de extensiecode Gauntlet zullen hebben gemerkt dat de schrijfwerkbalk niet langer onder aan het VS Code-venster wordt weergegeven wanneer de extensie Docs Markdown wordt geïnstalleerd. De reden hiervoor is dat de werkbalk veel ruimte op de VS Code-statusbalk innam en niet voldeed aan de best practices voor extensie-UX. We hebben de werkbalk daarom afgeschaft in de nieuwe extensie. U kunt er echter wel voor kiezen om de werkbalk weer te geven. Werk hiervoor uw VS Code-bestand settings.json als volgt bij:
+Gebruikers van de voorlopige versie van de extensie zullen merken dat de schrijfwerkbalk niet meer onder aan het VS Code-venster wordt weergegeven wanneer de Docs Markdown-extensie is geïnstalleerd. De reden hiervoor is dat de werkbalk veel ruimte op de VS Code-statusbalk innam en niet voldeed aan de best practices voor extensie-UX. We hebben de werkbalk daarom afgeschaft in de nieuwe extensie. U kunt er echter wel voor kiezen om de werkbalk weer te geven. Werk hiervoor uw VS Code-bestand settings.json als volgt bij:
 
 1. Ga in VS Code naar File (Bestand) -> Preferences (Voorkeuren) -> Settings (Instellingen) (`CTRL+Comma`).
 1. Selecteer User Settings (Gebruikersinstellingen) om de instellingen voor alle VS Code-werkruimten te wijzigen of selecteer Workspace Settings (Instellingen werkruimte) om alleen de instellingen voor de huidige werkruimte te wijzigen.
 1. Zoek in het deelvenster Default Settings (Standaardinstellingen) naar Docs Authoring Extension Configuration (Configuratie Docs-schrijfextensie) en selecteer het potloodpictogram naast de gewenste instelling. Daarna wordt u gevraagd om `true` of `false` te selecteren. Zodra u uw keuze hebt gemaakt, voegt VS Code automatisch de waarde aan het bestand settings.json toe. U wordt gevraagd het venster opnieuw te laden zodat de wijzigingen worden doorgevoerd.
 
-## <a name="known-issues"></a>Bekende problemen
+## <a name="how-to-use-docs-templates"></a>Het gebruik van Docs-sjablonen
 
-- DocFX Preview: In MacOS en Linux opent DocFX Preview de preview niet op de juiste manier (met de preview worden de standaardinstellingen voor Markdown-previews van VS Code voor deze platformen hersteld).
-- DocFX Preview: Op alle platformen worden sommige syntaxissen, zoals xref-koppelingen (kruisverwijzingen) naar API's, niet goed weergegeven in de preview. In sommige gevallen ontstaan hierdoor lege plekken in de inhoud.
-- Externe bladwijzers: In Linux wordt de lijst met bestanden weergegeven, maar er worden geen selecteerbare titels weergegeven.
-- Omvat tevens: In Linux wordt de lijst met bestanden weergegeven, maar er wordt geen koppeling toegevoegd nadat de selectie is gemaakt.
+Met de Docs Article Templates-extensie kunnen schrijvers die VS Code gebruiken, een Markdown-sjabloon ophalen uit een gecentraliseerde opslag en deze toepassen op een bestand. Sjablonen helpen ervoor te zorgen dat de vereiste metagegevens worden opgenomen in artikelen, dat inhoudsnormen worden opgevolgd, enzovoort. Sjablonen worden beheerd als Markdown-bestanden in een openbare GitHub-opslagplaats.
+
+### <a name="to-apply-a-template-in-vs-code"></a>Een sjabloon toepassen in VS Code
+
+1. Als de Docs Markdown-extensie niet is geïnstalleerd, drukt u op F1 om het opdrachtenpalet te openen, begint u ‘sjabloon’ te typen om te filteren, en klikt u vervolgens op `Docs: Template`. Als Docs Markdown wel is geïnstalleerd, kunt u het opdrachtenpalet gebruiken of op `Alt+M` klikken om het menu Docs Markdown QuickPick weer te geven. Selecteer vervolgens `Template` in de lijst.
+1. Selecteer de gewenste sjabloon in de lijst die wordt weergegeven.
+
+### <a name="to-add-your-github-id-andor-microsoft-alias-to-your-vs-code-settings"></a>Uw GitHub-id en/of Microsoft-alias toevoegen aan de VS Code-instellingen
+
+De Templates-extensie biedt ondersteuning voor drie velden met dynamische metagegevens: author, ms.author en ms.date. Dit betekent dat, wanneer de maker van een sjabloon deze velden gebruikt in de metagegevenskoptekst van een Markdown-sjabloon, ze als volgt automatisch worden ingevuld in uw bestand wanneer u de sjabloon toepast:
+
+|Metagegevens  |Waarde|
+|----------|---------------|
+|author    |Uw GitHub-id, indien opgegeven in het bestand met VS Code-instellingen.|
+|ms.author |Uw Microsoft-alias, indien opgegeven in het bestand met VS Code-instellingen. Als u geen werknemer van Microsoft bent, laat u dit veld niet-gespecificeerd.|
+|ms.date   |De huidige datum in de ondersteunde Docs-notatie, MM/DD/YYYY. Let op: de datum wordt niet automatisch bijgewerkt als u hierna het bestand bijwerkt. U moet dit handmatig bijwerken om aan te geven wanneer het artikel voor het laatst is vernieuwd.|
+
+### <a name="to-set-author-github-id-andor-msauthor-microsoft-alias"></a>Ga als volgt te werk om author (GitHub-id) en/of ms.author (Microsoft-alias) in te stellen
+
+1. Ga in VS Code naar File (Bestand) -> Preferences (Voorkeuren) -> Settings (Instellingen) (`CTRL+Comma`).
+1. Selecteer User Settings (Gebruikersinstellingen) om de instellingen voor alle VS Code-werkruimten te wijzigen, of selecteer Workspace Settings (Instellingen voor werkruimte) om alleen de instellingen voor de huidige werkruimte te wijzigen.
+1. Ga in het deelvenster Default Settings (Standaardinstellingen) aan de linkerkant naar Docs Article Templates Extension Configuration (Configuratie van Docs Article Templates-extensie). Klik op het penpictogram naast de gewenste instelling, en klik vervolgens in Settings (Instellingen) op Replace (Vervangen).
+1. Het Deelvenster User Setting (Gebruikersinstellingen) wordt geopend in een naastgelegen venster met onderaan een nieuwe vermelding.
+1. Voeg de GitHub-id of Microsoft-e-mailalias toe en sla het bestand op.
+1. Mogelijk moet u VS Code sluiten en opnieuw starten om de wijzigingen door te voeren.
+1. Wanneer u nu een sjabloon toepast die gebruikmaakt van dynamische velden, worden de GitHub-id en/of Microsoft-alias automatisch ingevuld in de koptekst van de metagegevens.

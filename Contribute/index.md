@@ -5,12 +5,12 @@ author: billwagner
 ms.author: wiwagn
 manager: wpickett
 ms.date: 04/17/2018
-ms.openlocfilehash: 6206f61a69c14575a726da9ce64ad0b765c7aa87
-ms.sourcegitcommit: 886ca76086a302d1d6124967df12a5bcfe4fd4b5
+ms.openlocfilehash: 94fad6f4b2faeefff687eb57cd2de8a0fb5bbbf3
+ms.sourcegitcommit: 5e508a7ad2991632a38f302e4769b36e3bf37eb2
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 08/10/2018
-ms.locfileid: "40251449"
+ms.lasthandoff: 08/30/2018
+ms.locfileid: "43308888"
 ---
 # <a name="microsoft-docs-contributor-guide-overview"></a>Gids voor inzenders van Microsoft Docs: overzicht
 
@@ -31,7 +31,7 @@ De gebruikerservaring op [docs.microsoft.com](https://docs.microsoft.com) is rec
 
 ## <a name="quick-edits-to-existing-documents"></a>Snelle bewerkingen van bestaande documenten
 
-Met snelle bewerkingen wordt het proces voor het rapporteren en herstellen van kleine fouten en weglatingen in documenten gestroomlijnd. Ondanks alle moeite kunnen toch kleine grammatica- en spelfouten in uw gepubliceerde documenten opduiken. Hoewel u fouten kunt rapporteren via probleemmeldingen, kunt u dit sneller en eenvoudiger doen door een pull-aanvraag (PR) te maken om het probleem te verhelpen. Bij bijna elk artikel wordt een knop Bewerken weergegeven, zoals in de volgende afbeelding wordt getoond. Wanneer u op de knop **Bewerken** klikt, gaat u naar het bronbestand op GitHub.
+Met snelle bewerkingen wordt het proces voor het rapporteren en herstellen van kleine fouten en weglatingen in documenten gestroomlijnd. Ondanks alle moeite kunnen toch kleine grammatica- en spelfouten in uw gepubliceerde documenten opduiken. Hoewel u fouten kunt rapporteren via probleemmeldingen, kunt u dit sneller en eenvoudiger doen door een pull-aanvraag (PR) te maken om het probleem te verhelpen. Bij bijna elk artikel wordt een knop Bewerken weergegeven, zoals in de volgende afbeelding wordt getoond. Wanneer u op de knop **Bewerken** (of de gelokaliseerde equivalent hiervan) klikt, gaat u naar het bronbestand op GitHub.
 
 ![Locatie van de link Bewerken](./media/index/edit-article.png)
 
@@ -46,6 +46,12 @@ Zodra u uw wijzigingen hebt aangebracht, scrolt u naar de onderkant van de pagin
 
 ![uw wijziging voorstellen](./media/index/submit-pull-request.png)
 
+Nu u de wijziging hebt voorgesteld, moet u de eigenaars van de opslagplaats vragen om de wijzigingen naar hun opslagplaats te halen. Dit gebeurt met een zogenaamde pull-aanvraag. Wanneer u in de afbeelding hierboven op **Bestandswijziging voorstellen** klikt, wordt u naar een nieuwe pagina geleid die er ongeveer uitziet als de volgende afbeelding:
+
+![pull-aanvraag maken](media/index/create-pull-request.png)
+
+Klik op **Pull-aanvraag maken**, voer een titel (en optioneel een beschrijving) in voor de pull-aanvraag. Klik vervolgens opnieuw op **Pull-aanvraag maken**.
+
 Dat is alles. Uw PR wordt door leden van het inhoudsteam gecontroleerd en samengevoegd. Als u grotere wijzigingen hebt aangebracht, krijgt u misschien feedback waarin u wordt gevraagd om wijzigingen aan te brengen.
 
 De gebruikersinterface voor GitHub-bewerkingen reageert op uw machtigingen voor de opslagplaats. De voorgaande afbeeldingen gelden voor inzenders die geen schrijfmachtigingen hebben voor de doelopslagplaats. In GitHub wordt automatisch een fork van de doelopslagplaats gemaakt in uw account. Als u schrijfrechten hebt voor de doelopslagplaats, wordt in GitHub een nieuwe vertakking in de doelopslagplaats gemaakt. De naam van de vertakking heeft de indeling **\<GitHubId\>-patch-n**, waarbij uw GitHub-id en een numerieke id worden gebruikt voor de vertakking van de patch.
@@ -53,6 +59,12 @@ De gebruikersinterface voor GitHub-bewerkingen reageert op uw machtigingen voor 
 De PR's worden gebruikt voor alle wijzigingen en dus ook voor inzenders die over schrijfrechten beschikken. Bij de meeste opslagplaatsen is de `master`-vertakking beschermd, zodat updates als PR's moeten worden verzonden.
 
 Voor kleinere of incidentele wijzigingen kunt u het beste de bewerkingservaring binnen browsers gebruiken. Als u grote bijdrage levert of geavanceerde Git-functies gebruikt (zoals vertakkingsbeheer of geavanceerde oplossingen voor samenvoegingsconflicten), moet u de [opslagplaats splitsen en lokaal werken](how-to-write-workflows-major.md).
+
+> [!NOTE]
+> Als deze functie is ingeschakeld, kunt u een artikel in **elke taal** bewerken. Afhankelijk van het soort bewerking gebeurt dan het volgende:
+> 1. elke taalkundige wijziging die is doorgevoerd, helpt ook bij het verbeteren van onze Machine Translation-engine
+> 2. elke bewerking waardoor de inhoud van een artikel significant wordt gewijzigd, wordt intern verwerkt om een wijziging in hetzelfde artikel in het Engels te verzenden. Op deze manier wordt de wijziging, indien goedgekeurd, in alle talen gelokaliseerd.
+> Uw voorgestelde wijzigingen beïnvloeden artikelen dus niet alleen positief in uw eigen taal, maar in alle beschikbare talen.
 
 ## <a name="review-open-prs"></a>Openstaande PR's controleren
 
