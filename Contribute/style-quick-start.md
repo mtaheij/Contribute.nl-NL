@@ -2,12 +2,12 @@
 title: 'Stijlgids: snel starten met Docs'
 description: Dit artikel is een beknopte gids met stijlrichtlijnen die alleen de essentiële onderwerpen bevat om aan de slag te gaan met docs.microsoft.com.
 ms.date: 07/25/2017
-ms.openlocfilehash: 3a91669ba9ad6711bcc436952d1d6cb311b9d4f6
-ms.sourcegitcommit: 886ca76086a302d1d6124967df12a5bcfe4fd4b5
+ms.openlocfilehash: 861181c7bfa22881fdd11327d19b2d7d517775c8
+ms.sourcegitcommit: 6f1997864c000a9cd25fb9171a8f8fdb8b5b5ece
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 08/10/2018
-ms.locfileid: "40243018"
+ms.lasthandoff: 10/11/2018
+ms.locfileid: "49084394"
 ---
 # <a name="docs-style-and-voice-quick-start"></a>Snel aan de slag met stijl en toon in Docs
 
@@ -15,7 +15,7 @@ Deze snelstart biedt een beknopte handleiding voor het schrijven van technische 
 
 Best practices:
 
-- Controleer de spelling en grammatica in uw artikelen. Hiervoor kunt u de tekst kopiëren en plakken in Word.
+- Controleer de spelling en grammatica in uw artikelen. Hiervoor kunt u de tekst kopiëren en plakken in Microsoft Word.
 - Gebruik een alledaagse, vriendelijke toon alsof u tegen een persoon praat.
 - Gebruik eenvoudige zinnen. Als u gemakkelijk leesbare zinnen gebruikt, kan de lezer de instructies die u geeft, snel in de praktijk brengen.
 
@@ -45,11 +45,11 @@ Onze technische artikelen worden in diverse talen vertaald en sommige worden aan
 - Als stappen codefragmenten bevatten, plaatst u aanvullende informatie over de stap als commentaar in de code. Hierdoor wordt de te lezen hoeveelheid tekst beperkt. Bovendien is het handig belangrijke informatie in de code op te nemen zodat wanneer mensen op een later tijdstip de code raadplegen, ze deze informatie ook meteen zien.
 - Gebruik een zin voor alle titels en kopteksten.
 - Gebruik 'aanmelden' en niet 'inloggen'.
-- Gebruik de tekst 'als volgt' in elke zin die voorafgaat aan een lijst of codefragment.
+- Raadpleeg de [Microsoft Writing Style Guide](https://docs.microsoft.com/style-guide/welcome) voor meer richtlijnen.
 
 ## <a name="localized-documentation"></a>Gelokaliseerde documentatie
 
 - Raadpleeg de [Microsoft Language Portal](https://www.microsoft.com/Language/Default.aspx), als u een bijdrage levert aan gelokaliseerde documentatie.
 - Download de [stijlgids](https://www.microsoft.com/Language/StyleGuides) in uw taal voor lokalisatierichtlijnen, informatie over de stijl en het gebruik van taal in technische publicaties en informatie over marktspecifieke opmaak van gegevens.
 - Voor gelokaliseerde Microsoft-terminologie kunt u zoeken naar [productspecifieke goedgekeurde terminologie](https://www.microsoft.com/Language/Default.aspx) of de [Microsoft Terminology Collection](https://www.microsoft.com/Language/Terminology.aspx) in uw taal downloaden.
-- U kunt meer vinden in de [lokalisatiesectie](https://docs.microsoft.com/style-guide/global-communications/) van de Microsoft-stijlgids.
+- Raadpleeg 'Global communications' in de [Microsoft Writing Style Guide](https://docs.microsoft.com/style-guide/global-communications) voor meer informatie over lokalisatie.
