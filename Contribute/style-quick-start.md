@@ -2,12 +2,12 @@
 title: 'Stijlgids: snel starten met Docs'
 description: Dit artikel is een beknopte gids met stijlrichtlijnen die alleen de essentiële onderwerpen bevat om aan de slag te gaan met docs.microsoft.com.
 ms.date: 07/25/2017
-ms.openlocfilehash: 861181c7bfa22881fdd11327d19b2d7d517775c8
-ms.sourcegitcommit: 6f1997864c000a9cd25fb9171a8f8fdb8b5b5ece
+ms.openlocfilehash: f5c32d3fb71ef3513c68b9c506c823997bfe4d8f
+ms.sourcegitcommit: d3c7b49dc854dae8da9cd49da8ac4035789a5010
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 10/11/2018
-ms.locfileid: "49084394"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49805570"
 ---
 # <a name="docs-style-and-voice-quick-start"></a>Snel aan de slag met stijl en toon in Docs
 
@@ -51,5 +51,5 @@ Onze technische artikelen worden in diverse talen vertaald en sommige worden aan
 
 - Raadpleeg de [Microsoft Language Portal](https://www.microsoft.com/Language/Default.aspx), als u een bijdrage levert aan gelokaliseerde documentatie.
 - Download de [stijlgids](https://www.microsoft.com/Language/StyleGuides) in uw taal voor lokalisatierichtlijnen, informatie over de stijl en het gebruik van taal in technische publicaties en informatie over marktspecifieke opmaak van gegevens.
-- Voor gelokaliseerde Microsoft-terminologie kunt u zoeken naar [productspecifieke goedgekeurde terminologie](https://www.microsoft.com/Language/Default.aspx) of de [Microsoft Terminology Collection](https://www.microsoft.com/Language/Terminology.aspx) in uw taal downloaden.
+- Voor gelokaliseerde Microsoft-terminologie kunt u zoeken naar [productspecifieke goedgekeurde terminologie](https://www.microsoft.com/Language/Default.aspx) of de [Microsoft Terminology Collection](https://www.microsoft.com/language/Terminology) in uw taal downloaden.
 - Raadpleeg 'Global communications' in de [Microsoft Writing Style Guide](https://docs.microsoft.com/style-guide/global-communications) voor meer informatie over lokalisatie.
