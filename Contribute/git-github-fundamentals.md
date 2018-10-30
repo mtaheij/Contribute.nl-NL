@@ -2,12 +2,12 @@
 title: Essentiële informatie over Git en GitHub voor documentatie
 description: In dit artikel vindt u een overzicht van Git- en GitHub-opslagplaatsen en wordt uitgelegd hoe inhoud wordt geordend en welke naamconventies voor docs.microsoft.com worden gebruikt.
 ms.date: 06/30/2017
-ms.openlocfilehash: 8a116067fdd7d031c560abfb7055236e0bfb1a3d
-ms.sourcegitcommit: 92aef5ea8bdd692c5c393d5c8f99b9e4f672ef2b
+ms.openlocfilehash: 05c758845007f859382014166e88fd9614cdb873
+ms.sourcegitcommit: d3c7b49dc854dae8da9cd49da8ac4035789a5010
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 06/19/2018
-ms.locfileid: "36239797"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49805695"
 ---
 # <a name="git-and-github-essentials-for-docs"></a>Essentiële informatie over Git en GitHub voor Docs
 
@@ -31,7 +31,7 @@ Ook wordt bij Git een gelaagde structuur gebruikt om inhoud voor een project op 
 Inzenders werken met Git om opslagplaatsen op zowel lokaal als op GitHub-niveau te updaten en bewerken:
 
 - Lokaal via hulpmiddelen zoals de Git Bash-console waarmee Git-opdrachten voor het beheer van lokale opslagplaatsen en de communicatie met GitHub-opslagplaatsen kunnen worden gegeven.
-- Via [www.github.com](https://www.github.com), waarmee Git wordt geïntegreerd om bijdragen in de hoofdopslagplaats samen te voegen
+- Via [www.github.com](https://www.github.com), waarmee Git wordt geïntegreerd om de afstemming van bijdragen die terugstromen naar de hoofdopslagplaats te beheren.
 
 ## <a name="github"></a>GitHub
 
@@ -46,7 +46,7 @@ Alle werkstromen beginnen en eindigen op GitHub-niveau waar de hoofdopslagplaats
 
 Zoals eerder genoemd, dient de standaardvertakking ('hoofdvertakking') als de huidige versie van de inhoud voor het project. De inhoud van de hoofdvertakking (en vertakkingen die op basis van de hoofdvertakking zijn gemaakt) wordt globaal afgestemd op de organisatie van de artikelen op de bijbehorende Docs-pagina's. Submappen worden gebruikt om soortgelijke inhoud (zoals services), media-inhoud (zoals afbeeldingsbestanden) en include-bestanden voor hergebruik van inhoud te scheiden.
 
-De hoofdmap `articles` bevindt zich meestal direct onder de hoofdmap van de opslagplaats. De map articles bevat een reeks submappen. Artikelen in de submappen zijn opgemaakt als Markdown-bestanden met de extensie *.md*. Sommige opslagplaatsen die ondersteuning bieden voor meerdere services, maken gebruik van een generieke submap `/articles`, bijvoorbeeld de opslagplaats [https://github.com/microsoft/Azure-Docs](https://github.com/microsoft/Azure-Docs). Andere gebruiken misschien een servicespecifieke naam, zoals de opslagplaats [https://github.com/microsoft/IntuneDocs](https://github.com/microsoft/IntuneDocs), die `/IntuneDocs` gebruikt.
+De hoofdmap `articles` bevindt zich meestal direct onder de hoofdmap van de opslagplaats. De map articles bevat een reeks submappen. Artikelen in de submappen zijn opgemaakt als Markdown-bestanden met de extensie *.md*. Sommige opslagplaatsen die ondersteuning bieden voor meerdere services, maken gebruik van een algemene `/articles`-submap, zoals de [Azure-Docs](https://github.com/MicrosoftDocs/Azure-Docs)-opslagplaats. Andere gebruiken misschien een servicespecifieke naam, zoals de [IntuneDocs](https://github.com/MicrosoftDocs/IntuneDocs)-opslagplaats, die gebruikmaakt van `/IntuneDocs`.
 
 Direct in deze hoofdmap vindt u algemene artikelen die betrekking hebben op de algehele service of het algehele product. De hoofdmap bevat meestal ook enkele submappen die horen bij de functies/services of bij algemene scenario's. Zo staan de Azure-artikelen over virtuele machines in de submap `/virtual-machines`, de Intune-artikelen uit de sectie Begrijpen en verkennen in de submap `/understand-explore`, enzovoort.
 

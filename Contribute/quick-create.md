@@ -8,20 +8,20 @@ ms.date: 07/24/2018
 ms.author: cfowler
 zone_pivot_groups: keyvault-languages
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: 27ebd3e348fc231d8b82e6c17f282bd9ca4afb9f
-ms.sourcegitcommit: 5e508a7ad2991632a38f302e4769b36e3bf37eb2
+ms.openlocfilehash: 497631fe46ac4e2c9c495a609547753a84d662bf
+ms.sourcegitcommit: d3c7b49dc854dae8da9cd49da8ac4035789a5010
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 08/30/2018
-ms.locfileid: "43308819"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49805732"
 ---
 # <a name="quickstart-set-and-retrieve-a-secret-from-azure-key-vault"></a>Snelstart: een geheim instellen en ophalen uit Azure Key Vault
 
-In deze snelstart ziet u hoe u een geheim kunt opslaan in Key Vault en dit geheim vervolgens kunt ophalen met behulp van een web-app. Als u de geheime waarde wilt bekijken, voert u deze uit in Azure. In de snelstart wordt gebruikgemaakt van Node.js en beheerde service-identiteiten (MSI's)
+In deze snelstart ziet u hoe u een geheim kunt opslaan in Key Vault en dit geheim vervolgens kunt ophalen met behulp van een web-app. Als u de geheime waarde wilt bekijken, voert u deze uit in Azure. In de snelstart wordt gebruikgemaakt van Node.js en beheerde service-identiteiten (MSI's).
 
 > [!div class="checklist"]
 > * Maak een sleutelkluis.
-> * Sla een geheim op in Key Vault.
+> * Sla een geheim op in de sleutelkluis.
 > * Haal een geheim op uit Key Vault.
 > * Maak een Azure-webtoepassing.
 
@@ -36,11 +36,14 @@ Controleer voordat u verdergaat of u bekend bent met de [basisbeginselen](https:
 ## <a name="prerequisites"></a>Vereisten
 
 ::: zone pivot="nodejs"
-* [Node JS](https://nodejs.org/en/) ::: zone-end ::: zone pivot="dotnet"
+* [Node JS](https://nodejs.org/en/)
+::: zone-end
+::: zone pivot="dotnet"
 * [Visual Studio 2017 versie 15.7.3 of hoger](https://www.microsoft.com/net/download/windows) met de volgende workloads:
   * ASP.NET-ontwikkeling en webontwikkeling
   * Platformoverschrijdende ontwikkeling met .NET Core
-* [.NET Core 2.1 SDK of later](https://www.microsoft.com/net/download/windows) :::zone-end
+* [.NET Core 2.1 SDK of hoger](https://www.microsoft.com/net/download/windows)
+::: zone-end
 * Git ([download](https://git-scm.com/downloads)).
 * Een Azure-abonnement. Als u nog geen Azure-abonnement hebt, maakt u eerst een [gratis account](https://azure.microsoft.com/free/?WT.mc_id=A261C142F) aan voordat u begint.
 * Versie [Azure CLI](https://docs.microsoft.com/cli/azure/install-azure-cli?view=azure-cli-latest) 2.0.4 of later. Deze versie is beschikbaar voor Windows, Mac en Linux.
@@ -111,7 +114,10 @@ git clone https://github.com/Azure-Samples/key-vault-node-quickstart.git
 
 ## <a name="install-dependencies"></a>Afhankelijkheden installeren
 
-Hier installeren we de afhankelijkheden. Voer de volgende opdrachten uit: cd key-vault-node-quickstart npm install
+Hier installeren we de afhankelijkheden. Voer de volgende opdrachten uit:
+
+    cd key-vault-node-quickstart
+    npm install
 
 In dit project worden twee knooppuntmodules gebruikt:
 
@@ -120,14 +126,14 @@ In dit project worden twee knooppuntmodules gebruikt:
 
 ## <a name="publish-the-web-application-to-azure"></a>De webtoepassing publiceren in Azure
 
-Hieronder vindt u de paar stappen die moeten worden uitgevoerd
+Hieronder vindt u de paar stappen die moeten worden uitgevoerd om de toepassing in Azure te publiceren.
 
 * In de eerste stap wordt een plan voor een [Azure App Service](https://azure.microsoft.com/services/app-service/) gemaakt. In dit plan kunt u meerdere web-apps opslaan.
 
     ```azurecli
     az appservice plan create --name myAppServicePlan --resource-group myResourceGroup
     ```
-* Hierna maken we een web-app. Vervang in het volgende voorbeeld <app_name> door een globaal unieke naam (geldige tekens zijn a-z, 0-9 en -). De runtime wordt ingesteld op NODE|6.9. Voer az webapp list-runtimes uit om alle ondersteunde runtimes te bekijken
+* Hierna maken we een web-app. Vervang in het volgende voorbeeld <app_name> door een globaal unieke naam (geldige tekens zijn a-z, 0-9 en -). De runtime wordt ingesteld op NODE|6.9. Voer `az webapp list-runtimes` uit als u alle ondersteunde runtimes wilt zien
 
     ```azurecli
     az webapp create --resource-group myResourceGroup --plan myAppServicePlan --name <app_name> --runtime "NODE|6.9" --deployment-local-git
@@ -239,7 +245,8 @@ Controleer of u de naam <YourKeyVaultName> hebt vervangen door de naam van de kl
 
 ::: zone-end
 
-::: zone pivot="dotnet" Tijdens het uitvoeren van de toepassing ziet u nu de geheime waarde die is opgehaald.
+::: zone pivot="dotnet"
+Tijdens het uitvoeren van de toepassing ziet u nu de geheime waarde die is opgehaald.
 ::: zone-end
 
 ## <a name="next-steps"></a>Volgende stappen
@@ -248,10 +255,12 @@ Controleer of u de naam <YourKeyVaultName> hebt vervangen door de naam van de kl
 * [Startpagina van Azure Key Vault](https://azure.microsoft.com/services/key-vault/)
 * [Documentatie voor Azure Key Vault](https://docs.microsoft.com/azure/key-vault/)
 * [Azure SDK voor Node](https://docs.microsoft.com/javascript/api/overview/azure/key-vault)
-* [Azure REST API-verwijzing](https://docs.microsoft.com/rest/api/keyvault/) ::: zone-end
+* [Azure REST API-naslaginformatie](https://docs.microsoft.com/rest/api/keyvault/)
+::: zone-end
 
 ::: zone pivot="dotnet"
 * [Startpagina van Azure Key Vault](https://azure.microsoft.com/services/key-vault/)
 * [Documentatie voor Azure Key Vault](https://docs.microsoft.com/azure/key-vault/)
 * [Azure-SDK voor .NET](https://github.com/Azure/azure-sdk-for-net)
-* [Azure REST API-naslaginformatie](https://docs.microsoft.com/rest/api/keyvault/) ::: zone-end
+* [Azure REST API-naslaginformatie](https://docs.microsoft.com/rest/api/keyvault/)
+::: zone-end

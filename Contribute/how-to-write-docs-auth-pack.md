@@ -1,20 +1,19 @@
 ---
-title: Docs-ontwerppakket voor VS Code
-description: In dit artikel wordt het extensiepakket van VS Code beschreven voor het schrijven van Markdown voor docs.microsoft.com.
+title: Docs-ontwerppakket voor Visual Studio Code
+description: In dit artikel wordt het extensiepakket van Visual Studio Code beschreven waarmee u Markdown voor docs.microsoft.com kunt ontwerpen.
 author: meganbradley
 ms.author: mbradley
-manager: jemash
-ms.date: 04/06/2018
-ms.openlocfilehash: b9fedce0a73c5c4212ffd0893c745fab56677c8c
-ms.sourcegitcommit: 5e508a7ad2991632a38f302e4769b36e3bf37eb2
+ms.date: 10/22/2018
+ms.openlocfilehash: 00afafbbf16096ac6433c0ab276578d8d9084b51
+ms.sourcegitcommit: d3c7b49dc854dae8da9cd49da8ac4035789a5010
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 08/30/2018
-ms.locfileid: "43308911"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49805649"
 ---
 # <a name="docs-authoring-pack-for-vs-code"></a>Docs-ontwerppakket voor VS Code
 
-Het Docs-ontwerppakket is een verzameling extensies voor VS Code die u kunt gebruiken bij het schrijven van Markdown voor docs.microsoft.com. Het pakket is [verkrijgbaar via de VS Code Marketplace](https://marketplace.visualstudio.com/items?itemName=docsmsft.docs-authoring-pack) en bevat de volgende extensies:
+Het Docs-ontwerppakket is een verzameling extensies voor Visual Studio Code die u kunt gebruiken bij het schrijven van Markdown voor docs.microsoft.com. Het pakket is [verkrijgbaar via de VS Code Marketplace](https://marketplace.visualstudio.com/items?itemName=docsmsft.docs-authoring-pack) en bevat de volgende extensies:
 
 - [markdownlint:](https://marketplace.visualstudio.com/items?itemName=DavidAnson.vscode-markdownlint) een populaire Markdown-linter van David Anson zodat u zeker weet dat u voor uw Markdown de best practices gebruikt.
 - [Code Spell Checker](https://marketplace.visualstudio.com/items?itemName=streetsidesoftware.code-spell-checker): een spellingcontrole van Street Side Software die volledig offline is.
@@ -103,7 +102,7 @@ De Templates-extensie biedt ondersteuning voor drie velden met dynamische metage
 |----------|---------------|
 |author    |Uw GitHub-id, indien opgegeven in het bestand met VS Code-instellingen.|
 |ms.author |Uw Microsoft-alias, indien opgegeven in het bestand met VS Code-instellingen. Als u geen werknemer van Microsoft bent, laat u dit veld niet-gespecificeerd.|
-|ms.date   |De huidige datum in de ondersteunde Docs-notatie, MM/DD/YYYY. Let op: de datum wordt niet automatisch bijgewerkt als u hierna het bestand bijwerkt. U moet dit handmatig bijwerken om aan te geven wanneer het artikel voor het laatst is vernieuwd.|
+|ms.date   |De huidige datum in de ondersteunde Docs-notatie, MM/DD/YYYY. De datum wordt niet automatisch bijgewerkt als u het bestand vervolgens wijzigt. U moet de waarde ms.date handmatig bijwerken om de meest recente datum van de publicatie op de docs.microsoft.com-site aan te geven.|
 
 ### <a name="to-set-author-github-id-andor-msauthor-microsoft-alias"></a>Ga als volgt te werk om author (GitHub-id) en/of ms.author (Microsoft-alias) in te stellen
 

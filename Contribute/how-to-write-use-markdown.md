@@ -2,18 +2,18 @@
 title: Markdown gebruiken voor het schrijven van documenten
 description: Dit artikel biedt de basis- en referentie-informatie voor de Markdown-taal die wordt gebruikt voor het schrijven van artikelen op docs.microsoft.com.
 ms.date: 07/13/2017
-ms.openlocfilehash: dca1ccba2ae4ebd08b6039f5d780e7a7ac92e79f
-ms.sourcegitcommit: 92aef5ea8bdd692c5c393d5c8f99b9e4f672ef2b
+ms.openlocfilehash: 6bb8a1fa20957512addb07dda0e68abec4b0a83f
+ms.sourcegitcommit: d3c7b49dc854dae8da9cd49da8ac4035789a5010
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 06/19/2018
-ms.locfileid: "36238961"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49805719"
 ---
 # <a name="how-to-use-markdown-for-writing-docs"></a>Markdown gebruiken voor het schrijven van documenten
 
-Artikelen op docs.microsoft.com worden geschreven in de toegankelijke opmaakcodetaal [Markdown](https://daringfireball.net/projects/markdown/), die eenvoudig te lezen en eenvoudig te leren is. Daarom is het al snel een standaardopmaaktaal geworden.
+Artikelen op [docs.microsoft.com](http://docs.microsoft.com) worden geschreven in de toegankelijke opmaakcodetaal [Markdown](https://daringfireball.net/projects/markdown/), die eenvoudig te lezen en eenvoudig te leren is. Daarom is het al snel een standaardopmaaktaal geworden.
 
-Omdat Docs-inhoud wordt opgeslagen in GitHub, kan een hoofdverzameling van Markdown, [GitHub Flavored Markdown (GFM)](https://help.github.com/categories/writing-on-github/), worden gebruikt. Deze biedt aanvullende functionaliteit voor algemene opmaakbehoeften. Daarnaast wordt met OPS (Open Publishing Services) Markdig Markdown Parser geïmplementeerd, Markdig is zeer compatibel met GitHub Flavored Markdown (GFM). Hiermee wordt aanvullende functionaliteit toegevoegd om voor Docs specifieke functies in te schakelen.
+Omdat Docs-inhoud wordt opgeslagen in GitHub, kan een hoofdverzameling van Markdown, [GitHub Flavored Markdown (GFM)](https://help.github.com/categories/writing-on-github/), worden gebruikt. Deze biedt aanvullende functionaliteit voor algemene opmaakbehoeften. Daarnaast wordt met OPS (Open Publishing Services) Markdig Markdown Parser geïmplementeerd, Markdig is zeer compatibel met GFM. Hiermee wordt functionaliteit toegevoegd om specifieke functies van Docs in te schakelen.
 
 * Markdig is een snelle, krachtige, CommonMark-compatibele, extensible Markdown-processor voor .NET.
 * https://github.com/lunet-io/markdig
@@ -27,10 +27,10 @@ Omdat Docs-inhoud wordt opgeslagen in GitHub, kan een hoofdverzameling van Markd
 Als u een kop wilt maken, gebruikt u een hash (#), als volgt:
 
 ```markdown
-    # This is heading 1
-    ## This is heading 2
-    ### This is heading 3
-    #### This is heading 4
+# This is heading 1
+## This is heading 2
+### This is heading 3
+#### This is heading 4
 ```
 
 ### <a name="bold-and-italic-text"></a>Vetgedrukte en cursieve tekst
@@ -38,19 +38,19 @@ Als u een kop wilt maken, gebruikt u een hash (#), als volgt:
 Als u tekst als **vet** wilt opmaken, zet u de tekst tussen dubbele sterretjes:
 
 ```markdown
-    This text is **bold**.
+This text is **bold**.
 ```
 
 Als u tekst als *cursief* wilt opmaken, zet u de tekst tussen enkele sterretjes:
 
 ```markdown
-    This text is *italic*.
+This text is *italic*.
 ```
 
 Als u tekst als ***vet en cursief*** wilt opmaken, zet u de tekst tussen driedubbele sterretjes:
 
 ```markdown
-    This is text is both ***bold and italic***.
+This is text is both ***bold and italic***.
 ```
 
 ### <a name="lists"></a>Lijsten
@@ -107,16 +107,16 @@ Als u een lijst in een andere lijst wilt nesten, laat u de lijstitems van de ond
 
 ```markdown
 1. First instruction
-    1. Sub-instruction
-    2. Sub-instruction
+   1. Sub-instruction
+   2. Sub-instruction
 2. Second instruction
 ```
 
 weergegeven als:
 
 1. Eerste instructie
-    1. Subinstructie
-    2. Subinstructie
+   1. Subinstructie
+   2. Subinstructie
 2. Tweede instructie
 
 ### <a name="tables"></a>Tabellen
@@ -145,12 +145,12 @@ weergegeven als:
 
 Ga voor meer informatie over het maken van tabellen naar:
 
-- De [functie voor tabelterugloop](#table-wrapping) van Markdig biedt ondersteuning bij het opmaken van brede tabellen
-- [Informatie ordenen met tabellen](https://help.github.com/articles/organizing-information-with-tables/) in GitHub
-- De web-app [Markdown-tabelgenerator](https://www.tablesgenerator.com/markdown_tables)
-- [Referentiemateriaal voor Markdown van Adam Pritchard](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet#wiki-tables)
-- [Markdown Extra van Michel Fortin](https://michelf.ca/projects/php-markdown/extra/#table)
-- [HTML-tabellen naar Markdown converteren](https://jmalarcon.github.io/markdowntables/)
+- De [functie voor tabelterugloop](#table-wrapping) van Markdig biedt ondersteuning bij het opmaken van brede tabellen.
+- [Informatie ordenen met tabellen](https://help.github.com/articles/organizing-information-with-tables/) in GitHub.
+- De web-app [Markdown-tabelgenerator](https://www.tablesgenerator.com/markdown_tables).
+- [Referentiemateriaal voor Markdown van Adam Pritchard](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet#wiki-tables).
+- [Markdown Extra van Michel Fortin](https://michelf.ca/projects/php-markdown/extra/#table).
+- [HTML-tabellen naar Markdown converteren](https://jmalarcon.github.io/markdowntables/).
 
 ### <a name="links"></a>Koppelingen
 
@@ -161,7 +161,7 @@ De Markdown-syntaxis voor een inlinekoppeling bestaat uit het gedeelte `[link te
 Ga voor meer informatie over koppelen naar:
 
 - De [Markdown-syntaxishandleiding](https://daringfireball.net/projects/markdown/syntax#link) voor informatie over basisondersteuning voor koppelen van Markdown.
-- De sectie [Koppelingen](how-to-write-links.md) van deze handleiding voor meer informatie over aanvullende syntaxis voor koppelen, zoals ondersteund door Markdig.
+- De sectie [Koppelingen](how-to-write-links.md) van deze handleiding voor meer informatie over de aanvullende syntaxis voor koppelen, zoals ondersteund door Markdig.
 
 ### <a name="code-snippets"></a>Codefragmenten
 
@@ -212,6 +212,7 @@ Deze talen bieden ondersteuning voor beschrijvende namen en de meeste talen hebb
 |PowerShell|powershell|
 |Python|python|
 |Q#|qsharp|
+|R|r|
 |Ruby|ruby|
 |SQL|sql|
 |Swift|swift|
@@ -336,18 +337,19 @@ Markdig ondersteunt geavanceerde insluiting van code in een artikel, via de exte
 Alternatieve tekst met onderstrepingstekens wordt niet goed weergegeven. In plaats van bijvoorbeeld dit te gebruiken:
 
 ```markdown
-![ADextension_2FA_Configure_Step4] (./media/bogusfilename/ADextension_2FA_Configure_Step4.PNG)
+![ADextension_2FA_Configure_Step4](./media/bogusfilename/ADextension_2FA_Configure_Step4.PNG)
 ```
 
 Typt u voor de onderstrepingstekens een escape-teken, zoals hier:
 
 ```markdown
-![ADextension\_2FA\_Configure\_Step4] (./media/bogusfilename/ADextension_2FA_Configure_Step4.PNG)
+![ADextension\_2FA\_Configure\_Step4](./media/bogusfilename/ADextension_2FA_Configure_Step4.PNG)
 ```
 
 ### <a name="apostrophes-and-quotation-marks"></a>Apostroffen en aanhalingstekens
 
-Als u tekst vanuit Word in een Markdown editor kopieert, bevat deze mogelijk gekrulde apostroffen of aanhalingstekens. Deze moeten worden gecodeerd of gewijzigd in rechte apostroffen of aanhalingstekens. Anders ziet de tekst er misschien zo uit wanneer u het bestand gaat publiceren: Itâ€™s
+Als u tekst vanuit Word in een Markdown editor kopieert, bevat deze mogelijk gekrulde apostroffen of aanhalingstekens. Deze moeten worden gecodeerd of gewijzigd in rechte apostroffen of aanhalingstekens.
+Anders ziet de tekst er misschien zo uit wanneer u het bestand gaat publiceren: Itâ€™s
 
 Hieronder vindt u de codering voor de gekrulde versies van deze leestekens:
 
@@ -358,14 +360,15 @@ Hieronder vindt u de codering voor de gekrulde versies van deze leestekens:
 
 ### <a name="angle-brackets"></a>Punthaken
 
-Als u in lopende tekst (geen code) punthaken gebruikt, bijvoorbeeld om een tijdelijke aanduiding aan te geven, moet u de punthaken handmatig coderen. Anders zal Markdown deze aanzien voor HTML-code.
+Het is gebruikelijk punthaken te gebruiken om een tijdelijke aanduiding aan te geven. Als u dit in tekst doet (dus niet in code), moet u de punthaken coderen. Anders zal Markdown deze aanzien voor HTML-code.
 
 Voorbeeld: codeer `<script name>` als `&lt;script name&gt;`
 
-## <a name="see-also"></a>Zie ook
+## <a name="see-also"></a>Zie ook:
 
 ### <a name="markdown-resources"></a>Markdown-resources
 
 - [Inleiding tot Markdown](https://daringfireball.net/projects/markdown/syntax)
 - [Referentiemateriaal voor Docs Markdown](./media/documents/markdown-cheatsheet.pdf?raw=true)
 - [Basisbeginselen voor GitHubs Markdown](https://help.github.com/articles/markdown-basics/)
+- [De Markdown-handleiding](https://www.markdownguide.org/)

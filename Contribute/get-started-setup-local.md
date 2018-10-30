@@ -3,14 +3,13 @@ title: Git-opslagplaats lokaal instellen
 description: Dit artikel biedt ondersteuning bij het maken van uw lokale Git-opslagplaats om bij te dragen aan documentatie. Ook het splits- en kloonproces wordt hier beschreven.
 author: jasonwhowell
 ms.author: jasonh
-manager: kfile
 ms.date: 01/18/2018
-ms.openlocfilehash: 2ad0de552d481e2460ca0f56570181e33d0a6608
-ms.sourcegitcommit: 92aef5ea8bdd692c5c393d5c8f99b9e4f672ef2b
+ms.openlocfilehash: 895c0fb0d64708e8e3d0f632c10a060791d15b65
+ms.sourcegitcommit: d3c7b49dc854dae8da9cd49da8ac4035789a5010
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 06/19/2018
-ms.locfileid: "36238984"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49805672"
 ---
 # <a name="set-up-git-repository-locally-for-documentation"></a>Een lokale Git-opslagplaats voor documentatie instellen
 
@@ -60,7 +59,7 @@ De documentatie die op [docs.microsoft.com](https://docs.microsoft.com) wordt ge
 ## <a name="fork-the-repository"></a>De opslagplaats splitsen
 Maak met behulp van de juiste opslagplaats een fork van de opslagplaats naar uw eigen GitHub-account via de GitHub-website.
 
-U hebt een persoonlijke fork nodig omdat alle hoofdopslagplaatsen voor documenten alleen-lezentoegang bieden. Dit houdt in dat u niet rechtstreeks wijzigingen kunt aanbrengen in de inhoud van de opslagplaatsen. Als u een wijziging wilt aanbrengen, moet u via uw fork een [pull-aanvraag](git-github-fundamentals.md#pull-requests) indienen bij de hoofdopslagplaats. Voor het vereenvoudigen van dit proces moet u van de opslagplaats eerst een kopie voor uzelf maken waarin u schrijftoegang hebt. Hiervoor is een *fork* van GitHub geschikt.
+Een persoonlijke fork is vereist omdat alle hoofdopslagplaatsen voor documentatie alleen-lezentoegang bieden. Als u een wijziging wilt aanbrengen, moet u via uw fork een [pull-aanvraag](git-github-fundamentals.md#pull-requests) indienen bij de hoofdopslagplaats. Voor het vereenvoudigen van dit proces moet u van de opslagplaats eerst een kopie voor uzelf maken waarin u schrijftoegang hebt. Hiervoor is een *fork* van GitHub geschikt.
 
 1. Ga naar de GitHub-pagina van de hoofdopslagplaats en klik op de knop **Fork** rechtsboven.
 

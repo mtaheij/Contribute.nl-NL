@@ -2,18 +2,18 @@
 title: Stappen voor instellen van GitHub-account
 description: In dit onderwerp wordt beschreven hoe u een GitHub-account maakt. U hebt dit account nodig als u een bijdrage wilt leveren aan de inhoud van docs.microsoft.com.
 ms.date: 02/27/2018
-ms.openlocfilehash: 15fa7c11090a5c4faefe38d00d273e92c231329b
-ms.sourcegitcommit: 92aef5ea8bdd692c5c393d5c8f99b9e4f672ef2b
+ms.openlocfilehash: 4bbf110fdbc1a60f77362a36a9c2c5b654d450cf
+ms.sourcegitcommit: d3c7b49dc854dae8da9cd49da8ac4035789a5010
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 06/19/2018
-ms.locfileid: "36238938"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49805479"
 ---
 # <a name="github-account-setup"></a>GitHub-account instellen
 
 ## <a name="set-up-your-github-account"></a>Uw GitHub-account instellen
 
-Als u wilt bijdragen aan technische inhoud van Docs, moet u een eigen GitHub-account maken. Het goede nieuws is dat u de meeste stappen maar één keer hoeft uit te voeren.
+Als u wilt bijdragen aan technische inhoud van Docs, moet u een eigen GitHub-account maken. Het goede nieuws is dat u deze stappen gewoonlijk maar één keer hoeft uit te voeren.
 
 ### <a name="1-create-a-github-account-and-set-up-your-profile"></a>1. Ee GitHub-account maken en uw profiel instellen
 
