@@ -2,12 +2,12 @@
 title: Koppelingen in documentatie gebruiken
 description: Dit artikel biedt ondersteuning voor het maken van koppelingen naar inhoud in docs.microsoft.com.
 ms.date: 06/29/2017
-ms.openlocfilehash: 92c23f2b91c67d7a1695c5f1e5dcdc80a8517f6e
-ms.sourcegitcommit: 37cd16636d7dcfc5222ef5a5d60e4ff30f74485c
+ms.openlocfilehash: 1820ed9af561964d7afe0b29827ee43526c72489
+ms.sourcegitcommit: d3c7b49dc854dae8da9cd49da8ac4035789a5010
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 10/02/2018
-ms.locfileid: "48030928"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49805764"
 ---
 # <a name="using-links-in-documentation"></a>Koppelingen in documentatie gebruiken
 In dit artikel wordt beschreven hoe u hyperlinks gebruikt van pagina's die op docs.microsoft.com worden gehost. Koppelingen kunnen eenvoudig in Markdown worden toegevoegd, met een aantal afwijkende conventies. Koppelingen verwijzen gebruikers naar inhoud op dezelfde pagina, naar omliggende pagina's of naar externe websites en URL's.
@@ -158,7 +158,7 @@ De sectie met de &lt;monikernaam&gt; is optioneel. Als deze sectie wordt weggela
 Wanneer u deze URL's gebruikt, wordt u omgeleid naar de nieuwste versie van de inhoud. Op die manier hoeft u geen versiemoniker op te geven. U voorkomt zo ook dat koppelingen naar conceptinhoud moeten worden bijgewerkt wanneer de versie verandert.
 
 Als u een goede koppeling wilt maken, gaat u in uw browser naar de pagina waarnaar u wilt koppelen en kopieert u de URL.
-Verwijder vervolgens ´ 'https://docs.microsoft.com' ´ en de gegevens van de landinstelling.
+Verwijder vervolgens `https://docs.microsoft.com` en de landinstellingsgegevens.
 
 Wanneer u een koppeling vanuit een inhoudsopgave maakt, moet u de volledige URL zonder de landcode gebruiken.
 
