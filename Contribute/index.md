@@ -5,12 +5,12 @@ author: billwagner
 ms.author: wiwagn
 manager: wpickett
 ms.date: 04/17/2018
-ms.openlocfilehash: 921c63c2748149543bfc73e4b38278a2ed74ac56
-ms.sourcegitcommit: d3c7b49dc854dae8da9cd49da8ac4035789a5010
+ms.openlocfilehash: dab2de80654fb55382b2ca7c9f78df36df9971dc
+ms.sourcegitcommit: 44eb4f5ee65c1848d7f36fca107b296eb7687397
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49805787"
+ms.lasthandoff: 11/13/2018
+ms.locfileid: "51609356"
 ---
 # <a name="microsoft-docs-contributor-guide-overview"></a>Gids voor inzenders van Microsoft Docs: overzicht
 
@@ -37,10 +37,12 @@ Met snelle bewerkingen wordt het proces voor het rapporteren en herstellen van k
 
 Klik op het potloodpictogram dat is weergegeven in de volgende afbeelding om het artikel te bewerken.
 
-> [!NOTE]
-> Als het potloodpictogram grijs wordt weergegeven, moet u bij uw GitHub-account aanmelden of een nieuw account maken. Breng uw wijzigingen aan in de webeditor. U kunt op het tabblad **Voorbeeld van wijzigingen** klikken om de opmaak van uw wijziging te controleren.
-
 ![Locatie van het potloodpictogram](./media/index/editicon.png)
+
+> [!NOTE]
+> Als het potloodpictogram grijs wordt weergegeven, moet u bij uw GitHub-account aanmelden of een nieuw account maken.
+
+Breng uw wijzigingen aan in de webeditor. U kunt op het tabblad **Voorbeeld van wijzigingen** klikken om de opmaak van uw wijziging te controleren.
 
 Zodra u uw wijzigingen hebt aangebracht, scrolt u naar de onderkant van de pagina. Voer een titel en een beschrijving in voor uw PR en klik op **Bestandswijziging voorstellen**, zoals is weergegeven in de volgende afbeelding:
 
