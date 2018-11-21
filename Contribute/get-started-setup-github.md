@@ -2,12 +2,12 @@
 title: Stappen voor instellen van GitHub-account
 description: In dit onderwerp wordt beschreven hoe u een GitHub-account maakt. U hebt dit account nodig als u een bijdrage wilt leveren aan de inhoud van docs.microsoft.com.
 ms.date: 02/27/2018
-ms.openlocfilehash: 4bbf110fdbc1a60f77362a36a9c2c5b654d450cf
-ms.sourcegitcommit: d3c7b49dc854dae8da9cd49da8ac4035789a5010
+ms.openlocfilehash: 89f45c32f969fe1186eff3b442cb995fd08a8d11
+ms.sourcegitcommit: 44eb4f5ee65c1848d7f36fca107b296eb7687397
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49805479"
+ms.lasthandoff: 11/13/2018
+ms.locfileid: "51609471"
 ---
 # <a name="github-account-setup"></a>GitHub-account instellen
 
@@ -22,6 +22,6 @@ Als u nog geen account hebt, moet u een [GitHub-account maken](https://github.co
 >[!NOTE]
 > Microsoft-werknemers die deelnemen aan open source-projecten, moeten dit altijd aangeven in hun GitHub-profiel. Community-inzenders moeten ervoor zorgen dat hun profiel niet ten onrechte een arbeidsrelatie impliceert.
 
-## <a name="next-steps"></a>Volgende stappen
+## <a name="next-step"></a>Volgende stap
 
 * Ga verder naar het artikel [Toolinstallaties](get-started-setup-tools.md) om Git Bash, een Markdown-editor, en meer te installeren.

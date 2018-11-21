@@ -4,12 +4,12 @@ description: Dit artikel biedt ondersteuning bij het maken van uw lokale Git-ops
 author: jasonwhowell
 ms.author: jasonh
 ms.date: 01/18/2018
-ms.openlocfilehash: 895c0fb0d64708e8e3d0f632c10a060791d15b65
-ms.sourcegitcommit: d3c7b49dc854dae8da9cd49da8ac4035789a5010
+ms.openlocfilehash: 5373bf34399105c15caabe0abdc1ea0692c46a4a
+ms.sourcegitcommit: 44eb4f5ee65c1848d7f36fca107b296eb7687397
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49805672"
+ms.lasthandoff: 11/13/2018
+ms.locfileid: "51609494"
 ---
 # <a name="set-up-git-repository-locally-for-documentation"></a>Een lokale Git-opslagplaats voor documentatie instellen
 
@@ -41,7 +41,7 @@ Als u nog niet eerder met GitHub hebt gewerkt, bekijkt u de volgende video voor 
 
 De documentatie die op [docs.microsoft.com](https://docs.microsoft.com) wordt gehost, bevindt zich in diverse opslagplaatsen op [github.com](https://www.github.com).
 
-1. Als u niet zeker weet welke opslagplaats u moet gebruiken, zoekt u in uw webbrowser naar het betreffende artikel op docs.microsoft.com. Selecteer de koppeling **Edit** (potloodpictogram) in de rechterbovenhoek van het artikel.
+1. Als u niet zeker weet welke opslagplaats u moet gebruiken, zoekt u in uw webbrowser naar het betreffende artikel op [docs.microsoft.com](https://docs.microsoft.com). Selecteer de koppeling **Edit** (potloodpictogram) in de rechterbovenhoek van het artikel.
 
    ![Klik op Edit om de opslagplaats en de bestandslocatie te bepalen.](media/index/edit-article.png)
 

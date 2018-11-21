@@ -2,12 +2,12 @@
 title: Markdown gebruiken voor het schrijven van documenten
 description: Dit artikel biedt de basis- en referentie-informatie voor de Markdown-taal die wordt gebruikt voor het schrijven van artikelen op docs.microsoft.com.
 ms.date: 07/13/2017
-ms.openlocfilehash: 6bb8a1fa20957512addb07dda0e68abec4b0a83f
-ms.sourcegitcommit: d3c7b49dc854dae8da9cd49da8ac4035789a5010
+ms.openlocfilehash: 21194c4bd6020d847b526a4d9544c826aa199e2a
+ms.sourcegitcommit: 44eb4f5ee65c1848d7f36fca107b296eb7687397
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49805719"
+ms.lasthandoff: 11/13/2018
+ms.locfileid: "51609517"
 ---
 # <a name="how-to-use-markdown-for-writing-docs"></a>Markdown gebruiken voor het schrijven van documenten
 
@@ -33,6 +33,14 @@ Als u een kop wilt maken, gebruikt u een hash (#), als volgt:
 #### This is heading 4
 ```
 
+Headers moeten in ATX-stijl worden gemaakt, dat wil zeggen dat aan het begin van de regel 1 tot 6 hekjes (#) moeten staan om een header aan te duiden overeenkomstig de HTML-headerniveaus H1 tot H6. Hierboven vindt u voorbeelden van headers van het eerste tot vierde niveau.
+
+Uw onderwerp **mag** maar één header van het eerste niveau (H1) bevatten. Deze wordt op de pagina weergegeven als de titel.
+
+Als uw header met een `#` eindigt, moet u aan het eind nog een `#` toevoegen zodat de titel correct wordt weergegeven. Bijvoorbeeld `# Async Programming in F# #`.
+
+Met de headers op het tweede niveau wordt de inhoudsopgave op de pagina gegenereerd die wordt weergegeven in de sectie 'In dit artikel' onder de titel op de pagina.
+
 ### <a name="bold-and-italic-text"></a>Vetgedrukte en cursieve tekst
 
 Als u tekst als **vet** wilt opmaken, zet u de tekst tussen dubbele sterretjes:
@@ -52,6 +60,18 @@ Als u tekst als ***vet en cursief*** wilt opmaken, zet u de tekst tussen driedub
 ```markdown
 This is text is both ***bold and italic***.
 ```
+
+### <a name="blockquotes"></a>Blokcitaten
+
+Blokcitaten worden gemaakt met het teken `>`:
+
+```markdown
+> The drought had lasted now for ten million years, and the reign of the terrible lizards had long since ended. Here on the Equator, in the continent which would one day be known as Africa, the battle for existence had reached a new climax of ferocity, and the victor was not yet in sight. In this barren and desiccated land, only the small or the swift or the fierce could flourish, or even hope to survive.
+```
+
+Het voorbeeld hierboven wordt als volgt weergegeven:
+
+> The drought had lasted now for ten million years, and the reign of the terrible lizards had long since ended. Here on the Equator, in the continent which would one day be known as Africa, the battle for existence had reached a new climax of ferocity, and the victor was not yet in sight. In this barren and desiccated land, only the small or the swift or the fierce could flourish, or even hope to survive.
 
 ### <a name="lists"></a>Lijsten
 
@@ -93,8 +113,8 @@ Als u een geordende lijst/stapsgewijze lijst wilt opmaken, gebruikt u de bijbeho
 
 ```markdown
 1. First instruction
-2. Second instruction
-3. Third instruction
+1. Second instruction
+1. Third instruction
 ```
 
 weergegeven als:
@@ -108,8 +128,8 @@ Als u een lijst in een andere lijst wilt nesten, laat u de lijstitems van de ond
 ```markdown
 1. First instruction
    1. Sub-instruction
-   2. Sub-instruction
-2. Second instruction
+   1. Sub-instruction
+1. Second instruction
 ```
 
 weergegeven als:
@@ -118,6 +138,8 @@ weergegeven als:
    1. Subinstructie
    2. Subinstructie
 2. Tweede instructie
+
+Merk op dat we '1.' gebruiken voor alle vermeldingen. Hierdoor is het eenvoudiger om later verschillen te beoordelen als er in latere updates nieuwe stappen worden toegevoegd of bestaande stappen worden verwijderd.
 
 ### <a name="tables"></a>Tabellen
 
@@ -194,6 +216,8 @@ Deze talen bieden ondersteuning voor beschrijvende namen en de meeste talen hebb
 |C++/CX|cppcx|
 |C++/WinRT|cppwinrt|
 |C#|csharp|
+|C# in browser|csharp-interactive|
+|Console|console|
 |CSHTML|cshtml|
 |DAX|dax|
 |F#|fsharp|
@@ -221,6 +245,8 @@ Deze talen bieden ondersteuning voor beschrijvende namen en de meeste talen hebb
 |VSTS CLI|vstscli|
 |XAML|xaml|
 |XML|xml|
+
+De naam `csharp-interactive` geeft de taal C# aan en de mogelijkheid om de voorbeelden uit te voeren vanuit de browser. Deze codefragmenten worden gecompileerd en uitgevoerd in een Docker-container, en de resultaten van het uitvoeren van het programma worden weergegeven in het browservenster van de gebruiker.
 
 #### <a name="example-c"></a>Voorbeeld: C\#
 
@@ -256,8 +282,8 @@ __Markdown__
 
     ```sql
     CREATE TABLE T1 (
-      c1 int PRIMARY KEY,
-      c2 varchar(50) SPARSE NULL
+      c1 int PRIMARY KEY,
+      c2 varchar(50) SPARSE NULL
     );
     ```
 
@@ -265,8 +291,8 @@ __Weergave__
 
 ```sql
 CREATE TABLE T1 (
-  c1 int PRIMARY KEY,
-  c2 varchar(50) SPARSE NULL
+  c1 int PRIMARY KEY,
+  c2 varchar(50) SPARSE NULL
 );
 ```
 
@@ -296,6 +322,36 @@ U kunt kiezen uit vier verschillende notitieblokken om de aandacht op specifieke
 
 Notitieblokken dienen met beleid te worden gebruikt, omdat ze als storend kunnen worden ervaren. Hoewel notitieblokken ondersteuning bieden voor codeblokken, afbeeldingen, lijsten en koppelingen, wordt het aanbevolen ze simpel te houden.
 
+Voorbeelden:
+
+```markdown
+> [!NOTE]
+> This is a NOTE
+
+> [!WARNING]
+> This is a WARNING
+
+> [!TIP]
+> This is a TIP
+
+> [!IMPORTANT]
+> This is IMPORTANT
+```
+
+Deze worden als volgt weergegeven:
+
+> [!NOTE]
+> Dit is een OPMERKING
+
+> [!WARNING]
+> Dit is een WAARSCHUWING
+
+> [!TIP]
+> Dit is een TIP
+
+> [!IMPORTANT]
+> Dit is BELANGRIJK
+
 ### <a name="includes"></a>Omvat
 
 Als u herbruikbare tekst- of afbeeldingsbestanden hebt die moeten worden ingesloten in artikelbestanden, kunt u een verwijzing naar het in te sluiten bestand gebruiken via de Markdig-functie voor het insluiten van bestanden. Met deze functie wordt aan OPS de opdracht gegeven het betreffende bestand tijdens het opbouwen in uw artikelbestand in te sluiten, zodat dit onderdeel wordt van het gepubliceerde artikel. Er zijn drie soorten insluitingen beschikbaar waarmee u inhoud opnieuw kunt gebruiken:
@@ -317,13 +373,29 @@ Dit zijn de vereisten en overwegingen voor insluitingen:
 - Net als bij gewone artikelen dient u geen media te delen tussen insluitingsbestanden. Gebruik een afzonderlijk bestand met een unieke naam voor elke insluiting en elk artikel. Sla het mediabestand op in de mediamap die is gekoppeld aan de insluiting.
 - Zorg ervoor dat een artikel meer inhoud bevat dan alleen een insluiting.  Insluitingen dienen als aanvulling op de inhoud in de rest van het artikel.
 
+Voorbeeld:
+
+```markdown
+[!INCLUDE[sample include file](../includes/sampleinclude.md)]
+```
+
 ### <a name="selectors"></a>Selectors
 
-Gebruik selectors in technische artikelen als u van een artikel meerdere versies maakt voor implementatie in verschillende technologieën of platformen. Dit is doorgaans het meest van toepassing voor onze inhoud voor mobiele platformen voor ontwikkelaars. Er zijn momenteel twee verschillende soorten selectors in Markdig, een enkelvoudige selector en een meervoudige selector.
+Gebruik selectors in technische artikelen als u van een artikel meerdere versies maakt voor implementatie in verschillende technologieën of op verschillende platformen. Dit is doorgaans het meest van toepassing voor onze inhoud voor mobiele platformen voor ontwikkelaars. Er zijn momenteel twee verschillende soorten selectors in Markdig, een enkelvoudige selector en een meervoudige selector.
 
 Omdat dezelfde selector Markdown in elk onderwerp in de selectie wordt geplaatst, wordt aanbevolen de selector voor uw onderwerp op te nemen in een insluiting. Deze kan vervolgens naar deze insluiting verwijzen in alle onderwerpen waarin dezelfde selector wordt gebruikt.
 
-### <a name="code-snippets"></a>Codefragmenten
+Hier volgt een voorbeeld van een selector:
+
+```markdown
+> [!div class="op_single_selector"]
+- [macOS](../docs/core/tutorials/using-on-macos.md)
+- [Windows](../docs/core/tutorials/with-visual-studio.md)
+```
+
+U kunt een praktijkvoorbeeld van selectors bekijken in [Azure Docs](https://docs.microsoft.com/azure/expressroute/expressroute-howto-circuit-classic).
+
+### <a name="code-includes"></a>Insluiting van code
 
 Markdig ondersteunt geavanceerde insluiting van code in een artikel, via de extensie voor codefragmenten. Dit biedt een geavanceerde weergave die gebruikmaakt van GFM-functies, zoals keuze van programmeertaal en syntaxiskleuren, plus leuke functies als:
 
@@ -348,8 +420,7 @@ Typt u voor de onderstrepingstekens een escape-teken, zoals hier:
 
 ### <a name="apostrophes-and-quotation-marks"></a>Apostroffen en aanhalingstekens
 
-Als u tekst vanuit Word in een Markdown editor kopieert, bevat deze mogelijk gekrulde apostroffen of aanhalingstekens. Deze moeten worden gecodeerd of gewijzigd in rechte apostroffen of aanhalingstekens.
-Anders ziet de tekst er misschien zo uit wanneer u het bestand gaat publiceren: Itâ€™s
+Als u tekst vanuit Word in een Markdown editor kopieert, bevat deze mogelijk gekrulde apostroffen of aanhalingstekens. Deze moeten worden gecodeerd of gewijzigd in rechte apostroffen of aanhalingstekens. Anders ziet de tekst er misschien zo uit wanneer u het bestand gaat publiceren: Itâ€™s
 
 Hieronder vindt u de codering voor de gekrulde versies van deze leestekens:
 

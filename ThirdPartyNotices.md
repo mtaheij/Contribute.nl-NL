@@ -5,6 +5,6 @@ Microsoft, Windows, Microsoft Azure en/of andere Microsoft-producten en -service
 Met de licenties voor dit project wordt u niet het recht verleend Microsoft-namen, -logo's of -handelsmerken te gebruiken.
 U vindt algemene richtlijnen van Microsoft voor handelsmerken op http://go.microsoft.com/fwlink/?LinkID=254653.
 
-Op https://privacy.microsoft.com/en-us/ kunt u informatie over privacy vinden.
+Op https://privacy.microsoft.com/ kunt u informatie over privacy vinden.
 
 Microsoft en alle inzenders behouden zich alle overige rechten voor, ongeacht of deze vallen onder de desbetreffende auteursrechten, patenten of handelsmerken, via implicatie, uitsluiting of anderszins.

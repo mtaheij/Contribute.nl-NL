@@ -1,13 +1,15 @@
 ---
 title: Koppelingen in documentatie gebruiken
 description: Dit artikel biedt ondersteuning voor het maken van koppelingen naar inhoud in docs.microsoft.com.
-ms.date: 06/29/2017
-ms.openlocfilehash: 1820ed9af561964d7afe0b29827ee43526c72489
-ms.sourcegitcommit: d3c7b49dc854dae8da9cd49da8ac4035789a5010
+author: gewarren
+ms.author: gewarren
+ms.date: 10/31/2018
+ms.openlocfilehash: e56bc0fe3a5428af2a79641a8959b4da21270d53
+ms.sourcegitcommit: 44eb4f5ee65c1848d7f36fca107b296eb7687397
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49805764"
+ms.lasthandoff: 11/13/2018
+ms.locfileid: "51609425"
 ---
 # <a name="using-links-in-documentation"></a>Koppelingen in documentatie gebruiken
 In dit artikel wordt beschreven hoe u hyperlinks gebruikt van pagina's die op docs.microsoft.com worden gehost. Koppelingen kunnen eenvoudig in Markdown worden toegevoegd, met een aantal afwijkende conventies. Koppelingen verwijzen gebruikers naar inhoud op dezelfde pagina, naar omliggende pagina's of naar externe websites en URL's.
@@ -22,7 +24,7 @@ De docs.microsoft.com site-back-end gebruikt Open Publishing Services (OPS); dez
 De woorden die u gebruikt in de tekst van de koppeling moeten duidelijk de bestemming van de koppeling aangeven. Gebruik dus normale beschrijvende tekst of de titel van de pagina die u wilt koppelen.
 
 > [!IMPORTANT]
-> Gebruik niet 'klik hier'. Het is nadelig voor de SEO en geeft geen goede beschrijving van het doelobject.
+> Gebruik niet 'klik hier'. Het is nadelig voor de zoekmachineoptimalisatie en geeft geen goede beschrijving van het doelobject.
 
 **Goed:**
 
@@ -56,7 +58,7 @@ Als u een inlinekoppeling wilt maken van een technisch Docs-artikel naar een and
 
   `[link text](../directory/article-name.md)`
 
-- Een artikel dat naar meerder docsets koppelt (zelfs in dezelfde opslagplaats): `[link text](./directory/article-name)`
+- Een artikel dat naar meerder docsets koppelt (zelfs in dezelfde opslagplaats):  `[link text](./directory/article-name)`
 
 > [!IMPORTANT]
 > Geen van de bovenstaande voorbeelden gebruikt de `~/` als onderdeel van de koppeling. Als u een koppeling maakt naar een pad in de hoofdmap van de opslagplaats, begint u met de `/`. Als u de `~/` opneemt, worden de koppelingen ongeldig als er wordt verwezen naar bronopslagplaatsen in GitHub. Als u het pad begint met `/`, wordt het correct omgezet.
@@ -84,17 +86,23 @@ U hoeft geen ankers te maken. Deze worden automatisch gegenereerd tijdens de pub
 
 Omdat Include-bestanden deel uitmaken van een andere map moet u een langer relatief pad gebruiken. Gebruik de volgende notatie om vanuit een Include-bestand een koppeling naar een artikel te maken:
 
-    [link text](../articles/folder/article-name.md)
+   ```markdown
+   [link text](../articles/folder/article-name.md)
+   ```
 
 ## <a name="links-in-selectors"></a>Koppelingen in selectors
 
-Als u met selectors werkt die zijn opgenomen in een Include-bestand, zoals het Azure-documentatieteam doet, gebruikt u de volgende koppelingsstructuur:
+Een selector is een navigatieonderdeel dat als vervolgkeuzelijst in een docs-artikel wordt weergegeven. Als de lezer een waarde in de vervolgkeuzelijst selecteert, wordt het geselecteerde artikel geopend in de browser. De selectorlijst bevat gewoonlijk koppelingen naar nauw verwante artikelen, bijvoorbeeld over hetzelfde onderwerp in meerdere programmeertalen, of naar een reeks nauw verwante artikelen. 
 
-    > [AZURE.SELECTOR-LIST (Dropdown1 | Dropdown2 )]
-    - [(Text1 | Example1 )](../articles/folder/article-name1.md)
-    - [(Text1 | Example2 )](../articles/folder/article-name2.md)
-    - [(Text2 | Example3 )](../articles/folder/article-name3.md)
-    - [(Text2 | Example4 )](../articles/folder/article-name4.md) -->
+Als u met selectors werkt die zijn opgenomen in een Include-bestand, gebruikt u de volgende koppelingsstructuur:
+
+   ```markdown
+   > [AZURE.SELECTOR-LIST (Dropdown1 | Dropdown2 )]
+   - [(Text1 | Example1 )](../articles/folder/article-name1.md)
+   - [(Text1 | Example2 )](../articles/folder/article-name2.md)
+   - [(Text2 | Example3 )](../articles/folder/article-name3.md)
+   - [(Text2 | Example4 )](../articles/folder/article-name4.md) -->
+   ```
 
 ## <a name="reference-style-links"></a>Koppelingen met verwijzingen
 
@@ -102,23 +110,29 @@ U kunt koppelingen met verwijzingen gebruiken zodat uw broninhoud gemakkelijker 
 
 Inlinetekst:
 
-    I get 10 times more traffic from [Google][1] than from [Yahoo][2] or [MSN][3].
+   ```markdown
+   I get 10 times more traffic from [Google][1] than from [Yahoo][2] or [MSN][3].
+   ```
 
 Koppelingsverwijzingen aan het einde van het artikel:
 
-    <!--Reference links in article-->
-    [1]: http://google.com/
-    [2]: http://search.yahoo.com/
-    [3]: http://search.msn.com/
-
+   ```markdown
+   <!--Reference links in article-->
+   [1]: http://google.com/
+   [2]: http://search.yahoo.com/
+   [3]: http://search.msn.com/
+   ```
+   
 Zorg ervoor dat u een spatie typt tussen de dubbele punt en de koppeling. Als u de spatie vergeet bij het maken van een koppeling naar andere technische artikelen, werkt de koppeling niet meer in het gepubliceerde artikel.
 
 ## <a name="links-to-pages-that-are-not-part-of-the-technical-documentation-set"></a>Een koppeling maken naar pagina's die geen deel uitmaken van de technische documentatie
 
 Als u een koppeling wilt maken naar een pagina in een ander Microsoft-domein (zoals de pagina met prijzen, de SLA-pagina of naar iets dat geen documentatieartikel is), gebruikt u een absolute URL, maar laat u de landcode achterwege. Het doel hier is dat de koppelingen werken in GitHub en op de weergegeven site:
 
-    [link text](https://azure.microsoft.com/pricing/details/virtual-machines/)
-
+   ```markdown
+   [link text](https://azure.microsoft.com/pricing/details/virtual-machines/)
+   ```
+   
 ## <a name="links-to-third-party-sites"></a>Een koppeling maken naar sites van derden
 
 Het beste kunt u gebruikers zo weinig mogelijk doorsturen naar andere sites. Soms is het echter nodig. Houd in die gevallen rekening met de volgende informatie wanneer u een koppeling maakt naar sites van derden:
@@ -146,7 +160,7 @@ Structuur van de URL:
   - `/powershell/azure/<topic-file-name>[?view=<moniker-name>]`
   - `/powershell/azure/<service-name>/<topic-file-name>[?view=<moniker-name>]`
 
-De sectie met de &lt;monikernaam&gt; is optioneel. Als deze sectie wordt weggelaten, wordt u doorgestuurd naar de nieuwste versie van de inhoud. De &lt;service-name&gt; is een van de voorbeelden die in de volgende basis-URL's wordt weergegeven:
+De sectie `<moniker-name>` is optioneel. Als deze sectie wordt weggelaten, wordt u doorgestuurd naar de nieuwste versie van de inhoud. De sectie `<service-name>` is een van de voorbeelden die in de volgende basis-URL's worden weergegeven:
 
 - Azure PowerShell-inhoud (AzureRM): [https://docs.microsoft.com/powershell/azure/](https://docs.microsoft.com/powershell/azure/)
 - Azure PowerShell-inhoud (ASM): [https://docs.microsoft.com/powershell/azure/_servicemanagement_](https://docs.microsoft.com/powershell/azure/servicemanagement)

@@ -8,16 +8,16 @@ ms.date: 05/18/2018
 ms.topic: contributor-guide
 ms.prod: non-product-specific
 audience: internal,external
-ms.openlocfilehash: e248eafb0247b200313ba198f2545eca947f5627
-ms.sourcegitcommit: d3c7b49dc854dae8da9cd49da8ac4035789a5010
+ms.openlocfilehash: 64921bacf48e638221048db4b24e1a941f1d2777
+ms.sourcegitcommit: 44eb4f5ee65c1848d7f36fca107b296eb7687397
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49805888"
+ms.lasthandoff: 11/13/2018
+ms.locfileid: "51609540"
 ---
 # <a name="markdown-reference-for-ops"></a>Markdown-naslaginformatie voor OPS
 
-Markdown is een lichtgewicht opmaakcodetaal met een syntaxis voor het opmaken van platte tekst. OPS ondersteunt de CommonMark-standaard voor Markdown, plus enkele aangepaste Markdown-extensies die zijn ontworpen om rijkere inhoud op docs.microsoft.com te bieden. Dit artikel bevat alfabetische naslaginformatie voor het gebruik van Markdown in OPS voor docs.microsoft.com.
+Markdown is een lichtgewicht opmaakcodetaal met een syntaxis voor het opmaken van platte tekst. Open Publishing Services (OPS) ondersteunt de CommonMark-standaard voor Markdown, plus enkele aangepaste Markdown-extensies die zijn ontworpen om rijkere inhoud op docs.microsoft.com te bieden. Dit artikel bevat alfabetische naslaginformatie voor het gebruik van Markdown in OPS voor docs.microsoft.com.
 
 U kunt voor het opstellen van Markdown elke teksteditor gebruiken. Voor elke editor die het invoegen van zowel standaard-Markdown-syntaxis als aangepaste OPS-extensies mogelijk maakt, wordt [VS Code](https://code.visualstudio.com/) met een geïnstalleerd [Docs-ontwerppakket](https://aka.ms/DocsAuthoringPack) aangeraden.
 
@@ -25,7 +25,7 @@ OPS is gestandaardiseerd in Markdig voor alle nieuwe opslagplaatsen, en oudere o
 
 ## <a name="alerts-note-tip-important-caution-warning"></a>Waarschuwingen (Opmerking, Tip, Belangrijk, Let op, Waarschuwing)
 
-Geeft een waarschuwing voor een OPS-specifieke Markdown-extensie om blokcitaten te maken die op docs.microsoft.com worden weergegeven met kleuren en pictogrammen die het belang van de inhoud aanduiden. De volgende typen waarschuwingen worden ondersteund:
+Alerts is een OPS-specifieke Markdown-extensie om blokcitaten te maken die op docs.microsoft.com worden weergegeven met kleuren en pictogrammen die het belang van de inhoud aanduiden. De volgende typen waarschuwingen worden ondersteund:
 
 ```markdown
 > [!NOTE]
@@ -122,7 +122,7 @@ In de meeste gevallen gebruikt OPS standaard-Markdown-koppelingen naar andere be
 > Het Docs-ontwerppakket voor VS Code kan helpen relatieve koppelingen en bladwijzers correct in te voegen zonder dat u zich met paden bezig hoeft te houden.
 
 > [!IMPORTANT]
-> Neem geen codes voor landinstellingen, zoals nl-nl, in uw koppelingen naar Microsoft-sites op. Landinstellingscodes die in code zijn vastgelegd verhinderen dat gelokaliseerde inhoud wordt weergegeven. Dit leidt tot een slechte klantervaring voor gebruikers in andere regio's en brengt aanzienlijke lokalisatiekosten met zich mee. Wanneer u een URL uit een browser kopieert, wordt de landinstellingscode standaard opgenomen, zodat u deze handmatig moet verwijderen wanneer u een koppeling maakt. Gebruik bijvoorbeeld:
+> Neem geen codes voor landinstellingen, zoals nl-nl, in uw koppelingen naar Microsoft-sites op. Landinstellingscodes die in code zijn vastgelegd verhinderen dat gelokaliseerde inhoud wordt weergegeven. Dit leidt tot een slechte klantervaring voor gebruikers in andere regio's en brengt aanzienlijke lokalisatiekosten met zich mee. Wanneer u een URL uit een browser kopieert, wordt de landinstellingscode standaard opgenomen. U moet deze handmatig dus verwijderen wanneer u een koppeling maakt. Gebruik bijvoorbeeld:
 >
 > `[Microsoft](https://www.microsoft.com)`
 >

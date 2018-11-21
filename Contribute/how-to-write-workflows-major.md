@@ -2,12 +2,12 @@
 title: GitHub-bijdragewerkstroom voor belangrijke of langdurige wijzigingen
 description: In dit artikel wordt beschreven hoe u de werkstroom voor belangrijke bijdragen gebruikt om bijdragen te leveren aan artikelen op docs.microsoft.com.
 ms.date: 08/30/2017
-ms.openlocfilehash: 31f9421fc5edbc2f65c5ff20a86da08c70211ec7
-ms.sourcegitcommit: 92aef5ea8bdd692c5c393d5c8f99b9e4f672ef2b
+ms.openlocfilehash: 93e659df4f72c6a272d15fd7487eb3a997bdf3c8
+ms.sourcegitcommit: 44eb4f5ee65c1848d7f36fca107b296eb7687397
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 06/19/2018
-ms.locfileid: "36239820"
+ms.lasthandoff: 11/13/2018
+ms.locfileid: "51609386"
 ---
 # <a name="github-contribution-workflow-for-major-or-long-running-changes"></a>GitHub-bijdragewerkstroom voor belangrijke of langdurige wijzigingen
 
@@ -31,7 +31,7 @@ Bekijk voordat u aan de slag gaat eerst enkele Git-/GitHub-termen en -monikers d
 | Naam | Beschrijving |
 |-----------|-------------|
 |fork|Wordt doorgaans als zelfstandig naamwoord gebruikt bij verwijzing naar een kopie van een GitHub-hoofdopslagplaats. Een fork is in feite gewoon een opslagplaats. Het is echter een bijzondere opslagplaats in de zin dat GitHub een verbinding in stand houdt met de bovenliggende of hoofdopslagplaats. Soms wordt de term gebruikt als werkwoord. In het Nederlands wordt hiervoor het werkwoord splitsen gebruikt, bijvoorbeeld "U moet de opslagplaats eerst splitsen."|
-|remote|Een benoemde verbinding naar een externe opslagplaats, bijvoorbeeld de origin of upstream remote. In Git wordt hiernaar verwezen als remotes, omdat ze worden gebruikt om te verwijzen naar een opslagplaats die wordt gehost op een andere computer. In deze werkstroom is een remote altijd een GitHub-opslagplaats.|
+|remote|Een benoemde verbinding naar een externe opslagplaats, bijvoorbeeld de origin of upstream remote. In Git wordt hiernaar verwezen als remote, omdat deze wordt gebruikt om te verwijzen naar een opslagplaats die wordt gehost op een andere computer. In deze werkstroom is een remote altijd een GitHub-opslagplaats.|
 |origin|De naam die wordt gegeven aan de verbinding tussen de lokale opslagplaats en de opslagplaats waarvandaan deze is gekloond. In deze werkstroom staat origin voor de verbinding met uw fork. Deze wordt soms gebruikt als moniker voor de oorspronkelijke opslagplaats, bijvoorbeeld in "Vergeet niet uw wijzigingen naar de origin te uploaden."|
 |upstream|Net als de origin remote is upstream een benoemde verbinding naar een andere opslagplaats. In deze werkstroom staat upstream voor de verbinding tussen uw lokale opslagplaats en de hoofdopslagplaats, waarvan de fork is gemaakt. Deze wordt soms als moniker gebruikt voor de upstream-opslagplaats, bijvoorbeeld in "Vergeet niet de wijzigingen van de upstream te downloaden."|
 
