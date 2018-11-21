@@ -11,6 +11,11 @@
 ## [Snel aan de slag met stijl en toon](style-quick-start.md)
 ## [Koppelingen](how-to-write-links.md)
 ## [Docs Authoring Pack](how-to-write-docs-auth-pack.md)
+# Richtlijnen voor specifieke documentatiesets
+## [.NET-documenten](dotnet-contribute.md)
+### [Bijdragen aan .NET-documenten](dotnet-contribute-process.md)
+### [Stijlconventies voor .NET-documenten](dotnet-style-guide.md)
+### [Vorm- en toonrichtlijnen](dotnet-voice-tone.md)
 
 <!--
 ## Creating new content
