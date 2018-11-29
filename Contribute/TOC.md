@@ -16,6 +16,7 @@
 ### [Bijdragen aan .NET-documenten](dotnet-contribute-process.md)
 ### [Stijlconventies voor .NET-documenten](dotnet-style-guide.md)
 ### [Vorm- en toonrichtlijnen](dotnet-voice-tone.md)
+# [Aanvullende bronnen](additional-resources.md)
 
 <!--
 ## Creating new content
@@ -79,4 +80,3 @@
 
      Open question: How to keep this up to date?
    -->
-## [Aanvullende bronnen](additional-resources.md)
