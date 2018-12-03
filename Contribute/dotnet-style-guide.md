@@ -2,12 +2,12 @@
 title: Sjabloon en cheatsheet voor .NET-artikelen
 description: Dit artikel bevat een handige sjabloon waarmee u nieuwe artikelen kunt maken voor opslagplaatsen voor .NET-documenten
 ms.date: 11/07/2018
-ms.openlocfilehash: 8980f5e39213d8f2edd1d29e66d900f2c3d04bbc
-ms.sourcegitcommit: 44eb4f5ee65c1848d7f36fca107b296eb7687397
+ms.openlocfilehash: 15f64ec86c475e2da2f6539c8f388d076389c4e0
+ms.sourcegitcommit: 68d81b61ffa60aba16acfed023760449e16de91b
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 11/13/2018
-ms.locfileid: "51609734"
+ms.lasthandoff: 11/26/2018
+ms.locfileid: "52299655"
 ---
 # <a name="metadata-and-markdown-template-for-net-docs"></a>Sjabloon voor metagegevens en Markdown voor .NET-documenten
 
@@ -79,9 +79,11 @@ Het .NET-documententeam maakt gebruik van de volgende conventies:
 - In de meeste gevallen gebruiken we de relatieve koppelingen en ontmoedigen het gebruik van `~/` in koppelingen, omdat relatieve koppelingen worden opgehaald in de bron op GitHub. Steeds wanneer wij echter een koppeling maken naar een bestand in een afhankelijke opslagplaats, gebruiken wij het `~/`-teken om het pad op te geven. Aangezien de bestanden in de afhankelijke opslagplaats zich op een andere locatie bevinden in GitHub, worden de koppelingen niet correct opgehaald met relatieve koppelingen, ongeacht de wijze waarop deze zijn geschreven.
 - De specificaties voor de computertaal C# en taal de Visual Basic zijn in de .NET-documenten opgenomen door de bron in te voegen vanuit de taalopslagplaatsen. De Markdown-bronnen worden beheerd in de opslagplaatsen [csharplang](https://github.com/dotnet/csharplang) en [vblang](https://github.com/dotnet/vblang).
 
-Koppelingen naar specificaties moeten verwijzen naar de bronmappen waarin die specificaties zijn opgenomen. Voor C# is dit **~/_csharplang/spec** en voor Visual Basic is dit **~/_vblang/spec**.
+Koppelingen naar specificaties moeten verwijzen naar de bronmappen waarin die specificaties zijn opgenomen. Voor C# is dit **~/_csharplang/spec** en voor Visual Basic is dit **~/_vblang/spec**, zoals in het volgende voorbeeld:
 
-- Voorbeeld: `[C# Query Expressions](~/_csharplang/spec/expressions.md#query-expressions)`
+```markdown
+[C# Query Expressions](~/_csharplang/spec/expressions.md#query-expressions)
+```
 
 ### <a name="links-to-apis"></a>Koppelingen naar API's
 
@@ -111,13 +113,13 @@ Voorbeelden:
 - System.Exception. \#ctor wordt `System.Exception.%23ctor`
 - System.Lazy\`1.\#ctor(System.Threading.LazyThreadSafetyMode) wordt `System.Lazy%601.%23ctor%28System.Threading.LazyThreadSafetyMode%29`
 
-U kunt de UID's opzoeken van typen, evenals een lijst van overbelaste leden of een bepaald overbelast lid vanuit `https://xref.docs.microsoft.com/autocomplete`. Via de querytekenreeks '?text=*\<type-member-name>*' wordt het type of lid geïdentificeerd waarvan of van wie de UID's zijn die u wilt zien. Met `https://xref.docs.microsoft.com/autocomplete?text=string.format` worden bijvoorbeeld de overbelastingen ten aanzien van [String.Format](https://docs.microsoft.com/dotnet/api/system.string.format) opgehaald. Met het hulpprogramma zoekt u naar de opgegeven queryparameter `text` ergens in de UID. U kunt bijvoorbeeld zoeken naar de naam van het lid (ToString), een gedeelte daarvan (ToStri), de naam van het type en lid (Double.ToString) enz.
+U kunt de UID's opzoeken van typen, evenals een lijst van overbelaste leden of een bepaald overbelast lid vanuit `https://xref.docs.microsoft.com/autocomplete`. Via de querytekenreeks `?text=*\<type-member-name>*` wordt het type of lid geïdentificeerd waarvan of van wie de UID's zijn die u wilt zien. Met `https://xref.docs.microsoft.com/autocomplete?text=string.format` worden bijvoorbeeld de overbelastingen ten aanzien van [String.Format](https://docs.microsoft.com/dotnet/api/system.string.format) opgehaald. Met het hulpprogramma zoekt u naar de opgegeven queryparameter `text` ergens in de UID. U kunt bijvoorbeeld zoeken naar de naam van het lid (ToString), een gedeelte daarvan (ToStri), de naam van het type en lid (Double.ToString) enz.
 
-Als u een \* (of %2A) toevoegt na de UID, geeft de koppeling de overbelastingspagina aan en niet een specifieke API. U kunt dat bijvoorbeeld gebruiken wanneer u op een generieke manier wilt koppelen aan de pagina [List\<T>.BinarySearch Method](https://docs.microsoft.com/dotnet/api/system.collections.generic.list-1.binarysearch) in plaats van specifieke overbelasting zoals [List\<T>.BinarySearch(T, IComparer\<T>)](https://docs.microsoft.com/dotnet/api/system.collections.generic.list-1.binarysearch#System_Collections_Generic_List_1_BinarySearch__0_). U kunt tevens met \* een koppeling maken met een lidpagina wanneer het lid niet overbelast is; zo hoeft u geen parameterlijst in de UID op te nemen.
+Als u een \* (of `%2A`) toevoegt na de UID, geeft de koppeling de overbelastingspagina aan en niet een specifieke API. U kunt dat bijvoorbeeld gebruiken wanneer u op een generieke manier wilt koppelen aan de pagina [List\<T>.BinarySearch Method](https://docs.microsoft.com/dotnet/api/system.collections.generic.list-1.binarysearch) in plaats van specifieke overbelasting zoals [List\<T>.BinarySearch(T, IComparer\<T>)](https://docs.microsoft.com/dotnet/api/system.collections.generic.list-1.binarysearch#System_Collections_Generic_List_1_BinarySearch__0_). U kunt tevens met \* een koppeling maken met een lidpagina wanneer het lid niet overbelast is; zo hoeft u geen parameterlijst in de UID op te nemen.
 
 Als u een koppeling wilt maken met een overbelasting van een specifieke methode, moet u de volledig gekwalificeerde typenaam van alle parameters van de methode opnemen. Zo bevat \<xref:System.DateTime.ToString> een koppeling naar de parameterloze methode [DateTime.ToString](https://docs.microsoft.com/dotnet/api/system.datetime.tostring#System_DateTime_ToString) terwijl \<xref:System.DateTime.ToString(System.String,System.IFormatProvider)> een koppeling bevat naar de methode [DateTime.ToString(String,IFormatProvider)](https://docs.microsoft.com/dotnet/api/system.datetime.tostring#System_DateTime_ToString_System_String_System_IFormatProvider_).
 
-Als u een koppeling wilt van een algemeen type, zoals [System.Collections.Generic.List\<T>](https://docs.microsoft.com/dotnet/api/system.collections.generic.list-1), moet u het teken \` (%60) gebruiken, gevolgd door het aantal parameters van het generieke type. Zo bevat \<xref:System.Nullable%601> een koppeling met het type [System.Nullable\<T>](https://docs.microsoft.com/dotnet/api/system.nullable-1), terwijl \<xref:System.Func%602> een koppeling bevat met de gemachtigde [System.Func\<T,TResult>](https://docs.microsoft.com/dotnet/api/system.func-2).
+Als u een koppeling wilt maken naar een algemeen type, zoals [System.Collections.Generic.List\<T>](https://docs.microsoft.com/dotnet/api/system.collections.generic.list-1), moet u het teken \` (`%60`) gebruiken, gevolgd door het aantal algemene parametertypen. Zo bevat `<xref:System.Nullable%601>` een koppeling met het type [System.Nullable\<T>](https://docs.microsoft.com/dotnet/api/system.nullable-1), terwijl `<xref:System.Func%602>` een koppeling bevat met de gemachtigde [System.Func\<T,TResult>](https://docs.microsoft.com/dotnet/api/system.func-2).
 
 ## <a name="code"></a>Code
 
