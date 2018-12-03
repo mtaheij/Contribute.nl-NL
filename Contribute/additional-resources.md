@@ -4,12 +4,12 @@ description: In dit artikel vindt u een lijst met voorgestelde resources voor Gi
 author: billwagner
 ms.author: wiwagn
 manager: wpickett
-ms.openlocfilehash: bf12947d0956a5ee2953d74840afe3060425074d
-ms.sourcegitcommit: 44eb4f5ee65c1848d7f36fca107b296eb7687397
+ms.openlocfilehash: 4c29bfd09f17e32624ee3fc484424c4fe8d3b68e
+ms.sourcegitcommit: 68d81b61ffa60aba16acfed023760449e16de91b
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 11/13/2018
-ms.locfileid: "51609563"
+ms.lasthandoff: 11/26/2018
+ms.locfileid: "52299632"
 ---
 # <a name="additional-git-and-github-resources"></a>Aanvullende Git- en GitHub-resources
 
@@ -20,8 +20,8 @@ Als u niet bekend bent met Git of GitHub, kunnen deze bronnen u helpen om erover
 - [Git basics](https://go.microsoft.com/fwlink/?linkid=853939) (Grondbeginselen van Git): dit is een eenvoudig overzicht van hoe Git werkt.
 - [Pro Git e-book (web)](https://go.microsoft.com/fwlink/?linkid=853940) (Pro Git-e-book (online)): dit is een gedetailleerde Git-naslaggids in HTML-indeling.
 - [Pro Git e-book (PDF)](https://progit2.s3.amazonaws.com/en/2016-03-22-f3531/progit-en.1084.pdf) (Pro Git-e-book (PDF)): hetzelfde als de voorgaande link, maar dan als PDF.
-- [Learn Git course from Codecademy](https://www.codecademy.com/learn/learn-git) (Cursus Learn Git van Codecademy): een Git-zelfstudie van Codecademy.
-- [Try Git course from Code School](https://www.codeschool.com/courses/try-git) (Cursus Try Git van Code School): een Git-zelfstudie van Code School
+- [Learn Git course from Codecademy](https://www.codecademy.com/learn/learn-git) (Cursus Learn Git van Codecademy): een Git-zelfstudie van Codeacademy.
+- [Try Git-cursus van Code School op Pluralsight](https://www.pluralsight.com/courses/code-school-git-real): een Git-zelfstudie van Code School op Pluralsight.
 - [Git and Github course from Udacity](https://www.udacity.com/course/how-to-use-git-and-github--ud775) (Cursus Git and Github van Udacity): een Git- en Github-zelfstudie van Udacity
 
 ## <a name="github-resources"></a>GitHub-bronnen
