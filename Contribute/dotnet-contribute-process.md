@@ -2,12 +2,12 @@
 title: Bijdrageproces voor .NET-documentopslagplaatsen
 description: In dit artikel vindt u een korte inleiding tot bijdragen aan de opslagplaatsen voor .NET-documenten. U krijgt informatie over de gebruikte opslagplaatsen, het proces voor het rangschikken van inhoud en de beleidsregels voor het beheren van codevoorbeelden en andere assets.
 ms.date: 11/07/2018
-ms.openlocfilehash: b83a3080f1abd4df8caaa9d10859760006216e86
-ms.sourcegitcommit: 44eb4f5ee65c1848d7f36fca107b296eb7687397
+ms.openlocfilehash: 0e7199b72cf9b94d00a09fb180ffef0558c59a53
+ms.sourcegitcommit: 21c9ac71e1abff946466cddf17a1ee97bc349ec5
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 11/13/2018
-ms.locfileid: "51609757"
+ms.lasthandoff: 12/11/2018
+ms.locfileid: "53245844"
 ---
 # <a name="process-for-contributing-to-net-docs"></a>Proces voor bijdragen aan .NET-documenten
 
@@ -24,7 +24,7 @@ Volg deze richtlijnen zodat we allemaal een betere ervaring hebben.
 
 ## <a name="make-a-contribution-to-net-docs"></a>Een bijdrage leveren aan .NET-documenten
 
-**Stap 1**: sla deze stap over als u alleen kleine wijzigingen wilt aanbrengen. Als u nieuwe inhoud wilt gaan schrijven of bestaande inhoud grondig wilt reviseren, opent u een [actie-item](https://github.com/dotnet/docs/issues) waarin u beschrijft wat u wilt doen.
+**Stap 1:** Sla deze stap over als u alleen kleine wijzigingen wilt aanbrengen. Als u nieuwe inhoud wilt gaan schrijven of bestaande inhoud grondig wilt reviseren, opent u een [actie-item](https://github.com/dotnet/docs/issues) waarin u beschrijft wat u wilt doen.
 
 De inhoud in de map met **documenten** is in secties onderverdeeld. Deze secties vindt u terug in de inhoudsopgave. Definieer de locatie van het onderwerp in de inhoudsopgave. Krijg feedback over uw voorstel.
 
@@ -42,11 +42,11 @@ Of bekijk onze lijst met [openstaande actie-items](https://github.com/dotnet/doc
 
 Zodra u een taak hebt gekozen om aan te werken, volgt u de instructies om [aan de slag](get-started-setup-github.md) te gaan om een GitHub-account te maken en uw omgeving in te stellen.
 
-**Stap 2:** maak waar nodig forks van de opslagplaatsen `/dotnet/docs`, `dotnet/samples`, `dotnet/dotnet-api-docs`, `dotnet/roslyn-api-docs` of `dotnet/ml-api-docs` en maak een vertakking voor uw wijzigingen.
+**Stap 2:** Maak waar nodig forks van de opslagplaatsen `/dotnet/docs`, `dotnet/samples`, `dotnet/dotnet-api-docs`, `dotnet/roslyn-api-docs` of `dotnet/ml-api-docs` en maak een vertakking voor uw wijzigingen.
 
 Voor kleine wijzigingen leest u de instructies voor bewerkingen in GitHub op de [startpagina](index.md#quick-edits-to-existing-documents) van de handleiding van de bijdrager.
 
-**Stap 3:** breng de wijzigingen in deze nieuwe vertakking aan.
+**Stap 3:** Breng de wijzigingen in deze nieuwe vertakking aan.
 
 Als het een nieuw onderwerp is, kunt u dit [sjabloonbestand](dotnet-style-guide.md) als beginpunt gebruiken. Dit bestand bevat de schrijfrichtlijnen en uitleg over de metagegevens die voor elk artikel zijn vereist, zoals informatie over de auteur.
 
@@ -65,7 +65,7 @@ Volg de juiste Markdown-syntaxis. Voor voorbeelden van algemene syntaxis raadple
             /porting-overview
                 portability_report.png
 
-**Stap 4:** dien een PR (Pull Request - pull-aanvraag) in van uw vertakking naar de hoofdvertakking.
+**Stap 4:** Dien een PR (Pull Request - pull-aanvraag) in van uw vertakking naar de hoofdvertakking.
 
 > [!IMPORTANT]
 > De functionaliteit [automatisering van commentaar](how-to-write-workflows-major.md#review-and-sign-off) is op dit moment in geen enkele .NET-documentenopslagplaats beschikbaar. Leden van het .NET-documententeam zullen uw pull-aanvraag beoordelen en samenvoegen.
@@ -76,7 +76,7 @@ Als u met uw pull-aanvraag een bestaand probleem oplost, voegt u het trefwoord `
 
 Het .NET-team beoordeelt uw pull-aanvraag en laat u weten of er andere updates/wijzigingen nodig zijn voor de goedkeuring.
 
-**Stap 5:** voer eventuele benodigde updates aan uw vertakking door die u met het team hebt besproken.
+**Stap 5:** Voer eventuele benodigde updates aan uw vertakking door die u met het team hebt besproken.
 
 De onderhoudsmedewerkers voegen uw pull-aanvraag samen met de hoofdvertakking zodra feedback is toegepast en uw wijziging is goedgekeurd.
 
@@ -131,6 +131,7 @@ U maakt als volgt een voorbeeld:
 2. Schrijf het onderwerp waarin de concepten worden uitgelegd die in uw voorbeeld worden aangegeven (bijvoorbeeld: `docs/standard/linq/where-clause.md`).
 3. Schrijf uw voorbeeld (voorbeeld: `WhereClause-Sample1.cs`).
 4. Maak een Program.cs met een hoofdinvoerpunt waardoor uw voorbeelden worden aangeroepen. Als er al een aanroep bestaat, voegt u deze aan uw voorbeeld toe:
+
     ```csharp
     public class Program
     {
@@ -143,6 +144,7 @@ U maakt als volgt een voorbeeld:
         }
     }
     ```
+
 U kunt .NET Core-codefragmenten of -voorbeelden bouwen met behulp van de .NET Core SLI. Deze kunt u installeren met de [.NET Core SDK](https://www.microsoft.com/net/download). U kunt uw voorbeeld als volgt bouwen en uitvoeren:
 
 1. Ga naar de map met voorbeelden en bouw uw voorbeeld om op fouten te controleren:
