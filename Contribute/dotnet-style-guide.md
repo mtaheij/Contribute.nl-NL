@@ -2,12 +2,12 @@
 title: Sjabloon en cheatsheet voor .NET-artikelen
 description: Dit artikel bevat een handige sjabloon waarmee u nieuwe artikelen kunt maken voor opslagplaatsen voor .NET-documenten
 ms.date: 11/07/2018
-ms.openlocfilehash: 15f64ec86c475e2da2f6539c8f388d076389c4e0
-ms.sourcegitcommit: 68d81b61ffa60aba16acfed023760449e16de91b
+ms.openlocfilehash: 08c8e19c858e7417d49cc2de543c67f330b93e89
+ms.sourcegitcommit: b0556fc33803358009a030ac9efcaed23f562868
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 11/26/2018
-ms.locfileid: "52299655"
+ms.lasthandoff: 12/11/2018
+ms.locfileid: "53264497"
 ---
 # <a name="metadata-and-markdown-template-for-net-docs"></a>Sjabloon voor metagegevens en Markdown voor .NET-documenten
 
@@ -31,10 +31,10 @@ ms.date: [CREATION/UPDATE DATE - mm/dd/yyyy]
 
 - Tussen de dubbele punt (:) en de waarde van een metagegevenselement **moet** een spatie staan.
 - Dubbele punten in een waarde (zoals een titel) verbreken de metagegevensparser. Omring in dit geval de titel met dubbele aanhalingstekens (bijvoorbeeld `title: "Writing .NET Core console apps: An advanced step-by-step guide"`).
-- **titel**: deze wordt in zoekprogrammaresultaten weergegeven. De titel mag niet identiek zijn aan de titel in uw kop H1 en moet maximaal 60 tekens bevatten.
-- **beschrijving**: hierin vat u de inhoud van het artikel samen. Deze wordt meestal in de pagina met zoekresultaten weergegeven, maar wordt niet gebruikt voor de rangschikking van de zoekresultaten. De lengte dient 115 tot 145 tekens te bedragen, inclusief spaties.
-- **auteur**: het veld Auteur moet de **GitHub-gebruikersnaam** van de auteur bevatten.
-- **ms.date**: de datum van de laatste belangrijke update. Werk deze bij voor bestaande artikelen als u het gehele artikel hebt bekeken en bijgewerkt. Kleine aanpassingen, zoals typfouten e.d., rechtvaardigen geen update.
+- **titel**: Deze wordt in zoekprogrammaresultaten weergegeven. De titel mag niet identiek zijn aan de titel in uw kop H1 en moet maximaal 60 tekens bevatten.
+- **beschrijving**: Hierin wordt de inhoud van het artikel samengevat. Deze wordt meestal in de pagina met zoekresultaten weergegeven, maar wordt niet gebruikt voor de rangschikking van de zoekresultaten. De lengte dient 115 tot 145 tekens te bedragen, inclusief spaties.
+- **auteur**: Het veld Auteur moet de **GitHub-gebruikersnaam** van de auteur bevatten.
+- **ms.date**: De datum van de laatste belangrijke update. Werk deze bij voor bestaande artikelen als u het gehele artikel hebt bekeken en bijgewerkt. Kleine aanpassingen, zoals typfouten e.d., rechtvaardigen geen update.
 
 Er zijn andere metagegevens aan elk artikel toegevoegd, maar wij passen gewoonlijk de meeste metagegevenswaarden toe op mapniveau, zoals is opgegeven in **docfx.json**.
 
@@ -244,13 +244,13 @@ Knopkoppelingen:
 
 ```markdown
 > [!div class="button"]
-[button links](dotnet-contribute.md)
+> [button links](dotnet-contribute.md)
 ```
 
 Dit wordt weergegeven als:
 
 > [!div class="button"]
-[knopkoppelingen](dotnet-contribute.md)
+> [knopkoppelingen](dotnet-contribute.md)
 
 U kunt in de [Visual Studio-documenten](https://docs.microsoft.com/visualstudio/install/install-visual-studio#step-2---download-visual-studio) een voorbeeld zien van knoppen in actie.
 
@@ -258,8 +258,8 @@ U kunt in de [Visual Studio-documenten](https://docs.microsoft.com/visualstudio/
 
 ```markdown
 >[!div class="step-by-step"]
-[Pre](../docs/csharp/expression-trees-interpreting.md)
-[Next](../docs/csharp/expression-trees-translating.md)
+> [Pre](../docs/csharp/expression-trees-interpreting.md)
+> [Next](../docs/csharp/expression-trees-translating.md)
 ```
 
 U kunt in de [C#-handleiding](https://docs.microsoft.com/dotnet/csharp/tour-of-csharp/program-structure) een voorbeeld zien van stappenplannen in actie.

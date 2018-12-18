@@ -1,6 +1,6 @@
 ---
-title: Markdown-naslaginformatie voor OPS en docs.microsoft.com
-description: De OPS-platformhandleiding voor Markdown- en DocFX Flavored Markdown-extensies (DFM).
+title: Markdown-naslaginformatie voor docs.microsoft.com
+description: De Docs platformhandleiding voor Markdown.
 author: meganbradley
 ms.author: mbradley
 manager: jemash
@@ -8,24 +8,24 @@ ms.date: 05/18/2018
 ms.topic: contributor-guide
 ms.prod: non-product-specific
 audience: internal,external
-ms.openlocfilehash: 64921bacf48e638221048db4b24e1a941f1d2777
-ms.sourcegitcommit: 44eb4f5ee65c1848d7f36fca107b296eb7687397
+ms.openlocfilehash: 1023f3036e5c1facd0bcd4c31069e6faf3c95483
+ms.sourcegitcommit: 21c9ac71e1abff946466cddf17a1ee97bc349ec5
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 11/13/2018
-ms.locfileid: "51609540"
+ms.lasthandoff: 12/11/2018
+ms.locfileid: "53245867"
 ---
-# <a name="markdown-reference-for-ops"></a>Markdown-naslaginformatie voor OPS
+# <a name="markdown-reference"></a>Markdown-naslaginformatie
 
-Markdown is een lichtgewicht opmaakcodetaal met een syntaxis voor het opmaken van platte tekst. Open Publishing Services (OPS) ondersteunt de CommonMark-standaard voor Markdown, plus enkele aangepaste Markdown-extensies die zijn ontworpen om rijkere inhoud op docs.microsoft.com te bieden. Dit artikel bevat alfabetische naslaginformatie voor het gebruik van Markdown in OPS voor docs.microsoft.com.
+Markdown is een lichtgewicht opmaakcodetaal met een syntaxis voor het opmaken van platte tekst. Het Docs-platform ondersteunt de CommonMark-standaard voor Markdown, plus enkele aangepaste Markdown-extensies die zijn ontworpen om rijkere inhoud op docs.microsoft.com te bieden. Dit artikel bevat alfabetische naslaginformatie voor het gebruik van Markdown voor docs.microsoft.com.
 
-U kunt voor het opstellen van Markdown elke teksteditor gebruiken. Voor elke editor die het invoegen van zowel standaard-Markdown-syntaxis als aangepaste OPS-extensies mogelijk maakt, wordt [VS Code](https://code.visualstudio.com/) met een geïnstalleerd [Docs-ontwerppakket](https://aka.ms/DocsAuthoringPack) aangeraden.
+U kunt voor het opstellen van Markdown elke teksteditor gebruiken. Voor elke editor die het invoegen van zowel standaard-Markdown-syntaxis als aangepaste Docs-extensies mogelijk maakt, wordt [VS Code](https://code.visualstudio.com/) met een geïnstalleerd [Docs-ontwerppakket](https://aka.ms/DocsAuthoringPack) aangeraden.
 
-OPS is gestandaardiseerd in Markdig voor alle nieuwe opslagplaatsen, en oudere opslagplaatsen worden gemigreerd naar Markdig. U kunt het weergeven van Markdown in Markdig versus andere engines testen op [https://babelmark.github.io/](https://babelmark.github.io/).
+Docs maakt gebruik van de Markdown-engine in Markdig. U kunt het weergeven van Markdown in Markdig versus andere engines testen op [https://babelmark.github.io/](https://babelmark.github.io/).
 
 ## <a name="alerts-note-tip-important-caution-warning"></a>Waarschuwingen (Opmerking, Tip, Belangrijk, Let op, Waarschuwing)
 
-Alerts is een OPS-specifieke Markdown-extensie om blokcitaten te maken die op docs.microsoft.com worden weergegeven met kleuren en pictogrammen die het belang van de inhoud aanduiden. De volgende typen waarschuwingen worden ondersteund:
+Geeft een waarschuwing voor een Docs Markdown-extensie om blokcitaten te maken die op docs.microsoft.com worden weergegeven met kleuren en pictogrammen die het belang van de inhoud aanduiden. De volgende typen waarschuwingen worden ondersteund:
 
 ```markdown
 > [!NOTE]
@@ -71,7 +71,7 @@ U kunt codefragmenten in uw Markdown-bestanden insluiten:
 
 ## <a name="headings"></a>Koppen
 
-OPS ondersteunt zes niveaus Markdown-koppen:
+Docs ondersteunt zes niveaus Markdown-koppen:
 
 ```markdown
 # This is a first level heading (H1)
@@ -92,7 +92,7 @@ OPS ondersteunt zes niveaus Markdown-koppen:
 
 ## <a name="html"></a>HTML
 
-Hoewel Markdown ondersteuning biedt voor inline-HTML, wordt HTML niet aanbevolen voor het publiceren via OPS. Bovendien leidt dit, behalve bij een beperkte lijst met waarden, tot compileerfouten of -waarschuwingen. <!--For more information, see HTML Whitelist. // do we want to add the whitelist? -->
+Hoewel Markdown ondersteuning biedt voor inline-HTML, wordt HTML niet aanbevolen voor het publiceren naar Docs. Bovendien leidt dit, behalve bij een beperkte lijst met waarden, tot compileerfouten of -waarschuwingen. <!--For more information, see HTML Whitelist. // do we want to add the whitelist? -->
 
 ## <a name="images"></a>Afbeeldingen
 
@@ -116,7 +116,7 @@ U kunt ook ondersteuning voor andere typen afbeeldingen toevoegen door deze toe 
 
 ## <a name="links"></a>Koppelingen
 
-In de meeste gevallen gebruikt OPS standaard-Markdown-koppelingen naar andere bestanden en pagina's. De typen koppelingen worden in de onderstaande subsecties beschreven.
+In de meeste gevallen gebruikt Docs standaard-Markdown-koppelingen naar andere bestanden en pagina's. De typen koppelingen worden in de onderstaande subsecties beschreven.
 
 > [!TIP]
 > Het Docs-ontwerppakket voor VS Code kan helpen relatieve koppelingen en bladwijzers correct in te voegen zonder dat u zich met paden bezig hoeft te houden.
@@ -132,7 +132,7 @@ In de meeste gevallen gebruikt OPS standaard-Markdown-koppelingen naar andere be
 
 ### <a name="relative-links-to-files-in-the-same-doc-set"></a>Relatieve koppelingen naar bestanden in dezelfde docset
 
-Een relatief pad is het pad naar het doelbestand ten opzichte van het huidige bestand. U kunt in OPS een relatief pad gebruiken om een koppeling naar ander bestand in dezelfde docset te maken. De syntaxis voor een relatief pad ziet er als volgt uit:
+Een relatief pad is het pad naar het doelbestand ten opzichte van het huidige bestand. U kunt in Docs een relatief pad gebruiken om een koppeling naar ander bestand in dezelfde docset te maken. De syntaxis voor een relatief pad ziet er als volgt uit:
 
 ```markdown
 [link text](../../folder/filename.md)
@@ -142,7 +142,7 @@ Hierbij duidt `../` één niveau hoger in de hiërarchie aan.
 
 - Het relatieve pad wordt tijdens het compileren omgezet, met inbegrip van het verwijderen van de MD-extensie.
 - U kunt ../ gebruiken om het bestand te koppelen aan een bestand in de bovenliggende map, maar dat bestand moet dan wel in dezelfde docset aanwezig zijn. U kunt ../ niet gebruiken om een bestand te koppelen aan een bestand in een andere docset-map.
-- OPS ondersteunt ook een speciale vorm van een relatief pad. Deze vorm begint met het teken ~ (bijvoorbeeld ~/foo/bar.md). Met deze syntaxis wordt een bestand ten opzichte van de hoofdmap van een docset aangegeven. Ook dit type pad wordt tijdens de build gevalideerd en omgezet.
+- Docs ondersteunt ook een speciale vorm van een relatief pad. Deze vorm begint met het teken ~ (bijvoorbeeld ~/foo/bar.md). Met deze syntaxis wordt een bestand ten opzichte van de hoofdmap van een docset aangegeven. Ook dit type pad wordt tijdens de build gevalideerd en omgezet.
 
 > [!IMPORTANT]
 > Neem de bestandsextensie in het relatieve pad op. Bij het compileren wordt het bestaan van het doelbestand van dat relatieve pad gevalideerd. Als het relatieve pad geen bestandsextensie bevat, wordt bij het compileren waarschijnlijk een waarschuwing of verbroken koppeling gerapporteerd. Gebruik bijvoorbeeld:
@@ -153,7 +153,7 @@ Hierbij duidt `../` één niveau hoger in de hiërarchie aan.
 >
 > `[link text](../../folder/filename)`
 
-### <a name="absolute-links-to-other-files-in-ops"></a>Absolute koppelingen naar andere bestanden in OPS
+### <a name="site-relative-links-to-other-files-on-docs"></a>Sitegerelateerde koppelingen naar andere bestanden in Docs
 
 ```markdown
 [Azure and Linux](/articles/virtual-machines/linux/overview)
@@ -252,7 +252,7 @@ Using XREF may require some configuration. For more information, see XREF Servic
 
 Als u een genummerde lijst wilt maken, kunt u alle 1's gebruiken. Deze worden bij het publiceren weergegeven als een sequentiële lijst. Voor betere leesbaarheid van de bron kunt u uw lijsten verhogen.
 
-Gebruik geen letters in lijsten, ook niet in geneste lijsten. Deze worden bij het publiceren via OPS niet goed weergegeven. Geneste lijsten die gebruikmaken van nummers, worden bij het publiceren weergegeven als kleine letters. Bijvoorbeeld:
+Gebruik geen letters in lijsten, ook niet in geneste lijsten. Deze worden bij het publiceren naar Docs niet goed weergegeven. Geneste lijsten die gebruikmaken van nummers, worden bij het publiceren weergegeven als kleine letters. Bijvoorbeeld:
 
 ```markdown
 1. This is
@@ -423,14 +423,6 @@ De eraan voorafgaande blockquote-Markdown-tekst wordt weergegeven als:
 > - [(Xamarin iOS | Javascript)](how-to-write-workflows-major.md)
 > - [(Xamarin Android | Javascript)](how-to-write-workflows-major.md)
 
-<!-- uncomment and link when Cory's topic is live
-## Tabbed content
-
-Tabs are a Markdown extension for docs.microsoft.com that allow us to present different versions of content, such as procedural steps to accomplish the same task on different platforms, in a tabbed format.
-
-Because the syntax and requirements for tabbed content are fairly complex, they are documented separately in Tabbed Content.
--->
-
 ## <a name="tables"></a>Tabellen
 
 De eenvoudigste manier om een tabel in Markdown te maken is gebruik te maken van pipes en regels. Als u een standaardtabel met een kop wilt maken, laat u de eerste regel volgen door een stippellijn:
@@ -535,13 +527,13 @@ HTML-tabellen worden niet aanbevolen voor docs.microsoft.com. Ze kunnen niet doo
 
 ### <a name="embedding-videos-into-a-markdown-page"></a>Video's insluiten op een Markdown-pagina
 
-Momenteel biedt OPS ondersteuning voor video's die zijn gepubliceerd op een van de volgende drie locaties:
+Momenteel biedt Docs ondersteuning voor video's die zijn gepubliceerd op een van de volgende drie locaties:
 
 - YouTube
 - Channel 9
 - Het eigen One Player-systeem van Microsoft
 
-U kunt een video insluiten met de volgende syntaxis zodat OPS de video kan renderen.
+U kunt een video insluiten met de volgende syntaxis zodat Docs de video kan weergeven.
 
 ```markdown
 > [!VIDEO <embedded_video_link>]
