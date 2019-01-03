@@ -2,12 +2,12 @@
 title: Markdown gebruiken voor het schrijven van documenten
 description: Dit artikel biedt de basis- en referentie-informatie voor de Markdown-taal die wordt gebruikt voor het schrijven van artikelen op docs.microsoft.com.
 ms.date: 07/13/2017
-ms.openlocfilehash: 8613d525afc11caf9ec760c4f15ea44010781634
-ms.sourcegitcommit: 21c9ac71e1abff946466cddf17a1ee97bc349ec5
+ms.openlocfilehash: ef75ffd59b75db5757822642f651d863906cf14c
+ms.sourcegitcommit: 18c271ebec920bb976a4bc901f4ab8c1d36b02fa
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 12/11/2018
-ms.locfileid: "53245890"
+ms.lasthandoff: 12/19/2018
+ms.locfileid: "53615830"
 ---
 # <a name="how-to-use-markdown-for-writing-docs"></a>Markdown gebruiken voor het schrijven van documenten
 
@@ -232,7 +232,8 @@ Deze talen bieden ondersteuning voor beschrijvende namen en de meeste talen hebb
 |Objective-C|objc|
 |OData|odata|
 |PHP|php|
-|Power Apps Formula|powerappsfl|
+|PowerApps (decimale punt als scheidingsteken)|powerapps-dot|
+|PowerApps (decimale komma als scheidingsteken)|powerapps-comma|
 |PowerShell|powershell|
 |Python|python|
 |Q#|qsharp|
