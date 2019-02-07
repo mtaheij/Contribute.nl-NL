@@ -5,12 +5,12 @@ author: billwagner
 ms.author: wiwagn
 manager: wpickett
 ms.date: 04/17/2018
-ms.openlocfilehash: dab2de80654fb55382b2ca7c9f78df36df9971dc
-ms.sourcegitcommit: 44eb4f5ee65c1848d7f36fca107b296eb7687397
+ms.openlocfilehash: 4a9a7573a62cfc7d5187b90de7e1fe147825273e
+ms.sourcegitcommit: 203ca15fda2d217f082c74ec648c1f1db323f9f1
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 11/13/2018
-ms.locfileid: "51609356"
+ms.lasthandoff: 02/04/2019
+ms.locfileid: "55712850"
 ---
 # <a name="microsoft-docs-contributor-guide-overview"></a>Gids voor inzenders van Microsoft Docs: overzicht
 
@@ -37,7 +37,7 @@ Met snelle bewerkingen wordt het proces voor het rapporteren en herstellen van k
 
 Klik op het potloodpictogram dat is weergegeven in de volgende afbeelding om het artikel te bewerken.
 
-![Locatie van het potloodpictogram](./media/index/editicon.png)
+![Locatie van het potloodpictogram](./media/index/edit-icon.png)
 
 > [!NOTE]
 > Als het potloodpictogram grijs wordt weergegeven, moet u bij uw GitHub-account aanmelden of een nieuw account maken.
