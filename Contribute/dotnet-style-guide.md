@@ -2,12 +2,12 @@
 title: Sjabloon en cheatsheet voor .NET-artikelen
 description: Dit artikel bevat een handige sjabloon waarmee u nieuwe artikelen kunt maken voor opslagplaatsen voor .NET-documenten
 ms.date: 11/07/2018
-ms.openlocfilehash: 08c8e19c858e7417d49cc2de543c67f330b93e89
-ms.sourcegitcommit: b0556fc33803358009a030ac9efcaed23f562868
+ms.openlocfilehash: e342373a09b623dc71aadd63e8d8627d154ec8b6
+ms.sourcegitcommit: 203ca15fda2d217f082c74ec648c1f1db323f9f1
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 12/11/2018
-ms.locfileid: "53264497"
+ms.lasthandoff: 02/04/2019
+ms.locfileid: "55712919"
 ---
 # <a name="metadata-and-markdown-template-for-net-docs"></a>Sjabloon voor metagegevens en Markdown voor .NET-documenten
 
@@ -123,7 +123,7 @@ Als u een koppeling wilt maken naar een algemeen type, zoals [System.Collections
 
 ## <a name="code"></a>Code
 
-De beste manier om code in te voegen is fragmenten van een werkend voorbeeld in te voegen. Maak uw voorbeeld op basis van de instructies in het artikel [Bijdragen aan .NET](dotnet-contribute-process.md#contributing-to-samples). De basisregels voor het invoegen van code bevinden zich in de algemene richtlijnen voor [code](how-to-write-use-markdown.md#code-includes).
+De beste manier om code in te voegen is fragmenten van een werkend voorbeeld in te voegen. Maak uw voorbeeld op basis van de instructies in het artikel [Bijdragen aan .NET](dotnet-contribute-process.md#contributing-to-samples). De basisregels voor het invoegen van code bevinden zich in de algemene richtlijnen voor [code](how-to-write-use-markdown.md#code-snippets).
 
 U kunt de code invoegen met behulp van de volgende syntaxis:
 
