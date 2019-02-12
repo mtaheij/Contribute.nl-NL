@@ -16,6 +16,7 @@
 ### [Bijdragen aan .NET-documenten](dotnet-contribute-process.md)
 ### [Stijlconventies voor .NET-documenten](dotnet-style-guide.md)
 ### [Vorm- en toonrichtlijnen](dotnet-voice-tone.md)
+### [Beoordelingsproces pull-aanvraag](dotnet-pr-review.md)
 # [Aanvullende bronnen](additional-resources.md)
 
 <!--
