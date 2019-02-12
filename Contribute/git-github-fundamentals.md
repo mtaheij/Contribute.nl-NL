@@ -2,12 +2,12 @@
 title: Essentiële informatie over Git en GitHub voor documentatie
 description: In dit artikel vindt u een overzicht van Git- en GitHub-opslagplaatsen en wordt uitgelegd hoe inhoud wordt geordend en welke naamconventies voor docs.microsoft.com worden gebruikt.
 ms.date: 06/30/2017
-ms.openlocfilehash: 05c758845007f859382014166e88fd9614cdb873
-ms.sourcegitcommit: d3c7b49dc854dae8da9cd49da8ac4035789a5010
+ms.openlocfilehash: b7eb82f299d3efcdb1e49649fb77367ef8ba3fae
+ms.sourcegitcommit: 203ca15fda2d217f082c74ec648c1f1db323f9f1
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49805695"
+ms.lasthandoff: 02/04/2019
+ms.locfileid: "55712873"
 ---
 # <a name="git-and-github-essentials-for-docs"></a>Essentiële informatie over Git en GitHub voor Docs
 
@@ -25,8 +25,8 @@ Als u vertrouwd bent met gecentraliseerde versiebeheersystemen (zoals Team Found
 
 Ook wordt bij Git een gelaagde structuur gebruikt om inhoud voor een project op te slaan en te beheren:
 
-- *Opslagplaats*: dit is de hoogste opslageenheid en wordt ook wel een *repository of repo*  genoemd. Een opslagplaats bevat een of meer vertakkingen.
-- *Vertakking*: een opslageenheid met de bestanden en mappen die gezamenlijk de inhoudsset van een project vormen. Vertakkingen zorgen voor de scheiding van werkstromen (meestal versies genoemd). Bijdragen worden altijd gemaakt voor en toegewezen aan een specifieke vertakking. Alle opslagplaatsen bevatten een standaardvertakking (meestal de hoofdvertakking genoemd) en een of meer vertakkingen die bedoeld zijn om later te worden samengevoegd met de hoofdvertakking. De hoofdvertakking fungeert als de huidige versie en 'de enige vertrouwde bron' voor het project. Alle andere vertakkingen in de opslagplaats worden hiervan afgeleid.
+- *Opslagplaats*: Dit is de hoogste opslageenheid en wordt ook wel een *repository of repo*  genoemd. Een opslagplaats bevat een of meer vertakkingen.
+- *Vertakking*: Een opslageenheid met de bestanden en mappen die gezamenlijk de inhoudsset van een project vormen. Vertakkingen zorgen voor de scheiding van werkstromen (meestal versies genoemd). Bijdragen worden altijd gemaakt voor en toegewezen aan een specifieke vertakking. Alle opslagplaatsen bevatten een standaardvertakking (meestal de hoofdvertakking genoemd) en een of meer vertakkingen die bedoeld zijn om later te worden samengevoegd met de hoofdvertakking. De hoofdvertakking fungeert als de huidige versie en 'de enige vertrouwde bron' voor het project. Alle andere vertakkingen in de opslagplaats worden hiervan afgeleid.
 
 Inzenders werken met Git om opslagplaatsen op zowel lokaal als op GitHub-niveau te updaten en bewerken:
 
@@ -58,7 +58,7 @@ Elke artikelmap bevat een submap `/media` voor de overeenkomstige mediabestanden
 
 Wanneer er herbruikbare inhoud is die wordt gedeeld door twee of meer artikelen, wordt deze inhoud opgeslagen in een submap `/includes` buiten de hoofdmap `articles`. In een Markdown-bestand waarvoor het include-bestand wordt gebruikt, wordt een overeenkomende Markdown-extensie include geplaatst op de locatie waar de verwijzing naar het include-bestand moet worden gebruikt.
 
-Zie [Markdown gebruiken: Includes](how-to-write-use-markdown.md#includes) voor aanvullende richtlijnen.
+Bekijk [hoe u Markdown: omvat](how-to-write-use-markdown.md#include-files) gebruikt voor verdere hulp.
 
 ### <a name="markdown-file-template"></a>Sjabloon voor Markdown-bestanden
 

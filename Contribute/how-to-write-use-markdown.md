@@ -1,24 +1,19 @@
 ---
 title: Markdown gebruiken voor het schrijven van documenten
 description: Dit artikel biedt de basis- en referentie-informatie voor de Markdown-taal die wordt gebruikt voor het schrijven van artikelen op docs.microsoft.com.
-ms.date: 07/13/2017
-ms.openlocfilehash: ef75ffd59b75db5757822642f651d863906cf14c
-ms.sourcegitcommit: 18c271ebec920bb976a4bc901f4ab8c1d36b02fa
+ms.date: 01/29/2019
+ms.openlocfilehash: 5235189d11c8c20ac20c91572d8bafcf525fb7c0
+ms.sourcegitcommit: fbdd61ae4fb3761aec072732eefcbf2c2dca8011
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 12/19/2018
-ms.locfileid: "53615830"
+ms.lasthandoff: 02/07/2019
+ms.locfileid: "55887293"
 ---
 # <a name="how-to-use-markdown-for-writing-docs"></a>Markdown gebruiken voor het schrijven van documenten
 
 Artikelen op [docs.microsoft.com](http://docs.microsoft.com) worden geschreven in de toegankelijke opmaakcodetaal [Markdown](https://daringfireball.net/projects/markdown/), die eenvoudig te lezen en eenvoudig te leren is. Daarom is het al snel een standaardopmaaktaal geworden.
 
-Omdat Docs-inhoud wordt opgeslagen in GitHub, kan een hoofdverzameling van Markdown, [GitHub Flavored Markdown (GFM)](https://help.github.com/categories/writing-on-github/), worden gebruikt. Deze biedt aanvullende functionaliteit voor algemene opmaakbehoeften. Daarnaast wordt met OPS (Open Publishing Services) Markdig Markdown Parser geïmplementeerd, Markdig is zeer compatibel met GFM. Hiermee wordt functionaliteit toegevoegd om specifieke functies van Docs in te schakelen.
-
-* Markdig is een snelle, krachtige, CommonMark-compatibele, extensible Markdown-processor voor .NET.
-* https://github.com/lunet-io/markdig
-* Betere ondersteuning voor community
-* Betere ondersteuning voor standaarden
+De back-end van docs.microsoft.com gebruikt Open Publishing Services (OPS), dat ondersteuning biedt voor Markdown die compatibel is met [CommanMark](https://commonmark.org/) en is geparseerd via [Markdig](https://github.com/lunet-io/markdig), evenals voor [DocFX Flavored Markdown (DFM)](https://dotnet.github.io/docfx/). Deze Markdown-typen zijn meestal geschikt voor [GitHub Flavored Markdown (GFM)](https://help.github.com/categories/writing-on-github/), aangezien de meeste docs worden bewaard in GitHub en daar kunnen worden bewerkt. Er wordt aanvullende functionaliteit toegevoegd met Markdown-extensies.
 
 ## <a name="markdown-basics"></a>Basisbeginselen van Markdown
 
@@ -220,6 +215,7 @@ Deze talen bieden ondersteuning voor beschrijvende namen en de meeste talen hebb
 |Console|console|
 |CSHTML|cshtml|
 |DAX|dax|
+|Docker|dockerfile|
 |F#|fsharp|
 |Go|go|
 |HTML|html|
@@ -227,8 +223,8 @@ Deze talen bieden ondersteuning voor beschrijvende namen en de meeste talen hebb
 |Java|java|
 |JavaScript|javascript|
 |JSON|json|
+|Kusto-querytaal|kusto|
 |Markdown|md|
-|NodeJS|nodejs|
 |Objective-C|objc|
 |OData|odata|
 |PHP|php|
@@ -243,7 +239,6 @@ Deze talen bieden ondersteuning voor beschrijvende namen en de meeste talen hebb
 |Swift|swift|
 |TypeScript|typescript|
 |VB|vb|
-|VSTS CLI|vstscli|
 |XAML|xaml|
 |XML|xml|
 

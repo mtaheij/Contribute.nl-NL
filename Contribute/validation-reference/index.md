@@ -1,29 +1,17 @@
 ---
 author: meganbradley
 ms.author: mbradley
-ms.openlocfilehash: fa048980afcf3c50f7d990f9c88064df6ee5ebb5
-ms.sourcegitcommit: 6f1997864c000a9cd25fb9171a8f8fdb8b5b5ece
+ms.openlocfilehash: 5488ba364ea561a732357bcebf9bf66039c26542
+ms.sourcegitcommit: 203ca15fda2d217f082c74ec648c1f1db323f9f1
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 10/11/2018
-ms.locfileid: "49084470"
+ms.lasthandoff: 02/04/2019
+ms.locfileid: "55712781"
 ---
-# <a name="docs-pr-validation-service"></a>Docs PR-validatieservice
+# <a name="docs-validation-reference"></a>Verwijzing voor Docs-validatie
 
-De Docs PR-validatieservice is een GitHub-app die validatieregels uitvoert op de bestanden in een PR.
+De artikelen in deze sectie bieden informatie over fouten, waarschuwingen en suggesties die u mogelijk ziet wanneer u een pull-aanvraag indient bij een docs.microsoft.com-opslagplaats of wanneer u een opslagplaats bouwt voor docs.microsoft.com.
 
-Als de validatieservice is ingeschakeld voor een opslagplaats, ziet u het volgende gedrag:
+Niet alle problemen zijn van toepassing op alle opslagplaatsen; sommige zijn specifiek voor bepaalde inhoudssets. Los alleen de problemen op die in uw build-rapport zijn vermeld, niet elk probleem dat in deze verwijzing wordt beschreven.
 
-1. U dient een PR in.
-1. In de GitHub-opmerking die de status van uw PR aangeeft, ziet u de status van controles die zijn ingeschakeld voor de opslagplaats. In dit voorbeeld zijn er twee controles ingeschakeld, namelijk "Commit Validation" en "OpenPublishing.Build":
-
-   ![sommige controles zijn mislukt](media/validation-failed.png)
-
-   De build kan mogelijk toch worden doorgevoerd, ook als de validatie voor het doorvoeren niet is geslaagd.
-
-1. Klik op **Details** voor meer informatie.
-1. Op de pagina Details ziet u alle validatiecontroles die zijn mislukt, met informatie over wat u moet doen om de fouten op te lossen:
-
-   ![validatiebericht](media/validation-details.png)
-
-Zie de inhoudsopgave aan de linkerkant van dit artikel voor de lijst met validaties die momenteel beschikbaar zijn in de service.
+Houd ook voor ogen dat deze verwijzing niet volledig is. Er worden continu nieuwe artikelen toegevoegd waarnaar wordt verwezen vanuit foutcodes in build-rapporten. Hoewel build-rapporten openbaar zijn, is een deel van de informatie die is vereist om sommige problemen op te lossen, niet beschikbaar buiten Microsoft. Als u geen documentatie vindt voor een fout of waarschuwing, als het bericht of de documentatie niet duidelijk is of als u een bijdrager buiten Microsoft bent en geen toegang hebt tot aanvullende informatie, gebruikt u de feedbackknop voor de documentatie hieronder om een GitHub-probleem in te dienen.

@@ -4,17 +4,17 @@ description: Dit artikel biedt ondersteuning voor het maken van koppelingen naar
 author: gewarren
 ms.author: gewarren
 ms.date: 10/31/2018
-ms.openlocfilehash: e56bc0fe3a5428af2a79641a8959b4da21270d53
-ms.sourcegitcommit: 44eb4f5ee65c1848d7f36fca107b296eb7687397
+ms.openlocfilehash: 9dc1b6dc2ac19b8f28a5a137817245f9a8c34eaf
+ms.sourcegitcommit: fbdd61ae4fb3761aec072732eefcbf2c2dca8011
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 11/13/2018
-ms.locfileid: "51609425"
+ms.lasthandoff: 02/07/2019
+ms.locfileid: "55887247"
 ---
 # <a name="using-links-in-documentation"></a>Koppelingen in documentatie gebruiken
 In dit artikel wordt beschreven hoe u hyperlinks gebruikt van pagina's die op docs.microsoft.com worden gehost. Koppelingen kunnen eenvoudig in Markdown worden toegevoegd, met een aantal afwijkende conventies. Koppelingen verwijzen gebruikers naar inhoud op dezelfde pagina, naar omliggende pagina's of naar externe websites en URL's.
 
-De docs.microsoft.com site-back-end gebruikt Open Publishing Services (OPS); deze implementeren DocFX Flavored Markdown (DFM). DFM is uiterst compatibel met GitHub Flavored Markdown (GFM) en voegt extra functies toe aan de hand van Markdown-extensies.
+De back-end van docs.microsoft.com gebruikt Open Publishing Services (OPS), dat ondersteuning biedt voor Markdown die compatibel is met [CommanMark](https://commonmark.org/) en is geparseerd via [Markdig](https://github.com/lunet-io/markdig), evenals voor [DocFX Flavored Markdown (DFM)](https://dotnet.github.io/docfx/). Deze Markdown-typen zijn meestal geschikt voor [GitHub Flavored Markdown (GFM)](https://help.github.com/categories/writing-on-github/), aangezien de meeste docs worden bewaard in GitHub en daar kunnen worden bewerkt. Er wordt aanvullende functionaliteit toegevoegd met Markdown-extensies.
 
 > [!IMPORTANT]
 > Alle koppelingen moeten zijn beveiligd (`https` vs. `http`) wanneer het doel dit ondersteunt (dit zou voor de grote meerderheid moeten gelden).
@@ -137,12 +137,12 @@ Als u een koppeling wilt maken naar een pagina in een ander Microsoft-domein (zo
 
 Het beste kunt u gebruikers zo weinig mogelijk doorsturen naar andere sites. Soms is het echter nodig. Houd in die gevallen rekening met de volgende informatie wanneer u een koppeling maakt naar sites van derden:
 
-- **Aansprakelijkheid:** maak een koppeling naar de inhoud van derden als u informatie van deze derde partij wilt delen. Het is bijvoorbeeld niet de taak van Microsoft om mensen te vertellen hoe ze Android-ontwikkeltools moeten gebruiken. Dat is namelijk de taak van Google. We kunnen eventueel wel uitleggen hoe Android-ontwikkeltools moeten worden gebruikt *met* Azure, maar het is aan Google om te vertellen hoe hun eigen tools moeten worden gebruikt.
-- **Aftekening door PM**: geef aan dat Microsoft verplicht moet aftekenen op inhoud van derden. Door een koppeling te maken, zeggen we iets over ons vertrouwen in die inhoud en onze verplichtingen als mensen de instructies volgen
-- **Controle naar de actualiteit van de inhoud:** controleer of de inhoud van de derde partij nog steeds actueel, juist en relevant is en dat de koppeling niet is gewijzigd
-- **Offsite:** zorg ervoor dat gebruikers er zich van bewust zijn dat ze naar een andere site gaan. Als dat niet blijkt uit de context, maakt u dat met een aparte zin duidelijk. Bijvoorbeeld: "Tot de vereisten behoren ook de Android-ontwikkeltools die u kunt downloaden op de Android Studio-site".
-- **Volgende stappen:** het is prima om een koppeling te maken naar, bijvoorbeeld, een MVP-blog in de sectie Volgende stappen. Maar nogmaals, wijs de gebruikers erop dat ze de site verlaten.
-- **Juridisch:** we kunnen een beroep doen op de juridisch bindende bepalingen die worden beschreven in de sectie **Koppelingen naar de sites van derden** van de **Gebruiksvoorwaarden**. Deze voorwaarden kunt u openen door op een pagina van ms.com naar de voettekst te gaan.
+- **Verantwoordelijkheden**: Maak een koppeling naar de inhoud van een derde partij als u informatie van deze partij wilt delen. Het is bijvoorbeeld niet de taak van Microsoft om mensen te vertellen hoe ze Android-ontwikkeltools moeten gebruiken. Dat is namelijk de taak van Google. We kunnen eventueel wel uitleggen hoe Android-ontwikkeltools moeten worden gebruikt *met* Azure, maar het is aan Google om te vertellen hoe hun eigen tools moeten worden gebruikt.
+- **Aftekening door PM**: Geef aan dat Microsoft moet aftekenen op inhoud van derden. Door een koppeling te maken, zeggen we iets over ons vertrouwen in die inhoud en onze verplichtingen als mensen de instructies volgen
+- **Controle van de nieuwheid**: Controleer of de inhoud van de derde partij nog steeds actueel, correct en relevant is en dat de koppeling niet is gewijzigd.
+- **Offsite**: Zorg ervoor dat gebruikers er zich van bewust zijn dat ze naar een andere site gaan. Als dat niet blijkt uit de context, maakt u dat met een aparte zin duidelijk. Bijvoorbeeld: Bijvoorbeeld: "Tot de vereisten behoren ook de Android-ontwikkeltools die u kunt downloaden op de Android Studio-site."
+- **Volgende stappen**: Het is prima om een koppeling te maken naar, bijvoorbeeld, een MVP-blog in de sectie Volgende stappen. Maar nogmaals, wijs de gebruikers erop dat ze de site verlaten.
+- **Juridisch**: We kunnen een beroep doen op de juridisch bindende bepalingen in de sectie **Koppelingen naar de sites van derden** van de **Gebruiksvoorwaarden** onderaan elke pagina op ms.com.
 
 ## <a name="links-to-msdn-or-technet"></a>Een koppeling maken naar MSDN of TechNet
 
