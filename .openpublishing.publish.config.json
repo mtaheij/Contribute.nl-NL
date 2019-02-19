@@ -4,7 +4,7 @@
       "docset_name": "ContributionGuide",
       "build_source_folder": "Contribute",
       "build_output_subfolder": "ContributionGuide",
-      "locale": "nl-NL",
+      "locale": "nl-nl",
       "monikers": [],
       "moniker_ranges": [],
       "open_to_public_contributors": true,
@@ -29,12 +29,12 @@
 	"contribution_branch_mappings": {
 		       "live-sxs": "live"
   },
-  "git_repository_url_open_to_public_contributors": "https://github.com/MicrosoftDocs/Contribute.nl-NL",
+  "git_repository_url_open_to_public_contributors": "https://github.com/MicrosoftDocs/Contribute.nl-nl",
   "git_repository_branch_open_to_public_contributors": "live",
   "dependent_repositories": [
     {
       "path_to_root": "_themes",
-      "url": "https://github.com/Microsoft/templates.docs.msft.nl-NL",
+      "url": "https://github.com/Microsoft/templates.docs.msft.nl-nl",
       "branch": "master",
       "branch_mapping": {}
     },
