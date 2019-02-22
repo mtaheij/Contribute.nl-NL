@@ -17,7 +17,7 @@ Optioneel afhankelijk tab:
 
 Voorbeeld van een tabsectie met één niveau met twee tabs en het tabgroepeindteken (---):
 
-```
+```markdown
 # [Linux](#tab/linux)
 
 Content for Linux...
