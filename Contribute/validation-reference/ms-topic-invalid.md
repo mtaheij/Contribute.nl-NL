@@ -1,19 +1,19 @@
 ---
-title: ms-date-invalid
-description: Uitleg en oplossing voor Docs-buildprobleem ms-date-invalid
+title: ms-topic-invalid
+description: Uitleg en oplossing voor Docs-buildprobleem ms-topic-invalid
 author: meganbradley
 ms.author: mbradley
 ms.topic: error-reference
-ms.date: 1/15/2019
+ms.date: 2/19/2019
 ms.prod: non-product-specific
-ms.openlocfilehash: e960bc2d8e9013e480f2bb391cdfa0c1da043b8b
+ms.openlocfilehash: e7b10f3f146ee33cd00bcd31d16b01e8d99f7134
 ms.sourcegitcommit: f374ad2607360f46d88982b4b7ecc63d3ab08235
 ms.translationtype: HT
 ms.contentlocale: nl-NL
 ms.lasthandoff: 02/20/2019
-ms.locfileid: "56431502"
+ms.locfileid: "56431628"
 ---
-# <a name="ms-date-invalid"></a>ms-date-invalid
+# <a name="ms-topic-invalid"></a>ms-topic-invalid
 
 **Binnenkort beschikbaar**
 
@@ -21,17 +21,13 @@ ms.locfileid: "56431502"
 
 ## <a name="suggestion"></a>Suggestie
 
-`Invalid value for ms.date: '{value}'. Must be a date in format MM/DD/YYYY.`
+`Invalid value for ms.topic: '{value}'.`
 
 ## <a name="resolution"></a>Oplossing
 
-Bevestig dat het artikel up-to-date is en geen gebroken inhoud bevat. Voeg vervolgens een geldige datum toe in de indeling MM/DD/JJJJ:
+Voeg een geldige waarde toe voor `ms.topic` waarmee het type artikel wordt aangegeven.
 
-```yml
----
-ms.date: 02/19/2019
----
-```
+U vindt geldige waarden op [deze interne Microsoft-site](https://docsmetadatatool.azurewebsites.net/whitelists).
 
 <!--make sure to add this file to your includes folder and verify the path-->
 [!INCLUDE [validation-reference-help](includes/validation-reference-help.md)]
