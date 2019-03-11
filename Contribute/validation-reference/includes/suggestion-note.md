@@ -1,14 +1,12 @@
 ---
 author: meganbradley
 ms.author: mbradley
-ms.openlocfilehash: 089a344a573f9d63c40493c939b2d1bb19bc277e
-ms.sourcegitcommit: 203ca15fda2d217f082c74ec648c1f1db323f9f1
+ms.openlocfilehash: 97a5e8df1fbac10119a1bed7f979ad424db1cab0
+ms.sourcegitcommit: 4053577bd0478d711257a283ee661d618b49c2df
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 02/04/2019
-ms.locfileid: "55713057"
+ms.lasthandoff: 03/05/2019
+ms.locfileid: "57457798"
 ---
 > [!IMPORTANT]
-> De regel is aanvankelijk ingeschakeld als 'Suggestie', zodat de inhoudteams tijd hebben om de impact te meten en een plan kunnen ontwikkelen om hun opslagplaatsen op te schonen. In tegenstelling tot fouten, die de Docs-build blokkeren, en waarschuwingen, die van invloed zijn op werkstroomautomatisering, vereisen suggesties geen onmiddellijke actie, maar u moet deze zo snel mogelijk oplossen, omdat suggesties naar verloop van tijd waarschuwingen of fouten worden. Meer informatie over wanneer de ernst wijzigt en waarin, wordt opgenomen in het bericht zodra deze beschikbaar komt.
->
-> Als u vragen of opmerkingen over de verwerking van suggesties hebt, dient u een GitHub-probleem in via de koppeling onderaan dit artikel.
+> De regel is aanvankelijk ingeschakeld als 'Suggestie', zodat de inhoudteams tijd hebben om de impact te meten en een plan kunnen ontwikkelen om hun opslagplaatsen op te schonen. Suggesties vereisen geen onmiddellijke actie, maar u moet deze zo snel mogelijk oplossen, omdat suggesties naar verloop van tijd waarschuwingen of fouten worden. Meer informatie over wanneer de ernst wijzigt en waarin, wordt opgenomen in het bericht zodra deze beschikbaar komt.
