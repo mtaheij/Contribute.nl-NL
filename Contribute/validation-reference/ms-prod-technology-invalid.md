@@ -6,12 +6,12 @@ ms.author: mbradley
 ms.topic: error-reference
 ms.date: 1/15/2019
 ms.prod: non-product-specific
-ms.openlocfilehash: 92e8b17c3b5c96d544d12d394534a494ada3b901
-ms.sourcegitcommit: 203ca15fda2d217f082c74ec648c1f1db323f9f1
+ms.openlocfilehash: 20706a44da0320c1a3fc85592a4636efba364dc7
+ms.sourcegitcommit: 42e5a6ae071826afc2a32a9b7150ca113b39afdf
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 02/04/2019
-ms.locfileid: "55713264"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "57987578"
 ---
 # <a name="ms-prod-and-technology-invalid"></a>ms-prod-and-technology-invalid
 
@@ -29,9 +29,7 @@ Gebruik `ms.prod` om on-premises producten op te geven. Geef optioneel `ms.techn
 
 Controleer of de waarde van uw `ms.prod` juist is voor uw artikel. Kies vervolgens een geldige waarde voor `ms.technology`.
 
-U vindt geldige waarden op [deze interne Microsoft-site](https://docsmetadatatool.azurewebsites.net/whitelists).
-
-<!-- Can we link to whitelist externally? -->
+U vindt geldige waarden op [deze interne Microsoft-site](https://docsmetadatatool.azurewebsites.net/allowlists).
 
 <!--make sure to add this file to your includes folder and verify the path-->
 [!INCLUDE [validation-reference-help](includes/validation-reference-help.md)]
