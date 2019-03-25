@@ -1,21 +1,29 @@
-# <a name="tabbed-conceptual"></a><span data-ttu-id="2ab9b-101">Tabbed conceptual</span><span class="sxs-lookup"><span data-stu-id="2ab9b-101">Tabbed conceptual</span></span>
+---
+ms.openlocfilehash: fa7cd177f6c4a3c4862677dbfa89f63a91e7f464
+ms.sourcegitcommit: 42e5a6ae071826afc2a32a9b7150ca113b39afdf
+ms.translationtype: HT
+ms.contentlocale: nl-NL
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "57987808"
+---
+# <a name="tabbed-conceptual"></a><span data-ttu-id="c3f7f-101">Tabbed conceptual</span><span class="sxs-lookup"><span data-stu-id="c3f7f-101">Tabbed conceptual</span></span>
 
 > [!IMPORTANT]
-> <span data-ttu-id="2ab9b-102">De Tabbed conceptual-syntaxis is afgeschaft en er mogen geen nieuwe tabbladen worden toegevoegd.</span><span class="sxs-lookup"><span data-stu-id="2ab9b-102">The tabbed conceptual syntax has been deprecated and new tabs should not be added.</span></span> <span data-ttu-id="2ab9b-103">De in dit artikel beschreven validaties zijn van toepassing op inhoudsets die zijn goedgekeurd voor het gebruik van Tabbed conceptual tot er vervangende functionaliteit beschikbaar is.</span><span class="sxs-lookup"><span data-stu-id="2ab9b-103">The validations described in this article apply to content sets that have been approved to use tabbed conceptual until replacement functionality is available.</span></span>
+> <span data-ttu-id="c3f7f-102">De Tabbed conceptual-syntaxis is afgeschaft en er mogen geen nieuwe tabbladen worden toegevoegd.</span><span class="sxs-lookup"><span data-stu-id="c3f7f-102">The tabbed conceptual syntax has been deprecated and new tabs should not be added.</span></span> <span data-ttu-id="c3f7f-103">De in dit artikel beschreven validaties zijn van toepassing op inhoudsets die zijn goedgekeurd voor het gebruik van Tabbed conceptual tot er vervangende functionaliteit beschikbaar is.</span><span class="sxs-lookup"><span data-stu-id="c3f7f-103">The validations described in this article apply to content sets that have been approved to use tabbed conceptual until replacement functionality is available.</span></span>
 
-## <a name="tab-syntax"></a><span data-ttu-id="2ab9b-104">Tab-syntaxis</span><span class="sxs-lookup"><span data-stu-id="2ab9b-104">Tab syntax</span></span>
+## <a name="tab-syntax"></a><span data-ttu-id="c3f7f-104">Tab-syntaxis</span><span class="sxs-lookup"><span data-stu-id="c3f7f-104">Tab syntax</span></span>
 
-<span data-ttu-id="2ab9b-105">De syntaxis voor tabs ziet er als volgt uit:</span><span class="sxs-lookup"><span data-stu-id="2ab9b-105">The syntax for tabs is as follows:</span></span>
+<span data-ttu-id="c3f7f-105">De syntaxis voor tabs ziet er als volgt uit:</span><span class="sxs-lookup"><span data-stu-id="c3f7f-105">The syntax for tabs is as follows:</span></span>
 
-<span data-ttu-id="2ab9b-106">Tab met één niveau:</span><span class="sxs-lookup"><span data-stu-id="2ab9b-106">Single level tab:</span></span>
+<span data-ttu-id="c3f7f-106">Tab met één niveau:</span><span class="sxs-lookup"><span data-stu-id="c3f7f-106">Single level tab:</span></span>
 
 `# [Tab Display Name](#tab/tab-id)`
 
-<span data-ttu-id="2ab9b-107">Optioneel afhankelijk tab:</span><span class="sxs-lookup"><span data-stu-id="2ab9b-107">Optional dependent tab:</span></span>
+<span data-ttu-id="c3f7f-107">Optioneel afhankelijk tab:</span><span class="sxs-lookup"><span data-stu-id="c3f7f-107">Optional dependent tab:</span></span>
 
 `# [Tab Display Name](#tab/tab-id/tab-condition)`
 
-<span data-ttu-id="2ab9b-108">Voorbeeld van een tabsectie met één niveau met twee tabs en het tabgroepeindteken (---):</span><span class="sxs-lookup"><span data-stu-id="2ab9b-108">Example of a single-level tab section with two tabs and the tab group terminator (---):</span></span>
+<span data-ttu-id="c3f7f-108">Voorbeeld van een tabsectie met één niveau met twee tabs en het tabgroepeindteken (---):</span><span class="sxs-lookup"><span data-stu-id="c3f7f-108">Example of a single-level tab section with two tabs and the tab group terminator (---):</span></span>
 
 ```markdown
 # [Linux](#tab/linux)
@@ -29,7 +37,7 @@ Content for Windows...
 ---
 ```
 
-<span data-ttu-id="2ab9b-109">Tabs kunnen eventueel secundaire tabs of afhankelijkheidstabs bevatten.</span><span class="sxs-lookup"><span data-stu-id="2ab9b-109">Tabs can optionally contain secondary tabs, or dependency tabs.</span></span> <span data-ttu-id="2ab9b-110">Hierdoor worden tabs afhankelijk van de selectie in een andere reeks tabs.</span><span class="sxs-lookup"><span data-stu-id="2ab9b-110">This makes tabs dependent on the selection in another set of tabs.</span></span> <span data-ttu-id="2ab9b-111">Hier volgt een voorbeeld:</span><span class="sxs-lookup"><span data-stu-id="2ab9b-111">Here's an example:</span></span>
+<span data-ttu-id="c3f7f-109">Tabs kunnen eventueel secundaire tabs of afhankelijkheidstabs bevatten.</span><span class="sxs-lookup"><span data-stu-id="c3f7f-109">Tabs can optionally contain secondary tabs, or dependency tabs.</span></span> <span data-ttu-id="c3f7f-110">Hierdoor worden tabs afhankelijk van de selectie in een andere reeks tabs.</span><span class="sxs-lookup"><span data-stu-id="c3f7f-110">This makes tabs dependent on the selection in another set of tabs.</span></span> <span data-ttu-id="c3f7f-111">Hier volgt een voorbeeld:</span><span class="sxs-lookup"><span data-stu-id="c3f7f-111">Here's an example:</span></span>
 
 ```markdown
 # [Azure CLI](#tab/azure-cli/linux)
@@ -51,22 +59,22 @@ PowerShell content for Windows...
 ---
 ```
 
-<span data-ttu-id="2ab9b-112">De volgende validaties gelden voor syntaxis van tabs:</span><span class="sxs-lookup"><span data-stu-id="2ab9b-112">The following validations apply to tab syntax:</span></span>
+<span data-ttu-id="c3f7f-112">De volgende validaties gelden voor syntaxis van tabs:</span><span class="sxs-lookup"><span data-stu-id="c3f7f-112">The following validations apply to tab syntax:</span></span>
 
-- <span data-ttu-id="2ab9b-113">De syntaxis van tabs moet juist zijn.</span><span class="sxs-lookup"><span data-stu-id="2ab9b-113">Tab syntax must be correct.</span></span>
-- <span data-ttu-id="2ab9b-114">Afhankelijke tabs moeten in een vorige tabgroep zijn gedefinieerd.</span><span class="sxs-lookup"><span data-stu-id="2ab9b-114">Dependent tabs must have been defined in a previous tab group.</span></span>
-- <span data-ttu-id="2ab9b-115">Er is slechts één niveau van afhankelijkheid toegestaan.</span><span class="sxs-lookup"><span data-stu-id="2ab9b-115">Only one level of dependency is allowed.</span></span>
-- <span data-ttu-id="2ab9b-116">Er zijn minimaal twee tabs toegestaan.</span><span class="sxs-lookup"><span data-stu-id="2ab9b-116">No fewer than two tabs are allowed.</span></span>
-- <span data-ttu-id="2ab9b-117">Er zijn niet meer dan vier tabs toegestaan.</span><span class="sxs-lookup"><span data-stu-id="2ab9b-117">No more than four tabs are allowed.</span></span>
-- <span data-ttu-id="2ab9b-118">Tabs moet in een whitelist zijn opgenomen.</span><span class="sxs-lookup"><span data-stu-id="2ab9b-118">Tabs must be whitelisted.</span></span>
-- <span data-ttu-id="2ab9b-119">Tab-id-paren moeten geldig zijn.</span><span class="sxs-lookup"><span data-stu-id="2ab9b-119">Tab/ID pairs must be valid.</span></span>
-- <span data-ttu-id="2ab9b-120">Deze kunnen niet meerdere keren dezelfde tab-id bevatten in één tabgroep.</span><span class="sxs-lookup"><span data-stu-id="2ab9b-120">Cannot have the same tab ID multiple times in one tab group.</span></span>
+- <span data-ttu-id="c3f7f-113">De syntaxis van tabs moet juist zijn.</span><span class="sxs-lookup"><span data-stu-id="c3f7f-113">Tab syntax must be correct.</span></span>
+- <span data-ttu-id="c3f7f-114">Afhankelijke tabs moeten in een vorige tabgroep zijn gedefinieerd.</span><span class="sxs-lookup"><span data-stu-id="c3f7f-114">Dependent tabs must have been defined in a previous tab group.</span></span>
+- <span data-ttu-id="c3f7f-115">Er is slechts één niveau van afhankelijkheid toegestaan.</span><span class="sxs-lookup"><span data-stu-id="c3f7f-115">Only one level of dependency is allowed.</span></span>
+- <span data-ttu-id="c3f7f-116">Er zijn minimaal twee tabs toegestaan.</span><span class="sxs-lookup"><span data-stu-id="c3f7f-116">No fewer than two tabs are allowed.</span></span>
+- <span data-ttu-id="c3f7f-117">Er zijn niet meer dan vier tabs toegestaan.</span><span class="sxs-lookup"><span data-stu-id="c3f7f-117">No more than four tabs are allowed.</span></span>
+- <span data-ttu-id="c3f7f-118">Tabbladen moeten worden goedgekeurd.</span><span class="sxs-lookup"><span data-stu-id="c3f7f-118">Tabs must be approved.</span></span>
+- <span data-ttu-id="c3f7f-119">Tab-id-paren moeten geldig zijn.</span><span class="sxs-lookup"><span data-stu-id="c3f7f-119">Tab/ID pairs must be valid.</span></span>
+- <span data-ttu-id="c3f7f-120">Deze kunnen niet meerdere keren dezelfde tab-id bevatten in één tabgroep.</span><span class="sxs-lookup"><span data-stu-id="c3f7f-120">Cannot have the same tab ID multiple times in one tab group.</span></span>
 
-## <a name="tab-whitelist"></a><span data-ttu-id="2ab9b-121">Whitelist voor tabs</span><span class="sxs-lookup"><span data-stu-id="2ab9b-121">Tab whitelist</span></span>
+## <a name="approved-tabs"></a><span data-ttu-id="c3f7f-121">Goedgekeurde tabbladen</span><span class="sxs-lookup"><span data-stu-id="c3f7f-121">Approved tabs</span></span>
 
-<span data-ttu-id="2ab9b-122">De volgende tabnaam-/tab-id-paren zijn in een whitelist opgenomen.</span><span class="sxs-lookup"><span data-stu-id="2ab9b-122">The following tab name/tab ID pairs are whitelisted.</span></span> <span data-ttu-id="2ab9b-123">Afhankelijke tab-id's zijn niet gepaard maar moeten geldig zijn op basis van de kolom Tab-id.</span><span class="sxs-lookup"><span data-stu-id="2ab9b-123">Dependent tab IDs are not paired but must be valid per the Tab ID column.</span></span> <span data-ttu-id="2ab9b-124">De waarden zijn hoofdlettergevoelig</span><span class="sxs-lookup"><span data-stu-id="2ab9b-124">The values are case-sensitive</span></span>
+<span data-ttu-id="c3f7f-122">De volgende tabnaam-/tab-id-paren zijn goedgekeurd.</span><span class="sxs-lookup"><span data-stu-id="c3f7f-122">The following tab name/tab ID pairs are approved.</span></span> <span data-ttu-id="c3f7f-123">Afhankelijke tab-id's zijn niet gepaard maar moeten geldig zijn op basis van de kolom Tab-id.</span><span class="sxs-lookup"><span data-stu-id="c3f7f-123">Dependent tab IDs are not paired but must be valid per the Tab ID column.</span></span> <span data-ttu-id="c3f7f-124">De waarden zijn hoofdlettergevoelig</span><span class="sxs-lookup"><span data-stu-id="c3f7f-124">The values are case-sensitive</span></span>
 
-|<span data-ttu-id="2ab9b-125">Naam van het tab</span><span class="sxs-lookup"><span data-stu-id="2ab9b-125">Tab name</span></span>              |<span data-ttu-id="2ab9b-126">Id van de tab</span><span class="sxs-lookup"><span data-stu-id="2ab9b-126">Tab ID</span></span>            |
+|<span data-ttu-id="c3f7f-125">Naam van het tab</span><span class="sxs-lookup"><span data-stu-id="c3f7f-125">Tab name</span></span>              |<span data-ttu-id="c3f7f-126">Id van de tab</span><span class="sxs-lookup"><span data-stu-id="c3f7f-126">Tab ID</span></span>            |
 |----------------------|------------------|
 |`[.NET]`              |`(#tab/dotnet)`   |
 |`[.NET Core 1.x]`     |`(#tab/netcore1x)`|
