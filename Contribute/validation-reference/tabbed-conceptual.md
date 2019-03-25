@@ -1,3 +1,11 @@
+---
+ms.openlocfilehash: fa7cd177f6c4a3c4862677dbfa89f63a91e7f464
+ms.sourcegitcommit: 42e5a6ae071826afc2a32a9b7150ca113b39afdf
+ms.translationtype: HT
+ms.contentlocale: nl-NL
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "57987808"
+---
 # <a name="tabbed-conceptual"></a>Tabbed conceptual
 
 > [!IMPORTANT]
@@ -58,13 +66,13 @@ De volgende validaties gelden voor syntaxis van tabs:
 - Er is slechts één niveau van afhankelijkheid toegestaan.
 - Er zijn minimaal twee tabs toegestaan.
 - Er zijn niet meer dan vier tabs toegestaan.
-- Tabs moet in een whitelist zijn opgenomen.
+- Tabbladen moeten worden goedgekeurd.
 - Tab-id-paren moeten geldig zijn.
 - Deze kunnen niet meerdere keren dezelfde tab-id bevatten in één tabgroep.
 
-## <a name="tab-whitelist"></a>Whitelist voor tabs
+## <a name="approved-tabs"></a>Goedgekeurde tabbladen
 
-De volgende tabnaam-/tab-id-paren zijn in een whitelist opgenomen. Afhankelijke tab-id's zijn niet gepaard maar moeten geldig zijn op basis van de kolom Tab-id. De waarden zijn hoofdlettergevoelig
+De volgende tabnaam-/tab-id-paren zijn goedgekeurd. Afhankelijke tab-id's zijn niet gepaard maar moeten geldig zijn op basis van de kolom Tab-id. De waarden zijn hoofdlettergevoelig
 
 |Naam van het tab              |Id van de tab            |
 |----------------------|------------------|

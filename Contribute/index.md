@@ -12,9 +12,9 @@ Welkom bij de stijlgids voor [docs.microsoft.com](https://docs.microsoft.com) (o
 
 Meerdere Microsoft-documentatiesets zijn open source en worden gehost op GitHub. Sommige documentatiesets zijn nog niet volledig open source, maar hebben een openbare opslagplaats waarvoor u pull-aanvragen kunt maken. Zo kan de communicatie tussen productengineers, de inhoudsteams en onze klanten worden gestroomlijnd en verbeterd. In het openbaar werken biedt verschillende voordelen:
 
-- Met openbare planning in opensourceopslagplaatsen kan feedback worden verkregen over welke documenten het meest nodig zijn.
-- Met openbare controles in opensourceopslagplaatsen kan de inhoud die het nuttigst is, in de eerste versie worden gepubliceerd.
-- Met openbare updates in opensourceopslagplaatsen is het eenvoudiger om de inhoud doorlopend te verbeteren.
+- Met _openbare planning_ in opensourceopslagplaatsen kan feedback worden verkregen over welke documenten het meest nodig zijn.
+- Met _openbare controles_ in opensourceopslagplaatsen kan de inhoud die het nuttigst is, in de eerste versie worden gepubliceerd.
+- Met _openbare updates_ in opensourceopslagplaatsen is het eenvoudiger om de inhoud doorlopend te verbeteren.
 
 De gebruikerservaring op [docs.microsoft.com](https://docs.microsoft.com) is rechtstreeks geïntegreerd met werkstromen van [GitHub](https://github.com) om dit nog eenvoudiger te maken. U kunt beginnen door [het document te bewerken dat u bekijkt](#quick-edits-to-existing-documents). Of u kunt helpen door [nieuwe onderwerpen te beoordelen](#review-open-prs) of [kwaliteitsproblemen te melden](#create-quality-issues).
 
@@ -25,9 +25,9 @@ De gebruikerservaring op [docs.microsoft.com](https://docs.microsoft.com) is rec
 
 ## <a name="quick-edits-to-existing-documents"></a>Snelle bewerkingen van bestaande documenten
 
-Met snelle bewerkingen wordt het proces voor het rapporteren en herstellen van kleine fouten en weglatingen in documenten gestroomlijnd. Ondanks alle moeite kunnen toch kleine grammatica- en spelfouten in uw gepubliceerde documenten opduiken. U kunt fouten rapporteren door een probleemmelding te maken. Als deze optie beschikbaar is, kunt u problemen echter ook melden via een pull-aanvraag. Dat is sneller en eenvoudiger.
+Met snelle bewerkingen wordt het proces voor het rapporteren en herstellen van kleine fouten en weglatingen in documenten gestroomlijnd. Ondanks alle moeite kunnen _toch_ kleine grammatica- en spelfouten in uw gepubliceerde documenten opduiken. U kunt fouten rapporteren door een probleemmelding te maken. Als deze optie beschikbaar is, kunt u problemen echter ook melden via een pull-aanvraag. Dat is sneller en eenvoudiger.
 
-1. Op sommige documentatiepagina's kunt u rechtstreeks in de browser inhoud bewerken. Als dat het geval is, wordt de knop **Bewerken** weergegeven. Zie het voorbeeld hieronder. Wanneer u op de knop **Bewerken** (of de gelokaliseerde equivalent hiervan) klikt, gaat u naar het bronbestand op GitHub. Als u de knop **Bewerken** (potloodpictogram) niet ziet, betekent dit dat de documentatiepagina niet kan worden gewijzigd.
+1. Op sommige documentatiepagina's kunt u rechtstreeks in de browser inhoud bewerken. Als dat het geval is, wordt de knop **Bewerken** weergegeven. Zie het voorbeeld hieronder. Wanneer u op de knop **Bewerken** (of de gelokaliseerde equivalent hiervan) klikt, gaat u naar het bronbestand op GitHub. Als u de knop **Bewerken** (potloodpictogram zonder tekst) niet ziet, betekent dit dat de documentatiepagina niet kan worden gewijzigd.
 
    ![Locatie van de link Bewerken](./media/index/edit-article.png)
 
@@ -46,7 +46,7 @@ Met snelle bewerkingen wordt het proces voor het rapporteren en herstellen van k
 
    ![pull-aanvraag maken](media/index/create-pull-request.png)
 
-   Klik op **Pull-aanvraag maken**, voer een titel (en optioneel een beschrijving) in voor de pull-aanvraag. Klik vervolgens opnieuw op **Pull-aanvraag maken**.
+   Klik op **Pull-aanvraag maken**, voer een titel (en optioneel een beschrijving) in voor de pull-aanvraag. Klik vervolgens opnieuw op **Pull-aanvraag maken**. (Als u niet bekend bent met GitHub, leest u [About Pull Requests](https://help.github.com/en/articles/about-pull-requests) (Over pull-aanvragen) voor meer informatie.)
 
 6. Dat is alles. Uw PR wordt door leden van het inhoudsteam gecontroleerd en samengevoegd. Als u grotere wijzigingen hebt aangebracht, krijgt u misschien feedback waarin u wordt gevraagd om wijzigingen aan te brengen.
 
@@ -72,7 +72,7 @@ Onze documentatie wordt doorlopend aangevuld en verbeterd. Dankzij goede problee
 
 Veel van de documentatiepagina's van Microsoft bevatten onderaan een gedeelte **Feedback**. Hier kunt u op klikken om **productfeedback** of **inhoudsfeedback** te geven met betrekking tot problemen in het artikel.
 
-Probleemmeldingen zijn het startpunt om te bespreken wat er nodig is. Het inhoudsteam reageert op deze probleemmeldingen met ideeën over wat we kunnen toevoegen, en vraagt om uw mening. Wanneer we een concept maken, vragen we u om [de PR te beoordelen](#review-open-prs).
+Probleemmeldingen zijn het startpunt om te bespreken wat er nodig is. Het inhoudsteam reageert op deze probleemmeldingen met ideeën over wat we kunnen toevoegen, en vraagt om uw mening. Wanneer we een concept maken, vragen we u om [de PR te beoordelen](#review-open-PRs).
 
 ## <a name="get-more-involved"></a>Meer betrokken raken
 
