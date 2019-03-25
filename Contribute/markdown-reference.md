@@ -6,12 +6,12 @@ ms.author: mbradley
 ms.date: 05/18/2018
 ms.topic: contributor-guide
 ms.prod: non-product-specific
-ms.openlocfilehash: 17bc6d3bf2de5077f490bea2f03cddf23d925b78
-ms.sourcegitcommit: 203ca15fda2d217f082c74ec648c1f1db323f9f1
+ms.openlocfilehash: b4ac631a4ebdf7daf00bc39be80fe2e479720392
+ms.sourcegitcommit: 42e5a6ae071826afc2a32a9b7150ca113b39afdf
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 02/04/2019
-ms.locfileid: "55712942"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "57987877"
 ---
 # <a name="markdown-reference"></a>Markdown-naslaginformatie
 
@@ -90,7 +90,7 @@ Docs ondersteunt zes niveaus Markdown-koppen:
 
 ## <a name="html"></a>HTML
 
-Hoewel Markdown ondersteuning biedt voor inline-HTML, wordt HTML niet aanbevolen voor het publiceren naar Docs. Bovendien leidt dit, behalve bij een beperkte lijst met waarden, tot compileerfouten of -waarschuwingen. <!--For more information, see HTML Whitelist. // do we want to add the whitelist? -->
+Hoewel Markdown ondersteuning biedt voor inline-HTML, wordt HTML niet aanbevolen voor het publiceren naar Docs. Bovendien leidt dit, behalve bij een beperkte lijst met waarden, tot compileerfouten of -waarschuwingen.
 
 ## <a name="images"></a>Afbeeldingen
 
@@ -110,7 +110,7 @@ Afbeeldingen moeten worden opgeslagen in een `/media`-map in uw docset. De volge
 - .jpg
 - .png
 
-U kunt ook ondersteuning voor andere typen afbeeldingen toevoegen door deze toe te voegen als resources aan het docfx.json-bestand<!--add link to reference when available--> voor uw docset.
+U kunt ook ondersteuning voor andere typen afbeeldingen toevoegen door deze toe te voegen als resources aan het docfx.json-bestand<!--add link to reference when available--> voor uw doc-set.
 
 ## <a name="links"></a>Koppelingen
 
@@ -169,7 +169,7 @@ Op URL gebaseerde koppeling naar een andere webpagina (moet https:// bevatten).
 
 ### <a name="bookmark-links"></a>Bladwijzerkoppelingen
 
-Bladwijzerkoppeling naar een kop in een ander bestand in dezelfde opslagplaats:
+Bladwijzerkoppeling naar een kop in een ander bestand in dezelfde opslagplaats. Bijvoorbeeld:
 
 ```markdown
 [Managed Disks](../../linux/overview.md#managed-disks)
@@ -181,7 +181,12 @@ Bladwijzerkoppeling naar een kop in het huidige bestand:
 [Managed Disks](#managed-disks)
 ```
 
-Gebruik een hash-code gevolgd door de woorden van de kop zonder leestekens en met streepjes als vervanging voor spaties.
+Gebruik een hekje `#` gevolgd door de woorden van de koptekst. De koptekst wijzigen in koppelingtekst:
+- Alleen kleine letters gebruiken
+- Leestekens verwijderen
+- Spaties vervangen door streepjes
+
+Bijvoorbeeld als de koptekstnaam "2.2 Beveiligingsproblemen" is, is de tekst van de bladwijzerkoppeling ' #22-beveiligingsproblemen'.
 
 ### <a name="explicit-anchor-links"></a>Expliciete ankerkoppelingen
 
@@ -230,7 +235,7 @@ Voorbeelden:
 - `<xref:System.String?displayProperty=nameWithType>` wordt weergegeven als System.String.
 - `[String class](xref:System.String)` wordt weergeven als String class.
 
-Momenteel is er geen eenvoudige manier om de UID's te zoeken. <!-- ? -->De beste manier om de UID voor een API te zoeken, is om de bron van de API-pagina waaraan u wilt koppelen te bekijken en de waarde ms.assetid te zoeken. Afzonderlijke overbelastingswaarden worden in de bron niet weergegeven. We werken aan een beter systeem voor de toekomst.
+Momenteel is er geen eenvoudige manier om de UID's te zoeken. <!-- ? -->De beste manier om de UID voor een API te zoeken, is om de bron van de API-pagina waaraan u wilt koppelen te bekijken en de waarde ms.assetid te vinden. Afzonderlijke overbelastingswaarden worden in de bron niet weergegeven. We werken aan een beter systeem voor de toekomst.
 
 Wanneer de UID de speciale tekens \`, \# of \* bevat, moet de waarde van de UID respectievelijk als `%60`, `%23` en `%2A` met HTML worden gecodeerd. U ziet soms haakjes in de code, maar dat is geen vereiste.
 
@@ -336,7 +341,8 @@ U kunt elke ondersteunde koppeling in een volgende stapactie gebruiken, met inbe
 
 ## <a name="section-definition"></a>Sectiedefinitie
 
-<!-- more info about this would be helpful! --> U moet mogelijk een sectie definiëren. Deze syntaxis wordt voornamelijk gebruikt voor codetabellen.
+<!-- more info about this would be helpful! -->
+U moet mogelijk een sectie definiëren. Deze syntaxis wordt voornamelijk gebruikt voor codetabellen.
 Zie het volgende voorbeeld:
 
 ````
@@ -360,7 +366,8 @@ De eraan voorafgaande blockquote-Markdown-tekst wordt weergegeven als:
 
 ## <a name="selectors"></a>Selectors
 
-<!-- could be more clear! --> U kunt een selector gebruiken wanneer u verschillende pagina's voor hetzelfde artikel met elkaar wilt verbinden. Lezers kunnen dan schakelen tussen die pagina's.
+<!-- could be more clear! -->
+U kunt een selector gebruiken wanneer u verschillende pagina's voor hetzelfde artikel met elkaar wilt verbinden. Lezers kunnen dan schakelen tussen die pagina's.
 
 > [!NOTE]
 > Deze extensie werkt anders tussen docs.microsoft.com en MSDN. <!-- should we keep info about MSDN? If so say how they differ?-->
