@@ -2,12 +2,12 @@
 title: Sjabloon en cheatsheet voor .NET-artikelen
 description: Dit artikel bevat een handige sjabloon waarmee u nieuwe artikelen kunt maken voor opslagplaatsen voor .NET-documenten
 ms.date: 11/07/2018
-ms.openlocfilehash: e342373a09b623dc71aadd63e8d8627d154ec8b6
-ms.sourcegitcommit: 203ca15fda2d217f082c74ec648c1f1db323f9f1
+ms.openlocfilehash: 9b57abd96093940c96f90a4a01b9f81eae063ffb
+ms.sourcegitcommit: af37d44eb67daa2841959817cd205ec95db18cec
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 02/04/2019
-ms.locfileid: "55712919"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "58653615"
 ---
 # <a name="metadata-and-markdown-template-for-net-docs"></a>Sjabloon voor metagegevens en Markdown voor .NET-documenten
 
@@ -132,7 +132,7 @@ U kunt de code invoegen met behulp van de volgende syntaxis:
 ```
 
 * `-<language>` (*optioneel*, maar *wel aanbevolen*)
-  * Taal van het codefragment waarnaar wordt verwezen. Zie [Ondersteunde talen](#supported-languages) voor een lijst met ondersteunde waarden.
+  * Taal van het codefragment waarnaar wordt verwezen.
 
 * `<name>`( *optioneel*)
   * Naam van het codefragment. Deze heeft geen invloed op het HTML-resultaat, maar u kunt deze gebruiken om de leesbaarheid van uw Markdown-bron te verbeteren.
