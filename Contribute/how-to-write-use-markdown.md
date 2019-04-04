@@ -1,19 +1,18 @@
 ---
 title: Markdown gebruiken voor het schrijven van documenten
 description: Dit artikel biedt de basis- en referentie-informatie voor de Markdown-taal die wordt gebruikt voor het schrijven van artikelen op docs.microsoft.com.
-ms.date: 01/29/2019
-ms.openlocfilehash: 5235189d11c8c20ac20c91572d8bafcf525fb7c0
-ms.sourcegitcommit: fbdd61ae4fb3761aec072732eefcbf2c2dca8011
+ms.date: 03/26/2019
+ms.openlocfilehash: eeb49961fbf530676b55ae4e42d4fca7b8d7edf7
+ms.sourcegitcommit: 8e897e90268a8a87dc4b97d7c28d22ed5950c8d9
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 02/07/2019
-ms.locfileid: "55887293"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "58637478"
 ---
 # <a name="how-to-use-markdown-for-writing-docs"></a>Markdown gebruiken voor het schrijven van documenten
 
-Artikelen op [docs.microsoft.com](http://docs.microsoft.com) worden geschreven in de toegankelijke opmaakcodetaal [Markdown](https://daringfireball.net/projects/markdown/), die eenvoudig te lezen en eenvoudig te leren is. Daarom is het al snel een standaardopmaaktaal geworden.
+Artikelen op [docs.microsoft.com](http://docs.microsoft.com) worden geschreven in de toegankelijke opmaakcodetaal [Markdown](https://daringfireball.net/projects/markdown/), die eenvoudig te lezen en eenvoudig te leren is. Daarom is het al snel een standaardopmaaktaal geworden. De docs-site maakt gebruik van de [Markdig-variant](#markdown-flavor) van Markdown.
 
-De back-end van docs.microsoft.com gebruikt Open Publishing Services (OPS), dat ondersteuning biedt voor Markdown die compatibel is met [CommanMark](https://commonmark.org/) en is geparseerd via [Markdig](https://github.com/lunet-io/markdig), evenals voor [DocFX Flavored Markdown (DFM)](https://dotnet.github.io/docfx/). Deze Markdown-typen zijn meestal geschikt voor [GitHub Flavored Markdown (GFM)](https://help.github.com/categories/writing-on-github/), aangezien de meeste docs worden bewaard in GitHub en daar kunnen worden bewerkt. Er wordt aanvullende functionaliteit toegevoegd met Markdown-extensies.
 
 ## <a name="markdown-basics"></a>Basisbeginselen van Markdown
 
@@ -162,7 +161,6 @@ weergegeven als:
 
 Ga voor meer informatie over het maken van tabellen naar:
 
-- De [functie voor tabelterugloop](#table-wrapping) van Markdig biedt ondersteuning bij het opmaken van brede tabellen.
 - [Informatie ordenen met tabellen](https://help.github.com/articles/organizing-information-with-tables/) in GitHub.
 - De web-app [Markdown-tabelgenerator](https://www.tablesgenerator.com/markdown_tables).
 - [Referentiemateriaal voor Markdown van Adam Pritchard](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet#wiki-tables).
@@ -207,6 +205,7 @@ Deze talen bieden ondersteuning voor beschrijvende namen en de meeste talen hebb
 |AzCopy|azcopy|
 |Azure CLI|azurecli|
 |Azure PowerShell|azurepowershell|
+|Bash|bash|
 |C++|cpp|
 |C++/CX|cppcx|
 |C++/WinRT|cppwinrt|
@@ -430,6 +429,10 @@ Hieronder vindt u de codering voor de gekrulde versies van deze leestekens:
 Het is gebruikelijk punthaken te gebruiken om een tijdelijke aanduiding aan te geven. Als u dit in tekst doet (dus niet in code), moet u de punthaken coderen. Anders zal Markdown deze aanzien voor HTML-code.
 
 Voorbeeld: codeer `<script name>` als `&lt;script name&gt;`
+
+## <a name="markdown-flavor"></a>Markdown-variant
+
+De back-end van docs.microsoft.com gebruikt Open Publishing Services (OPS), dat ondersteuning biedt voor Markdown die compatibel is met [CommonMark](https://commonmark.org/) en is geparseerd via de parseerengine [Markdig](https://github.com/lunet-io/markdig). Deze Markdown-variant is meestal geschikt voor [GitHub Flavored Markdown (GFM)](https://help.github.com/categories/writing-on-github/), aangezien de meeste docs worden bewaard in GitHub en daar kunnen worden bewerkt. Er wordt aanvullende functionaliteit toegevoegd met Markdown-extensies.
 
 ## <a name="see-also"></a>Zie ook:
 

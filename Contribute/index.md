@@ -4,13 +4,18 @@ description: In de handleiding wordt beschreven hoe u kunt bijdragen aan de Micr
 author: billwagner
 ms.author: wiwagn
 ms.date: 02/19/2019
+ms.openlocfilehash: 9b091f864f5191c9f7a00900ec11a4a1cffdb698
+ms.sourcegitcommit: af37d44eb67daa2841959817cd205ec95db18cec
+ms.translationtype: HT
+ms.contentlocale: nl-NL
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "58653500"
 ---
-
 # <a name="microsoft-docs-contributor-guide-overview"></a>Gids voor inzenders van Microsoft Docs: overzicht
 
 Welkom bij de stijlgids voor [docs.microsoft.com](https://docs.microsoft.com) (ook bekend als Docs).
 
-Meerdere Microsoft-documentatiesets zijn open source en worden gehost op GitHub. Sommige documentatiesets zijn nog niet volledig open source, maar hebben een openbare opslagplaats waarvoor u pull-aanvragen kunt maken. Zo kan de communicatie tussen productengineers, de inhoudsteams en onze klanten worden gestroomlijnd en verbeterd. In het openbaar werken biedt verschillende voordelen:
+Meerdere Microsoft-documentatiesets zijn open source en worden gehost op GitHub. Niet alle documentatiesets zijn volledig open source, maar vele hebben een openbare opslagplaats waar u aanbevolen wijzigingen kunt aanbrengen via pull-aanvragen. Deze open source-benadering stroomlijnt en verbetert niet alleen de communicatie tussen productengineers, inhoudsteams en klanten, maar biedt ook nog andere voordelen:
 
 - Met _openbare planning_ in opensourceopslagplaatsen kan feedback worden verkregen over welke documenten het meest nodig zijn.
 - Met _openbare controles_ in opensourceopslagplaatsen kan de inhoud die het nuttigst is, in de eerste versie worden gepubliceerd.
@@ -72,7 +77,7 @@ Onze documentatie wordt doorlopend aangevuld en verbeterd. Dankzij goede problee
 
 Veel van de documentatiepagina's van Microsoft bevatten onderaan een gedeelte **Feedback**. Hier kunt u op klikken om **productfeedback** of **inhoudsfeedback** te geven met betrekking tot problemen in het artikel.
 
-Probleemmeldingen zijn het startpunt om te bespreken wat er nodig is. Het inhoudsteam reageert op deze probleemmeldingen met ideeën over wat we kunnen toevoegen, en vraagt om uw mening. Wanneer we een concept maken, vragen we u om [de PR te beoordelen](#review-open-PRs).
+Probleemmeldingen zijn het startpunt om te bespreken wat er nodig is. Het inhoudsteam reageert op deze probleemmeldingen met ideeën over wat we kunnen toevoegen, en vraagt om uw mening. Wanneer we een concept maken, vragen we u om [de PR te beoordelen](#review-open-prs).
 
 ## <a name="get-more-involved"></a>Meer betrokken raken
 
