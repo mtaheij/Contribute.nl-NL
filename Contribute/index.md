@@ -1,6 +1,6 @@
 ---
 title: 'Gids voor inzenders van Microsoft Docs: overzicht'
-description: In de handleiding wordt beschreven hoe u kunt bijdragen aan de Microsoft-documentatiesite docs.microsoft.com.
+description: In deze gids wordt beschreven hoe u kunt bijdragen aan de Microsoft-documentatiesite docs.microsoft.com.
 author: billwagner
 ms.author: wiwagn
 ms.date: 02/19/2019
@@ -13,7 +13,7 @@ ms.locfileid: "58653500"
 ---
 # <a name="microsoft-docs-contributor-guide-overview"></a>Gids voor inzenders van Microsoft Docs: overzicht
 
-Welkom bij de stijlgids voor [docs.microsoft.com](https://docs.microsoft.com) (ook bekend als Docs).
+Welkom bij de gids voor inzenders voor [docs.microsoft.com](https://docs.microsoft.com) (ook bekend als Docs).
 
 Meerdere Microsoft-documentatiesets zijn open source en worden gehost op GitHub. Niet alle documentatiesets zijn volledig open source, maar vele hebben een openbare opslagplaats waar u aanbevolen wijzigingen kunt aanbrengen via pull-aanvragen. Deze open source-benadering stroomlijnt en verbetert niet alleen de communicatie tussen productengineers, inhoudsteams en klanten, maar biedt ook nog andere voordelen:
 
@@ -30,13 +30,13 @@ De gebruikerservaring op [docs.microsoft.com](https://docs.microsoft.com) is rec
 
 ## <a name="quick-edits-to-existing-documents"></a>Snelle bewerkingen van bestaande documenten
 
-Met snelle bewerkingen wordt het proces voor het rapporteren en herstellen van kleine fouten en weglatingen in documenten gestroomlijnd. Ondanks alle moeite kunnen _toch_ kleine grammatica- en spelfouten in uw gepubliceerde documenten opduiken. U kunt fouten rapporteren door een probleemmelding te maken. Als deze optie beschikbaar is, kunt u problemen echter ook melden via een pull-aanvraag. Dat is sneller en eenvoudiger.
+Met snelle bewerkingen wordt het proces voor het rapporteren en herstellen van kleine fouten en weglatingen in documenten gestroomlijnd. Ondanks alle moeite kunnen er _toch_ kleine grammatica- en spelfouten in onze gepubliceerde documenten opduiken. U kunt fouten rapporteren door een probleemmelding te maken. Als deze optie beschikbaar is, kunt u problemen echter ook melden via een pull-aanvraag. Dat is sneller en eenvoudiger.
 
-1. Op sommige documentatiepagina's kunt u rechtstreeks in de browser inhoud bewerken. Als dat het geval is, wordt de knop **Bewerken** weergegeven. Zie het voorbeeld hieronder. Wanneer u op de knop **Bewerken** (of de gelokaliseerde equivalent hiervan) klikt, gaat u naar het bronbestand op GitHub. Als u de knop **Bewerken** (potloodpictogram zonder tekst) niet ziet, betekent dit dat de documentatiepagina niet kan worden gewijzigd.
+1. Op sommige documentatiepagina's kunt u rechtstreeks in de browser inhoud bewerken. Als dat het geval is, wordt de knop **Bewerken** weergegeven. Zie het voorbeeld hieronder. Wanneer u op de knop **Bewerken** klikt, gaat u naar het bronbestand op GitHub. Als u de knop **Bewerken** (potloodpictogram zonder tekst) niet ziet, betekent dit dat de documentatiepagina niet kan worden gewijzigd.
 
-   ![Locatie van de link Bewerken](./media/index/edit-article.png)
+   ![Locatie van de koppeling Bewerken](./media/index/edit-article.png)
 
-2. Klik vervolgens op het potloodpictogram om het artikel te bewerken zoals hieronder wordt weergegeven. Als het potloodpictogram grijs wordt weergegeven, moet u bij uw GitHub-account aanmelden of een nieuw account maken. 
+2. Klik vervolgens op het potloodpictogram om het artikel te bewerken zoals hieronder wordt weergegeven. Als het potloodpictogram grijs wordt weergegeven, moet u zich bij uw GitHub-account aanmelden of een nieuw account maken. 
 
    ![Locatie van het potloodpictogram](./media/index/edit-icon.png)
 
@@ -51,7 +51,7 @@ Met snelle bewerkingen wordt het proces voor het rapporteren en herstellen van k
 
    ![pull-aanvraag maken](media/index/create-pull-request.png)
 
-   Klik op **Pull-aanvraag maken**, voer een titel (en optioneel een beschrijving) in voor de pull-aanvraag. Klik vervolgens opnieuw op **Pull-aanvraag maken**. (Als u niet bekend bent met GitHub, leest u [About Pull Requests](https://help.github.com/en/articles/about-pull-requests) (Over pull-aanvragen) voor meer informatie.)
+   Klik op **Pull-aanvraag maken**en voer een titel (en optioneel een beschrijving) in voor de pull-aanvraag. Klik vervolgens opnieuw op **Pull-aanvraag maken**. (Als u niet bekend bent met GitHub, leest u [About Pull Requests](https://help.github.com/en/articles/about-pull-requests) (Over pull-aanvragen) voor meer informatie.)
 
 6. Dat is alles. Uw PR wordt door leden van het inhoudsteam gecontroleerd en samengevoegd. Als u grotere wijzigingen hebt aangebracht, krijgt u misschien feedback waarin u wordt gevraagd om wijzigingen aan te brengen.
 
@@ -59,7 +59,7 @@ De gebruikersinterface voor GitHub-bewerkingen reageert op uw machtigingen voor 
 
 De pull-aanvragen worden gebruikt voor alle wijzigingen en dus ook voor inzenders die over schrijfrechten beschikken. Bij de meeste opslagplaatsen is de `master`-vertakking beschermd, zodat updates als pull-aanvragen moeten worden verzonden.
 
-Voor kleinere of incidentele wijzigingen kunt u het beste de bewerkingservaring binnen browsers gebruiken. Als u grote bijdrage levert of geavanceerde Git-functies gebruikt (zoals vertakkingsbeheer of geavanceerde oplossingen voor samenvoegingsconflicten), moet u de [opslagplaats splitsen en lokaal werken](how-to-write-workflows-major.md).
+Voor kleinere of incidentele wijzigingen kunt u het beste de bewerkingservaring binnen browsers gebruiken. Als u grote bijdragen levert of geavanceerde Git-functies gebruikt (zoals vertakkingsbeheer of geavanceerde oplossingen voor samenvoegingsconflicten), moet u de [opslagplaats splitsen en lokaal werken](how-to-write-workflows-major.md).
 
 > [!NOTE]
 > Als deze functie is ingeschakeld, kunt u een artikel in **elke taal** bewerken. Afhankelijk van het soort bewerking gebeurt dan het volgende:
