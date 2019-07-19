@@ -45,19 +45,19 @@ Geeft een waarschuwing voor een Docs Markdown-extensie om blokcitaten te maken d
 Deze waarschuwingen zien er op docs.microsoft.com als volgt uit:
 
 > [!NOTE]
-> Informatie die de gebruiker ook bij globaal scannen moet zien.
+> Information the user should notice even if skimming.
 
 > [!TIP]
-> Optionele informatie waarmee een gebruiker meer succes zal hebben.
+> Optional information to help a user be more successful.
 
 > [!IMPORTANT]
-> Informatie die essentieel voor de gebruiker is om succes te hebben.
+> Essential information required for user success.
 
 > [!CAUTION]
-> Mogelijke negatieve gevolgen van een actie.
+> Negative potential consequences of an action.
 
 > [!WARNING]
-> Bepaalde gevaarlijke gevolgen van een actie.
+> Dangerous certain consequences of an action.
 
 ## <a name="code-snippets"></a>Codefragmenten
 
@@ -267,11 +267,11 @@ Gebruik geen letters in lijsten, ook niet in geneste lijsten. Deze worden bij he
 
 Dit wordt weergegeven als:
 
-1. Dit is
-1. een bovenliggende lijst met nummers
-   1. en dit is
-   1. een geneste lijst met nummers
-1. (einde)
+1. This is
+1. a parent numbered list
+   1. and this is
+   1. a nested numbered list
+1. (fin)
 
 ### <a name="bulleted-list"></a>Lijst met opsommingstekens
 
@@ -287,11 +287,11 @@ Als u een lijst met opsommingstekens wilt maken, gebruikt u `-` gevolgd door een
 
 Dit wordt weergegeven als:
 
-- Dit is
-- een bovenliggende lijst met opsommingstekens
-  - en dit is
-  - een geneste lijst met opsommingstekens
-- Klaar!
+- This is
+- a parent bulleted list
+  - and this is
+  - a nested bulleted list
+- All done!
 
 ### <a name="checklist"></a>Controlelijst
 
@@ -307,9 +307,9 @@ Controlelijsten zijn beschikbaar voor gebruik op (alleen) docs.microsoft.com via
 Dit voorbeeld wordt op docs.microsoft.com weergegeven als:
 
 > [!div class="checklist"]
-> * Lijstitem 1
-> * Lijstitem 2
-> * Lijstitem 3
+> * List item 1
+> * List item 2
+> * List item 3
 
 Gebruik controlelijsten aan het begin of eind van een artikel om inhoud voor 'Wat gaat u leren' of 'Wat hebt u geleerd' samen te vatten. Voeg geen willekeurige controlelijsten ergens anders in een artikel toe.
 <!-- is this guidance still accurate? -->
@@ -335,7 +335,7 @@ Bijvoorbeeld:
 Dit wordt weergegeven als:
 
 > [!div class="nextstepaction"]
-> [Informatie over de basisstijl](style-quick-start.md)
+> [Learn about basic style](style-quick-start.md)
 
 U kunt elke ondersteunde koppeling in een volgende stapactie gebruiken, met inbegrip van een Markdown-koppeling naar een andere webpagina. In de meeste gevallen is de koppeling voor de volgende actie een relatieve koppeling naar een ander bestand in dezelfde docset.
 
@@ -441,10 +441,10 @@ De eenvoudigste manier om een tabel in Markdown te maken is gebruik te maken van
 
 Dit wordt weergegeven als:
 
-|Dit is   |een eenvoudige   |tabelkop|
+|This is   |a simple   |table header|
 |----------|-----------|------------|
-|tabel     |gegevens       |hier        |
-|deze hoeft niet|precies   |te zijn uitgelijnd.||
+|table     |data       |here        |
+|it doesn't|actually   |have to line up nicely!||
 
 U kunt ook een tabel zonder kop maken. Ga bijvoorbeeld als volgt te werk om een lijst met meerdere kolommen te maken:
 
@@ -459,8 +459,8 @@ Dit wordt als volgt weergegeven:
 
 |   |   |
 | - | - |
-| Deze | tabel |
-| heeft geen | kop |
+| This | table |
+| has no | header |
 
 U kunt de kolommen uitlijnen met behulp van dubbele punten:
 
@@ -476,9 +476,9 @@ Wordt weergegeven als:
 
 |                  |
 |------------------|
-|    rechts uitgelijnd:|
-|:links uitgelijnd     |
-|:gecentreerd        :|
+|    right aligned:|
+|:left aligned     |
+|:centered        :|
 
 > [!TIP]
 > U kunt met Docs Authoring Extension voor VS Code gemakkelijk basis-Markdown-tabellen toevoegen.
@@ -506,11 +506,11 @@ Hier ziet u een Markdown-voorbeeld van een tabel met drie rijen die teruglopen d
 Deze wordt als volgt weergegeven:
 
 > [!div class="mx-tdBreakAll"]
-> |Naam|Syntaxis|Verplicht voor installatie op de achtergrond?|Beschrijving|
+> |Name|Syntax|Mandatory for silent installation?|Description|
 > |-------------|----------|---------|---------|
-> |Quiet|/quiet|Ja|Het installatieprogramma wordt uitgevoerd zonder dat de UI of prompts worden weergegeven.|
-> |NoRestart|/norestart|Nee|Onderdrukt elke poging tot herstarten. De UI geeft standaard een prompt vóór de herstart.|
-> |Help|/help|Nee|Biedt hulp- en naslaginformatie. Geeft het juiste gebruik van de setup-opdracht weer, samen met een overzicht van alle opties en alle gedrag.|
+> |Quiet|/quiet|Yes|Runs the installer, displaying no UI and no prompts.|
+> |NoRestart|/norestart|No|Suppresses any attempts to restart. By default, the UI will prompt before restart.|
+> |Help|/help|No|Provides help and quick reference. Displays the correct use of the setup command, including a list of all options and behaviors.|
 
 ### <a name="mx-tdcol2breakall"></a>mx-tdCol2BreakAll
 

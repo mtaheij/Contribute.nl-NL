@@ -81,9 +81,9 @@ Als u een ongeordende lijst of een lijst met opsommingstekens wilt opmaken, kunt
 
 weergegeven als:
 
-- Lijstitem 1
-- Lijstitem 2
-- Lijstitem 3
+- List item 1
+- List item 2
+- List item 3
 
 Als u een lijst in een andere lijst wilt nesten, laat u de lijstitems van de onderliggende lijst inspringen. Zo wordt de volgende Markdown:
 
@@ -96,10 +96,10 @@ Als u een lijst in een andere lijst wilt nesten, laat u de lijstitems van de ond
 
 weergegeven als:
 
-- Lijstitem 1
-  - Lijstitem A
-  - Lijstitem B
-- Lijstitem 2
+- List item 1
+  - List item A
+  - List item B
+- List item 2
 
 #### <a name="ordered-list"></a>Geordende lijst
 
@@ -113,9 +113,9 @@ Als u een geordende lijst/stapsgewijze lijst wilt opmaken, gebruikt u de bijbeho
 
 weergegeven als:
 
-1. Eerste instructie
-2. Tweede instructie
-3. Derde instructie
+1. First instruction
+2. Second instruction
+3. Third instruction
 
 Als u een lijst in een andere lijst wilt nesten, laat u de lijstitems van de onderliggende lijst inspringen. Zo wordt de volgende Markdown:
 
@@ -128,10 +128,10 @@ Als u een lijst in een andere lijst wilt nesten, laat u de lijstitems van de ond
 
 weergegeven als:
 
-1. Eerste instructie
-   1. Subinstructie
-   2. Subinstructie
-2. Tweede instructie
+1. First instruction
+   1. Sub-instruction
+   2. Sub-instruction
+2. Second instruction
 
 Merk op dat we '1.' gebruiken voor alle vermeldingen. Hierdoor is het eenvoudiger om later verschillen te beoordelen als er in latere updates nieuwe stappen worden toegevoegd of bestaande stappen worden verwijderd.
 
@@ -152,12 +152,12 @@ Zo wordt de volgende Markdown:
 
 Wordt weergegeven als:
 
-| Pret                  | met                 | Tabellen          |
+| Fun                  | With                 | Tables          |
 | :------------------- | -------------------: |:---------------:|
-| links uitgelijnde kolom  | rechts uitgelijnde kolom | gecentreerde kolom |
-| USD 100                 | USD 100                 | USD 100            |
-| USD 10                  | USD 10                  | USD 10             |
-| USD 1                   | USD 1                   | USD 1              |
+| left-aligned column  | right-aligned column | centered column |
+| $100                 | $100                 | $100            |
+| $10                  | $10                  | $10             |
+| $1                   | $1                   | $1              |
 
 Ga voor meer informatie over het maken van tabellen naar:
 
@@ -336,16 +336,16 @@ Voorbeelden:
 Deze worden als volgt weergegeven:
 
 > [!NOTE]
-> Dit is een OPMERKING
+> This is a NOTE
 
 > [!WARNING]
-> Dit is een WAARSCHUWING
+> This is a WARNING
 
 > [!TIP]
-> Dit is een TIP
+> This is a TIP
 
 > [!IMPORTANT]
-> Dit is BELANGRIJK
+> This is IMPORTANT
 
 ### <a name="include-files"></a>Bestanden opnemen
 
