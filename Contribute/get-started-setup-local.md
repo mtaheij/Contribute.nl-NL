@@ -4,12 +4,12 @@ description: Dit artikel biedt ondersteuning bij het maken van uw lokale Git-ops
 author: jasonwhowell
 ms.author: jasonh
 ms.date: 01/18/2018
-ms.openlocfilehash: 5373bf34399105c15caabe0abdc1ea0692c46a4a
-ms.sourcegitcommit: 44eb4f5ee65c1848d7f36fca107b296eb7687397
+ms.openlocfilehash: 1053900b0af5a0ea3dec99ccd27114f16b828406
+ms.sourcegitcommit: c6a5a715af1b915ecd4ef64d40f7d18c6035c858
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 11/13/2018
-ms.locfileid: "51609494"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "68669911"
 ---
 # <a name="set-up-git-repository-locally-for-documentation"></a>Een lokale Git-opslagplaats voor documentatie instellen
 
@@ -55,6 +55,7 @@ De documentatie die op [docs.microsoft.com](https://docs.microsoft.com) wordt ge
    - Documentatie over Visual Studio [https://github.com/MicrosoftDocs/visualstudio-docs](https://github.com/MicrosoftDocs/visualstudio-docs)
    - Documentatie over .NET [https://github.com/dotnet/docs](https://github.com/dotnet/docs)
    - Documentatie over Azure .NET SDK[https://github.com/azure/azure-docs-sdk-dotnet](https://github.com/azure/azure-docs-sdk-dotnet)
+   - Documentatie over ConfigMgr [https://github.com/MicrosoftDocs/SCCMdocs ] (https://github.com/MicrosoftDocs/SCCMdocs/)
 
 ## <a name="fork-the-repository"></a>De opslagplaats splitsen
 Maak met behulp van de juiste opslagplaats een fork van de opslagplaats naar uw eigen GitHub-account via de GitHub-website.
