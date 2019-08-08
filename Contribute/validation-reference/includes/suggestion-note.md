@@ -1,12 +1,12 @@
 ---
 author: meganbradley
 ms.author: mbradley
-ms.openlocfilehash: 97a5e8df1fbac10119a1bed7f979ad424db1cab0
-ms.sourcegitcommit: 4053577bd0478d711257a283ee661d618b49c2df
+ms.openlocfilehash: 22d9b3b13856e978aa5b8a902f27e460293e0bd0
+ms.sourcegitcommit: 495d49f10df51a8897687940aa653e906c48c2a0
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 03/05/2019
-ms.locfileid: "57457798"
+ms.lasthandoff: 08/06/2019
+ms.locfileid: "68819708"
 ---
 > [!IMPORTANT]
-> De regel is aanvankelijk ingeschakeld als 'Suggestie', zodat de inhoudteams tijd hebben om de impact te meten en een plan kunnen ontwikkelen om hun opslagplaatsen op te schonen. Suggesties vereisen geen onmiddellijke actie, maar u moet deze zo snel mogelijk oplossen, omdat suggesties naar verloop van tijd waarschuwingen of fouten worden. Meer informatie over wanneer de ernst wijzigt en waarin, wordt opgenomen in het bericht zodra deze beschikbaar komt.
+> De regel is aanvankelijk ingeschakeld als 'Suggestie', zodat de inhoudteams tijd hebben om de impact te meten en een plan kunnen ontwikkelen om hun opslagplaatsen op te schonen. **Deze wordt verhoogd naar een waarschuwing op 01-09-2019**.
