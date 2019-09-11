@@ -1,0 +1,39 @@
+---
+title: h1-no-space
+description: Uitleg en oplossing voor Docs-buildprobleem h1-no-space.
+author: meganbradley
+ms.author: mbradley
+ms.topic: error-reference
+ms.date: 12/12/2018
+ms.prod: non-product-specific
+ms.openlocfilehash: 7dd6a3d5cfc6def000d5bf7a5bf7810a16625cae
+ms.sourcegitcommit: 89147521f0aa3b39e7ddf390136b09a43d95c416
+ms.translationtype: HT
+ms.contentlocale: nl-NL
+ms.lasthandoff: 09/10/2019
+ms.locfileid: "70856238"
+---
+# <a name="h1-no-space"></a>h1-no-space
+
+[!INCLUDE [suggestion-note](includes/suggestion-note.md)]
+
+## <a name="suggestion"></a>Suggestie
+
+`A space is required after the hash (#) in H1.`
+
+H1 verwijst naar de eerste kop in een Markdown-bestand. Bij publicatie naar docs.microsoft.com wordt H1 boven aan de pagina weergegeven in een groot lettertype. U maakt een H1 door een regel te beginnen met één hash (#), gevolgd door een spatie en de tekst van de kop. Zonder de spatie na de hash, wordt een H1 niet herkend in Docs.
+
+## <a name="resolution"></a>Oplossing
+
+Voeg een spatie toe na de hash in uw H1 om dit probleem op te lossen.
+
+```markdown
+---
+author: meganbradley
+ms.author: mbradley
+---
+# This is an H1
+```
+
+<!--make sure to add this file to your includes folder and verify the path-->
+[!INCLUDE [validation-reference-help](includes/validation-reference-help.md)]
