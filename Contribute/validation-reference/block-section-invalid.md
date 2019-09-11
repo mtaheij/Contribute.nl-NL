@@ -4,28 +4,28 @@ description: Uitleg en oplossing voor Docs-buildprobleem block-section-invalid
 author: meganbradley
 ms.author: mbradley
 ms.topic: error-reference
-ms.date: 2/28/2019
+ms.date: 09/10/2019
 ms.prod: non-product-specific
-ms.openlocfilehash: 257b963ae37f5a8f0edc2fbca6186ab0f258cfc0
-ms.sourcegitcommit: 4053577bd0478d711257a283ee661d618b49c2df
+ms.openlocfilehash: 500527c7371dd9d4966460b3eafe0a44874fc4eb
+ms.sourcegitcommit: 89147521f0aa3b39e7ddf390136b09a43d95c416
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 03/05/2019
-ms.locfileid: "57427524"
+ms.lasthandoff: 09/10/2019
+ms.locfileid: "70848530"
 ---
-# <a name="block-section-invalid"></a><span data-ttu-id="8e82f-103">block-section-invalid</span><span class="sxs-lookup"><span data-stu-id="8e82f-103">block-section-invalid</span></span>
+# <a name="block-section-invalid"></a><span data-ttu-id="55cef-103">block-section-invalid</span><span class="sxs-lookup"><span data-stu-id="55cef-103">block-section-invalid</span></span>
 
-## <a name="warning"></a><span data-ttu-id="8e82f-104">Waarschuwing</span><span class="sxs-lookup"><span data-stu-id="8e82f-104">Warning</span></span>
+## <a name="warning"></a><span data-ttu-id="55cef-104">Waarschuwing</span><span class="sxs-lookup"><span data-stu-id="55cef-104">Warning</span></span>
 
 `Invalid syntax for alert, div, or video. The text will be rendered as a block quote.`
 
-<span data-ttu-id="8e82f-105">Diverse Docs Markdown-extensies beginnen met de tekenreeks `> [!`.</span><span class="sxs-lookup"><span data-stu-id="8e82f-105">Several Docs Markdown extensions begin with the string `> [!`.</span></span> <span data-ttu-id="8e82f-106">Er is een spatie nodig tussen `>` en `[` en er moet een afsluitende `]` zijn.</span><span class="sxs-lookup"><span data-stu-id="8e82f-106">A space is required between `>` and `[`, and there must be a closing `]`.</span></span> <span data-ttu-id="8e82f-107">Als de syntaxis onjuist is, wordt de tekst weergegeven als een blokcitaat.</span><span class="sxs-lookup"><span data-stu-id="8e82f-107">If the syntax is incorrect, the text will be rendered as a block quote.</span></span>
+<span data-ttu-id="55cef-105">Diverse Docs Markdown-extensies beginnen met de tekenreeks `> [!`.</span><span class="sxs-lookup"><span data-stu-id="55cef-105">Several Docs Markdown extensions begin with the string `> [!`.</span></span> <span data-ttu-id="55cef-106">Er is een spatie nodig tussen `>` en `[` en er moet een afsluitende `]` zijn.</span><span class="sxs-lookup"><span data-stu-id="55cef-106">A space is required between `>` and `[`, and there must be a closing `]`.</span></span> <span data-ttu-id="55cef-107">Als de syntaxis onjuist is, wordt de tekst weergegeven als een blokcitaat.</span><span class="sxs-lookup"><span data-stu-id="55cef-107">If the syntax is incorrect, the text will be rendered as a block quote.</span></span>
 
-## <a name="resolution"></a><span data-ttu-id="8e82f-108">Oplossing</span><span class="sxs-lookup"><span data-stu-id="8e82f-108">Resolution</span></span>
+## <a name="resolution"></a><span data-ttu-id="55cef-108">Oplossing</span><span class="sxs-lookup"><span data-stu-id="55cef-108">Resolution</span></span>
 
 [!INCLUDE [docs-authoring-pack](includes/docs-authoring-pack.md)]
 
-<span data-ttu-id="8e82f-109">Zorg ervoor dat de syntaxis juist is voor de extensie die u gebruikt:</span><span class="sxs-lookup"><span data-stu-id="8e82f-109">Ensure the syntax is correct for the extension you're using:</span></span>
+<span data-ttu-id="55cef-109">Zorg ervoor dat de syntaxis juist is voor de extensie die u gebruikt:</span><span class="sxs-lookup"><span data-stu-id="55cef-109">Ensure the syntax is correct for the extension you're using:</span></span>
 
 ```markdown
 
