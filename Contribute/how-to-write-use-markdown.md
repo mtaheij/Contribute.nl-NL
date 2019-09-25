@@ -2,16 +2,16 @@
 title: Markdown gebruiken voor het schrijven van documenten
 description: Dit artikel biedt de basis- en referentie-informatie voor de Markdown-taal die wordt gebruikt voor het schrijven van artikelen op docs.microsoft.com.
 ms.date: 03/26/2019
-ms.openlocfilehash: 9fcd76e6103761465815784e4bf24e7042fb9f34
-ms.sourcegitcommit: 5f7212a091e9fc4e9cd1320fdfa8efaff51384c7
+ms.openlocfilehash: 7a42aa88bab65846ce54e2444387ac3a578779c0
+ms.sourcegitcommit: 7e73bef8bcdca39fd54cd79fbe8cb22da5566411
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66373111"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71247350"
 ---
 # <a name="how-to-use-markdown-for-writing-docs"></a>Markdown gebruiken voor het schrijven van documenten
 
-Artikelen op [docs.microsoft.com](http://docs.microsoft.com) worden geschreven in de toegankelijke opmaakcodetaal [Markdown](https://daringfireball.net/projects/markdown/), die eenvoudig te lezen en eenvoudig te leren is. Daarom is het al snel een standaardopmaaktaal geworden. De docs-site maakt gebruik van de [Markdig-variant](#markdown-flavor) van Markdown.
+Artikelen op [docs.microsoft.com](https://docs.microsoft.com) worden geschreven in de toegankelijke opmaakcodetaal [Markdown](https://daringfireball.net/projects/markdown/), die eenvoudig te lezen en eenvoudig te leren is. Daarom is het al snel een standaardopmaaktaal geworden. De docs-site maakt gebruik van de [Markdig-variant](#markdown-flavor) van Markdown.
 
 
 ## <a name="markdown-basics"></a>Basisbeginselen van Markdown

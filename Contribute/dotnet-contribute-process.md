@@ -2,12 +2,12 @@
 title: Bijdrageproces voor .NET-documentopslagplaatsen
 description: In dit artikel vindt u een korte inleiding tot bijdragen aan de opslagplaatsen voor .NET-documenten. U krijgt informatie over de gebruikte opslagplaatsen, het proces voor het rangschikken van inhoud en de beleidsregels voor het beheren van codevoorbeelden en andere assets.
 ms.date: 11/07/2018
-ms.openlocfilehash: 121f6c885ef6d292968e5bb3961cae8e9c22942b
-ms.sourcegitcommit: 8e897e90268a8a87dc4b97d7c28d22ed5950c8d9
+ms.openlocfilehash: a5429864efe56e2004ccfeac4443dc74fbf15dc3
+ms.sourcegitcommit: 7e73bef8bcdca39fd54cd79fbe8cb22da5566411
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "58637501"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71247328"
 ---
 # <a name="process-for-contributing-to-net-docs"></a>Proces voor bijdragen aan .NET-documenten
 
@@ -94,7 +94,7 @@ We maken het volgende onderscheid voor code die in onze opslagplaats aanwezig is
 Alle code bevindt zich in de opslagplaats [dotnet/voorbeelden](https://github.com/dotnet/samples). We werken aan de ontwikkeling van een model waarin de structuur van onze map met voorbeelden overeenkomt met de structuur van onze map met documenten. We volgen de volgende standaarden:
 
 - De map *codefragmenten* op het hoogste niveau bevat codefragmenten voor kleine, doelgerichte voorbeelden.
-- Er worden API-verwijzingsvoorbeelden in een map geplaatst volgens dit patroon: *snippets/\<language>/api/\<namespace>/\<apiname>*.
+- Er worden API-verwijzingsvoorbeelden in een map geplaatst volgens dit patroon: *snippets/\<language>/api/\<namespace>/\<apiname>* .
 - Andere mappen op het hoogste niveau komen overeen met de mappen op het hoogste niveau in de opslagplaats *documenten*. De opslagplaats Documenten bevat bijvoorbeeld de map *machine learning/zelfstudies* en de voorbeelden voor zelfstudies over machine learning bevinden zich in de map *voorbeelden/machine learning/zelfstudies*.
 
 Daarnaast moeten alle voorbeelden in de mappen *kern* en *standaard* worden ontwikkeld en uitgevoerd op alle platformen die door .NET Core worden ondersteund. Dit zal door ons CI-ontwikkelingssysteem worden afgedwongen. De map *framework* op het hoogste niveau bevat voorbeelden die alleen in Windows worden ontwikkeld en gevalideerd.
@@ -103,7 +103,7 @@ Voorbeeldprojecten moeten worden ontwikkeld en uitgevoerd op de breedste set pla
 
 We werken aan de ontwikkeling van een CI-systeem voor alle code. Wanneer u voorbeelden bijwerkt, moet u ervoor zorgen dat elke update deel uitmaakt van een project dat kan worden ontwikkeld. U kunt het beste ook testen toevoegen om te controleren of de voorbeelden correct zijn.
 
-Elk volledige voorbeeld dat u maakt, moet een *readme.md*-bestand bevatten. Dit bestand moet een korte beschrijving van het voorbeeld (van 1 à 2 paragrafen) bevatten. Uit het *readme.md*-bestand moeten lezers kunnen opmaken wat ze gaan leren wanneer ze dit voorbeeld verkennen. In het *readme.md*-bestand moet ook een koppeling naar het live-document op de [.NET-documentatiesite](https://docs.microsoft.com/dotnet/welcome) staan. Vervang `/docs` in het pad van de opslagplaats door `http://docs.microsoft.com/dotnet` om te bepalen op welke locatie een bepaald bestand in de opslagplaats aan die site wordt toegewezen.
+Elk volledige voorbeeld dat u maakt, moet een *readme.md*-bestand bevatten. Dit bestand moet een korte beschrijving van het voorbeeld (van 1 à 2 paragrafen) bevatten. Uit het *readme.md*-bestand moeten lezers kunnen opmaken wat ze gaan leren wanneer ze dit voorbeeld verkennen. In het *readme.md*-bestand moet ook een koppeling naar het live-document op de [.NET-documentatiesite](https://docs.microsoft.com/dotnet/welcome) staan. Vervang `/docs` in het pad van de opslagplaats door `https://docs.microsoft.com/dotnet` om te bepalen op welke locatie een bepaald bestand in de opslagplaats aan die site wordt toegewezen.
 
 Uw onderwerp bevat ook koppelingen naar het voorbeeld. Geef een directe koppeling op naar de map van het voorbeeld op GitHub.
 
@@ -158,7 +158,7 @@ U kunt .NET Core-codefragmenten of -voorbeelden bouwen met behulp van de .NET Co
     dotnet run
     ```
 
-3. Voeg een readme.md-bestand toe aan de hoofdmap van uw voorbeeld. 
+3. Voeg een readme.md-bestand toe aan de hoofdmap van uw voorbeeld.
 
    Dit bestand moet een korte beschrijving van de code bevatten en mensen verwijzen naar het artikel waarin het voorbeeld wordt genoemd.
 
