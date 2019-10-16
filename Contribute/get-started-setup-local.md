@@ -1,15 +1,18 @@
 ---
 title: Git-opslagplaats lokaal instellen
 description: Dit artikel biedt ondersteuning bij het maken van uw lokale Git-opslagplaats om bij te dragen aan documentatie. Ook het splits- en kloonproces wordt hier beschreven.
+ms.topic: contributor-guide
+ms.prod: non-product-specific
+ms.custom: external-contributor-guide
 author: jasonwhowell
 ms.author: jasonh
 ms.date: 01/18/2018
-ms.openlocfilehash: 285c25fe0e5df067ceeaa5a42da1bad5533d2c84
-ms.sourcegitcommit: 7e73bef8bcdca39fd54cd79fbe8cb22da5566411
+ms.openlocfilehash: e73c60c439285f901c5c83e538f8971d795bd6c4
+ms.sourcegitcommit: ca84e542b081e145052f38967e826f6ef25da1b2
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 09/24/2019
-ms.locfileid: "71247399"
+ms.lasthandoff: 10/12/2019
+ms.locfileid: "72288607"
 ---
 # <a name="set-up-git-repository-locally-for-documentation"></a>Een lokale Git-opslagplaats voor documentatie instellen
 

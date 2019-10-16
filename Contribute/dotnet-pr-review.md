@@ -1,13 +1,16 @@
 ---
 title: Beoordelingsproces pull-aanvraag bij .NET-docs
 description: Bij .NET-docs is de webhook voor samenvoegingen van pull-aanvragen niet ingeschakeld. In dit artikel wordt het proces voor pull-aanvragen beschreven voor deze opslagplaatsen
+ms.topic: contributor-guide
+ms.prod: non-product-specific
+ms.custom: external-contributor-guide
 ms.date: 01/04/2019
-ms.openlocfilehash: f710e330e31e56887d43030290d5aa6a5c62961b
-ms.sourcegitcommit: af37d44eb67daa2841959817cd205ec95db18cec
+ms.openlocfilehash: 80877a93dc410454c939bcd5be5588861682ed11
+ms.sourcegitcommit: ca84e542b081e145052f38967e826f6ef25da1b2
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "58653592"
+ms.lasthandoff: 10/12/2019
+ms.locfileid: "72288531"
 ---
 # <a name="pull-request-review-process-for-the-net-docs-repositories"></a>Beoordelingsproces voor pull-aanvragen voor de opslagplaatsen van .NET-docs
 
