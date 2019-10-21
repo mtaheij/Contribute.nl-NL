@@ -1,25 +1,28 @@
 ---
 title: Docs-ontwerppakket voor Visual Studio Code
 description: In dit artikel wordt het extensiepakket van Visual Studio Code beschreven waarmee u Markdown voor docs.microsoft.com kunt ontwerpen.
+ms.topic: contributor-guide
+ms.prod: non-product-specific
+ms.custom: external-contributor-guide
 author: meganbradley
 ms.author: mbradley
 ms.date: 10/22/2018
-ms.openlocfilehash: 00afafbbf16096ac6433c0ab276578d8d9084b51
-ms.sourcegitcommit: d3c7b49dc854dae8da9cd49da8ac4035789a5010
+ms.openlocfilehash: 11f18ce4f769b478108d399b780937f927e0e12d
+ms.sourcegitcommit: ca84e542b081e145052f38967e826f6ef25da1b2
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49805649"
+ms.lasthandoff: 10/12/2019
+ms.locfileid: "72288327"
 ---
 # <a name="docs-authoring-pack-for-vs-code"></a>Docs-ontwerppakket voor VS Code
 
 Het Docs-ontwerppakket is een verzameling extensies voor Visual Studio Code die u kunt gebruiken bij het schrijven van Markdown voor docs.microsoft.com. Het pakket is [verkrijgbaar via de VS Code Marketplace](https://marketplace.visualstudio.com/items?itemName=docsmsft.docs-authoring-pack) en bevat de volgende extensies:
 
-- [markdownlint:](https://marketplace.visualstudio.com/items?itemName=DavidAnson.vscode-markdownlint) een populaire Markdown-linter van David Anson zodat u zeker weet dat u voor uw Markdown de best practices gebruikt.
+- [markdownlint](https://marketplace.visualstudio.com/items?itemName=DavidAnson.vscode-markdownlint): een populaire Markdown-linter van David Anson zodat u zeker weet dat u voor uw Markdown de best practices gebruikt.
 - [Code Spell Checker](https://marketplace.visualstudio.com/items?itemName=streetsidesoftware.code-spell-checker): een spellingcontrole van Street Side Software die volledig offline is.
 - [Docs Preview](https://marketplace.visualstudio.com/items?itemName=docsmsft.docs-preview): gebruikt de CSS op docs.microsoft.com voor een nauwkeuriger Markdown-voorbeeld, inclusief aangepaste Markdown.
-- [Docs Markdown:](https://marketplace.visualstudio.com/items?itemName=docsmsft.docs-markdown) biedt hulp bij het schrijven van Markdown voor inhoud op docs.microsoft.com in het OPS (Open Publishing System), inclusief fundamentele Markdown-ondersteuning en ondersteuning voor aangepaste Markdown-syntaxis in OPS. De rest van dit onderwerp gaat over de Docs Markdown-extensie.
-- [Docs Article Templates](https://marketplace.visualstudio.com/items?itemName=docsmsft.docs-article-templates): hiermee kunnen gebruikers inhoud uit het Markdown-geraamte toepassen op nieuwe bestanden.
+- [Docs Markdown](https://marketplace.visualstudio.com/items?itemName=docsmsft.docs-markdown): biedt hulp bij het schrijven van Markdown voor inhoud op docs.microsoft.com in het OPS (Open Publishing System), inclusief fundamentele Markdown-ondersteuning en ondersteuning voor aangepaste Markdown-syntaxis in OPS. De rest van dit onderwerp gaat over de Docs Markdown-extensie.
+- [Docs Article Templates](https://marketplace.visualstudio.com/items?itemName=docsmsft.docs-article-templates): hiermee kunnen gebruikers inhoud uit het Markdown-raamwerk toepassen op nieuwe bestanden.
 
 ## <a name="prerequisites-and-assumptions"></a>Vereisten en aannames
 
@@ -31,7 +34,7 @@ Sommige syntaxissen die door de extensie worden ondersteund, zoals waarschuwinge
 
 Typ `ALT+M` voor toegang tot het menu van Docs Markdown. U kunt klikken of de pijltjes omhoog/omlaag gebruiken om de gewenste functie te selecteren, of begin te typen om te filteren. Kies vervolgens `ENTER` wanneer de gewenste functie in het menu wordt gemarkeerd. De volgende functies zijn beschikbaar:
 
-|Functie     |Beschrijving           |
+|Functie     |Description           |
 |-------------|----------------------|
 |Preview      |Bekijk met behulp van Docs Preview-extensie een voorbeeld van het actieve onderwerp in een naastgelegen venster. Deze optie is alleen beschikbaar als Docs Preview is geïnstalleerd.|
 |Vet         |Hiermee wordt tekst **vetgedrukt** weergegeven.|

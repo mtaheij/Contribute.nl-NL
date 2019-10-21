@@ -1,13 +1,16 @@
 ---
 title: GitHub-bijdragewerkstroom voor belangrijke of langdurige wijzigingen
 description: In dit artikel wordt beschreven hoe u de werkstroom voor belangrijke bijdragen gebruikt om bijdragen te leveren aan artikelen op docs.microsoft.com.
+ms.topic: contributor-guide
+ms.prod: non-product-specific
+ms.custom: external-contributor-guide
 ms.date: 08/30/2017
-ms.openlocfilehash: 93e659df4f72c6a272d15fd7487eb3a997bdf3c8
-ms.sourcegitcommit: 44eb4f5ee65c1848d7f36fca107b296eb7687397
+ms.openlocfilehash: 87c31979e60a957586ea623b22be190bfdaa41d9
+ms.sourcegitcommit: d357977935b432381f3df6297164417ed59ab434
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 11/13/2018
-ms.locfileid: "51609386"
+ms.lasthandoff: 10/14/2019
+ms.locfileid: "72310288"
 ---
 # <a name="github-contribution-workflow-for-major-or-long-running-changes"></a>GitHub-bijdragewerkstroom voor belangrijke of langdurige wijzigingen
 
@@ -28,7 +31,7 @@ Voorbeelden van dergelijke bijdragen zijn:
 
 Bekijk voordat u aan de slag gaat eerst enkele Git-/GitHub-termen en -monikers die in deze werkstroom worden gebruikt. U hoeft deze nu nog niet te begrijpen. U maakt eerst kennis met de termen en kunt dan deze sectie raadplegen als u een definitie wilt controleren.
 
-| Naam | Beschrijving |
+| Name | Beschrijving |
 |-----------|-------------|
 |fork|Wordt doorgaans als zelfstandig naamwoord gebruikt bij verwijzing naar een kopie van een GitHub-hoofdopslagplaats. Een fork is in feite gewoon een opslagplaats. Het is echter een bijzondere opslagplaats in de zin dat GitHub een verbinding in stand houdt met de bovenliggende of hoofdopslagplaats. Soms wordt de term gebruikt als werkwoord. In het Nederlands wordt hiervoor het werkwoord splitsen gebruikt, bijvoorbeeld "U moet de opslagplaats eerst splitsen."|
 |remote|Een benoemde verbinding naar een externe opslagplaats, bijvoorbeeld de origin of upstream remote. In Git wordt hiernaar verwezen als remote, omdat deze wordt gebruikt om te verwijzen naar een opslagplaats die wordt gehost op een andere computer. In deze werkstroom is een remote altijd een GitHub-opslagplaats.|
@@ -59,4 +62,4 @@ Ga daarom als volgt te werk om in uw lokale opslagplaats een werkvertakking te m
 
 Dat is alles. U hebt een bijdrage geleverd aan inhoud voor docs.microsoft.com.
 
-- Ga verder naar de sectie 'Belangrijke aspecten van het schrijven' voor meer informatie over onderwerpen als Markdown en de syntaxis van Markdown-extensies.
+- Ga verder naar het artikel [Belangrijke aspecten van het schrijven](how-to-write-use-markdown.md) voor meer informatie over onderwerpen als Markdown en de syntaxis van Markdown-extensies.

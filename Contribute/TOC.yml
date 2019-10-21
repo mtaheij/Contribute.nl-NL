@@ -1,0 +1,56 @@
+- name: Overzicht van en op browser gebaseerde taken in de Gids voor inzenders
+  href: index.md
+- name: Installeren en lokaal werken
+  items:
+    - name: 1. Registreren voor GitHub
+      href: get-started-setup-github.md
+    - name: 2. Hulpprogramma's voor Git/Markdown installeren
+      href: get-started-setup-tools.md
+    - name: 3. Een lokale Git-opslagplaats instellen
+      href: get-started-setup-local.md
+    - name: Basisprincipes van Git en GitHub
+      href: git-github-fundamentals.md
+    - name: Volledige werkstroom
+      href: how-to-write-workflows-major.md
+- name: Essentials voor schrijven
+  items:
+    - name: Markdown
+      href: how-to-write-use-markdown.md
+    - name: Markdown-naslaginformatie
+      href: markdown-reference.md
+    - name: Snel aan de slag met stijl en toon
+      href: style-quick-start.md
+    - name: Koppelingen
+      href: how-to-write-links.md
+    - name: Docs Authoring Pack
+      href: how-to-write-docs-auth-pack.md
+- name: Richtlijnen voor specifieke documentatiesets
+  items:
+    - name: .NET-documenten
+      items:
+        - name: Uitleg over het bijdragen aan .NET-documenten
+          href: dotnet-contribute.md
+        - name: Bijdragen aan .NET-documenten
+          href: dotnet-contribute-process.md
+        - name: Stijlconventies voor .NET-documenten
+          href: dotnet-style-guide.md
+        - name: Vorm- en toonrichtlijnen
+          href: dotnet-voice-tone.md
+        - name: Beoordelingsproces pull-aanvraag
+          href: dotnet-pr-review.md
+    - name: Powershell-Docs
+      items:
+        - name: Een bijdrage leveren aan PowerShell-documentatie
+          href: powershell\powershell-contribute.md
+        - name: Proces voor het bijdragen aan PowerShell
+          href: powershell\powershell-contribute-process.md
+        - name: Snelstartgids voor het schrijven van PowerShell-artikelen
+          href: powershell\powershell-style-basic-markdown.md
+        - name: Stijlgids voor PowerShell-voorbeeldscript
+          href: powershell\powershell-style-code.md
+        - name: Stijlgids voor PowerShell-cmdlets
+          href: powershell\powershell-style-reference.md
+        - name: Een pull-aanvraag verzenden voor PowerShell
+          href: powershell\powershell-pull-requests.md
+- name: Aanvullende bronnen
+  href: additional-resources.md
