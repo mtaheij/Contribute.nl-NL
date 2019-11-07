@@ -6,24 +6,42 @@ ms.author: mbradley
 ms.topic: error-reference
 ms.date: 6/5/2019
 ms.prod: non-product-specific
-ms.openlocfilehash: bb58c472371c429002cf5b35b7d6157ffb28b5cd
-ms.sourcegitcommit: 495d49f10df51a8897687940aa653e906c48c2a0
+ms.openlocfilehash: 9f8074d3746ea375e29704853c82f48d95273cdc
+ms.sourcegitcommit: 55624c641bea5367bcfa08655c085bc950e8beae
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 08/06/2019
-ms.locfileid: "68817407"
+ms.lasthandoff: 10/30/2019
+ms.locfileid: "73166797"
 ---
 # <a name="validation-timeout"></a>Validatie-time-out
 
 ## <a name="warning"></a>Waarschuwing
 
-`The call to the validation service timed out and validation was not completed. This happens when there's an issue with the service and continuing to retry the call could cause build delays. You might have content issues that were not reported. To retry validation, close and re-open your PR, or rebuild your branch via Docs Portal (requires admin permissions). If you need admin help or if you continue to see this message, file an issue via https://SiteHelp.`
+`The call to the validation service timed out and validation was not completed. This happens when there's an issue with the service and continuing to retry the call could cause build delays. You might have content issues that were not reported. To retry validation, close and re-open your PR, or force a full build of your branch via https://ops.microsoft.com. Note that forcing a full build requires admin permissions to the repo. If you don’t know who your repo admin is, or if you continue to see this message after a forced build, file an issue via https://SiteHelp.`
 
 Soms kan het door tijdelijke problemen in de validatieservice, zoals een slecht functionerende server, voorkomen dat Docs Build de service op correcte wijze aanroept. De aanroep registreert na meerdere pogingen een time-out en de validatie wordt geannuleerd om build-vertragingen en een overbelaste build-pipeline te voorkomen.
 
 ## <a name="resolution"></a>Oplossing
 
-Probeer uw pull-aanvraag te sluiten en opnieuw te openen of een handmatige build-actie via Docs-portal uit te voeren (alleen mogelijk voor opslagplaatsbeheerders). Vaak worden serviceproblemen vanzelf opgelost wanneer de handeling opnieuw wordt uitgevoerd. Als u hulp nodig hebt van een beheerder of de melding blijft ontvangen, kunt u een probleem melden via [https://SiteHelp](https://SiteHelp) als u een Microsoft-medewerker bent of met een @vermelding van de auteur van een artikel in uw pull-aanvraag om hulp vragen als u een externe inzender bent.
+Sluit uw pull-aanvraag af en open deze opnieuw of forceer een volledige build via [Docs Portal](https://ops.microsoft.com/#/). Vaak worden serviceproblemen vanzelf opgelost wanneer de handeling opnieuw wordt uitgevoerd.
+
+U moet een opslagplaatsbeheerder zijn om een build via Docs Portal te forceren. Als u niet weet wie u opslagplaatsbeheerder is of als u de melding blijft ontvangen na een geforceerde build, kunt u een probleem melden via [https://SiteHelp](https://SiteHelp) als u een Microsoft-medewerker bent of met een @vermelding van de auteur van een artikel in uw pull-aanvraag om hulp vragen als u een externe inzender bent.
+
+Als u een opslagplaatsbeheerder bent, kunt u als volgt een volledige build forceren:
+
+1. Ga naar [Docs Portal](https://ops.microsoft.com/#/) en meld u aan.
+1. Zoek de opslagplaats door in de linkerbovenhoek te zoeken en selecteer deze.
+
+   :::image type="content" source="media/find-repo.png" alt-text="uw opslagplaats zoeken via het zoekvak van Docs Portal":::
+1. Klik op het tabblad **Buildgeschiedenis** op **+ Handmatig publiceren**.
+1. Selecteer de vertakking die de waarschuwing krijgt, zoals Basis.
+1. Behoud de standaard **Docs-site** voor het doel.
+1. Schakel het selectievakje **Geforceerd publiceren** in.
+1. Klik op **Publiceren**.
+
+   :::image type="content" source="media/force-build.png" alt-text="stappen om een volledige build te forceren":::
+
+Hiermee wordt een volledige build op de vertakking geforceerd.
 
 <!--make sure to add this file to your includes folder and verify the path-->
 [!INCLUDE [validation-reference-help](includes/validation-reference-help.md)]

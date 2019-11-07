@@ -6,12 +6,12 @@ ms.author: mbradley
 ms.topic: error-reference
 ms.date: 10/18/2019
 ms.prod: non-product-specific
-ms.openlocfilehash: 0fbc7634e00202fdfdf607b9504744a6d9846792
-ms.sourcegitcommit: 836d4d6127fabb5569ffc0809db5fb25e46038b5
+ms.openlocfilehash: 1ab511398cbd622906ccb0a67e2b24968ee29374
+ms.sourcegitcommit: 55624c641bea5367bcfa08655c085bc950e8beae
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 10/18/2019
-ms.locfileid: "72590872"
+ms.lasthandoff: 10/30/2019
+ms.locfileid: "73166826"
 ---
 # <a name="hard-coded-locale"></a>hard-coded-locale
 
@@ -20,7 +20,7 @@ ms.locfileid: "72590872"
 
 ## <a name="suggestion"></a>Suggestie
 
-`Link '{URL}' contains locale code '{code}'. For localizability, remove '{code}' from links to Microsoft sites.`
+`Link '{URL}' contains locale code '{code}'. For localizability, remove '{code}' from links to most Microsoft sites.`
 
 Landinstellingscodes, zoals `en-us`, mogen niet worden opgenomen in koppelingen naar bepaalde sites van Microsoft. Als u een landinstellingscode opneemt in een koppeling in Engelse inhoud, wordt deze ook opgenomen in gelokaliseerde koppelingen. Gebruikers zullen dat ervaren als een slechte lokalisatie. Als een koppeling in inhoud die in het Duits is gelokaliseerd `en-us` bevat, worden Duitse klanten omgeleid naar het Engelse artikel, ook al is er een Duitse versie beschikbaar.
 
@@ -28,7 +28,7 @@ Voor de volgende sites is deze validatie vereist:
 
 - azure.microsoft.com
 - docs.microsoft.com
-- msdn.microsoft.com
+- msdn.microsoft.com (met uitzondering van social.msdn.com, waarvoor de landinstelling is vereist om ervoor te zorgen dat het juiste forum is gekoppeld)
 - technet.microsoft.com
 
 ## <a name="resolution"></a>Oplossing
