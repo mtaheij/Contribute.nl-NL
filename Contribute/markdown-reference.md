@@ -7,12 +7,12 @@ ms.date: 05/18/2018
 ms.topic: contributor-guide
 ms.prod: non-product-specific
 ms.custom: external-contributor-guide
-ms.openlocfilehash: 3142b1aee8cadb69f82bfbcd3f89c701fac5b356
-ms.sourcegitcommit: ca84e542b081e145052f38967e826f6ef25da1b2
+ms.openlocfilehash: a5ff6c5122a08d2b611fd6b0344a6f5740d93928
+ms.sourcegitcommit: 254c804bb0b451c262745fe8d87e2e8f9196440c
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 10/12/2019
-ms.locfileid: "72288310"
+ms.lasthandoff: 11/05/2019
+ms.locfileid: "73592570"
 ---
 # <a name="markdown-reference"></a>Markdown-naslaginformatie
 
@@ -26,7 +26,7 @@ Docs maakt gebruik van de Markdown-engine in Markdig. U kunt het weergeven van M
 
 Geeft een waarschuwing voor een Docs Markdown-extensie om blokcitaten te maken die op docs.microsoft.com worden weergegeven met kleuren en pictogrammen die het belang van de inhoud aanduiden. De volgende typen waarschuwingen worden ondersteund:
 
-```markdown
+```md
 > [!NOTE]
 > Information the user should notice even if skimming.
 
@@ -45,26 +45,13 @@ Geeft een waarschuwing voor een Docs Markdown-extensie om blokcitaten te maken d
 
 Deze waarschuwingen zien er op docs.microsoft.com als volgt uit:
 
-> [!NOTE]
-> Information the user should notice even if skimming.
-
-> [!TIP]
-> Optional information to help a user be more successful.
-
-> [!IMPORTANT]
-> Essential information required for user success.
-
-> [!CAUTION]
-> Negative potential consequences of an action.
-
-> [!WARNING]
-> Dangerous certain consequences of an action.
+![laat zien hoe de waarschuwingen in het vorige voorbeeld eruit zien op de gepubliceerde Docs-pagina met verschillende pictogrammen en kleuren](media/alerts-rendering.png)
 
 ## <a name="code-snippets"></a>Codefragmenten
 
 U kunt codefragmenten in uw Markdown-bestanden insluiten:
 
-```markdown
+```md
 [!code-<language>[<name>](<codepath><queryoption><queryoptionvalue> "<title>")]
 ```
 
@@ -72,7 +59,7 @@ U kunt codefragmenten in uw Markdown-bestanden insluiten:
 
 Docs ondersteunt zes niveaus Markdown-koppen:
 
-```markdown
+```md
 # This is a first level heading (H1)
 
 ## This is a second level heading (H2)
@@ -97,7 +84,7 @@ Hoewel Markdown ondersteuning biedt voor inline-HTML, wordt HTML niet aanbevolen
 
 De syntaxis voor het insluiten van een afbeelding is:
 
-```markdown
+```md
 ![[alt text]](<folderPath>)
 
 Example:
@@ -133,7 +120,7 @@ In de meeste gevallen gebruikt Docs standaard-Markdown-koppelingen naar andere b
 
 Een relatief pad is het pad naar het doelbestand ten opzichte van het huidige bestand. U kunt in Docs een relatief pad gebruiken om een koppeling naar ander bestand in dezelfde docset te maken. De syntaxis voor een relatief pad ziet er als volgt uit:
 
-```markdown
+```md
 [link text](../../folder/filename.md)
 ```
 
@@ -154,7 +141,7 @@ Hierbij duidt `../` één niveau hoger in de hiërarchie aan.
 
 ### <a name="site-relative-links-to-other-files-on-docs"></a>Sitegerelateerde koppelingen naar andere bestanden in Docs
 
-```markdown
+```md
 [Azure and Linux](/articles/virtual-machines/linux/overview)
 ```
 
@@ -162,7 +149,7 @@ Neem de bestandsextensie (.md) niet op. Deze koppelt naar het Linux-overzichtsbe
 
 ### <a name="links-to-external-sites"></a>Koppelingen naar externe sites
 
-```markdown
+```md
 [Microsoft](https://www.microsoft.com)
 ```
 
@@ -172,13 +159,13 @@ Op URL gebaseerde koppeling naar een andere webpagina (moet https:// bevatten).
 
 Bladwijzerkoppeling naar een kop in een ander bestand in dezelfde opslagplaats. Bijvoorbeeld:
 
-```markdown
+```md
 [Managed Disks](../../linux/overview.md#managed-disks)
 ```
 
 Bladwijzerkoppeling naar een kop in het huidige bestand:
 
-```markdown
+```md
 [Managed Disks](#managed-disks)
 ```
 
@@ -197,7 +184,7 @@ Expliciete ankerkoppelingen die de `<a>`-HTML-tag gebruiken worden **niet vereis
 
 Gebruik de volgende syntaxis om een koppeling naar expliciete ankers te maken:
 
-```markdown
+```md
 To go to a section on the same page:
 [text](#AnchorText)
 
@@ -258,7 +245,7 @@ Als u een genummerde lijst wilt maken, kunt u alle 1's gebruiken. Deze worden bi
 
 Gebruik geen letters in lijsten, ook niet in geneste lijsten. Deze worden bij het publiceren naar Docs niet goed weergegeven. Geneste lijsten die gebruikmaken van nummers, worden bij het publiceren weergegeven als kleine letters. Bijvoorbeeld:
 
-```markdown
+```md
 1. This is
 1. a parent numbered list
    1. and this is
@@ -278,7 +265,7 @@ Dit wordt weergegeven als:
 
 Als u een lijst met opsommingstekens wilt maken, gebruikt u `-` gevolgd door een spatie aan het begin van elke regel:
 
-```markdown
+```md
 - This is
 - a parent bulleted list
   - and this is
@@ -298,7 +285,7 @@ Dit wordt weergegeven als:
 
 Controlelijsten zijn beschikbaar voor gebruik op (alleen) docs.microsoft.com via een aangepaste Markdown-extensie:
 
-```markdown
+```md
 > [!div class="checklist"]
 > * List item 1
 > * List item 2
@@ -321,14 +308,14 @@ U kunt een aangepaste extensie gebruiken om een knop voor de actie van de volgen
 
 De syntaxis ziet er als volgt uit:
 
-```markdown
+```md
 > [!div class="nextstepaction"]
 > [button text](link to topic)
 ```
 
 Bijvoorbeeld:
 
-```markdown
+```md
 > [!div class="nextstepaction"]
 > [Learn about basic style](style-quick-start.md)
 ```
@@ -433,7 +420,7 @@ U kunt een selector gebruiken wanneer u verschillende pagina's voor hetzelfde ar
 
 De eenvoudigste manier om een tabel in Markdown te maken is gebruik te maken van pipes en regels. Als u een standaardtabel met een kop wilt maken, laat u de eerste regel volgen door een stippellijn:
 
-```markdown
+```md
 |This is   |a simple   |table header|
 |----------|-----------|------------|
 |table     |data       |here        |
@@ -449,7 +436,7 @@ Dit wordt weergegeven als:
 
 U kunt ook een tabel zonder kop maken. Ga bijvoorbeeld als volgt te werk om een lijst met meerdere kolommen te maken:
 
-```markdown
+```md
 |   |   |
 | - | - |
 | This | table |
@@ -465,7 +452,7 @@ Dit wordt als volgt weergegeven:
 
 U kunt de kolommen uitlijnen met behulp van dubbele punten:
 
-```markdown
+```md
 |                  |
 |------------------|
 |    right aligned:|
@@ -495,7 +482,7 @@ Als u een tabel in Markdown maakt, kan de tabel worden uitgebreid naar het navig
 
 Hier ziet u een Markdown-voorbeeld van een tabel met drie rijen die teruglopen door gebruik te maken van een `div` met de klassenaam `mx-tdBreakAll`.
 
-```markdown
+```md
 > [!div class="mx-tdBreakAll"]
 > |Name|Syntax|Mandatory for silent installation?|Description|
 > |-------------|----------|---------|---------|
@@ -541,13 +528,13 @@ Momenteel biedt Docs ondersteuning voor video's die zijn gepubliceerd op een van
 
 U kunt een video insluiten met de volgende syntaxis zodat Docs de video kan weergeven.
 
-```markdown
+```md
 > [!VIDEO <embedded_video_link>]
 ```
 
 Voorbeeld:
 
-```markdown
+```md
 > [!VIDEO https://channel9.msdn.com/Series/Youve-Got-Key-Values-A-Redis-Jump-Start/03/player]
 
 > [!VIDEO https://www.youtube.com/embed/iAtwVM-Z7rY]
@@ -591,6 +578,6 @@ Alle nieuwe video's moeten worden geüpload met het volgende proces:
 1. Nadat u de videokoppeling hebt vastgelegd, sluit u het werkitem.
 1. De videokoppeling kan vervolgens aan uw bericht worden toegevoegd met deze syntaxis:
 
-   ```markdown
+   ```md
    > [!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RE1XVQS]
    ```
