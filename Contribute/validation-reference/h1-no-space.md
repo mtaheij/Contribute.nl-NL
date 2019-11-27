@@ -4,20 +4,18 @@ description: Uitleg en oplossing voor Docs-buildprobleem h1-no-space.
 author: meganbradley
 ms.author: mbradley
 ms.topic: error-reference
-ms.date: 12/12/2018
+ms.date: 11/25/2019
 ms.prod: non-product-specific
-ms.openlocfilehash: 7dd6a3d5cfc6def000d5bf7a5bf7810a16625cae
-ms.sourcegitcommit: 89147521f0aa3b39e7ddf390136b09a43d95c416
+ms.openlocfilehash: 7058367a6edd7f663ea42a4fc2e9fafd9cbfb34f
+ms.sourcegitcommit: 423d9b8145a11426c91f45510b2d77319838eb27
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 09/10/2019
-ms.locfileid: "70856238"
+ms.lasthandoff: 11/26/2019
+ms.locfileid: "74528956"
 ---
 # <a name="h1-no-space"></a>h1-no-space
 
-[!INCLUDE [suggestion-note](includes/suggestion-note.md)]
-
-## <a name="suggestion"></a>Suggestie
+## <a name="warning"></a>Waarschuwing
 
 `A space is required after the hash (#) in H1.`
 

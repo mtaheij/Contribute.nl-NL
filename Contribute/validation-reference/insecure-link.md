@@ -6,12 +6,12 @@ ms.author: mbradley
 ms.topic: error-reference
 ms.date: 10/1/2019
 ms.prod: non-product-specific
-ms.openlocfilehash: c22404e624ae85369d7b0b95f44e37d51f847368
-ms.sourcegitcommit: ab31cbb17c64a06cab4ffb37b157fd812417a499
+ms.openlocfilehash: 4735d47cdf2029d2c613c9b333a393c7d978c58e
+ms.sourcegitcommit: 423d9b8145a11426c91f45510b2d77319838eb27
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 10/18/2019
-ms.locfileid: "72587683"
+ms.lasthandoff: 11/26/2019
+ms.locfileid: "74528853"
 ---
 # <a name="insecure-link"></a>insecure-link
 
@@ -28,7 +28,11 @@ Dit bericht betekent dat u een expliciete Markdown-koppeling met `http` of een o
 
 Wijzig alle URL’s naar Microsoft-websites zodat `https` wordt gebruikt in plaats van `http`.
 
-Als uw koppeling een onbewerkte URL is, moet deze worden gewijzigd naar een expliciete Markdown-koppeling die begint met `https`.
+Als uw koppeling een onbewerkte URL is, wijzigt u deze in een expliciete Markdown-koppeling die begint met `https`, zoals:
+
+```md
+`[www.microsoft.com](https://www.microsoft.com)`.
+```
 
 > [!TIP]
 > De Markdown-extensie voor Docs in VS Code bevat een opschoonscript voor Microsoft-koppelingen. Met het script controleert u alle koppelingen naar Microsoft-sites in een opslagplaats om te zorgen dat ze beginnen met `https` in plaats van `http` en geen codes voor landinstellingen, zoals `en-us`, bevatten. Het script uitvoeren:
@@ -36,6 +40,12 @@ Als uw koppeling een onbewerkte URL is, moet deze worden gewijzigd naar een expl
 > 1. Installeer de [Docs Markdown](https://marketplace.visualstudio.com/items?itemName=docsmsft.docs-markdown)-extensie voor VS Code.
 > 1. Klik op alt + M om het menu Markdown te openen.
 > 1. Selecteer **Opschonen** en daarna **Microsoft-koppelingen**.
+
+In sommige gevallen moet u mogelijk webadressen noteren, zoals volledige domeinnamen, die niet bedoeld zijn als klikbare koppelingen. Deze moeten worden opgemaakt als inlinecode, zoals:
+
+```md
+`www.microsoft.com:90`
+```
 
 <!--make sure to add this file to your includes folder and verify the path-->
 [!INCLUDE [validation-reference-help](includes/validation-reference-help.md)]
