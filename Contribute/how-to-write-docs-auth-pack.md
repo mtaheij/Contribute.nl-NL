@@ -7,12 +7,12 @@ ms.custom: external-contributor-guide
 author: meganbradley
 ms.author: mbradley
 ms.date: 10/22/2018
-ms.openlocfilehash: 11f18ce4f769b478108d399b780937f927e0e12d
-ms.sourcegitcommit: ca84e542b081e145052f38967e826f6ef25da1b2
+ms.openlocfilehash: 1552ecc3e17e52439a7faa72973813099ce4d253
+ms.sourcegitcommit: a812d716b31084926b886b93923f9b84c9b23429
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 10/12/2019
-ms.locfileid: "72288327"
+ms.lasthandoff: 12/18/2019
+ms.locfileid: "75188303"
 ---
 # <a name="docs-authoring-pack-for-vs-code"></a>Docs-ontwerppakket voor VS Code
 
@@ -32,7 +32,7 @@ Sommige syntaxissen die door de extensie worden ondersteund, zoals waarschuwinge
 
 ## <a name="how-to-use-the-docs-markdown-extension"></a>De Docs Markdown-extensie gebruiken
 
-Typ `ALT+M` voor toegang tot het menu van Docs Markdown. U kunt klikken of de pijltjes omhoog/omlaag gebruiken om de gewenste functie te selecteren, of begin te typen om te filteren. Kies vervolgens `ENTER` wanneer de gewenste functie in het menu wordt gemarkeerd. De volgende functies zijn beschikbaar:
+Druk op `ALT+M` voor toegang tot het menu van Docs Markdown. U kunt klikken of de pijltjes omhoog/omlaag gebruiken om de gewenste functie te selecteren, of begin te typen om te filteren. Kies vervolgens `ENTER` wanneer de gewenste functie in het menu wordt gemarkeerd. De volgende functies zijn beschikbaar:
 
 |Functie     |Description           |
 |-------------|----------------------|

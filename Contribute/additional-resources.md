@@ -7,12 +7,12 @@ ms.custom: external-contributor-guide
 author: billwagner
 ms.author: wiwagn
 ms.date: 03/29/2019
-ms.openlocfilehash: 63192315c66eb05750c5a59751c339f671985314
-ms.sourcegitcommit: ca84e542b081e145052f38967e826f6ef25da1b2
+ms.openlocfilehash: 862bf048b30584a5dc51c1b0758ffc7d41a406f5
+ms.sourcegitcommit: a812d716b31084926b886b93923f9b84c9b23429
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 10/12/2019
-ms.locfileid: "72288286"
+ms.lasthandoff: 12/18/2019
+ms.locfileid: "75188355"
 ---
 # <a name="additional-git-and-github-resources"></a>Aanvullende Git- en GitHub-resources
 
@@ -25,7 +25,7 @@ Als u niet bekend bent met Git of GitHub, kunnen deze bronnen u helpen om erover
 - [Pro Git-e-book (PDF)](https://progit2.s3.amazonaws.com/en/2016-03-22-f3531/progit-en.1084.pdf): hetzelfde als de voorgaande link, maar dan als PDF.
 - [De cursus Learn Git (Kennismaken met Git) van Codecademy](https://www.codecademy.com/learn/learn-git): Git-zelfstudie van Codeacademy.
 - [De cursus Try Git (Git uitproberen) van Code School over Pluralsight](https://www.pluralsight.com/courses/code-school-git-real): Git-zelfstudie van Code School over Pluralsight.
-- [Git- en Github-cursus van Udacity](https://www.udacity.com/course/how-to-use-git-and-github--ud775): Git- en Github-zelfstudie van Udacity
+- [Git- en Github-cursus van Udacity](https://www.udacity.com/course/how-to-use-git-and-github--ud775): Git- en GitHub-zelfstudie van Udacity.
 
 ## <a name="github-resources"></a>GitHub-bronnen
 

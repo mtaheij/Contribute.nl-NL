@@ -5,12 +5,12 @@ ms.topic: contributor-guide
 ms.prod: non-product-specific
 ms.custom: external-contributor-guide
 ms.date: 08/30/2017
-ms.openlocfilehash: 87c31979e60a957586ea623b22be190bfdaa41d9
-ms.sourcegitcommit: d357977935b432381f3df6297164417ed59ab434
+ms.openlocfilehash: 997f313e94e4858f37501736c1ec0be2fa8fd552
+ms.sourcegitcommit: a812d716b31084926b886b93923f9b84c9b23429
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 10/14/2019
-ms.locfileid: "72310288"
+ms.lasthandoff: 12/18/2019
+ms.locfileid: "75188239"
 ---
 # <a name="github-contribution-workflow-for-major-or-long-running-changes"></a>GitHub-bijdragewerkstroom voor belangrijke of langdurige wijzigingen
 
@@ -54,7 +54,55 @@ Als u gerelateerde wijzigingen isoleert in een specifieke vertakking, kunt u dez
 >[!TIP]
 >Het wordt *niet* aanbevolen de wijzigingen rechtstreeks in de mastervertakking door te voeren. Stelt u zich eens voor dat u de mastervertakking gebruikt om enkele wijzigingen door te voeren voor het uitbrengen van een getimede functie. U hebt de wijzigingen voltooid en wacht op het moment waarop u deze kunt uitbrengen. Ondertussen ontvangt u een urgente aanvraag om een fout op te lossen. U voert de wijziging door in een bestand in de mastervertakking en publiceert de wijziging. In dit voorbeeld hebt u per ongeluk niet alleen de fix gepubliceerd, maar *ook* de wijzigingen die u pas op een specifieke datum wilde vrijgeven.
 
-Ga daarom als volgt te werk om in uw lokale opslagplaats een werkvertakking te maken waarin u uw wijzigingen kunt vastleggen. Elke Git-client is anders, dus raadpleeg het Help-systeem van de client van uw keuze. Een overzicht van het proces vindt u in de GitHub-handleiding in de [GitHub-workflow](https://guides.github.com/introduction/flow/).
+Ga daarom als volgt te werk om in uw lokale opslagplaats een werkvertakking te maken waarin u uw wijzigingen kunt vastleggen. Als u Git Bash hebt ingesteld (zie [Hulpprogramma's installeren om inhoud aan te passen](get-started-setup-tools.md)), kunt u een nieuwe vertakking maken en die vertakking met één opdracht vanuit uw gekloonde opslagplaats 'uitchecken':
+
+````
+git checkout -b "branchname"
+````
+
+Elke Git-client is anders, dus raadpleeg het Help-systeem van de client van uw keuze. Een overzicht van het proces vindt u in de GitHub-handleiding in de [GitHub-workflow](https://guides.github.com/introduction/flow/).
+
+## <a name="making-your-changes"></a>Wijzigingen aanbrengen
+
+Nu u een kopie ('kloon') van de Microsoft-opslagplaats hebt en een vertakking hebt gemaakt, kunt u met een tekst- of Markdown-editor alle wijzigingen aanbrengen waar de community volgens u baat bij kan hebben. Dit wordt beschreven op de pagina [Hulpprogramma's installeren om inhoud aan te passen](get-started-setup-tools.md).  U kunt uw wijzigingen lokaal opslaan en deze pas naar Microsoft verzenden wanneer u klaar bent.
+
+## <a name="saving-changes-to-your-repository"></a>Wijzigingen in uw opslagplaats opslaan
+
+Voordat u uw wijzigingen naar de auteur verzendt, moet u deze eerst in uw GitHub-opslagplaats opslaan.  En als u de Git Bash-opdrachtregel gebruikt, kan dit in slechts een paar eenvoudige stappen worden uitgevoerd, ook al zijn alle hulpprogramma's verschillend.
+
+Eerst moet u vanuit de opslagplaats alle wijzigingen _faseren_ die moeten worden aangebracht.  Voer hiervoor het volgende uit:
+
+````
+git add --all
+````
+
+Vervolgens moet u uw opgeslagen wijzigingen doorvoeren in uw lokale opslagplaats.  Voer hiervoor het volgende uit in Git Bash:
+
+````
+git commit -m "Short Description of Changes Made"
+````
+
+En omdat u deze vertakking op uw lokale computer hebt gemaakt, moet u de fork van uw GitHub.com-account hiervan op de hoogte stellen.  Als u Git Bash gebruikt, kunt u hiervoor het volgende uitvoeren:
+
+````
+git push --set-upstream origin <branchname>
+````
+
+U bent klaar!  Uw code is nu beschikbaar in uw GitHub-opslagplaats; u kunt nu een pull-aanvraag maken.  
+
+>[!TIP]
+> Hoewel uw wijzigingen weliswaar in uw persoonlijke GitHub-account worden weergegeven wanneer u deze pusht, is er geen regel dat u direct een pull-aanvraag moet indienen.  Als u wilt stoppen en op een later tijdstip wilt terugkeren om extra aanpassingen aan te brengen, is dat prima.
+
+Moet u iets herstellen dat u hebt ingediend?  Geen probleem!  Breng uw wijzigingen aan in dezelfde vertakking; daarna kunt u de wijzigingen doorvoeren en opnieuw pushen (u hoeft de upstream-server niet in te stellen op volgende pushes van dezelfde vertakking).
+
+Wilt u nog andere wijzigingen aanbrengen die geen betrekking hebben op deze wijziging?  Ga terug naar de hoofdvertakking om een nieuwe vertakking uit te checken met behulp van Git Bash. Dit is net zo eenvoudig als:
+
+````
+git checkout master
+git checkout -b "branchname"
+````
+
+U bent nu terug in een nieuwe vertakking en u bent al aardig op weg om een belangrijke bijdrager te worden.
 
 [!INCLUDE[contribute-how-to-write-workflows-pull-request-processing](includes/contribute-how-to-write-workflows-pull-request-processing.md)]
 
