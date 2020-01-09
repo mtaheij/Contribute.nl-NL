@@ -7,15 +7,16 @@ ms.custom: external-contributor-guide
 author: gewarren
 ms.author: gewarren
 ms.date: 10/31/2018
-ms.openlocfilehash: 69371cd201d156b2d0ce5e3e38527d77baca5a8a
-ms.sourcegitcommit: ca84e542b081e145052f38967e826f6ef25da1b2
+ms.openlocfilehash: 970f80b4e6ce795e0e2f15192d31680d7de6d35b
+ms.sourcegitcommit: a812d716b31084926b886b93923f9b84c9b23429
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 10/12/2019
-ms.locfileid: "72288587"
+ms.lasthandoff: 12/18/2019
+ms.locfileid: "75188344"
 ---
-# <a name="using-links-in-documentation"></a>Koppelingen in documentatie gebruiken
-In dit artikel wordt beschreven hoe u hyperlinks gebruikt van pagina's die op docs.microsoft.com worden gehost. Koppelingen kunnen eenvoudig in Markdown worden toegevoegd, met een aantal afwijkende conventies. Koppelingen verwijzen gebruikers naar inhoud op dezelfde pagina, naar omliggende pagina's of naar externe websites en URL's.
+# <a name="use-links-in-documentation"></a>Koppelingen in documentatie gebruiken
+
+In dit artikel wordt beschreven hoe u hyperlinks gebruikt van pagina's die op docs.microsoft.com worden gehost. Koppelingen kunnen eenvoudig in Markdown worden toegevoegd, met een aantal afwijkende conventies. Koppelingen verwijzen gebruikers naar inhoud op dezelfde pagina, op omliggende pagina's of op externe websites en URL's.
 
 De back-end van docs.microsoft.com gebruikt Open Publishing Services (OPS), dat ondersteuning biedt voor Markdown die compatibel is met [CommonMark](https://commonmark.org/) en is geparseerd via de parseerengine [Markdig](https://github.com/lunet-io/markdig). Deze Markdown-variant is meestal geschikt voor [GitHub Flavored Markdown (GFM)](https://help.github.com/categories/writing-on-github/), aangezien de meeste docs worden bewaard in GitHub en daar kunnen worden bewerkt. Er wordt aanvullende functionaliteit toegevoegd met Markdown-extensies.
 
@@ -43,49 +44,51 @@ De woorden die u gebruikt in de tekst van de koppeling moeten duidelijk de beste
 
 ## <a name="links-from-one-article-to-another"></a>Koppelingen van het ene artikel naar het andere
 
-Als u een inlinekoppeling wilt maken van een technisch Docs-artikel naar een ander technisch Docs-artikel in dezelfde docset, gebruikt u de volgende syntaxis voor de koppeling:
+Als u een inlinekoppeling wilt maken van een technisch Docs-artikel naar een ander technisch Docs-artikel in dezelfde *docset*, gebruikt u de volgende syntaxis voor de koppeling:
 
-- Een artikel in een map wordt gekoppeld aan een ander artikel in dezelfde map:
+- Een artikel wordt gekoppeld aan een ander artikel in dezelfde map:
 
   `[link text](article-name.md)`
 
-- Een artikel in een submap wordt gekoppeld aan een artikel in de hoofdmap:
+- Een artikel wordt gekoppeld aan een artikel in de bovenliggende map van de huidige map:
 
   `[link text](../article-name.md)`
 
-- Een artikel in de hoofdmap wordt gekoppeld aan een artikel in een submap:
+- Een artikel wordt gekoppeld aan een artikel in een submap van de huidige map:
 
-  `[link text](./directory/article-name.md)`
+  `[link text](directory/article-name.md)`
 
-- Een artikel in een submap wordt gekoppeld aan een artikel in een andere submap:
+- Een artikel wordt gekoppeld aan een artikel in een submap van de bovenliggende map van de huidige map:
 
   `[link text](../directory/article-name.md)`
 
-- Een artikel dat naar meerder docsets koppelt (zelfs in dezelfde opslagplaats):  `[link text](./directory/article-name)`
+> [!NOTE]
+> Geen van de eerder genoemde voorbeelden gebruikt de `~/` als onderdeel van de koppeling. Als u een koppeling wilt maken naar een absoluut pad dat bij de hoofdmap van de opslagplaats begint, begint u de koppeling met `/`. Als u de `~/` opneemt, worden de koppelingen ongeldig als er wordt verwezen naar bronopslagplaatsen in GitHub. Als u het pad begint met `/`, wordt het correct omgezet.
 
-> [!IMPORTANT]
-> Geen van de bovenstaande voorbeelden gebruikt de `~/` als onderdeel van de koppeling. Als u een koppeling maakt naar een pad in de hoofdmap van de opslagplaats, begint u met de `/`. Als u de `~/` opneemt, worden de koppelingen ongeldig als er wordt verwezen naar bronopslagplaatsen in GitHub. Als u het pad begint met `/`, wordt het correct omgezet.
+Als u een koppeling wilt maken naar een artikel in een andere docset, zelfs als het bestand zich in dezelfde opslagplaats bevindt, gebruikt u de volgende syntaxis:
+
+`[link text](/docset-root/directory/article-name)`
+   
+Als een artikel waarvan de basis-URL `https://docs.microsoft.com/dotnet` is bijvoorbeeld wordt gekoppeld met een artikel waarvan de basis-URL `https://docs.microsoft.com/visualstudio` is, ziet de koppeling eruit als `[link text](/visualstudio/directory/article-name)`.
+
+> [!TIP]
+> Artikelen in dezelfde *docset* bevatten hetzelfde URL-fragment na 'docs.microsoft.com'. `https://docs.microsoft.com/dotnet/core/get-started` en `https://docs.microsoft.com/dotnet/framework/install` bevinden zich bijvoorbeeld in dezelfde docset en `https://docs.microsoft.com/dotnet/core/get-started` en `https://docs.microsoft.com/visualstudio/whats-new` bevinden zich in verschillende docsets.
 
 ## <a name="links-to-anchors"></a>Koppelingen naar ankers
 
 U hoeft geen ankers te maken. Deze worden automatisch gegenereerd tijdens de publicatie van alle H2-koppen. U hoeft alleen maar koppelingen naar de H2-secties te maken.
 
-- U maakt als volgt een koppeling naar een kop in hetzelfde artikel:
+- U kunt als volgt een koppeling maken naar een kop in hetzelfde artikel:
 
   `[link](#the-text-of-the-H2-section-separated-by-hyphens)`
   `[Create cache](#create-cache)`
 
-- U maakt als volgt een koppeling naar een anker in een ander artikel in dezelfde submap:
-
-  `[link text](article-name.md#anchor-name)`
-  `[Configure your profile](media-services-create-account.md#configure-your-profile)`
-
-- U maakt als volgt een koppeling naar een anker in een andere servicesubmap:
+- U kunt als volgt een koppeling maken naar een anker in een ander artikel:
 
   `[link text](../directory/article-name.md#anchor-name)`
   `[Configure your profile](../directory/media-services-create-account.md#configure-your-profile)`
 
-## <a name="links-from-includes"></a>Koppelingen in Include-bestanden
+## <a name="links-from-includes"></a>Koppelingen vanuit Include-bestanden
 
 Omdat Include-bestanden deel uitmaken van een andere map moet u een langer relatief pad gebruiken. Gebruik de volgende notatie om vanuit een Include-bestand een koppeling naar een artikel te maken:
 
@@ -147,10 +150,6 @@ Het beste kunt u gebruikers zo weinig mogelijk doorsturen naar andere sites. Som
 - **Volgende stappen**: Het is prima om een koppeling te maken naar, bijvoorbeeld, een MVP-blog in de sectie Volgende stappen. Maar nogmaals, wijs de gebruikers erop dat ze de site verlaten.
 - **Juridisch**: We kunnen een beroep doen op de juridisch bindende bepalingen in de sectie **Koppelingen naar de sites van derden** van de **Gebruiksvoorwaarden** onderaan elke pagina op ms.com.
 
-## <a name="links-to-msdn-or-technet"></a>Een koppeling maken naar MSDN of TechNet
-
-Wanneer u een koppeling wilt maken naar MSDN of TechNet, gebruikt u de volledige koppeling naar het onderwerp en verwijdert u de landcode voor de taal uit de koppeling.
-
 ## <a name="links-to-azure-powershell-reference-content"></a>Koppeling naar Azure PowerShell-referentiemateriaal
 
 Het Azure PowerShell-referentiemateriaal heeft sinds november 2016 een aantal wijzigingen ondergaan. Gebruik de volgende richtlijnen om een koppeling naar deze inhoud te maken vanuit andere artikelen op docs.microsoft.com.
@@ -159,7 +158,7 @@ Structuur van de URL:
 
 * Voor cmdlets:
   - `/powershell/module/<module-name>/<cmdlet-name>[?view=<moniker-name>]`
-* Voor conceptonderwerpen:
+* Voor conceptuele onderwerpen:
   - `/powershell/azure/<topic-file-name>[?view=<moniker-name>]`
   - `/powershell/azure/<service-name>/<topic-file-name>[?view=<moniker-name>]`
 
@@ -174,18 +173,15 @@ De sectie `<moniker-name>` is optioneel. Als deze sectie wordt weggelaten, wordt
 
 Wanneer u deze URL's gebruikt, wordt u omgeleid naar de nieuwste versie van de inhoud. Op die manier hoeft u geen versiemoniker op te geven. U voorkomt zo ook dat koppelingen naar conceptinhoud moeten worden bijgewerkt wanneer de versie verandert.
 
-Als u een goede koppeling wilt maken, gaat u in uw browser naar de pagina waarnaar u wilt koppelen en kopieert u de URL.
-Verwijder vervolgens `https://docs.microsoft.com` en de landinstellingsgegevens.
-
-Wanneer u een koppeling vanuit een inhoudsopgave maakt, moet u de volledige URL zonder de landcode gebruiken.
+Als u een goede koppeling wilt maken, gaat u in uw browser naar de pagina waarnaar u wilt koppelen en kopieert u de URL. Verwijder vervolgens de landinstellingscode, bijvoorbeeld **en-us**.
 
 Voorbeeld van Markdown:
 
 ```markdown
-[Get-AzureRmResourceGroup](/powershell/module/azurerm.resources/get-azurermresourcegroup)
-[Get-AzureRmResourceGroup](/powershell/module/azurerm.resources/get-azurermresourcegroup?view=azurermps-4.1.0)
-[New-AzureVM](/powershell/module/azure/new-azurevm?view=azuresmps-4.0.0)
-[New-AzureRmVM](/powershell/module/azurerm.compute/new-azurermvm)
-[Install Azure PowerShell for Service Management](/powershell/azure/servicemanagement/install-azurerm-ps)
-[Install Azure PowerShell](/powershell/azure/install-azurerm-ps)
+[Get-AzureRmResourceGroup](https://docs.microsoft.com/powershell/module/azurerm.resources/get-azurermresourcegroup)
+[Get-AzureRmResourceGroup](https://docs.microsoft.com/powershell/module/azurerm.resources/get-azurermresourcegroup?view=azurermps-4.1.0)
+[New-AzureVM](https://docs.microsoft.com/powershell/module/azure/new-azurevm?view=azuresmps-4.0.0)
+[New-AzureRmVM](https://docs.microsoft.com/powershell/module/azurerm.compute/new-azurermvm)
+[Install Azure PowerShell for Service Management](https://docs.microsoft.com/powershell/azure/servicemanagement/install-azurerm-ps)
+[Install Azure PowerShell](https://docs.microsoft.com/powershell/azure/install-azurerm-ps)
 ```

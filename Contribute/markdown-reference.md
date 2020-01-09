@@ -7,12 +7,12 @@ ms.date: 05/18/2018
 ms.topic: contributor-guide
 ms.prod: non-product-specific
 ms.custom: external-contributor-guide
-ms.openlocfilehash: a5ff6c5122a08d2b611fd6b0344a6f5740d93928
-ms.sourcegitcommit: 254c804bb0b451c262745fe8d87e2e8f9196440c
+ms.openlocfilehash: 452cbf97db748532ae2b0e09b4bb558c8f757a61
+ms.sourcegitcommit: a812d716b31084926b886b93923f9b84c9b23429
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 11/05/2019
-ms.locfileid: "73592570"
+ms.lasthandoff: 12/18/2019
+ms.locfileid: "75188274"
 ---
 # <a name="markdown-reference"></a>Markdown-naslaginformatie
 
@@ -73,7 +73,7 @@ Docs ondersteunt zes niveaus Markdown-koppen:
 - Elk Markdown-bestand moet precies één H1 hebben.
 - De H1 moet de eerste inhoud in het bestand zijn na het YML-blok met metagegevens.
 - H2's verschijnen automatisch in het navigatiemenu aan de rechterkant van het gepubliceerde bestand. Dit geldt niet voor koppen op een lager niveau. Gebruik H2's dus strategisch om lezers te helpen door uw inhoud te navigeren.
-- HMTL-koppen, zoals `<h1>`, worden niet aanbevolen en leiden in sommige gevallen tot compileerwaarschuwingen.
+- HMTL-koppen, zoals `<h1>`, worden niet aanbevolen en leiden in sommige gevallen tot opbouwwaarschuwingen.
 - U kunt de afzonderlijke koppen in een bestand koppelen via [bladwijzers](#bookmark-links).
 
 ## <a name="html"></a>HTML
