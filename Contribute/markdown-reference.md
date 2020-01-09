@@ -7,24 +7,24 @@ ms.date: 05/18/2018
 ms.topic: contributor-guide
 ms.prod: non-product-specific
 ms.custom: external-contributor-guide
-ms.openlocfilehash: a5ff6c5122a08d2b611fd6b0344a6f5740d93928
-ms.sourcegitcommit: 254c804bb0b451c262745fe8d87e2e8f9196440c
+ms.openlocfilehash: 452cbf97db748532ae2b0e09b4bb558c8f757a61
+ms.sourcegitcommit: a812d716b31084926b886b93923f9b84c9b23429
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 11/05/2019
-ms.locfileid: "73592570"
+ms.lasthandoff: 12/18/2019
+ms.locfileid: "75188274"
 ---
-# <a name="markdown-reference"></a><span data-ttu-id="0fa48-103">Markdown-naslaginformatie</span><span class="sxs-lookup"><span data-stu-id="0fa48-103">Markdown Reference</span></span>
+# <a name="markdown-reference"></a><span data-ttu-id="937f2-103">Markdown-naslaginformatie</span><span class="sxs-lookup"><span data-stu-id="937f2-103">Markdown Reference</span></span>
 
-<span data-ttu-id="0fa48-104">Markdown is een lichtgewicht opmaakcodetaal met een syntaxis voor het opmaken van platte tekst.</span><span class="sxs-lookup"><span data-stu-id="0fa48-104">Markdown is a lightweight markup language with plain text formatting syntax.</span></span> <span data-ttu-id="0fa48-105">Het Docs-platform ondersteunt de CommonMark-standaard voor Markdown, plus enkele aangepaste Markdown-extensies die zijn ontworpen om rijkere inhoud op docs.microsoft.com te bieden.</span><span class="sxs-lookup"><span data-stu-id="0fa48-105">The Docs platform supports the CommonMark standard for Markdown, plus some custom Markdown extensions designed to provide richer content on docs.microsoft.com.</span></span> <span data-ttu-id="0fa48-106">Dit artikel bevat alfabetische naslaginformatie voor het gebruik van Markdown voor docs.microsoft.com.</span><span class="sxs-lookup"><span data-stu-id="0fa48-106">This article provides an alphabetical reference for using Markdown for docs.microsoft.com.</span></span>
+<span data-ttu-id="937f2-104">Markdown is een lichtgewicht opmaakcodetaal met een syntaxis voor het opmaken van platte tekst.</span><span class="sxs-lookup"><span data-stu-id="937f2-104">Markdown is a lightweight markup language with plain text formatting syntax.</span></span> <span data-ttu-id="937f2-105">Het Docs-platform ondersteunt de CommonMark-standaard voor Markdown, plus enkele aangepaste Markdown-extensies die zijn ontworpen om rijkere inhoud op docs.microsoft.com te bieden.</span><span class="sxs-lookup"><span data-stu-id="937f2-105">The Docs platform supports the CommonMark standard for Markdown, plus some custom Markdown extensions designed to provide richer content on docs.microsoft.com.</span></span> <span data-ttu-id="937f2-106">Dit artikel bevat alfabetische naslaginformatie voor het gebruik van Markdown voor docs.microsoft.com.</span><span class="sxs-lookup"><span data-stu-id="937f2-106">This article provides an alphabetical reference for using Markdown for docs.microsoft.com.</span></span>
 
-<span data-ttu-id="0fa48-107">U kunt voor het opstellen van Markdown elke teksteditor gebruiken.</span><span class="sxs-lookup"><span data-stu-id="0fa48-107">You can use any text editor to author Markdown.</span></span> <span data-ttu-id="0fa48-108">Voor elke editor die het invoegen van zowel standaard-Markdown-syntaxis als aangepaste Docs-extensies mogelijk maakt, wordt [VS Code](https://code.visualstudio.com/) met een geïnstalleerd [Docs-ontwerppakket](https://aka.ms/DocsAuthoringPack) aangeraden.</span><span class="sxs-lookup"><span data-stu-id="0fa48-108">For an editor that facilitates inserting both standard Markdown syntax and custom Docs extensions, we recommend [VS Code](https://code.visualstudio.com/) with the [Docs Authoring Pack](https://aka.ms/DocsAuthoringPack) installed.</span></span>
+<span data-ttu-id="937f2-107">U kunt voor het opstellen van Markdown elke teksteditor gebruiken.</span><span class="sxs-lookup"><span data-stu-id="937f2-107">You can use any text editor to author Markdown.</span></span> <span data-ttu-id="937f2-108">Voor elke editor die het invoegen van zowel standaard-Markdown-syntaxis als aangepaste Docs-extensies mogelijk maakt, wordt [VS Code](https://code.visualstudio.com/) met een geïnstalleerd [Docs-ontwerppakket](https://aka.ms/DocsAuthoringPack) aangeraden.</span><span class="sxs-lookup"><span data-stu-id="937f2-108">For an editor that facilitates inserting both standard Markdown syntax and custom Docs extensions, we recommend [VS Code](https://code.visualstudio.com/) with the [Docs Authoring Pack](https://aka.ms/DocsAuthoringPack) installed.</span></span>
 
-<span data-ttu-id="0fa48-109">Docs maakt gebruik van de Markdown-engine in Markdig.</span><span class="sxs-lookup"><span data-stu-id="0fa48-109">Docs uses the Markdig Markdown engine.</span></span> <span data-ttu-id="0fa48-110">U kunt het weergeven van Markdown in Markdig versus andere engines testen op [https://babelmark.github.io/](https://babelmark.github.io/).</span><span class="sxs-lookup"><span data-stu-id="0fa48-110">You can test the rendering of Markdown in Markdig vs. other engines at [https://babelmark.github.io/](https://babelmark.github.io/).</span></span>
+<span data-ttu-id="937f2-109">Docs maakt gebruik van de Markdown-engine in Markdig.</span><span class="sxs-lookup"><span data-stu-id="937f2-109">Docs uses the Markdig Markdown engine.</span></span> <span data-ttu-id="937f2-110">U kunt het weergeven van Markdown in Markdig versus andere engines testen op [https://babelmark.github.io/](https://babelmark.github.io/).</span><span class="sxs-lookup"><span data-stu-id="937f2-110">You can test the rendering of Markdown in Markdig vs. other engines at [https://babelmark.github.io/](https://babelmark.github.io/).</span></span>
 
-## <a name="alerts-note-tip-important-caution-warning"></a><span data-ttu-id="0fa48-111">Waarschuwingen (Opmerking, Tip, Belangrijk, Let op, Waarschuwing)</span><span class="sxs-lookup"><span data-stu-id="0fa48-111">Alerts (Note, Tip, Important, Caution, Warning)</span></span>
+## <a name="alerts-note-tip-important-caution-warning"></a><span data-ttu-id="937f2-111">Waarschuwingen (Opmerking, Tip, Belangrijk, Let op, Waarschuwing)</span><span class="sxs-lookup"><span data-stu-id="937f2-111">Alerts (Note, Tip, Important, Caution, Warning)</span></span>
 
-<span data-ttu-id="0fa48-112">Geeft een waarschuwing voor een Docs Markdown-extensie om blokcitaten te maken die op docs.microsoft.com worden weergegeven met kleuren en pictogrammen die het belang van de inhoud aanduiden.</span><span class="sxs-lookup"><span data-stu-id="0fa48-112">Alerts are a Docs Markdown extension to create block quotes that render on docs.microsoft.com with colors and icons that indicate the significance of the content.</span></span> <span data-ttu-id="0fa48-113">De volgende typen waarschuwingen worden ondersteund:</span><span class="sxs-lookup"><span data-stu-id="0fa48-113">The following alert types are supported:</span></span>
+<span data-ttu-id="937f2-112">Geeft een waarschuwing voor een Docs Markdown-extensie om blokcitaten te maken die op docs.microsoft.com worden weergegeven met kleuren en pictogrammen die het belang van de inhoud aanduiden.</span><span class="sxs-lookup"><span data-stu-id="937f2-112">Alerts are a Docs Markdown extension to create block quotes that render on docs.microsoft.com with colors and icons that indicate the significance of the content.</span></span> <span data-ttu-id="937f2-113">De volgende typen waarschuwingen worden ondersteund:</span><span class="sxs-lookup"><span data-stu-id="937f2-113">The following alert types are supported:</span></span>
 
 ```md
 > [!NOTE]
@@ -43,21 +43,21 @@ ms.locfileid: "73592570"
 > Dangerous certain consequences of an action.
 ```
 
-<span data-ttu-id="0fa48-114">Deze waarschuwingen zien er op docs.microsoft.com als volgt uit:</span><span class="sxs-lookup"><span data-stu-id="0fa48-114">These alerts look like this on docs.microsoft.com:</span></span>
+<span data-ttu-id="937f2-114">Deze waarschuwingen zien er op docs.microsoft.com als volgt uit:</span><span class="sxs-lookup"><span data-stu-id="937f2-114">These alerts look like this on docs.microsoft.com:</span></span>
 
 ![laat zien hoe de waarschuwingen in het vorige voorbeeld eruit zien op de gepubliceerde Docs-pagina met verschillende pictogrammen en kleuren](media/alerts-rendering.png)
 
-## <a name="code-snippets"></a><span data-ttu-id="0fa48-116">Codefragmenten</span><span class="sxs-lookup"><span data-stu-id="0fa48-116">Code snippets</span></span>
+## <a name="code-snippets"></a><span data-ttu-id="937f2-116">Codefragmenten</span><span class="sxs-lookup"><span data-stu-id="937f2-116">Code snippets</span></span>
 
-<span data-ttu-id="0fa48-117">U kunt codefragmenten in uw Markdown-bestanden insluiten:</span><span class="sxs-lookup"><span data-stu-id="0fa48-117">You can embed code snippets in your Markdown files:</span></span>
+<span data-ttu-id="937f2-117">U kunt codefragmenten in uw Markdown-bestanden insluiten:</span><span class="sxs-lookup"><span data-stu-id="937f2-117">You can embed code snippets in your Markdown files:</span></span>
 
 ```md
 [!code-<language>[<name>](<codepath><queryoption><queryoptionvalue> "<title>")]
 ```
 
-## <a name="headings"></a><span data-ttu-id="0fa48-118">Koppen</span><span class="sxs-lookup"><span data-stu-id="0fa48-118">Headings</span></span>
+## <a name="headings"></a><span data-ttu-id="937f2-118">Koppen</span><span class="sxs-lookup"><span data-stu-id="937f2-118">Headings</span></span>
 
-<span data-ttu-id="0fa48-119">Docs ondersteunt zes niveaus Markdown-koppen:</span><span class="sxs-lookup"><span data-stu-id="0fa48-119">Docs supports six levels of Markdown headings:</span></span>
+<span data-ttu-id="937f2-119">Docs ondersteunt zes niveaus Markdown-koppen:</span><span class="sxs-lookup"><span data-stu-id="937f2-119">Docs supports six levels of Markdown headings:</span></span>
 
 ```md
 # This is a first level heading (H1)
@@ -69,20 +69,20 @@ ms.locfileid: "73592570"
 ###### This is a sixth level heading (H6)
 ```
 
-- <span data-ttu-id="0fa48-120">Tussen de laatste `#` en de koptekst moet een spatie staan.</span><span class="sxs-lookup"><span data-stu-id="0fa48-120">There must be a space between the last `#` and heading text.</span></span>
-- <span data-ttu-id="0fa48-121">Elk Markdown-bestand moet precies één H1 hebben.</span><span class="sxs-lookup"><span data-stu-id="0fa48-121">Each Markdown file must have one and only one H1.</span></span>
-- <span data-ttu-id="0fa48-122">De H1 moet de eerste inhoud in het bestand zijn na het YML-blok met metagegevens.</span><span class="sxs-lookup"><span data-stu-id="0fa48-122">The H1 must be the first content in the file after the YML metadata block.</span></span>
-- <span data-ttu-id="0fa48-123">H2's verschijnen automatisch in het navigatiemenu aan de rechterkant van het gepubliceerde bestand.</span><span class="sxs-lookup"><span data-stu-id="0fa48-123">H2s automatically appear in the right-hand navigating menu of the published file.</span></span> <span data-ttu-id="0fa48-124">Dit geldt niet voor koppen op een lager niveau. Gebruik H2's dus strategisch om lezers te helpen door uw inhoud te navigeren.</span><span class="sxs-lookup"><span data-stu-id="0fa48-124">Lower-level headings do not, so use H2s strategically to help readers navigate your content.</span></span>
-- <span data-ttu-id="0fa48-125">HMTL-koppen, zoals `<h1>`, worden niet aanbevolen en leiden in sommige gevallen tot compileerwaarschuwingen.</span><span class="sxs-lookup"><span data-stu-id="0fa48-125">HMTL headings, such as `<h1>`, are not recommended and in some cases will cause build warnings.</span></span>
-- <span data-ttu-id="0fa48-126">U kunt de afzonderlijke koppen in een bestand koppelen via [bladwijzers](#bookmark-links).</span><span class="sxs-lookup"><span data-stu-id="0fa48-126">You can link to individual headings in a file via [bookmarks](#bookmark-links).</span></span>
+- <span data-ttu-id="937f2-120">Tussen de laatste `#` en de koptekst moet een spatie staan.</span><span class="sxs-lookup"><span data-stu-id="937f2-120">There must be a space between the last `#` and heading text.</span></span>
+- <span data-ttu-id="937f2-121">Elk Markdown-bestand moet precies één H1 hebben.</span><span class="sxs-lookup"><span data-stu-id="937f2-121">Each Markdown file must have one and only one H1.</span></span>
+- <span data-ttu-id="937f2-122">De H1 moet de eerste inhoud in het bestand zijn na het YML-blok met metagegevens.</span><span class="sxs-lookup"><span data-stu-id="937f2-122">The H1 must be the first content in the file after the YML metadata block.</span></span>
+- <span data-ttu-id="937f2-123">H2's verschijnen automatisch in het navigatiemenu aan de rechterkant van het gepubliceerde bestand.</span><span class="sxs-lookup"><span data-stu-id="937f2-123">H2s automatically appear in the right-hand navigating menu of the published file.</span></span> <span data-ttu-id="937f2-124">Dit geldt niet voor koppen op een lager niveau. Gebruik H2's dus strategisch om lezers te helpen door uw inhoud te navigeren.</span><span class="sxs-lookup"><span data-stu-id="937f2-124">Lower-level headings do not, so use H2s strategically to help readers navigate your content.</span></span>
+- <span data-ttu-id="937f2-125">HMTL-koppen, zoals `<h1>`, worden niet aanbevolen en leiden in sommige gevallen tot opbouwwaarschuwingen.</span><span class="sxs-lookup"><span data-stu-id="937f2-125">HTML headings, such as `<h1>`, are not recommended and in some cases will cause build warnings.</span></span>
+- <span data-ttu-id="937f2-126">U kunt de afzonderlijke koppen in een bestand koppelen via [bladwijzers](#bookmark-links).</span><span class="sxs-lookup"><span data-stu-id="937f2-126">You can link to individual headings in a file via [bookmarks](#bookmark-links).</span></span>
 
-## <a name="html"></a><span data-ttu-id="0fa48-127">HTML</span><span class="sxs-lookup"><span data-stu-id="0fa48-127">HTML</span></span>
+## <a name="html"></a><span data-ttu-id="937f2-127">HTML</span><span class="sxs-lookup"><span data-stu-id="937f2-127">HTML</span></span>
 
-<span data-ttu-id="0fa48-128">Hoewel Markdown ondersteuning biedt voor inline-HTML, wordt HTML niet aanbevolen voor het publiceren naar Docs. Bovendien leidt dit, behalve bij een beperkte lijst met waarden, tot compileerfouten of -waarschuwingen.</span><span class="sxs-lookup"><span data-stu-id="0fa48-128">Although Markdown supports inline HTML, HTML is not recommended for publishing to Docs, and except for a limited list of values will cause build errors or warnings.</span></span>
+<span data-ttu-id="937f2-128">Hoewel Markdown ondersteuning biedt voor inline-HTML, wordt HTML niet aanbevolen voor het publiceren naar Docs. Bovendien leidt dit, behalve bij een beperkte lijst met waarden, tot compileerfouten of -waarschuwingen.</span><span class="sxs-lookup"><span data-stu-id="937f2-128">Although Markdown supports inline HTML, HTML is not recommended for publishing to Docs, and except for a limited list of values will cause build errors or warnings.</span></span>
 
-## <a name="images"></a><span data-ttu-id="0fa48-129">Afbeeldingen</span><span class="sxs-lookup"><span data-stu-id="0fa48-129">Images</span></span>
+## <a name="images"></a><span data-ttu-id="937f2-129">Afbeeldingen</span><span class="sxs-lookup"><span data-stu-id="937f2-129">Images</span></span>
 
-<span data-ttu-id="0fa48-130">De syntaxis voor het insluiten van een afbeelding is:</span><span class="sxs-lookup"><span data-stu-id="0fa48-130">The syntax to include an image is:</span></span>
+<span data-ttu-id="937f2-130">De syntaxis voor het insluiten van een afbeelding is:</span><span class="sxs-lookup"><span data-stu-id="937f2-130">The syntax to include an image is:</span></span>
 
 ```md
 ![[alt text]](<folderPath>)
@@ -91,98 +91,98 @@ Example:
 ![alt text for image](../images/Introduction.png)
 ```
 
-<span data-ttu-id="0fa48-131">Hierbij is `alt text` een korte beschrijving van de afbeelding en `<folder path>` een relatief pad naar de afbeelding.</span><span class="sxs-lookup"><span data-stu-id="0fa48-131">Where `alt text` is a brief description of the image and `<folder path>` is a relative path to the image.</span></span> <span data-ttu-id="0fa48-132">Voor schermlezers voor visueel gehandicapten is alternatieve tekst nodig.</span><span class="sxs-lookup"><span data-stu-id="0fa48-132">Alternate text is required for screen readers for the visually impaired.</span></span> <span data-ttu-id="0fa48-133">Dit is ook handig wanneer de afbeelding niet kan worden weergegeven door een sitebug.</span><span class="sxs-lookup"><span data-stu-id="0fa48-133">It is also useful if there is a site bug where the image cannot render.</span></span>
+<span data-ttu-id="937f2-131">Hierbij is `alt text` een korte beschrijving van de afbeelding en `<folder path>` een relatief pad naar de afbeelding.</span><span class="sxs-lookup"><span data-stu-id="937f2-131">Where `alt text` is a brief description of the image and `<folder path>` is a relative path to the image.</span></span> <span data-ttu-id="937f2-132">Voor schermlezers voor visueel gehandicapten is alternatieve tekst nodig.</span><span class="sxs-lookup"><span data-stu-id="937f2-132">Alternate text is required for screen readers for the visually impaired.</span></span> <span data-ttu-id="937f2-133">Dit is ook handig wanneer de afbeelding niet kan worden weergegeven door een sitebug.</span><span class="sxs-lookup"><span data-stu-id="937f2-133">It is also useful if there is a site bug where the image cannot render.</span></span>
 
-<span data-ttu-id="0fa48-134">Afbeeldingen moeten worden opgeslagen in een `/media`-map in uw docset.</span><span class="sxs-lookup"><span data-stu-id="0fa48-134">Images should be stored in a `/media` folder within your doc set.</span></span> <span data-ttu-id="0fa48-135">De volgende bestandstypen worden standaard voor afbeeldingen ondersteund:</span><span class="sxs-lookup"><span data-stu-id="0fa48-135">The following file types are supported by default for images:</span></span>
+<span data-ttu-id="937f2-134">Afbeeldingen moeten worden opgeslagen in een `/media`-map in uw docset.</span><span class="sxs-lookup"><span data-stu-id="937f2-134">Images should be stored in a `/media` folder within your doc set.</span></span> <span data-ttu-id="937f2-135">De volgende bestandstypen worden standaard voor afbeeldingen ondersteund:</span><span class="sxs-lookup"><span data-stu-id="937f2-135">The following file types are supported by default for images:</span></span>
 
-- <span data-ttu-id="0fa48-136">.jpg</span><span class="sxs-lookup"><span data-stu-id="0fa48-136">.jpg</span></span>
-- <span data-ttu-id="0fa48-137">.png</span><span class="sxs-lookup"><span data-stu-id="0fa48-137">.png</span></span>
+- <span data-ttu-id="937f2-136">.jpg</span><span class="sxs-lookup"><span data-stu-id="937f2-136">.jpg</span></span>
+- <span data-ttu-id="937f2-137">.png</span><span class="sxs-lookup"><span data-stu-id="937f2-137">.png</span></span>
 
-<span data-ttu-id="0fa48-138">U kunt ook ondersteuning voor andere typen afbeeldingen toevoegen door deze toe te voegen als resources aan het docfx.json-bestand</span><span class="sxs-lookup"><span data-stu-id="0fa48-138">You can add support for other image types by adding them as resources to the docfx.json file</span></span><!--add link to reference when available--> <span data-ttu-id="0fa48-139">voor uw doc-set.</span><span class="sxs-lookup"><span data-stu-id="0fa48-139">for your doc set.</span></span>
+<span data-ttu-id="937f2-138">U kunt ook ondersteuning voor andere typen afbeeldingen toevoegen door deze toe te voegen als resources aan het docfx.json-bestand</span><span class="sxs-lookup"><span data-stu-id="937f2-138">You can add support for other image types by adding them as resources to the docfx.json file</span></span><!--add link to reference when available--> <span data-ttu-id="937f2-139">voor uw doc-set.</span><span class="sxs-lookup"><span data-stu-id="937f2-139">for your doc set.</span></span>
 
-## <a name="links"></a><span data-ttu-id="0fa48-140">Koppelingen</span><span class="sxs-lookup"><span data-stu-id="0fa48-140">Links</span></span>
+## <a name="links"></a><span data-ttu-id="937f2-140">Koppelingen</span><span class="sxs-lookup"><span data-stu-id="937f2-140">Links</span></span>
 
-<span data-ttu-id="0fa48-141">In de meeste gevallen gebruikt Docs standaard-Markdown-koppelingen naar andere bestanden en pagina's.</span><span class="sxs-lookup"><span data-stu-id="0fa48-141">In most cases, Docs uses standard Markdown links to other files and pages.</span></span> <span data-ttu-id="0fa48-142">De typen koppelingen worden in de onderstaande subsecties beschreven.</span><span class="sxs-lookup"><span data-stu-id="0fa48-142">The types of links are described in subsections below.</span></span>
+<span data-ttu-id="937f2-141">In de meeste gevallen gebruikt Docs standaard-Markdown-koppelingen naar andere bestanden en pagina's.</span><span class="sxs-lookup"><span data-stu-id="937f2-141">In most cases, Docs uses standard Markdown links to other files and pages.</span></span> <span data-ttu-id="937f2-142">De typen koppelingen worden in de onderstaande subsecties beschreven.</span><span class="sxs-lookup"><span data-stu-id="937f2-142">The types of links are described in subsections below.</span></span>
 
 > [!TIP]
-> <span data-ttu-id="0fa48-143">Het Docs-ontwerppakket voor VS Code kan helpen relatieve koppelingen en bladwijzers correct in te voegen zonder dat u zich met paden bezig hoeft te houden.</span><span class="sxs-lookup"><span data-stu-id="0fa48-143">The Docs Authoring Pack for VS Code can help insert relative links and bookmarks correctly without the tedium of figuring out the paths!</span></span>
+> <span data-ttu-id="937f2-143">Het Docs-ontwerppakket voor VS Code kan helpen relatieve koppelingen en bladwijzers correct in te voegen zonder dat u zich met paden bezig hoeft te houden.</span><span class="sxs-lookup"><span data-stu-id="937f2-143">The Docs Authoring Pack for VS Code can help insert relative links and bookmarks correctly without the tedium of figuring out the paths!</span></span>
 
 > [!IMPORTANT]
-> <span data-ttu-id="0fa48-144">Neem geen codes voor landinstellingen, zoals nl-nl, in uw koppelingen naar Microsoft-sites op.</span><span class="sxs-lookup"><span data-stu-id="0fa48-144">Do not include locale codes, such as en-us, in your links to Microsoft sites.</span></span> <span data-ttu-id="0fa48-145">Landinstellingscodes die in code zijn vastgelegd verhinderen dat gelokaliseerde inhoud wordt weergegeven. Dit leidt tot een slechte klantervaring voor gebruikers in andere regio's en brengt aanzienlijke lokalisatiekosten met zich mee.</span><span class="sxs-lookup"><span data-stu-id="0fa48-145">Hard-coded locale codes prevent localized content from rendering, which is a bad customer experience for users in other locales and incurs significant localization costs.</span></span> <span data-ttu-id="0fa48-146">Wanneer u een URL uit een browser kopieert, wordt de landinstellingscode standaard opgenomen. U moet deze handmatig dus verwijderen wanneer u een koppeling maakt.</span><span class="sxs-lookup"><span data-stu-id="0fa48-146">When you copy a URL from a browser, the locale code is included by default, so you need to manually delete it when you create your link.</span></span> <span data-ttu-id="0fa48-147">Gebruik bijvoorbeeld:</span><span class="sxs-lookup"><span data-stu-id="0fa48-147">For example, use:</span></span>
+> <span data-ttu-id="937f2-144">Neem geen codes voor landinstellingen, zoals nl-nl, in uw koppelingen naar Microsoft-sites op.</span><span class="sxs-lookup"><span data-stu-id="937f2-144">Do not include locale codes, such as en-us, in your links to Microsoft sites.</span></span> <span data-ttu-id="937f2-145">Landinstellingscodes die in code zijn vastgelegd verhinderen dat gelokaliseerde inhoud wordt weergegeven. Dit leidt tot een slechte klantervaring voor gebruikers in andere regio's en brengt aanzienlijke lokalisatiekosten met zich mee.</span><span class="sxs-lookup"><span data-stu-id="937f2-145">Hard-coded locale codes prevent localized content from rendering, which is a bad customer experience for users in other locales and incurs significant localization costs.</span></span> <span data-ttu-id="937f2-146">Wanneer u een URL uit een browser kopieert, wordt de landinstellingscode standaard opgenomen. U moet deze handmatig dus verwijderen wanneer u een koppeling maakt.</span><span class="sxs-lookup"><span data-stu-id="937f2-146">When you copy a URL from a browser, the locale code is included by default, so you need to manually delete it when you create your link.</span></span> <span data-ttu-id="937f2-147">Gebruik bijvoorbeeld:</span><span class="sxs-lookup"><span data-stu-id="937f2-147">For example, use:</span></span>
 >
 > `[Microsoft](https://www.microsoft.com)`
 >
-> <span data-ttu-id="0fa48-148">Niet:</span><span class="sxs-lookup"><span data-stu-id="0fa48-148">Not:</span></span>
+> <span data-ttu-id="937f2-148">Niet:</span><span class="sxs-lookup"><span data-stu-id="937f2-148">Not:</span></span>
 >
 > `[Microsoft](https://www.microsoft.com/en-us/)`
 
-### <a name="relative-links-to-files-in-the-same-doc-set"></a><span data-ttu-id="0fa48-149">Relatieve koppelingen naar bestanden in dezelfde docset</span><span class="sxs-lookup"><span data-stu-id="0fa48-149">Relative links to files in the same doc set</span></span>
+### <a name="relative-links-to-files-in-the-same-doc-set"></a><span data-ttu-id="937f2-149">Relatieve koppelingen naar bestanden in dezelfde docset</span><span class="sxs-lookup"><span data-stu-id="937f2-149">Relative links to files in the same doc set</span></span>
 
-<span data-ttu-id="0fa48-150">Een relatief pad is het pad naar het doelbestand ten opzichte van het huidige bestand.</span><span class="sxs-lookup"><span data-stu-id="0fa48-150">A relative path is the path to the target file relative to the current file.</span></span> <span data-ttu-id="0fa48-151">U kunt in Docs een relatief pad gebruiken om een koppeling naar ander bestand in dezelfde docset te maken.</span><span class="sxs-lookup"><span data-stu-id="0fa48-151">In Docs, you can use a relative path to link to another file within the same doc set.</span></span> <span data-ttu-id="0fa48-152">De syntaxis voor een relatief pad ziet er als volgt uit:</span><span class="sxs-lookup"><span data-stu-id="0fa48-152">The syntax for a relative path is as follows:</span></span>
+<span data-ttu-id="937f2-150">Een relatief pad is het pad naar het doelbestand ten opzichte van het huidige bestand.</span><span class="sxs-lookup"><span data-stu-id="937f2-150">A relative path is the path to the target file relative to the current file.</span></span> <span data-ttu-id="937f2-151">U kunt in Docs een relatief pad gebruiken om een koppeling naar ander bestand in dezelfde docset te maken.</span><span class="sxs-lookup"><span data-stu-id="937f2-151">In Docs, you can use a relative path to link to another file within the same doc set.</span></span> <span data-ttu-id="937f2-152">De syntaxis voor een relatief pad ziet er als volgt uit:</span><span class="sxs-lookup"><span data-stu-id="937f2-152">The syntax for a relative path is as follows:</span></span>
 
 ```md
 [link text](../../folder/filename.md)
 ```
 
-<span data-ttu-id="0fa48-153">Hierbij duidt `../` één niveau hoger in de hiërarchie aan.</span><span class="sxs-lookup"><span data-stu-id="0fa48-153">Where `../` indicates one level above in the hierarchy.</span></span>
+<span data-ttu-id="937f2-153">Hierbij duidt `../` één niveau hoger in de hiërarchie aan.</span><span class="sxs-lookup"><span data-stu-id="937f2-153">Where `../` indicates one level above in the hierarchy.</span></span>
 
-- <span data-ttu-id="0fa48-154">Het relatieve pad wordt tijdens het compileren omgezet, met inbegrip van het verwijderen van de MD-extensie.</span><span class="sxs-lookup"><span data-stu-id="0fa48-154">The relative path will be resolved during the build, including removal of the .md extension.</span></span>
-- <span data-ttu-id="0fa48-155">U kunt ../ gebruiken om het bestand te koppelen aan een bestand in de bovenliggende map, maar dat bestand moet dan wel in dezelfde docset aanwezig zijn.</span><span class="sxs-lookup"><span data-stu-id="0fa48-155">You can use "../" to link to a file in the parent folder, but that file has to be in the same doc set.</span></span> <span data-ttu-id="0fa48-156">U kunt ../ niet gebruiken om een bestand te koppelen aan een bestand in een andere docset-map.</span><span class="sxs-lookup"><span data-stu-id="0fa48-156">You cannot use "../" to link to a file in another doc set folder.</span></span>
-- <span data-ttu-id="0fa48-157">Docs ondersteunt ook een speciale vorm van een relatief pad. Deze vorm begint met het teken ~ (bijvoorbeeld ~/foo/bar.md).</span><span class="sxs-lookup"><span data-stu-id="0fa48-157">Docs also supports a special form of relative path that starts with "~" (for example, ~/foo/bar.md).</span></span> <span data-ttu-id="0fa48-158">Met deze syntaxis wordt een bestand ten opzichte van de hoofdmap van een docset aangegeven.</span><span class="sxs-lookup"><span data-stu-id="0fa48-158">This syntax indicates a file relative to the root folder of a doc set.</span></span> <span data-ttu-id="0fa48-159">Ook dit type pad wordt tijdens de build gevalideerd en omgezet.</span><span class="sxs-lookup"><span data-stu-id="0fa48-159">This kind of path is also validated and resolved during the build.</span></span>
+- <span data-ttu-id="937f2-154">Het relatieve pad wordt tijdens het compileren omgezet, met inbegrip van het verwijderen van de MD-extensie.</span><span class="sxs-lookup"><span data-stu-id="937f2-154">The relative path will be resolved during the build, including removal of the .md extension.</span></span>
+- <span data-ttu-id="937f2-155">U kunt ../ gebruiken om het bestand te koppelen aan een bestand in de bovenliggende map, maar dat bestand moet dan wel in dezelfde docset aanwezig zijn.</span><span class="sxs-lookup"><span data-stu-id="937f2-155">You can use "../" to link to a file in the parent folder, but that file has to be in the same doc set.</span></span> <span data-ttu-id="937f2-156">U kunt ../ niet gebruiken om een bestand te koppelen aan een bestand in een andere docset-map.</span><span class="sxs-lookup"><span data-stu-id="937f2-156">You cannot use "../" to link to a file in another doc set folder.</span></span>
+- <span data-ttu-id="937f2-157">Docs ondersteunt ook een speciale vorm van een relatief pad. Deze vorm begint met het teken ~ (bijvoorbeeld ~/foo/bar.md).</span><span class="sxs-lookup"><span data-stu-id="937f2-157">Docs also supports a special form of relative path that starts with "~" (for example, ~/foo/bar.md).</span></span> <span data-ttu-id="937f2-158">Met deze syntaxis wordt een bestand ten opzichte van de hoofdmap van een docset aangegeven.</span><span class="sxs-lookup"><span data-stu-id="937f2-158">This syntax indicates a file relative to the root folder of a doc set.</span></span> <span data-ttu-id="937f2-159">Ook dit type pad wordt tijdens de build gevalideerd en omgezet.</span><span class="sxs-lookup"><span data-stu-id="937f2-159">This kind of path is also validated and resolved during the build.</span></span>
 
 > [!IMPORTANT]
-> <span data-ttu-id="0fa48-160">Neem de bestandsextensie in het relatieve pad op.</span><span class="sxs-lookup"><span data-stu-id="0fa48-160">Include the file extension in the relative path.</span></span> <span data-ttu-id="0fa48-161">Bij het compileren wordt het bestaan van het doelbestand van dat relatieve pad gevalideerd.</span><span class="sxs-lookup"><span data-stu-id="0fa48-161">Build validates the existence of the target file of that relative path.</span></span> <span data-ttu-id="0fa48-162">Als het relatieve pad geen bestandsextensie bevat, wordt bij het compileren waarschijnlijk een waarschuwing of verbroken koppeling gerapporteerd.</span><span class="sxs-lookup"><span data-stu-id="0fa48-162">If relative path does not include file extension, it is likely build will report a warning of broken link.</span></span> <span data-ttu-id="0fa48-163">Gebruik bijvoorbeeld:</span><span class="sxs-lookup"><span data-stu-id="0fa48-163">For example, use:</span></span>
+> <span data-ttu-id="937f2-160">Neem de bestandsextensie in het relatieve pad op.</span><span class="sxs-lookup"><span data-stu-id="937f2-160">Include the file extension in the relative path.</span></span> <span data-ttu-id="937f2-161">Bij het compileren wordt het bestaan van het doelbestand van dat relatieve pad gevalideerd.</span><span class="sxs-lookup"><span data-stu-id="937f2-161">Build validates the existence of the target file of that relative path.</span></span> <span data-ttu-id="937f2-162">Als het relatieve pad geen bestandsextensie bevat, wordt bij het compileren waarschijnlijk een waarschuwing of verbroken koppeling gerapporteerd.</span><span class="sxs-lookup"><span data-stu-id="937f2-162">If relative path does not include file extension, it is likely build will report a warning of broken link.</span></span> <span data-ttu-id="937f2-163">Gebruik bijvoorbeeld:</span><span class="sxs-lookup"><span data-stu-id="937f2-163">For example, use:</span></span>
 >
 > `[link text](../../folder/filename.md)`
 >
-> <span data-ttu-id="0fa48-164">Niet:</span><span class="sxs-lookup"><span data-stu-id="0fa48-164">Not:</span></span>
+> <span data-ttu-id="937f2-164">Niet:</span><span class="sxs-lookup"><span data-stu-id="937f2-164">Not:</span></span>
 >
 > `[link text](../../folder/filename)`
 
-### <a name="site-relative-links-to-other-files-on-docs"></a><span data-ttu-id="0fa48-165">Sitegerelateerde koppelingen naar andere bestanden in Docs</span><span class="sxs-lookup"><span data-stu-id="0fa48-165">Site relative links to other files on Docs</span></span>
+### <a name="site-relative-links-to-other-files-on-docs"></a><span data-ttu-id="937f2-165">Sitegerelateerde koppelingen naar andere bestanden in Docs</span><span class="sxs-lookup"><span data-stu-id="937f2-165">Site relative links to other files on Docs</span></span>
 
 ```md
 [Azure and Linux](/articles/virtual-machines/linux/overview)
 ```
 
-<span data-ttu-id="0fa48-166">Neem de bestandsextensie (.md) niet op.</span><span class="sxs-lookup"><span data-stu-id="0fa48-166">Do not include the file extension (.md).</span></span> <span data-ttu-id="0fa48-167">Deze koppelt naar het Linux-overzichtsbestand van buiten de Azure-docset 'articles'.</span><span class="sxs-lookup"><span data-stu-id="0fa48-167">This links to the Linux overview file from outside the Azure "articles" doc set.</span></span>
+<span data-ttu-id="937f2-166">Neem de bestandsextensie (.md) niet op.</span><span class="sxs-lookup"><span data-stu-id="937f2-166">Do not include the file extension (.md).</span></span> <span data-ttu-id="937f2-167">Deze koppelt naar het Linux-overzichtsbestand van buiten de Azure-docset 'articles'.</span><span class="sxs-lookup"><span data-stu-id="937f2-167">This links to the Linux overview file from outside the Azure "articles" doc set.</span></span>
 
-### <a name="links-to-external-sites"></a><span data-ttu-id="0fa48-168">Koppelingen naar externe sites</span><span class="sxs-lookup"><span data-stu-id="0fa48-168">Links to external sites</span></span>
+### <a name="links-to-external-sites"></a><span data-ttu-id="937f2-168">Koppelingen naar externe sites</span><span class="sxs-lookup"><span data-stu-id="937f2-168">Links to external sites</span></span>
 
 ```md
 [Microsoft](https://www.microsoft.com)
 ```
 
-<span data-ttu-id="0fa48-169">Op URL gebaseerde koppeling naar een andere webpagina (moet https:// bevatten).</span><span class="sxs-lookup"><span data-stu-id="0fa48-169">URL-based link to another web page (must include https://).</span></span>
+<span data-ttu-id="937f2-169">Op URL gebaseerde koppeling naar een andere webpagina (moet https:// bevatten).</span><span class="sxs-lookup"><span data-stu-id="937f2-169">URL-based link to another web page (must include https://).</span></span>
 
-### <a name="bookmark-links"></a><span data-ttu-id="0fa48-170">Bladwijzerkoppelingen</span><span class="sxs-lookup"><span data-stu-id="0fa48-170">Bookmark links</span></span>
+### <a name="bookmark-links"></a><span data-ttu-id="937f2-170">Bladwijzerkoppelingen</span><span class="sxs-lookup"><span data-stu-id="937f2-170">Bookmark links</span></span>
 
-<span data-ttu-id="0fa48-171">Bladwijzerkoppeling naar een kop in een ander bestand in dezelfde opslagplaats.</span><span class="sxs-lookup"><span data-stu-id="0fa48-171">Bookmark link to a heading in another file in the same repo.</span></span> <span data-ttu-id="0fa48-172">Bijvoorbeeld:</span><span class="sxs-lookup"><span data-stu-id="0fa48-172">For example:</span></span>
+<span data-ttu-id="937f2-171">Bladwijzerkoppeling naar een kop in een ander bestand in dezelfde opslagplaats.</span><span class="sxs-lookup"><span data-stu-id="937f2-171">Bookmark link to a heading in another file in the same repo.</span></span> <span data-ttu-id="937f2-172">Bijvoorbeeld:</span><span class="sxs-lookup"><span data-stu-id="937f2-172">For example:</span></span>
 
 ```md
 [Managed Disks](../../linux/overview.md#managed-disks)
 ```
 
-<span data-ttu-id="0fa48-173">Bladwijzerkoppeling naar een kop in het huidige bestand:</span><span class="sxs-lookup"><span data-stu-id="0fa48-173">Bookmark link to a heading in the current file:</span></span>
+<span data-ttu-id="937f2-173">Bladwijzerkoppeling naar een kop in het huidige bestand:</span><span class="sxs-lookup"><span data-stu-id="937f2-173">Bookmark link to a heading in the current file:</span></span>
 
 ```md
 [Managed Disks](#managed-disks)
 ```
 
-<span data-ttu-id="0fa48-174">Gebruik een hekje `#` gevolgd door de woorden van de koptekst.</span><span class="sxs-lookup"><span data-stu-id="0fa48-174">Use a hash mark `#` followed by the words of the heading.</span></span> <span data-ttu-id="0fa48-175">De koptekst wijzigen in koppelingtekst:</span><span class="sxs-lookup"><span data-stu-id="0fa48-175">To change the heading text into link text:</span></span>
-- <span data-ttu-id="0fa48-176">Alleen kleine letters gebruiken</span><span class="sxs-lookup"><span data-stu-id="0fa48-176">Use all lowercase characters</span></span>
-- <span data-ttu-id="0fa48-177">Leestekens verwijderen</span><span class="sxs-lookup"><span data-stu-id="0fa48-177">Remove punctuation</span></span>
-- <span data-ttu-id="0fa48-178">Spaties vervangen door streepjes</span><span class="sxs-lookup"><span data-stu-id="0fa48-178">Replace spaces with dashes</span></span>
+<span data-ttu-id="937f2-174">Gebruik een hekje `#` gevolgd door de woorden van de koptekst.</span><span class="sxs-lookup"><span data-stu-id="937f2-174">Use a hash mark `#` followed by the words of the heading.</span></span> <span data-ttu-id="937f2-175">De koptekst wijzigen in koppelingtekst:</span><span class="sxs-lookup"><span data-stu-id="937f2-175">To change the heading text into link text:</span></span>
+- <span data-ttu-id="937f2-176">Alleen kleine letters gebruiken</span><span class="sxs-lookup"><span data-stu-id="937f2-176">Use all lowercase characters</span></span>
+- <span data-ttu-id="937f2-177">Leestekens verwijderen</span><span class="sxs-lookup"><span data-stu-id="937f2-177">Remove punctuation</span></span>
+- <span data-ttu-id="937f2-178">Spaties vervangen door streepjes</span><span class="sxs-lookup"><span data-stu-id="937f2-178">Replace spaces with dashes</span></span>
 
-<span data-ttu-id="0fa48-179">Bijvoorbeeld als de koptekstnaam "2.2 Beveiligingsproblemen" is, is de tekst van de bladwijzerkoppeling ' #22-beveiligingsproblemen'.</span><span class="sxs-lookup"><span data-stu-id="0fa48-179">For example, if the heading name is "2.2 Security concerns", then the bookmark link text will be "#22-security-concerns".</span></span>
+<span data-ttu-id="937f2-179">Bijvoorbeeld als de koptekstnaam "2.2 Beveiligingsproblemen" is, is de tekst van de bladwijzerkoppeling ' #22-beveiligingsproblemen'.</span><span class="sxs-lookup"><span data-stu-id="937f2-179">For example, if the heading name is "2.2 Security concerns", then the bookmark link text will be "#22-security-concerns".</span></span>
 
-### <a name="explicit-anchor-links"></a><span data-ttu-id="0fa48-180">Expliciete ankerkoppelingen</span><span class="sxs-lookup"><span data-stu-id="0fa48-180">Explicit anchor links</span></span>
+### <a name="explicit-anchor-links"></a><span data-ttu-id="937f2-180">Expliciete ankerkoppelingen</span><span class="sxs-lookup"><span data-stu-id="937f2-180">Explicit anchor links</span></span>
 
-<span data-ttu-id="0fa48-181">Expliciete ankerkoppelingen die de `<a>`-HTML-tag gebruiken worden **niet vereist of aanbevolen** behalve in hub- en landingspagina's.</span><span class="sxs-lookup"><span data-stu-id="0fa48-181">Explicit anchor links using the `<a>` HTML tag are **not required or recommended** except in hub and landing pages.</span></span> <span data-ttu-id="0fa48-182">Gebruik in algemene Markdown-bestanden bladwijzers zoals hierboven wordt beschreven.</span><span class="sxs-lookup"><span data-stu-id="0fa48-182">Use bookmarks as described above in general Markdown files.</span></span> <span data-ttu-id="0fa48-183">Gebruik als volgt ankers voor hub- en landingspagina's:</span><span class="sxs-lookup"><span data-stu-id="0fa48-183">For hub and landing pages, use anchors as follows:</span></span>
+<span data-ttu-id="937f2-181">Expliciete ankerkoppelingen die de `<a>`-HTML-tag gebruiken worden **niet vereist of aanbevolen** behalve in hub- en landingspagina's.</span><span class="sxs-lookup"><span data-stu-id="937f2-181">Explicit anchor links using the `<a>` HTML tag are **not required or recommended** except in hub and landing pages.</span></span> <span data-ttu-id="937f2-182">Gebruik in algemene Markdown-bestanden bladwijzers zoals hierboven wordt beschreven.</span><span class="sxs-lookup"><span data-stu-id="937f2-182">Use bookmarks as described above in general Markdown files.</span></span> <span data-ttu-id="937f2-183">Gebruik als volgt ankers voor hub- en landingspagina's:</span><span class="sxs-lookup"><span data-stu-id="937f2-183">For hub and landing pages, use anchors as follows:</span></span>
 
-<span data-ttu-id="0fa48-184">`## <a id="AnchorText"> </a>Header text` of `## <a name="AnchorText"> </a>Header text`</span><span class="sxs-lookup"><span data-stu-id="0fa48-184">`## <a id="AnchorText"> </a>Header text` or `## <a name="AnchorText"> </a>Header text`</span></span>
+<span data-ttu-id="937f2-184">`## <a id="AnchorText"> </a>Header text` of `## <a name="AnchorText"> </a>Header text`</span><span class="sxs-lookup"><span data-stu-id="937f2-184">`## <a id="AnchorText"> </a>Header text` or `## <a name="AnchorText"> </a>Header text`</span></span>
 
-<span data-ttu-id="0fa48-185">Gebruik de volgende syntaxis om een koppeling naar expliciete ankers te maken:</span><span class="sxs-lookup"><span data-stu-id="0fa48-185">To link to explicit anchors, use the following syntax:</span></span>
+<span data-ttu-id="937f2-185">Gebruik de volgende syntaxis om een koppeling naar expliciete ankers te maken:</span><span class="sxs-lookup"><span data-stu-id="937f2-185">To link to explicit anchors, use the following syntax:</span></span>
 
 ```md
 To go to a section on the same page:
@@ -192,12 +192,12 @@ To go to a section on another page.
 [text](FileName.md#AnchorText)
 ```
 
-### <a name="xref-cross-reference-links"></a><span data-ttu-id="0fa48-186">XREF-koppelingen (kruisverwijzing)</span><span class="sxs-lookup"><span data-stu-id="0fa48-186">XREF (cross reference) links</span></span>
+### <a name="xref-cross-reference-links"></a><span data-ttu-id="937f2-186">XREF-koppelingen (kruisverwijzing)</span><span class="sxs-lookup"><span data-stu-id="937f2-186">XREF (cross reference) links</span></span>
 
-<span data-ttu-id="0fa48-187">Als u in de huidige docset of andere docsets een koppeling wilt maken naar automatisch gegenereerde pagina's met API-naslaginformatie, gebruikt u XREF-koppelingen met de unieke id (UID).</span><span class="sxs-lookup"><span data-stu-id="0fa48-187">To link to auto-generated API references pages in the current doc set or other doc sets, use XREF links with the unique ID (UID).</span></span>
+<span data-ttu-id="937f2-187">Als u in de huidige docset of andere docsets een koppeling wilt maken naar automatisch gegenereerde pagina's met API-naslaginformatie, gebruikt u XREF-koppelingen met de unieke id (UID).</span><span class="sxs-lookup"><span data-stu-id="937f2-187">To link to auto-generated API references pages in the current doc set or other doc sets, use XREF links with the unique ID (UID).</span></span>
 
 > [!NOTE]
-> <span data-ttu-id="0fa48-188">Als u wilt verwijzen naar pagina's met API-naslaginformatie in andere docsets, moet u `xrefService`-configuratie in het `docfx.json`-bestand toevoegen.</span><span class="sxs-lookup"><span data-stu-id="0fa48-188">To reference API reference pages in other doc sets, you need to add `xrefService` configuration in `docfx.json` file.</span></span>
+> <span data-ttu-id="937f2-188">Als u wilt verwijzen naar pagina's met API-naslaginformatie in andere docsets, moet u `xrefService`-configuratie in het `docfx.json`-bestand toevoegen.</span><span class="sxs-lookup"><span data-stu-id="937f2-188">To reference API reference pages in other doc sets, you need to add `xrefService` configuration in `docfx.json` file.</span></span>
 > ```
 > "build": {
 >   ...
@@ -205,45 +205,45 @@ To go to a section on another page.
 > }
 > ```
 
-<span data-ttu-id="0fa48-189">De UID is gelijk aan de volledig gekwalificeerde naam van de klasse en het lid.</span><span class="sxs-lookup"><span data-stu-id="0fa48-189">The UID equates to the fully qualified class and member name.</span></span> <span data-ttu-id="0fa48-190">Als u een \* toevoegt na de UID, vertegenwoordigt de koppeling een overbelastingspagina en niet een specifieke API.</span><span class="sxs-lookup"><span data-stu-id="0fa48-190">If you add a \* after the UID, the link then represents the overload page and not a specific API.</span></span> <span data-ttu-id="0fa48-191">Gebruik bijvoorbeeld `List<T>.BinarySearch*` om een koppeling naar de pagina BinarySearch Method te maken in plaats van te koppelen naar een specifieke overbelasting zoals `List<T>.BinarySearch(T, IComparer<T>)`.</span><span class="sxs-lookup"><span data-stu-id="0fa48-191">For example, use `List<T>.BinarySearch*` to link to the BinarySearch Method page instead of linking to a specific overload such as `List<T>.BinarySearch(T, IComparer<T>)`.</span></span>
+<span data-ttu-id="937f2-189">De UID is gelijk aan de volledig gekwalificeerde naam van de klasse en het lid.</span><span class="sxs-lookup"><span data-stu-id="937f2-189">The UID equates to the fully qualified class and member name.</span></span> <span data-ttu-id="937f2-190">Als u een \* toevoegt na de UID, vertegenwoordigt de koppeling een overbelastingspagina en niet een specifieke API.</span><span class="sxs-lookup"><span data-stu-id="937f2-190">If you add a \* after the UID, the link then represents the overload page and not a specific API.</span></span> <span data-ttu-id="937f2-191">Gebruik bijvoorbeeld `List<T>.BinarySearch*` om een koppeling naar de pagina BinarySearch Method te maken in plaats van te koppelen naar een specifieke overbelasting zoals `List<T>.BinarySearch(T, IComparer<T>)`.</span><span class="sxs-lookup"><span data-stu-id="937f2-191">For example, use `List<T>.BinarySearch*` to link to the BinarySearch Method page instead of linking to a specific overload such as `List<T>.BinarySearch(T, IComparer<T>)`.</span></span>
 
-<span data-ttu-id="0fa48-192">Voor de syntaxis hebt u de volgende mogelijkheden:</span><span class="sxs-lookup"><span data-stu-id="0fa48-192">You can use one of the following syntaxes:</span></span>
+<span data-ttu-id="937f2-192">Voor de syntaxis hebt u de volgende mogelijkheden:</span><span class="sxs-lookup"><span data-stu-id="937f2-192">You can use one of the following syntaxes:</span></span>
 
-- <span data-ttu-id="0fa48-193">Automatisch koppelen: `<xref:UID> or <xref:UID?displayProperty=nameWithType>`</span><span class="sxs-lookup"><span data-stu-id="0fa48-193">Auto-link: `<xref:UID> or <xref:UID?displayProperty=nameWithType>`</span></span>
+- <span data-ttu-id="937f2-193">Automatisch koppelen: `<xref:UID> or <xref:UID?displayProperty=nameWithType>`</span><span class="sxs-lookup"><span data-stu-id="937f2-193">Auto-link: `<xref:UID> or <xref:UID?displayProperty=nameWithType>`</span></span>
 
-  <span data-ttu-id="0fa48-194">De optionele queryparameter `displayProperty` produceert een volledig gekwalificeerde koppelingstekst.</span><span class="sxs-lookup"><span data-stu-id="0fa48-194">The optional `displayProperty` query parameter produces a fully qualified link text.</span></span> <span data-ttu-id="0fa48-195">Standaard toont de koppelingstekst alleen de naam van het lid of het type.</span><span class="sxs-lookup"><span data-stu-id="0fa48-195">By default, link text shows only the member or type name.</span></span>
+  <span data-ttu-id="937f2-194">De optionele queryparameter `displayProperty` produceert een volledig gekwalificeerde koppelingstekst.</span><span class="sxs-lookup"><span data-stu-id="937f2-194">The optional `displayProperty` query parameter produces a fully qualified link text.</span></span> <span data-ttu-id="937f2-195">Standaard toont de koppelingstekst alleen de naam van het lid of het type.</span><span class="sxs-lookup"><span data-stu-id="937f2-195">By default, link text shows only the member or type name.</span></span>
 
-- <span data-ttu-id="0fa48-196">Markdown-koppeling: `[link text](xref:UID)`</span><span class="sxs-lookup"><span data-stu-id="0fa48-196">Markdown link: `[link text](xref:UID)`</span></span>
+- <span data-ttu-id="937f2-196">Markdown-koppeling: `[link text](xref:UID)`</span><span class="sxs-lookup"><span data-stu-id="937f2-196">Markdown link: `[link text](xref:UID)`</span></span>
   
-  <span data-ttu-id="0fa48-197">Gebruik deze als u de weergegeven koppelingstekst wilt aanpassen.</span><span class="sxs-lookup"><span data-stu-id="0fa48-197">Use when you want to customize the link text displayed.</span></span>
+  <span data-ttu-id="937f2-197">Gebruik deze als u de weergegeven koppelingstekst wilt aanpassen.</span><span class="sxs-lookup"><span data-stu-id="937f2-197">Use when you want to customize the link text displayed.</span></span>
 
-<span data-ttu-id="0fa48-198">Voorbeelden:</span><span class="sxs-lookup"><span data-stu-id="0fa48-198">Examples:</span></span>
+<span data-ttu-id="937f2-198">Voorbeelden:</span><span class="sxs-lookup"><span data-stu-id="937f2-198">Examples:</span></span>
 
-- <span data-ttu-id="0fa48-199">`<xref:System.String>` wordt weergegeven als String.</span><span class="sxs-lookup"><span data-stu-id="0fa48-199">`<xref:System.String>` renders as "String".</span></span>
-- <span data-ttu-id="0fa48-200">`<xref:System.String?displayProperty=nameWithType>` wordt weergegeven als System.String.</span><span class="sxs-lookup"><span data-stu-id="0fa48-200">`<xref:System.String?displayProperty=nameWithType>` renders as "System.String".</span></span>
-- <span data-ttu-id="0fa48-201">`[String class](xref:System.String)` wordt weergeven als String class.</span><span class="sxs-lookup"><span data-stu-id="0fa48-201">`[String class](xref:System.String)` renders as "String class".</span></span>
+- <span data-ttu-id="937f2-199">`<xref:System.String>` wordt weergegeven als String.</span><span class="sxs-lookup"><span data-stu-id="937f2-199">`<xref:System.String>` renders as "String".</span></span>
+- <span data-ttu-id="937f2-200">`<xref:System.String?displayProperty=nameWithType>` wordt weergegeven als System.String.</span><span class="sxs-lookup"><span data-stu-id="937f2-200">`<xref:System.String?displayProperty=nameWithType>` renders as "System.String".</span></span>
+- <span data-ttu-id="937f2-201">`[String class](xref:System.String)` wordt weergeven als String class.</span><span class="sxs-lookup"><span data-stu-id="937f2-201">`[String class](xref:System.String)` renders as "String class".</span></span>
 
-<span data-ttu-id="0fa48-202">Momenteel is er geen eenvoudige manier om de UID's te zoeken.</span><span class="sxs-lookup"><span data-stu-id="0fa48-202">Right now, there is no easy way to find the UIDs.</span></span> <!-- ? --><span data-ttu-id="0fa48-203">De beste manier om de UID voor een API te zoeken, is om de bron van de API-pagina waaraan u wilt koppelen te bekijken en de waarde ms.assetid te vinden.</span><span class="sxs-lookup"><span data-stu-id="0fa48-203">The best way to find the UID for an API is to view the source for the API page you want to link to and find the ms.assetid value.</span></span> <span data-ttu-id="0fa48-204">Afzonderlijke overbelastingswaarden worden in de bron niet weergegeven.</span><span class="sxs-lookup"><span data-stu-id="0fa48-204">Individual overload values are not shown in the source.</span></span> <span data-ttu-id="0fa48-205">We werken aan een beter systeem voor de toekomst.</span><span class="sxs-lookup"><span data-stu-id="0fa48-205">We're working on having a better system in the future.</span></span>
+<span data-ttu-id="937f2-202">Momenteel is er geen eenvoudige manier om de UID's te zoeken.</span><span class="sxs-lookup"><span data-stu-id="937f2-202">Right now, there is no easy way to find the UIDs.</span></span> <!-- ? --><span data-ttu-id="937f2-203">De beste manier om de UID voor een API te zoeken, is om de bron van de API-pagina waaraan u wilt koppelen te bekijken en de waarde ms.assetid te vinden.</span><span class="sxs-lookup"><span data-stu-id="937f2-203">The best way to find the UID for an API is to view the source for the API page you want to link to and find the ms.assetid value.</span></span> <span data-ttu-id="937f2-204">Afzonderlijke overbelastingswaarden worden in de bron niet weergegeven.</span><span class="sxs-lookup"><span data-stu-id="937f2-204">Individual overload values are not shown in the source.</span></span> <span data-ttu-id="937f2-205">We werken aan een beter systeem voor de toekomst.</span><span class="sxs-lookup"><span data-stu-id="937f2-205">We're working on having a better system in the future.</span></span>
 
-<span data-ttu-id="0fa48-206">Wanneer de UID de speciale tekens \`, \# of \* bevat, moet de waarde van de UID respectievelijk als `%60`, `%23` en `%2A` met HTML worden gecodeerd.</span><span class="sxs-lookup"><span data-stu-id="0fa48-206">When the UID contains the special characters \`, \#, or \*, the UID value needs to be HTML encoded as `%60`, `%23`, and `%2A`, respectively.</span></span> <span data-ttu-id="0fa48-207">U ziet soms haakjes in de code, maar dat is geen vereiste.</span><span class="sxs-lookup"><span data-stu-id="0fa48-207">You'll sometimes see parentheses encoded but it's not a requirement.</span></span>
+<span data-ttu-id="937f2-206">Wanneer de UID de speciale tekens \`, \# of \* bevat, moet de waarde van de UID respectievelijk als `%60`, `%23` en `%2A` met HTML worden gecodeerd.</span><span class="sxs-lookup"><span data-stu-id="937f2-206">When the UID contains the special characters \`, \#, or \*, the UID value needs to be HTML encoded as `%60`, `%23`, and `%2A`, respectively.</span></span> <span data-ttu-id="937f2-207">U ziet soms haakjes in de code, maar dat is geen vereiste.</span><span class="sxs-lookup"><span data-stu-id="937f2-207">You'll sometimes see parentheses encoded but it's not a requirement.</span></span>
 
-<span data-ttu-id="0fa48-208">Voorbeelden:</span><span class="sxs-lookup"><span data-stu-id="0fa48-208">Examples:</span></span>
+<span data-ttu-id="937f2-208">Voorbeelden:</span><span class="sxs-lookup"><span data-stu-id="937f2-208">Examples:</span></span>
 
-- <span data-ttu-id="0fa48-209">System.Threading.Tasks.Task\`1 wordt `System.Threading.Tasks.Task%601`</span><span class="sxs-lookup"><span data-stu-id="0fa48-209">System.Threading.Tasks.Task\`1 becomes `System.Threading.Tasks.Task%601`</span></span>
-- <span data-ttu-id="0fa48-210">System.Exception. \#ctor wordt `System.Exception.%23ctor`</span><span class="sxs-lookup"><span data-stu-id="0fa48-210">System.Exception.\#ctor becomes `System.Exception.%23ctor`</span></span>
-- <span data-ttu-id="0fa48-211">System.Lazy\`1.\#ctor(System.Threading.LazyThreadSafetyMode) wordt `System.Lazy%601.%23ctor%28System.Threading.LazyThreadSafetyMode%29`</span><span class="sxs-lookup"><span data-stu-id="0fa48-211">System.Lazy\`1.\#ctor(System.Threading.LazyThreadSafetyMode) becomes  `System.Lazy%601.%23ctor%28System.Threading.LazyThreadSafetyMode%29`</span></span>
+- <span data-ttu-id="937f2-209">System.Threading.Tasks.Task\`1 wordt `System.Threading.Tasks.Task%601`</span><span class="sxs-lookup"><span data-stu-id="937f2-209">System.Threading.Tasks.Task\`1 becomes `System.Threading.Tasks.Task%601`</span></span>
+- <span data-ttu-id="937f2-210">System.Exception. \#ctor wordt `System.Exception.%23ctor`</span><span class="sxs-lookup"><span data-stu-id="937f2-210">System.Exception.\#ctor becomes `System.Exception.%23ctor`</span></span>
+- <span data-ttu-id="937f2-211">System.Lazy\`1.\#ctor(System.Threading.LazyThreadSafetyMode) wordt `System.Lazy%601.%23ctor%28System.Threading.LazyThreadSafetyMode%29`</span><span class="sxs-lookup"><span data-stu-id="937f2-211">System.Lazy\`1.\#ctor(System.Threading.LazyThreadSafetyMode) becomes  `System.Lazy%601.%23ctor%28System.Threading.LazyThreadSafetyMode%29`</span></span>
 
 <!-- leave out of Contributor Guide for now
 Using XREF may require some configuration. For more information, see XREF Service.
 -->
 
-## <a name="lists-numbered-bulleted-checklist"></a><span data-ttu-id="0fa48-212">Lijsten (Genummerd, Met opsommingstekens, Controlelijst)</span><span class="sxs-lookup"><span data-stu-id="0fa48-212">Lists (Numbered, Bulleted, Checklist)</span></span>
+## <a name="lists-numbered-bulleted-checklist"></a><span data-ttu-id="937f2-212">Lijsten (Genummerd, Met opsommingstekens, Controlelijst)</span><span class="sxs-lookup"><span data-stu-id="937f2-212">Lists (Numbered, Bulleted, Checklist)</span></span>
 
-### <a name="numbered-list"></a><span data-ttu-id="0fa48-213">Genummerde lijst</span><span class="sxs-lookup"><span data-stu-id="0fa48-213">Numbered list</span></span>
+### <a name="numbered-list"></a><span data-ttu-id="937f2-213">Genummerde lijst</span><span class="sxs-lookup"><span data-stu-id="937f2-213">Numbered list</span></span>
 
-<span data-ttu-id="0fa48-214">Als u een genummerde lijst wilt maken, kunt u alle 1's gebruiken. Deze worden bij het publiceren weergegeven als een sequentiële lijst.</span><span class="sxs-lookup"><span data-stu-id="0fa48-214">To create a numbered list, you can use all 1s, which are rendered as a sequential list when published.</span></span> <span data-ttu-id="0fa48-215">Voor betere leesbaarheid van de bron kunt u uw lijsten verhogen.</span><span class="sxs-lookup"><span data-stu-id="0fa48-215">For increased source readability, you can increment your lists.</span></span>
+<span data-ttu-id="937f2-214">Als u een genummerde lijst wilt maken, kunt u alle 1's gebruiken. Deze worden bij het publiceren weergegeven als een sequentiële lijst.</span><span class="sxs-lookup"><span data-stu-id="937f2-214">To create a numbered list, you can use all 1s, which are rendered as a sequential list when published.</span></span> <span data-ttu-id="937f2-215">Voor betere leesbaarheid van de bron kunt u uw lijsten verhogen.</span><span class="sxs-lookup"><span data-stu-id="937f2-215">For increased source readability, you can increment your lists.</span></span>
 
-<span data-ttu-id="0fa48-216">Gebruik geen letters in lijsten, ook niet in geneste lijsten.</span><span class="sxs-lookup"><span data-stu-id="0fa48-216">Do not use letters in lists, including nested lists.</span></span> <span data-ttu-id="0fa48-217">Deze worden bij het publiceren naar Docs niet goed weergegeven. Geneste lijsten die gebruikmaken van nummers, worden bij het publiceren weergegeven als kleine letters.</span><span class="sxs-lookup"><span data-stu-id="0fa48-217">They do not render correctly when published to Docs. Nested lists using numbers will render as lowercase letters when published.</span></span> <span data-ttu-id="0fa48-218">Bijvoorbeeld:</span><span class="sxs-lookup"><span data-stu-id="0fa48-218">For example:</span></span>
+<span data-ttu-id="937f2-216">Gebruik geen letters in lijsten, ook niet in geneste lijsten.</span><span class="sxs-lookup"><span data-stu-id="937f2-216">Do not use letters in lists, including nested lists.</span></span> <span data-ttu-id="937f2-217">Deze worden bij het publiceren naar Docs niet goed weergegeven. Geneste lijsten die gebruikmaken van nummers, worden bij het publiceren weergegeven als kleine letters.</span><span class="sxs-lookup"><span data-stu-id="937f2-217">They do not render correctly when published to Docs. Nested lists using numbers will render as lowercase letters when published.</span></span> <span data-ttu-id="937f2-218">Bijvoorbeeld:</span><span class="sxs-lookup"><span data-stu-id="937f2-218">For example:</span></span>
 
 ```md
 1. This is
@@ -253,17 +253,17 @@ Using XREF may require some configuration. For more information, see XREF Servic
 1. (fin)
 ```
 
-<span data-ttu-id="0fa48-219">Dit wordt weergegeven als:</span><span class="sxs-lookup"><span data-stu-id="0fa48-219">This renders as follows:</span></span>
+<span data-ttu-id="937f2-219">Dit wordt weergegeven als:</span><span class="sxs-lookup"><span data-stu-id="937f2-219">This renders as follows:</span></span>
 
-1. <span data-ttu-id="0fa48-220">This is</span><span class="sxs-lookup"><span data-stu-id="0fa48-220">This is</span></span>
-1. <span data-ttu-id="0fa48-221">a parent numbered list</span><span class="sxs-lookup"><span data-stu-id="0fa48-221">a parent numbered list</span></span>
-   1. <span data-ttu-id="0fa48-222">and this is</span><span class="sxs-lookup"><span data-stu-id="0fa48-222">and this is</span></span>
-   1. <span data-ttu-id="0fa48-223">a nested numbered list</span><span class="sxs-lookup"><span data-stu-id="0fa48-223">a nested numbered list</span></span>
-1. <span data-ttu-id="0fa48-224">(fin)</span><span class="sxs-lookup"><span data-stu-id="0fa48-224">(fin)</span></span>
+1. <span data-ttu-id="937f2-220">This is</span><span class="sxs-lookup"><span data-stu-id="937f2-220">This is</span></span>
+1. <span data-ttu-id="937f2-221">a parent numbered list</span><span class="sxs-lookup"><span data-stu-id="937f2-221">a parent numbered list</span></span>
+   1. <span data-ttu-id="937f2-222">and this is</span><span class="sxs-lookup"><span data-stu-id="937f2-222">and this is</span></span>
+   1. <span data-ttu-id="937f2-223">a nested numbered list</span><span class="sxs-lookup"><span data-stu-id="937f2-223">a nested numbered list</span></span>
+1. <span data-ttu-id="937f2-224">(fin)</span><span class="sxs-lookup"><span data-stu-id="937f2-224">(fin)</span></span>
 
-### <a name="bulleted-list"></a><span data-ttu-id="0fa48-225">Lijst met opsommingstekens</span><span class="sxs-lookup"><span data-stu-id="0fa48-225">Bulleted list</span></span>
+### <a name="bulleted-list"></a><span data-ttu-id="937f2-225">Lijst met opsommingstekens</span><span class="sxs-lookup"><span data-stu-id="937f2-225">Bulleted list</span></span>
 
-<span data-ttu-id="0fa48-226">Als u een lijst met opsommingstekens wilt maken, gebruikt u `-` gevolgd door een spatie aan het begin van elke regel:</span><span class="sxs-lookup"><span data-stu-id="0fa48-226">To create a bulleted list, use `-` followed by a space at the beginning of each line:</span></span>
+<span data-ttu-id="937f2-226">Als u een lijst met opsommingstekens wilt maken, gebruikt u `-` gevolgd door een spatie aan het begin van elke regel:</span><span class="sxs-lookup"><span data-stu-id="937f2-226">To create a bulleted list, use `-` followed by a space at the beginning of each line:</span></span>
 
 ```md
 - This is
@@ -273,17 +273,17 @@ Using XREF may require some configuration. For more information, see XREF Servic
 - All done!
 ```
 
-<span data-ttu-id="0fa48-227">Dit wordt weergegeven als:</span><span class="sxs-lookup"><span data-stu-id="0fa48-227">This renders as follows:</span></span>
+<span data-ttu-id="937f2-227">Dit wordt weergegeven als:</span><span class="sxs-lookup"><span data-stu-id="937f2-227">This renders as follows:</span></span>
 
-- <span data-ttu-id="0fa48-228">This is</span><span class="sxs-lookup"><span data-stu-id="0fa48-228">This is</span></span>
-- <span data-ttu-id="0fa48-229">a parent bulleted list</span><span class="sxs-lookup"><span data-stu-id="0fa48-229">a parent bulleted list</span></span>
-  - <span data-ttu-id="0fa48-230">and this is</span><span class="sxs-lookup"><span data-stu-id="0fa48-230">and this is</span></span>
-  - <span data-ttu-id="0fa48-231">a nested bulleted list</span><span class="sxs-lookup"><span data-stu-id="0fa48-231">a nested bulleted list</span></span>
-- <span data-ttu-id="0fa48-232">All done!</span><span class="sxs-lookup"><span data-stu-id="0fa48-232">All done!</span></span>
+- <span data-ttu-id="937f2-228">This is</span><span class="sxs-lookup"><span data-stu-id="937f2-228">This is</span></span>
+- <span data-ttu-id="937f2-229">a parent bulleted list</span><span class="sxs-lookup"><span data-stu-id="937f2-229">a parent bulleted list</span></span>
+  - <span data-ttu-id="937f2-230">and this is</span><span class="sxs-lookup"><span data-stu-id="937f2-230">and this is</span></span>
+  - <span data-ttu-id="937f2-231">a nested bulleted list</span><span class="sxs-lookup"><span data-stu-id="937f2-231">a nested bulleted list</span></span>
+- <span data-ttu-id="937f2-232">All done!</span><span class="sxs-lookup"><span data-stu-id="937f2-232">All done!</span></span>
 
-### <a name="checklist"></a><span data-ttu-id="0fa48-233">Controlelijst</span><span class="sxs-lookup"><span data-stu-id="0fa48-233">Checklist</span></span>
+### <a name="checklist"></a><span data-ttu-id="937f2-233">Controlelijst</span><span class="sxs-lookup"><span data-stu-id="937f2-233">Checklist</span></span>
 
-<span data-ttu-id="0fa48-234">Controlelijsten zijn beschikbaar voor gebruik op (alleen) docs.microsoft.com via een aangepaste Markdown-extensie:</span><span class="sxs-lookup"><span data-stu-id="0fa48-234">Checklists are available for use on docs.microsoft.com (only) via a custom Markdown extension:</span></span>
+<span data-ttu-id="937f2-234">Controlelijsten zijn beschikbaar voor gebruik op (alleen) docs.microsoft.com via een aangepaste Markdown-extensie:</span><span class="sxs-lookup"><span data-stu-id="937f2-234">Checklists are available for use on docs.microsoft.com (only) via a custom Markdown extension:</span></span>
 
 ```md
 > [!div class="checklist"]
@@ -292,46 +292,46 @@ Using XREF may require some configuration. For more information, see XREF Servic
 > * List item 3
 ```
 
-<span data-ttu-id="0fa48-235">Dit voorbeeld wordt op docs.microsoft.com weergegeven als:</span><span class="sxs-lookup"><span data-stu-id="0fa48-235">This example renders on docs.microsoft.com like this:</span></span>
+<span data-ttu-id="937f2-235">Dit voorbeeld wordt op docs.microsoft.com weergegeven als:</span><span class="sxs-lookup"><span data-stu-id="937f2-235">This example renders on docs.microsoft.com like this:</span></span>
 
 > [!div class="checklist"]
-> * <span data-ttu-id="0fa48-236">List item 1</span><span class="sxs-lookup"><span data-stu-id="0fa48-236">List item 1</span></span>
-> * <span data-ttu-id="0fa48-237">List item 2</span><span class="sxs-lookup"><span data-stu-id="0fa48-237">List item 2</span></span>
-> * <span data-ttu-id="0fa48-238">List item 3</span><span class="sxs-lookup"><span data-stu-id="0fa48-238">List item 3</span></span>
+> * <span data-ttu-id="937f2-236">List item 1</span><span class="sxs-lookup"><span data-stu-id="937f2-236">List item 1</span></span>
+> * <span data-ttu-id="937f2-237">List item 2</span><span class="sxs-lookup"><span data-stu-id="937f2-237">List item 2</span></span>
+> * <span data-ttu-id="937f2-238">List item 3</span><span class="sxs-lookup"><span data-stu-id="937f2-238">List item 3</span></span>
 
-<span data-ttu-id="0fa48-239">Gebruik controlelijsten aan het begin of eind van een artikel om inhoud voor 'Wat gaat u leren' of 'Wat hebt u geleerd' samen te vatten.</span><span class="sxs-lookup"><span data-stu-id="0fa48-239">Use checklists at the beginning or end of an article to summarize "What will you learn" or "What have you learned" content.</span></span> <span data-ttu-id="0fa48-240">Voeg geen willekeurige controlelijsten ergens anders in een artikel toe.</span><span class="sxs-lookup"><span data-stu-id="0fa48-240">Do not add random checklists throughout your articles.</span></span>
+<span data-ttu-id="937f2-239">Gebruik controlelijsten aan het begin of eind van een artikel om inhoud voor 'Wat gaat u leren' of 'Wat hebt u geleerd' samen te vatten.</span><span class="sxs-lookup"><span data-stu-id="937f2-239">Use checklists at the beginning or end of an article to summarize "What will you learn" or "What have you learned" content.</span></span> <span data-ttu-id="937f2-240">Voeg geen willekeurige controlelijsten ergens anders in een artikel toe.</span><span class="sxs-lookup"><span data-stu-id="937f2-240">Do not add random checklists throughout your articles.</span></span>
 <!-- is this guidance still accurate? -->
 
-## <a name="next-step-action"></a><span data-ttu-id="0fa48-241">Actie volgende stap</span><span class="sxs-lookup"><span data-stu-id="0fa48-241">Next step action</span></span>
+## <a name="next-step-action"></a><span data-ttu-id="937f2-241">Actie volgende stap</span><span class="sxs-lookup"><span data-stu-id="937f2-241">Next step action</span></span>
 
-<span data-ttu-id="0fa48-242">U kunt een aangepaste extensie gebruiken om een knop voor de actie van de volgende stap toe te voegen aan pagina's op (alleen) docs.microsoft.com.</span><span class="sxs-lookup"><span data-stu-id="0fa48-242">You can use a custom extension to add a next step action button to pages on docs.microsoft.com (only).</span></span>
+<span data-ttu-id="937f2-242">U kunt een aangepaste extensie gebruiken om een knop voor de actie van de volgende stap toe te voegen aan pagina's op (alleen) docs.microsoft.com.</span><span class="sxs-lookup"><span data-stu-id="937f2-242">You can use a custom extension to add a next step action button to pages on docs.microsoft.com (only).</span></span>
 
-<span data-ttu-id="0fa48-243">De syntaxis ziet er als volgt uit:</span><span class="sxs-lookup"><span data-stu-id="0fa48-243">The syntax is as follows:</span></span>
+<span data-ttu-id="937f2-243">De syntaxis ziet er als volgt uit:</span><span class="sxs-lookup"><span data-stu-id="937f2-243">The syntax is as follows:</span></span>
 
 ```md
 > [!div class="nextstepaction"]
 > [button text](link to topic)
 ```
 
-<span data-ttu-id="0fa48-244">Bijvoorbeeld:</span><span class="sxs-lookup"><span data-stu-id="0fa48-244">For example:</span></span>
+<span data-ttu-id="937f2-244">Bijvoorbeeld:</span><span class="sxs-lookup"><span data-stu-id="937f2-244">For example:</span></span>
 
 ```md
 > [!div class="nextstepaction"]
 > [Learn about basic style](style-quick-start.md)
 ```
 
-<span data-ttu-id="0fa48-245">Dit wordt weergegeven als:</span><span class="sxs-lookup"><span data-stu-id="0fa48-245">This renders as follows:</span></span>
+<span data-ttu-id="937f2-245">Dit wordt weergegeven als:</span><span class="sxs-lookup"><span data-stu-id="937f2-245">This renders as follows:</span></span>
 
 > [!div class="nextstepaction"]
-> [<span data-ttu-id="0fa48-246">Learn about basic style</span><span class="sxs-lookup"><span data-stu-id="0fa48-246">Learn about basic style</span></span>](style-quick-start.md)
+> [<span data-ttu-id="937f2-246">Learn about basic style</span><span class="sxs-lookup"><span data-stu-id="937f2-246">Learn about basic style</span></span>](style-quick-start.md)
 
-<span data-ttu-id="0fa48-247">U kunt elke ondersteunde koppeling in een volgende stapactie gebruiken, met inbegrip van een Markdown-koppeling naar een andere webpagina.</span><span class="sxs-lookup"><span data-stu-id="0fa48-247">You can use any supported link in a next step action, including a Markdown link to another web page.</span></span> <span data-ttu-id="0fa48-248">In de meeste gevallen is de koppeling voor de volgende actie een relatieve koppeling naar een ander bestand in dezelfde docset.</span><span class="sxs-lookup"><span data-stu-id="0fa48-248">In most cases, the next action link will be a relative link to another file in the same doc set.</span></span>
+<span data-ttu-id="937f2-247">U kunt elke ondersteunde koppeling in een volgende stapactie gebruiken, met inbegrip van een Markdown-koppeling naar een andere webpagina.</span><span class="sxs-lookup"><span data-stu-id="937f2-247">You can use any supported link in a next step action, including a Markdown link to another web page.</span></span> <span data-ttu-id="937f2-248">In de meeste gevallen is de koppeling voor de volgende actie een relatieve koppeling naar een ander bestand in dezelfde docset.</span><span class="sxs-lookup"><span data-stu-id="937f2-248">In most cases, the next action link will be a relative link to another file in the same doc set.</span></span>
 
-## <a name="section-definition"></a><span data-ttu-id="0fa48-249">Sectiedefinitie</span><span class="sxs-lookup"><span data-stu-id="0fa48-249">Section definition</span></span>
+## <a name="section-definition"></a><span data-ttu-id="937f2-249">Sectiedefinitie</span><span class="sxs-lookup"><span data-stu-id="937f2-249">Section definition</span></span>
 
 <!-- more info about this would be helpful! -->
-<span data-ttu-id="0fa48-250">U moet mogelijk een sectie definiëren.</span><span class="sxs-lookup"><span data-stu-id="0fa48-250">You might need to define a section.</span></span> <span data-ttu-id="0fa48-251">Deze syntaxis wordt voornamelijk gebruikt voor codetabellen.</span><span class="sxs-lookup"><span data-stu-id="0fa48-251">This syntax is mostly used for code tables.</span></span>
-<span data-ttu-id="0fa48-252">Zie het volgende voorbeeld:</span><span class="sxs-lookup"><span data-stu-id="0fa48-252">See the following example:</span></span>
+<span data-ttu-id="937f2-250">U moet mogelijk een sectie definiëren.</span><span class="sxs-lookup"><span data-stu-id="937f2-250">You might need to define a section.</span></span> <span data-ttu-id="937f2-251">Deze syntaxis wordt voornamelijk gebruikt voor codetabellen.</span><span class="sxs-lookup"><span data-stu-id="937f2-251">This syntax is mostly used for code tables.</span></span>
+<span data-ttu-id="937f2-252">Zie het volgende voorbeeld:</span><span class="sxs-lookup"><span data-stu-id="937f2-252">See the following example:</span></span>
 
 ````
 > [!div class="tabbedCodeSnippets" data-resources="OutlookServices.Calendar"]
@@ -343,7 +343,7 @@ Using XREF may require some configuration. For more information, see XREF Servic
 > ```
 ````
 
-<span data-ttu-id="0fa48-253">De eraan voorafgaande blockquote-Markdown-tekst wordt weergegeven als:</span><span class="sxs-lookup"><span data-stu-id="0fa48-253">The preceding blockquote Markdown text will be rendered as:</span></span>
+<span data-ttu-id="937f2-253">De eraan voorafgaande blockquote-Markdown-tekst wordt weergegeven als:</span><span class="sxs-lookup"><span data-stu-id="937f2-253">The preceding blockquote Markdown text will be rendered as:</span></span>
 > [!div class="tabbedCodeSnippets" data-resources="OutlookServices.Calendar"]
 > ```cs
 > <cs code text>
@@ -352,15 +352,15 @@ Using XREF may require some configuration. For more information, see XREF Servic
 > <js code text>
 > ```
 
-## <a name="selectors"></a><span data-ttu-id="0fa48-254">Selectors</span><span class="sxs-lookup"><span data-stu-id="0fa48-254">Selectors</span></span>
+## <a name="selectors"></a><span data-ttu-id="937f2-254">Selectors</span><span class="sxs-lookup"><span data-stu-id="937f2-254">Selectors</span></span>
 
 <!-- could be more clear! -->
-<span data-ttu-id="0fa48-255">U kunt een selector gebruiken wanneer u verschillende pagina's voor hetzelfde artikel met elkaar wilt verbinden.</span><span class="sxs-lookup"><span data-stu-id="0fa48-255">You can use a selector when you want to connect different pages for the same article.</span></span> <span data-ttu-id="0fa48-256">Lezers kunnen dan schakelen tussen die pagina's.</span><span class="sxs-lookup"><span data-stu-id="0fa48-256">Readers can then switch between those pages.</span></span>
+<span data-ttu-id="937f2-255">U kunt een selector gebruiken wanneer u verschillende pagina's voor hetzelfde artikel met elkaar wilt verbinden.</span><span class="sxs-lookup"><span data-stu-id="937f2-255">You can use a selector when you want to connect different pages for the same article.</span></span> <span data-ttu-id="937f2-256">Lezers kunnen dan schakelen tussen die pagina's.</span><span class="sxs-lookup"><span data-stu-id="937f2-256">Readers can then switch between those pages.</span></span>
 
 > [!NOTE]
-> <span data-ttu-id="0fa48-257">Deze extensie werkt anders tussen docs.microsoft.com en MSDN.</span><span class="sxs-lookup"><span data-stu-id="0fa48-257">This extension works differently between docs.microsoft.com and MSDN.</span></span> <!-- should we keep info about MSDN? If so say how they differ?-->
+> <span data-ttu-id="937f2-257">Deze extensie werkt anders tussen docs.microsoft.com en MSDN.</span><span class="sxs-lookup"><span data-stu-id="937f2-257">This extension works differently between docs.microsoft.com and MSDN.</span></span> <!-- should we keep info about MSDN? If so say how they differ?-->
 
-### <a name="single-selector"></a><span data-ttu-id="0fa48-258">Single selector</span><span class="sxs-lookup"><span data-stu-id="0fa48-258">Single selector</span></span>
+### <a name="single-selector"></a><span data-ttu-id="937f2-258">Single selector</span><span class="sxs-lookup"><span data-stu-id="937f2-258">Single selector</span></span>
 
 ```
 > [!div class="op_single_selector"]
@@ -374,7 +374,7 @@ Using XREF may require some configuration. For more information, see XREF Servic
 > - [Xamarin.Android](how-to-write-use-markdown.md)
 ```
 
-<span data-ttu-id="0fa48-259">... wordt als volgt weergegeven:</span><span class="sxs-lookup"><span data-stu-id="0fa48-259">... will be rendered like this:</span></span>
+<span data-ttu-id="937f2-259">... wordt als volgt weergegeven:</span><span class="sxs-lookup"><span data-stu-id="937f2-259">... will be rendered like this:</span></span>
 
 > [!div class="op_single_selector"]
 > - [Universal Windows](how-to-write-use-markdown.md)
@@ -386,7 +386,7 @@ Using XREF may require some configuration. For more information, see XREF Servic
 > - [Xamarin.iOS](how-to-write-use-markdown.md)
 > - [Xamarin.Android](how-to-write-use-markdown.md)
 
-### <a name="multi-selector"></a><span data-ttu-id="0fa48-268">Multi-selector</span><span class="sxs-lookup"><span data-stu-id="0fa48-268">Multi-selector</span></span>
+### <a name="multi-selector"></a><span data-ttu-id="937f2-268">Multi-selector</span><span class="sxs-lookup"><span data-stu-id="937f2-268">Multi-selector</span></span>
 
 ```
 > [!div class="op_multi_selector" title1="Platform" title2="Backend"]
@@ -402,7 +402,7 @@ Using XREF may require some configuration. For more information, see XREF Servic
 > - [(Xamarin Android | Javascript)](how-to-write-workflows-major.md)
 ```
 
-<span data-ttu-id="0fa48-269">... wordt als volgt weergegeven:</span><span class="sxs-lookup"><span data-stu-id="0fa48-269">... will be rendered like this:</span></span>
+<span data-ttu-id="937f2-269">... wordt als volgt weergegeven:</span><span class="sxs-lookup"><span data-stu-id="937f2-269">... will be rendered like this:</span></span>
 
 > [!div class="op_multi_selector" title1="Platform" title2="Back-end"]
 > - [(iOS | .NET)](how-to-write-workflows-major.md)
@@ -416,9 +416,9 @@ Using XREF may require some configuration. For more information, see XREF Servic
 > - [(Xamarin iOS | Javascript)](how-to-write-workflows-major.md)
 > - [(Xamarin Android | Javascript)](how-to-write-workflows-major.md)
 
-## <a name="tables"></a><span data-ttu-id="0fa48-282">Tabellen</span><span class="sxs-lookup"><span data-stu-id="0fa48-282">Tables</span></span>
+## <a name="tables"></a><span data-ttu-id="937f2-282">Tabellen</span><span class="sxs-lookup"><span data-stu-id="937f2-282">Tables</span></span>
 
-<span data-ttu-id="0fa48-283">De eenvoudigste manier om een tabel in Markdown te maken is gebruik te maken van pipes en regels.</span><span class="sxs-lookup"><span data-stu-id="0fa48-283">The simplest way to create a table in Markdown is to use pipes and lines.</span></span> <span data-ttu-id="0fa48-284">Als u een standaardtabel met een kop wilt maken, laat u de eerste regel volgen door een stippellijn:</span><span class="sxs-lookup"><span data-stu-id="0fa48-284">To create a standard table with a header, follow the first line with dashed line:</span></span>
+<span data-ttu-id="937f2-283">De eenvoudigste manier om een tabel in Markdown te maken is gebruik te maken van pipes en regels.</span><span class="sxs-lookup"><span data-stu-id="937f2-283">The simplest way to create a table in Markdown is to use pipes and lines.</span></span> <span data-ttu-id="937f2-284">Als u een standaardtabel met een kop wilt maken, laat u de eerste regel volgen door een stippellijn:</span><span class="sxs-lookup"><span data-stu-id="937f2-284">To create a standard table with a header, follow the first line with dashed line:</span></span>
 
 ```md
 |This is   |a simple   |table header|
@@ -427,14 +427,14 @@ Using XREF may require some configuration. For more information, see XREF Servic
 |it doesn't|actually   |have to line up nicely!|
 ```
 
-<span data-ttu-id="0fa48-285">Dit wordt weergegeven als:</span><span class="sxs-lookup"><span data-stu-id="0fa48-285">This renders as follows:</span></span>
+<span data-ttu-id="937f2-285">Dit wordt weergegeven als:</span><span class="sxs-lookup"><span data-stu-id="937f2-285">This renders as follows:</span></span>
 
-|<span data-ttu-id="0fa48-286">This is</span><span class="sxs-lookup"><span data-stu-id="0fa48-286">This is</span></span>   |<span data-ttu-id="0fa48-287">a simple</span><span class="sxs-lookup"><span data-stu-id="0fa48-287">a simple</span></span>   |<span data-ttu-id="0fa48-288">table header</span><span class="sxs-lookup"><span data-stu-id="0fa48-288">table header</span></span>|
+|<span data-ttu-id="937f2-286">This is</span><span class="sxs-lookup"><span data-stu-id="937f2-286">This is</span></span>   |<span data-ttu-id="937f2-287">a simple</span><span class="sxs-lookup"><span data-stu-id="937f2-287">a simple</span></span>   |<span data-ttu-id="937f2-288">table header</span><span class="sxs-lookup"><span data-stu-id="937f2-288">table header</span></span>|
 |----------|-----------|------------|
-|<span data-ttu-id="0fa48-289">table</span><span class="sxs-lookup"><span data-stu-id="0fa48-289">table</span></span>     |<span data-ttu-id="0fa48-290">data</span><span class="sxs-lookup"><span data-stu-id="0fa48-290">data</span></span>       |<span data-ttu-id="0fa48-291">here</span><span class="sxs-lookup"><span data-stu-id="0fa48-291">here</span></span>        |
-|<span data-ttu-id="0fa48-292">it doesn't</span><span class="sxs-lookup"><span data-stu-id="0fa48-292">it doesn't</span></span>|<span data-ttu-id="0fa48-293">actually</span><span class="sxs-lookup"><span data-stu-id="0fa48-293">actually</span></span>   |<span data-ttu-id="0fa48-294">have to line up nicely!</span><span class="sxs-lookup"><span data-stu-id="0fa48-294">have to line up nicely!</span></span>||
+|<span data-ttu-id="937f2-289">table</span><span class="sxs-lookup"><span data-stu-id="937f2-289">table</span></span>     |<span data-ttu-id="937f2-290">data</span><span class="sxs-lookup"><span data-stu-id="937f2-290">data</span></span>       |<span data-ttu-id="937f2-291">here</span><span class="sxs-lookup"><span data-stu-id="937f2-291">here</span></span>        |
+|<span data-ttu-id="937f2-292">it doesn't</span><span class="sxs-lookup"><span data-stu-id="937f2-292">it doesn't</span></span>|<span data-ttu-id="937f2-293">actually</span><span class="sxs-lookup"><span data-stu-id="937f2-293">actually</span></span>   |<span data-ttu-id="937f2-294">have to line up nicely!</span><span class="sxs-lookup"><span data-stu-id="937f2-294">have to line up nicely!</span></span>||
 
-<span data-ttu-id="0fa48-295">U kunt ook een tabel zonder kop maken.</span><span class="sxs-lookup"><span data-stu-id="0fa48-295">You can also create a table without a header.</span></span> <span data-ttu-id="0fa48-296">Ga bijvoorbeeld als volgt te werk om een lijst met meerdere kolommen te maken:</span><span class="sxs-lookup"><span data-stu-id="0fa48-296">For example, to create a multiple-column list:</span></span>
+<span data-ttu-id="937f2-295">U kunt ook een tabel zonder kop maken.</span><span class="sxs-lookup"><span data-stu-id="937f2-295">You can also create a table without a header.</span></span> <span data-ttu-id="937f2-296">Ga bijvoorbeeld als volgt te werk om een lijst met meerdere kolommen te maken:</span><span class="sxs-lookup"><span data-stu-id="937f2-296">For example, to create a multiple-column list:</span></span>
 
 ```md
 |   |   |
@@ -443,14 +443,14 @@ Using XREF may require some configuration. For more information, see XREF Servic
 | has no | header |
 ```
 
-<span data-ttu-id="0fa48-297">Dit wordt als volgt weergegeven:</span><span class="sxs-lookup"><span data-stu-id="0fa48-297">This renders like this:</span></span>
+<span data-ttu-id="937f2-297">Dit wordt als volgt weergegeven:</span><span class="sxs-lookup"><span data-stu-id="937f2-297">This renders like this:</span></span>
 
 |   |   |
 | - | - |
-| <span data-ttu-id="0fa48-298">This</span><span class="sxs-lookup"><span data-stu-id="0fa48-298">This</span></span> | <span data-ttu-id="0fa48-299">table</span><span class="sxs-lookup"><span data-stu-id="0fa48-299">table</span></span> |
-| <span data-ttu-id="0fa48-300">has no</span><span class="sxs-lookup"><span data-stu-id="0fa48-300">has no</span></span> | <span data-ttu-id="0fa48-301">header</span><span class="sxs-lookup"><span data-stu-id="0fa48-301">header</span></span> |
+| <span data-ttu-id="937f2-298">This</span><span class="sxs-lookup"><span data-stu-id="937f2-298">This</span></span> | <span data-ttu-id="937f2-299">table</span><span class="sxs-lookup"><span data-stu-id="937f2-299">table</span></span> |
+| <span data-ttu-id="937f2-300">has no</span><span class="sxs-lookup"><span data-stu-id="937f2-300">has no</span></span> | <span data-ttu-id="937f2-301">header</span><span class="sxs-lookup"><span data-stu-id="937f2-301">header</span></span> |
 
-<span data-ttu-id="0fa48-302">U kunt de kolommen uitlijnen met behulp van dubbele punten:</span><span class="sxs-lookup"><span data-stu-id="0fa48-302">You can align the columns by using colons:</span></span>
+<span data-ttu-id="937f2-302">U kunt de kolommen uitlijnen met behulp van dubbele punten:</span><span class="sxs-lookup"><span data-stu-id="937f2-302">You can align the columns by using colons:</span></span>
 
 ```md
 |                  |
@@ -460,27 +460,27 @@ Using XREF may require some configuration. For more information, see XREF Servic
 |:centered        :|
 ```
 
-<span data-ttu-id="0fa48-303">Wordt weergegeven als:</span><span class="sxs-lookup"><span data-stu-id="0fa48-303">Renders as follows:</span></span>
+<span data-ttu-id="937f2-303">Wordt weergegeven als:</span><span class="sxs-lookup"><span data-stu-id="937f2-303">Renders as follows:</span></span>
 
 |                  |
 |------------------|
-|    <span data-ttu-id="0fa48-304">right aligned:</span><span class="sxs-lookup"><span data-stu-id="0fa48-304">right aligned:</span></span>|
-|<span data-ttu-id="0fa48-305">:left aligned</span><span class="sxs-lookup"><span data-stu-id="0fa48-305">:left aligned</span></span>     |
-|<span data-ttu-id="0fa48-306">:centered        :</span><span class="sxs-lookup"><span data-stu-id="0fa48-306">:centered        :</span></span>|
+|    <span data-ttu-id="937f2-304">right aligned:</span><span class="sxs-lookup"><span data-stu-id="937f2-304">right aligned:</span></span>|
+|<span data-ttu-id="937f2-305">:left aligned</span><span class="sxs-lookup"><span data-stu-id="937f2-305">:left aligned</span></span>     |
+|<span data-ttu-id="937f2-306">:centered        :</span><span class="sxs-lookup"><span data-stu-id="937f2-306">:centered        :</span></span>|
 
 > [!TIP]
-> <span data-ttu-id="0fa48-307">U kunt met Docs Authoring Extension voor VS Code gemakkelijk basis-Markdown-tabellen toevoegen.</span><span class="sxs-lookup"><span data-stu-id="0fa48-307">The Docs Authoring Extension for VS Code makes it easy to add basic Markdown tables!</span></span>
+> <span data-ttu-id="937f2-307">U kunt met Docs Authoring Extension voor VS Code gemakkelijk basis-Markdown-tabellen toevoegen.</span><span class="sxs-lookup"><span data-stu-id="937f2-307">The Docs Authoring Extension for VS Code makes it easy to add basic Markdown tables!</span></span>
 >
-> <span data-ttu-id="0fa48-308">U kunt ook een [onlinegenerator voor tabellen](http://www.tablesgenerator.com/markdown_tables) gebruiken.</span><span class="sxs-lookup"><span data-stu-id="0fa48-308">You can also use an [online table generator](http://www.tablesgenerator.com/markdown_tables).</span></span>
+> <span data-ttu-id="937f2-308">U kunt ook een [onlinegenerator voor tabellen](http://www.tablesgenerator.com/markdown_tables) gebruiken.</span><span class="sxs-lookup"><span data-stu-id="937f2-308">You can also use an [online table generator](http://www.tablesgenerator.com/markdown_tables).</span></span>
 
-### <a name="mx-tdbreakall"></a><span data-ttu-id="0fa48-309">mx-tdBreakAll</span><span class="sxs-lookup"><span data-stu-id="0fa48-309">mx-tdBreakAll</span></span>
+### <a name="mx-tdbreakall"></a><span data-ttu-id="937f2-309">mx-tdBreakAll</span><span class="sxs-lookup"><span data-stu-id="937f2-309">mx-tdBreakAll</span></span>
 
 > [!IMPORTANT]
-> <span data-ttu-id="0fa48-310">Dit werkt alleen op de site docs.microsoft.com.</span><span class="sxs-lookup"><span data-stu-id="0fa48-310">This only works on the docs.microsoft.com site.</span></span>
+> <span data-ttu-id="937f2-310">Dit werkt alleen op de site docs.microsoft.com.</span><span class="sxs-lookup"><span data-stu-id="937f2-310">This only works on the docs.microsoft.com site.</span></span>
 
-<span data-ttu-id="0fa48-311">Als u een tabel in Markdown maakt, kan de tabel worden uitgebreid naar het navigatievenster rechts, waardoor de tabel onleesbaar wordt.</span><span class="sxs-lookup"><span data-stu-id="0fa48-311">If you create a table in Markdown, the table might expand to the right navigation and become unreadable.</span></span> <span data-ttu-id="0fa48-312">Dat is op te lossen door bij het renderen van Docs de tabel op te splitsen wanneer dat nodig is.</span><span class="sxs-lookup"><span data-stu-id="0fa48-312">You can solve that by allowing Docs rendering to break the table when needed.</span></span> <span data-ttu-id="0fa48-313">U laat eenvoudig de tabel teruglopen met de aangepaste klasse `[!div class="mx-tdBreakAll"]`.</span><span class="sxs-lookup"><span data-stu-id="0fa48-313">Just wrap up the table with the custom class `[!div class="mx-tdBreakAll"]`.</span></span>
+<span data-ttu-id="937f2-311">Als u een tabel in Markdown maakt, kan de tabel worden uitgebreid naar het navigatievenster rechts, waardoor de tabel onleesbaar wordt.</span><span class="sxs-lookup"><span data-stu-id="937f2-311">If you create a table in Markdown, the table might expand to the right navigation and become unreadable.</span></span> <span data-ttu-id="937f2-312">Dat is op te lossen door bij het renderen van Docs de tabel op te splitsen wanneer dat nodig is.</span><span class="sxs-lookup"><span data-stu-id="937f2-312">You can solve that by allowing Docs rendering to break the table when needed.</span></span> <span data-ttu-id="937f2-313">U laat eenvoudig de tabel teruglopen met de aangepaste klasse `[!div class="mx-tdBreakAll"]`.</span><span class="sxs-lookup"><span data-stu-id="937f2-313">Just wrap up the table with the custom class `[!div class="mx-tdBreakAll"]`.</span></span>
 
-<span data-ttu-id="0fa48-314">Hier ziet u een Markdown-voorbeeld van een tabel met drie rijen die teruglopen door gebruik te maken van een `div` met de klassenaam `mx-tdBreakAll`.</span><span class="sxs-lookup"><span data-stu-id="0fa48-314">Here is a Markdown sample of a table with three rows that will be wrapped by a `div` with the class name `mx-tdBreakAll`.</span></span>
+<span data-ttu-id="937f2-314">Hier ziet u een Markdown-voorbeeld van een tabel met drie rijen die teruglopen door gebruik te maken van een `div` met de klassenaam `mx-tdBreakAll`.</span><span class="sxs-lookup"><span data-stu-id="937f2-314">Here is a Markdown sample of a table with three rows that will be wrapped by a `div` with the class name `mx-tdBreakAll`.</span></span>
 
 ```md
 > [!div class="mx-tdBreakAll"]
@@ -491,48 +491,48 @@ Using XREF may require some configuration. For more information, see XREF Servic
 > |Help|/help|No|Provides help and quick reference. Displays the correct use of the setup command, including a list of all options and behaviors.|
 ```
 
-<span data-ttu-id="0fa48-315">Deze wordt als volgt weergegeven:</span><span class="sxs-lookup"><span data-stu-id="0fa48-315">It will be rendered like this:</span></span>
+<span data-ttu-id="937f2-315">Deze wordt als volgt weergegeven:</span><span class="sxs-lookup"><span data-stu-id="937f2-315">It will be rendered like this:</span></span>
 
 > [!div class="mx-tdBreakAll"]
-> |<span data-ttu-id="0fa48-316">Name</span><span class="sxs-lookup"><span data-stu-id="0fa48-316">Name</span></span>|<span data-ttu-id="0fa48-317">Syntax</span><span class="sxs-lookup"><span data-stu-id="0fa48-317">Syntax</span></span>|<span data-ttu-id="0fa48-318">Mandatory for silent installation?</span><span class="sxs-lookup"><span data-stu-id="0fa48-318">Mandatory for silent installation?</span></span>|<span data-ttu-id="0fa48-319">Description</span><span class="sxs-lookup"><span data-stu-id="0fa48-319">Description</span></span>|
+> |<span data-ttu-id="937f2-316">Name</span><span class="sxs-lookup"><span data-stu-id="937f2-316">Name</span></span>|<span data-ttu-id="937f2-317">Syntax</span><span class="sxs-lookup"><span data-stu-id="937f2-317">Syntax</span></span>|<span data-ttu-id="937f2-318">Mandatory for silent installation?</span><span class="sxs-lookup"><span data-stu-id="937f2-318">Mandatory for silent installation?</span></span>|<span data-ttu-id="937f2-319">Description</span><span class="sxs-lookup"><span data-stu-id="937f2-319">Description</span></span>|
 > |-------------|----------|---------|---------|
-> |<span data-ttu-id="0fa48-320">Quiet</span><span class="sxs-lookup"><span data-stu-id="0fa48-320">Quiet</span></span>|<span data-ttu-id="0fa48-321">/quiet</span><span class="sxs-lookup"><span data-stu-id="0fa48-321">/quiet</span></span>|<span data-ttu-id="0fa48-322">Yes</span><span class="sxs-lookup"><span data-stu-id="0fa48-322">Yes</span></span>|<span data-ttu-id="0fa48-323">Runs the installer, displaying no UI and no prompts.</span><span class="sxs-lookup"><span data-stu-id="0fa48-323">Runs the installer, displaying no UI and no prompts.</span></span>|
-> |<span data-ttu-id="0fa48-324">NoRestart</span><span class="sxs-lookup"><span data-stu-id="0fa48-324">NoRestart</span></span>|<span data-ttu-id="0fa48-325">/norestart</span><span class="sxs-lookup"><span data-stu-id="0fa48-325">/norestart</span></span>|<span data-ttu-id="0fa48-326">No</span><span class="sxs-lookup"><span data-stu-id="0fa48-326">No</span></span>|<span data-ttu-id="0fa48-327">Suppresses any attempts to restart.</span><span class="sxs-lookup"><span data-stu-id="0fa48-327">Suppresses any attempts to restart.</span></span> <span data-ttu-id="0fa48-328">By default, the UI will prompt before restart.</span><span class="sxs-lookup"><span data-stu-id="0fa48-328">By default, the UI will prompt before restart.</span></span>|
-> |<span data-ttu-id="0fa48-329">Help</span><span class="sxs-lookup"><span data-stu-id="0fa48-329">Help</span></span>|<span data-ttu-id="0fa48-330">/help</span><span class="sxs-lookup"><span data-stu-id="0fa48-330">/help</span></span>|<span data-ttu-id="0fa48-331">No</span><span class="sxs-lookup"><span data-stu-id="0fa48-331">No</span></span>|<span data-ttu-id="0fa48-332">Provides help and quick reference.</span><span class="sxs-lookup"><span data-stu-id="0fa48-332">Provides help and quick reference.</span></span> <span data-ttu-id="0fa48-333">Displays the correct use of the setup command, including a list of all options and behaviors.</span><span class="sxs-lookup"><span data-stu-id="0fa48-333">Displays the correct use of the setup command, including a list of all options and behaviors.</span></span>|
+> |<span data-ttu-id="937f2-320">Quiet</span><span class="sxs-lookup"><span data-stu-id="937f2-320">Quiet</span></span>|<span data-ttu-id="937f2-321">/quiet</span><span class="sxs-lookup"><span data-stu-id="937f2-321">/quiet</span></span>|<span data-ttu-id="937f2-322">Yes</span><span class="sxs-lookup"><span data-stu-id="937f2-322">Yes</span></span>|<span data-ttu-id="937f2-323">Runs the installer, displaying no UI and no prompts.</span><span class="sxs-lookup"><span data-stu-id="937f2-323">Runs the installer, displaying no UI and no prompts.</span></span>|
+> |<span data-ttu-id="937f2-324">NoRestart</span><span class="sxs-lookup"><span data-stu-id="937f2-324">NoRestart</span></span>|<span data-ttu-id="937f2-325">/norestart</span><span class="sxs-lookup"><span data-stu-id="937f2-325">/norestart</span></span>|<span data-ttu-id="937f2-326">No</span><span class="sxs-lookup"><span data-stu-id="937f2-326">No</span></span>|<span data-ttu-id="937f2-327">Suppresses any attempts to restart.</span><span class="sxs-lookup"><span data-stu-id="937f2-327">Suppresses any attempts to restart.</span></span> <span data-ttu-id="937f2-328">By default, the UI will prompt before restart.</span><span class="sxs-lookup"><span data-stu-id="937f2-328">By default, the UI will prompt before restart.</span></span>|
+> |<span data-ttu-id="937f2-329">Help</span><span class="sxs-lookup"><span data-stu-id="937f2-329">Help</span></span>|<span data-ttu-id="937f2-330">/help</span><span class="sxs-lookup"><span data-stu-id="937f2-330">/help</span></span>|<span data-ttu-id="937f2-331">No</span><span class="sxs-lookup"><span data-stu-id="937f2-331">No</span></span>|<span data-ttu-id="937f2-332">Provides help and quick reference.</span><span class="sxs-lookup"><span data-stu-id="937f2-332">Provides help and quick reference.</span></span> <span data-ttu-id="937f2-333">Displays the correct use of the setup command, including a list of all options and behaviors.</span><span class="sxs-lookup"><span data-stu-id="937f2-333">Displays the correct use of the setup command, including a list of all options and behaviors.</span></span>|
 
-### <a name="mx-tdcol2breakall"></a><span data-ttu-id="0fa48-334">mx-tdCol2BreakAll</span><span class="sxs-lookup"><span data-stu-id="0fa48-334">mx-tdCol2BreakAll</span></span>
+### <a name="mx-tdcol2breakall"></a><span data-ttu-id="937f2-334">mx-tdCol2BreakAll</span><span class="sxs-lookup"><span data-stu-id="937f2-334">mx-tdCol2BreakAll</span></span>
 
 > [!IMPORTANT]
-> <span data-ttu-id="0fa48-335">Dit werkt alleen op de site docs.microsoft.com.</span><span class="sxs-lookup"><span data-stu-id="0fa48-335">This only works on the docs.microsoft.com site.</span></span>
+> <span data-ttu-id="937f2-335">Dit werkt alleen op de site docs.microsoft.com.</span><span class="sxs-lookup"><span data-stu-id="937f2-335">This only works on the docs.microsoft.com site.</span></span>
 
-<span data-ttu-id="0fa48-336">Er kunnen soms hele lange woorden in de tweede kolom van een tabel staan.</span><span class="sxs-lookup"><span data-stu-id="0fa48-336">From time to time, you might have very long words in the second column of a table.</span></span> <span data-ttu-id="0fa48-337">Om ervoor te zorgen dat lange woorden netjes worden gesplitst, kunt u de klasse `mx-tdCol2BreakAll` toepassen met behulp van de `div`-wrapper-syntaxis zoals eerder besproken.</span><span class="sxs-lookup"><span data-stu-id="0fa48-337">To ensure they are broken apart nicely, you can apply the class `mx-tdCol2BreakAll` by using the `div` wrapper syntax as shown earlier.</span></span>
+<span data-ttu-id="937f2-336">Er kunnen soms hele lange woorden in de tweede kolom van een tabel staan.</span><span class="sxs-lookup"><span data-stu-id="937f2-336">From time to time, you might have very long words in the second column of a table.</span></span> <span data-ttu-id="937f2-337">Om ervoor te zorgen dat lange woorden netjes worden gesplitst, kunt u de klasse `mx-tdCol2BreakAll` toepassen met behulp van de `div`-wrapper-syntaxis zoals eerder besproken.</span><span class="sxs-lookup"><span data-stu-id="937f2-337">To ensure they are broken apart nicely, you can apply the class `mx-tdCol2BreakAll` by using the `div` wrapper syntax as shown earlier.</span></span>
 
-### <a name="html-tables"></a><span data-ttu-id="0fa48-338">HTML-tabellen</span><span class="sxs-lookup"><span data-stu-id="0fa48-338">HTML Tables</span></span>
+### <a name="html-tables"></a><span data-ttu-id="937f2-338">HTML-tabellen</span><span class="sxs-lookup"><span data-stu-id="937f2-338">HTML Tables</span></span>
 
-<span data-ttu-id="0fa48-339">HTML-tabellen worden niet aanbevolen voor docs.microsoft.com.</span><span class="sxs-lookup"><span data-stu-id="0fa48-339">HTML tables are not recommended for docs.microsoft.com.</span></span> <span data-ttu-id="0fa48-340">Ze kunnen niet door mensen worden gelezen in de bron. Dit is wel een basisprincipe van Markdown.</span><span class="sxs-lookup"><span data-stu-id="0fa48-340">They are not human readable in the source - which is a key principle of Markdown.</span></span>
+<span data-ttu-id="937f2-339">HTML-tabellen worden niet aanbevolen voor docs.microsoft.com.</span><span class="sxs-lookup"><span data-stu-id="937f2-339">HTML tables are not recommended for docs.microsoft.com.</span></span> <span data-ttu-id="937f2-340">Ze kunnen niet door mensen worden gelezen in de bron. Dit is wel een basisprincipe van Markdown.</span><span class="sxs-lookup"><span data-stu-id="937f2-340">They are not human readable in the source - which is a key principle of Markdown.</span></span>
 
 <!--If you use HTML tables and your Markdown is not being rendered between the two tables, you need to add a closing `br` tag after the closing `table` tag.
 
 ![break HTML tables](media/break-tables.png)
 -->
 
-## <a name="videos"></a><span data-ttu-id="0fa48-341">Video's</span><span class="sxs-lookup"><span data-stu-id="0fa48-341">Videos</span></span>
+## <a name="videos"></a><span data-ttu-id="937f2-341">Video's</span><span class="sxs-lookup"><span data-stu-id="937f2-341">Videos</span></span>
 
-### <a name="embedding-videos-into-a-markdown-page"></a><span data-ttu-id="0fa48-342">Video's insluiten op een Markdown-pagina</span><span class="sxs-lookup"><span data-stu-id="0fa48-342">Embedding videos into a Markdown page</span></span>
+### <a name="embedding-videos-into-a-markdown-page"></a><span data-ttu-id="937f2-342">Video's insluiten op een Markdown-pagina</span><span class="sxs-lookup"><span data-stu-id="937f2-342">Embedding videos into a Markdown page</span></span>
 
-<span data-ttu-id="0fa48-343">Momenteel biedt Docs ondersteuning voor video's die zijn gepubliceerd op een van de volgende drie locaties:</span><span class="sxs-lookup"><span data-stu-id="0fa48-343">Currently, Docs can support videos published to one of three locations:</span></span>
+<span data-ttu-id="937f2-343">Momenteel biedt Docs ondersteuning voor video's die zijn gepubliceerd op een van de volgende drie locaties:</span><span class="sxs-lookup"><span data-stu-id="937f2-343">Currently, Docs can support videos published to one of three locations:</span></span>
 
-- <span data-ttu-id="0fa48-344">YouTube</span><span class="sxs-lookup"><span data-stu-id="0fa48-344">YouTube</span></span>
-- <span data-ttu-id="0fa48-345">Channel 9</span><span class="sxs-lookup"><span data-stu-id="0fa48-345">Channel 9</span></span>
-- <span data-ttu-id="0fa48-346">Het eigen One Player-systeem van Microsoft</span><span class="sxs-lookup"><span data-stu-id="0fa48-346">Microsoft's own 'One Player' system</span></span>
+- <span data-ttu-id="937f2-344">YouTube</span><span class="sxs-lookup"><span data-stu-id="937f2-344">YouTube</span></span>
+- <span data-ttu-id="937f2-345">Channel 9</span><span class="sxs-lookup"><span data-stu-id="937f2-345">Channel 9</span></span>
+- <span data-ttu-id="937f2-346">Het eigen One Player-systeem van Microsoft</span><span class="sxs-lookup"><span data-stu-id="937f2-346">Microsoft's own 'One Player' system</span></span>
 
-<span data-ttu-id="0fa48-347">U kunt een video insluiten met de volgende syntaxis zodat Docs de video kan weergeven.</span><span class="sxs-lookup"><span data-stu-id="0fa48-347">You can embed a video with the following syntax, and Docs will render it.</span></span>
+<span data-ttu-id="937f2-347">U kunt een video insluiten met de volgende syntaxis zodat Docs de video kan weergeven.</span><span class="sxs-lookup"><span data-stu-id="937f2-347">You can embed a video with the following syntax, and Docs will render it.</span></span>
 
 ```md
 > [!VIDEO <embedded_video_link>]
 ```
 
-<span data-ttu-id="0fa48-348">Voorbeeld:</span><span class="sxs-lookup"><span data-stu-id="0fa48-348">Example:</span></span>
+<span data-ttu-id="937f2-348">Voorbeeld:</span><span class="sxs-lookup"><span data-stu-id="937f2-348">Example:</span></span>
 
 ```md
 > [!VIDEO https://channel9.msdn.com/Series/Youve-Got-Key-Values-A-Redis-Jump-Start/03/player]
@@ -542,7 +542,7 @@ Using XREF may require some configuration. For more information, see XREF Servic
 > [!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RE1XVQS]
 ```
 
-<span data-ttu-id="0fa48-349">... wordt weergegeven als:</span><span class="sxs-lookup"><span data-stu-id="0fa48-349">... will be rendered as:</span></span>
+<span data-ttu-id="937f2-349">... wordt weergegeven als:</span><span class="sxs-lookup"><span data-stu-id="937f2-349">... will be rendered as:</span></span>
 
 ```html
 <iframe src="https://channel9.msdn.com/Series/Youve-Got-Key-Values-A-Redis-Jump-Start/03/player" width="640" height="320" allowFullScreen="true" frameBorder="0"></iframe>
@@ -551,7 +551,7 @@ Using XREF may require some configuration. For more information, see XREF Servic
 <iframe src="https://www.microsoft.com/en-us/videoplayer/embed/RE1XVQS" width="640" height="320" allowFullScreen="true" frameBorder="0"></iframe>
 ```
 
-<span data-ttu-id="0fa48-350">En deze wordt als volgt weergegeven op gepubliceerde pagina's:</span><span class="sxs-lookup"><span data-stu-id="0fa48-350">And it will be displayed like this on published pages:</span></span>
+<span data-ttu-id="937f2-350">En deze wordt als volgt weergegeven op gepubliceerde pagina's:</span><span class="sxs-lookup"><span data-stu-id="937f2-350">And it will be displayed like this on published pages:</span></span>
 
 > [!VIDEO https://channel9.msdn.com/Series/Youve-Got-Key-Values-A-Redis-Jump-Start/03/player]
 
@@ -560,23 +560,23 @@ Using XREF may require some configuration. For more information, see XREF Servic
 > [!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RE1XVQS]
 
 > [!IMPORTANT]
-> <span data-ttu-id="0fa48-351">De URL van de CH9-video moet beginnen met `https` en eindigen met `/player`.</span><span class="sxs-lookup"><span data-stu-id="0fa48-351">The CH9 video URL should start with `https` and end with `/player`.</span></span> <span data-ttu-id="0fa48-352">Anders wordt de hele pagina en niet alleen de video ingesloten.</span><span class="sxs-lookup"><span data-stu-id="0fa48-352">Otherwise, it will embed the whole page instead of the video only.</span></span>
+> <span data-ttu-id="937f2-351">De URL van de CH9-video moet beginnen met `https` en eindigen met `/player`.</span><span class="sxs-lookup"><span data-stu-id="937f2-351">The CH9 video URL should start with `https` and end with `/player`.</span></span> <span data-ttu-id="937f2-352">Anders wordt de hele pagina en niet alleen de video ingesloten.</span><span class="sxs-lookup"><span data-stu-id="937f2-352">Otherwise, it will embed the whole page instead of the video only.</span></span>
 
-### <a name="uploading-new-videos"></a><span data-ttu-id="0fa48-353">Nieuwe video's uploaden</span><span class="sxs-lookup"><span data-stu-id="0fa48-353">Uploading new videos</span></span>
+### <a name="uploading-new-videos"></a><span data-ttu-id="937f2-353">Nieuwe video's uploaden</span><span class="sxs-lookup"><span data-stu-id="937f2-353">Uploading new videos</span></span>
 
-<span data-ttu-id="0fa48-354">Alle nieuwe video's moeten worden geüpload met het volgende proces:</span><span class="sxs-lookup"><span data-stu-id="0fa48-354">Any new videos should be uploaded using the following process:</span></span>
+<span data-ttu-id="937f2-354">Alle nieuwe video's moeten worden geüpload met het volgende proces:</span><span class="sxs-lookup"><span data-stu-id="937f2-354">Any new videos should be uploaded using the following process:</span></span>
 
-1. <span data-ttu-id="0fa48-355">Neem deel aan de groep **docs_video_users** op IDWEB.</span><span class="sxs-lookup"><span data-stu-id="0fa48-355">Join the **docs_video_users** group on IDWEB.</span></span>
-1. <span data-ttu-id="0fa48-356">Ga naar https://aka.ms/VideoUploadRequest en vul de gegevens voor uw video in.</span><span class="sxs-lookup"><span data-stu-id="0fa48-356">Go to https://aka.ms/VideoUploadRequest and fill in the details for your video.</span></span> <span data-ttu-id="0fa48-357">Het volgende is nodig (geen van deze items is zichtbaar voor het publiek):</span><span class="sxs-lookup"><span data-stu-id="0fa48-357">You will need (note that none of these items will be visible to the public):</span></span>
-    1. <span data-ttu-id="0fa48-358">Een titel voor uw video.</span><span class="sxs-lookup"><span data-stu-id="0fa48-358">A title for your video.</span></span>
-    1. <span data-ttu-id="0fa48-359">Een lijst met producten/services waarop uw video betrekking heeft.</span><span class="sxs-lookup"><span data-stu-id="0fa48-359">A list of products/services that your video is related to.</span></span>
-    1. <span data-ttu-id="0fa48-360">De doelpagina of (als u de pagina nog niet hebt) de docset waarop uw video wordt gehost.</span><span class="sxs-lookup"><span data-stu-id="0fa48-360">The target page or (if you don’t have the page yet) doc set that your video will be hosted on.</span></span>
-    1. <span data-ttu-id="0fa48-361">Een koppeling naar het MP4-bestand voor uw video (als u geen locatie hebt waar het bestand kan worden geplaatst, kunt u het tijdelijk hier plaatsen:   `\\scratch2\scratch\apex`).</span><span class="sxs-lookup"><span data-stu-id="0fa48-361">A link to the MP4 file for your video (if you don’t have a location to put the file, you can put it here temporarily:   `\\scratch2\scratch\apex`).</span></span> <span data-ttu-id="0fa48-362">MP4-bestanden moeten 720p of hoger zijn.</span><span class="sxs-lookup"><span data-stu-id="0fa48-362">MP4 files should be 720p or higher.</span></span>
-    1. <span data-ttu-id="0fa48-363">Een beschrijving van de video.</span><span class="sxs-lookup"><span data-stu-id="0fa48-363">A description of the video.</span></span>
-1. <span data-ttu-id="0fa48-364">Verzend dat item (sla het op).</span><span class="sxs-lookup"><span data-stu-id="0fa48-364">Submit (save) that item.</span></span>
-1. <span data-ttu-id="0fa48-365">De video wordt binnen twee werkdagen geüpload.</span><span class="sxs-lookup"><span data-stu-id="0fa48-365">Within two business days, the video will get uploaded.</span></span> <span data-ttu-id="0fa48-366">De koppeling die u voor het insluiten nodig hebt, wordt in het werkitem geplaatst en deze wordt *terug naar u* omgezet.</span><span class="sxs-lookup"><span data-stu-id="0fa48-366">The link you need for embedding will be placed into the work item, and it will be resolved *back to you*.</span></span>
-1. <span data-ttu-id="0fa48-367">Nadat u de videokoppeling hebt vastgelegd, sluit u het werkitem.</span><span class="sxs-lookup"><span data-stu-id="0fa48-367">Once you have grabbed the video link, close the work item.</span></span>
-1. <span data-ttu-id="0fa48-368">De videokoppeling kan vervolgens aan uw bericht worden toegevoegd met deze syntaxis:</span><span class="sxs-lookup"><span data-stu-id="0fa48-368">The video link can then be added to your post, using this syntax:</span></span>
+1. <span data-ttu-id="937f2-355">Neem deel aan de groep **docs_video_users** op IDWEB.</span><span class="sxs-lookup"><span data-stu-id="937f2-355">Join the **docs_video_users** group on IDWEB.</span></span>
+1. <span data-ttu-id="937f2-356">Ga naar https://aka.ms/VideoUploadRequest en vul de gegevens voor uw video in.</span><span class="sxs-lookup"><span data-stu-id="937f2-356">Go to https://aka.ms/VideoUploadRequest and fill in the details for your video.</span></span> <span data-ttu-id="937f2-357">Het volgende is nodig (geen van deze items is zichtbaar voor het publiek):</span><span class="sxs-lookup"><span data-stu-id="937f2-357">You will need (note that none of these items will be visible to the public):</span></span>
+    1. <span data-ttu-id="937f2-358">Een titel voor uw video.</span><span class="sxs-lookup"><span data-stu-id="937f2-358">A title for your video.</span></span>
+    1. <span data-ttu-id="937f2-359">Een lijst met producten/services waarop uw video betrekking heeft.</span><span class="sxs-lookup"><span data-stu-id="937f2-359">A list of products/services that your video is related to.</span></span>
+    1. <span data-ttu-id="937f2-360">De doelpagina of (als u de pagina nog niet hebt) de docset waarop uw video wordt gehost.</span><span class="sxs-lookup"><span data-stu-id="937f2-360">The target page or (if you don’t have the page yet) doc set that your video will be hosted on.</span></span>
+    1. <span data-ttu-id="937f2-361">Een koppeling naar het MP4-bestand voor uw video (als u geen locatie hebt waar het bestand kan worden geplaatst, kunt u het tijdelijk hier plaatsen:   `\\scratch2\scratch\apex`).</span><span class="sxs-lookup"><span data-stu-id="937f2-361">A link to the MP4 file for your video (if you don’t have a location to put the file, you can put it here temporarily:   `\\scratch2\scratch\apex`).</span></span> <span data-ttu-id="937f2-362">MP4-bestanden moeten 720p of hoger zijn.</span><span class="sxs-lookup"><span data-stu-id="937f2-362">MP4 files should be 720p or higher.</span></span>
+    1. <span data-ttu-id="937f2-363">Een beschrijving van de video.</span><span class="sxs-lookup"><span data-stu-id="937f2-363">A description of the video.</span></span>
+1. <span data-ttu-id="937f2-364">Verzend dat item (sla het op).</span><span class="sxs-lookup"><span data-stu-id="937f2-364">Submit (save) that item.</span></span>
+1. <span data-ttu-id="937f2-365">De video wordt binnen twee werkdagen geüpload.</span><span class="sxs-lookup"><span data-stu-id="937f2-365">Within two business days, the video will get uploaded.</span></span> <span data-ttu-id="937f2-366">De koppeling die u voor het insluiten nodig hebt, wordt in het werkitem geplaatst en deze wordt *terug naar u* omgezet.</span><span class="sxs-lookup"><span data-stu-id="937f2-366">The link you need for embedding will be placed into the work item, and it will be resolved *back to you*.</span></span>
+1. <span data-ttu-id="937f2-367">Nadat u de videokoppeling hebt vastgelegd, sluit u het werkitem.</span><span class="sxs-lookup"><span data-stu-id="937f2-367">Once you have grabbed the video link, close the work item.</span></span>
+1. <span data-ttu-id="937f2-368">De videokoppeling kan vervolgens aan uw bericht worden toegevoegd met deze syntaxis:</span><span class="sxs-lookup"><span data-stu-id="937f2-368">The video link can then be added to your post, using this syntax:</span></span>
 
    ```md
    > [!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RE1XVQS]
