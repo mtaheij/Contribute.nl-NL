@@ -5,12 +5,12 @@ ms.topic: contributor-guide
 ms.prod: non-product-specific
 ms.custom: external-contributor-guide
 ms.date: 03/26/2019
-ms.openlocfilehash: 1f43cecb450c988e4f546aa5ecc5907061521f34
-ms.sourcegitcommit: a812d716b31084926b886b93923f9b84c9b23429
+ms.openlocfilehash: 086972acaef9647709fbe43f07c07abde71c7d9f
+ms.sourcegitcommit: fd92198ec2d0ce2d6687b6f1521a82b3fefc60e0
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 12/18/2019
-ms.locfileid: "75188276"
+ms.lasthandoff: 01/16/2020
+ms.locfileid: "76111061"
 ---
 # <a name="how-to-use-markdown-for-writing-docs"></a>Markdown gebruiken voor het schrijven van documenten
 
@@ -389,10 +389,312 @@ U kunt een praktijkvoorbeeld van selectors bekijken in [Azure Docs](https://docs
 
 ### <a name="code-include-references"></a>Insluitingsverwijzingen van code
 
-Markdig ondersteunt geavanceerde insluiting van code in een artikel, via de extensie voor codefragmenten. Dit biedt een geavanceerde weergave die gebruikmaakt van GFM-functies, zoals keuze van programmeertaal en syntaxiskleuren, plus leuke functies als:
+Met de Markdown-extensie voor het Docs-codefragment kunt u codevoorbeelden in uw artikelen insluiten en ze weergeven in een taalspecifieke syntaxiskleur. U kunt code van de huidige opslagplaats of een andere opslagplaats insluiten. In de onderstaande instructies vindt u een overzicht van het gebruik van de functie met het [docs.microsoft.com-ontwerppakket](https://marketplace.visualstudio.com/items?itemName=docsmsft.docs-authoring-pack). In Visual Studio Code kunt u een voorbeeld van de codefragmenten bekijken door **Preview** te openen. Markeren en interactiviteit zijn niet beschikbaar in de preview-versie.
 
-- Insluiting van gecentraliseerde codevoorbeelden/-fragmenten uit een externe opslagplaats.
-- Gebruikersinterface met tabbladen voor weergave van meerdere versies van codevoorbeelden in verschillende talen.
+> [!NOTE]
+> De extensie biedt geen ondersteuning voor het integraal opnemen van code-inhoud. Dit moet worden uitgevoerd door middel van de standaard Markdown-conventie, die drie keer moet worden afgevinkt.
+
+#### <a name="code-from-current-repository"></a>Code uit huidige opslagplaats
+
+1. Klik in Visual Studio Code op **Alt + M** of **optie + M** en selecteer Fragment.
+2. Wanneer het fragment is geselecteerd, wordt u gevraagd om een Volledige zoekopdracht, een Zoekopdracht met bereik of een Verwijzing naar meerdere opslagplaatsen. Als u lokaal wilt zoeken, selecteert u Volledige lokale zoekopdracht.
+3. Voer een zoekterm in om het bestand te zoeken. Wanneer u het bestand hebt gevonden, selecteert u het bestand.
+4. Selecteer vervolgens een optie om te bepalen welke regel(s) code er in het fragment moeten worden opgenomen. U kunt kiezen uit de volgende opties: **Id**, **Bereik** en **Geen**.
+5. Geef, op basis van uw selectie uit stap 4, indien nodig een waarde op.
+
+Volledig codebestand weergeven:
+
+```markdown
+:::code language="csharp" source="intro/samples/cu/Controllers/StudentsController.cs":::
+```
+
+Deel van een codebestand weergeven door regels op te geven:
+
+```markdown
+:::code language="csharp" source="intro/samples/cu/Controllers/StudentsController.cs" range="2-24,26":::
+```
+
+Deel van een codebestand weergeven op basis van de naam van een fragment:
+
+```markdown
+:::code language="csharp" source="intro/samples/cu/Controllers/StudentsController.cs" id="snippet_Create":::
+```
+
+#### <a name="code-from-another-repository"></a>Code uit een andere opslagplaats
+
+1. Klik in Visual Studio Code op **Alt + M** of **optie + M** en selecteer Fragment.
+2. Wanneer het fragment is geselecteerd, wordt u gevraagd om een Volledige zoekopdracht, een Zoekopdracht met bereik of een Verwijzing naar meerdere opslagplaatsen. Als u wilt zoeken in meerdere opslagplaatsen, selecteert u Verwijzing naar meerdere opslagplaatsen.
+3. U krijgt een selectie van opslagplaatsen die zich in *.openpublishing.publish.config.json* bevinden. Selecteer een opslagplaats.
+3. Voer een zoekterm in om het bestand te zoeken. Wanneer u het bestand hebt gevonden, selecteert u het bestand.
+4. Selecteer vervolgens een optie om te bepalen welke regel(s) code er in het fragment moeten worden opgenomen. U kunt kiezen uit de volgende opties: **Id**, **Bereik** en **Geen**.
+5. Geef, op basis van uw selectie uit stap 5, indien nodig een waarde op.
+
+Uw fragmentverwijzing ziet er als volgt uit:
+
+```markdown
+:::code language="csharp" source="~/samples-durable-functions/samples/csx/shared/Location.csx" highlight="2,5":::
+```
+
+#### <a name="path-to-code-file"></a>Pad naar het codebestand
+
+Voorbeeld:
+
+```markdown
+:::code language="csharp" source="intro/samples/cu/Controllers/StudentsController.cs" range="2-24,26":::
+```
+
+Dit voorbeeld komt uit de ASP.NET-docs-opslagplaats, uit het artikelbestand [aspnetcore/data/ef-mvc/crud.md](https://github.com/aspnet/Docs/blob/master/aspnetcore/data/ef-mvc/crud.md). Er wordt naar het codebestand verwezen met een relatief pad naar [aspnetcore/data/ef-mvc/intro/samples/cu/Controllers/StudentsController.cs](https://github.com/aspnet/Docs/blob/master/aspnetcore/data/ef-mvc/intro/samples/cu/Controllers/StudentsController.cs) in dezelfde opslagplaats.
+
+#### <a name="selected-line-numbers"></a>Bepaalde regelnummers
+
+Voorbeeld:
+
+```markdown
+:::code language="csharp" source="intro/samples/cu/Controllers/StudentsController.cs" range="2-24,26":::
+```
+
+In dit voorbeeld worden alleen regels 2-24 en 26 van het code bestand *StudentController.cs* weergegeven.
+
+U kunt beter fragmenten gebruiken dan regelnummers. We leggen hieronder uit waarom.
+
+#### <a name="named-snippet"></a>Fragment met naam
+
+Voorbeeld:
+
+```markdown
+:::code language="csharp" source="intro/samples/cu/Controllers/StudentsController.cs" id="snippet_Create":::
+```
+
+Gebruik alleen letters en onderstrepingstekens voor de naam.
+
+In het voorbeeld wordt het gedeelte `snippet_Create` van het codebestand weergegeven. Het codebestand van dit voorbeeld heeft een C#-regio genaamd `snippet_Create`:
+
+```cs
+// code excluded from the snippet
+// <snippet_Create>
+// code included in the snippet
+// </snippet_Create>
+// code excluded from the snippet
+```
+
+Wanneer mogelijk kunt u beter naar een gedeelte met naam verwijzen dan regelnummers op te geven. Verwijzingen naar regelnummers zijn foutgevoelig omdat codebestanden altijd veranderen, waarbij ook de regelnummers kunnen wijzigen.
+U ontvangt niet per se een melding van zulke wijzigingen. In uw artikel zullen dan de verkeerde regels worden weergegeven zonder dat u weet dat er iets is veranderd.
+
+#### <a name="highlighting-selected-lines"></a>Bepaalde regels markeren
+
+Voorbeeld:
+
+```markdown
+:::code language="csharp" source="intro/samples/cu/Controllers/StudentsController.cs" range="2-24,26" highlight="2,5":::
+```
+
+In het voorbeeld zijn regel 2 en 5 gemarkeerd, waarbij wordt geteld vanaf het begin van het weergegeven fragment. (Voor het markeren van regels wordt niet geteld vanaf het begin van het codebestand.) Met andere woorden: regel 3 en 6 van het codebestand zijn gemarkeerd.
+
+#### <a name="interactive-code-snippets"></a>Interactieve codefragmenten
+
+U kunt de interactieve modus inschakelen voor codefragmenten die met verwijzing zijn opgenomen. Hier volgen enkele voorbeelden:
+
+```markdown
+:::code language="powershell" source="PowerShell.ps1" interactive="cloudshell-powershell":::
+```
+
+```markdown
+:::code language="bash" source="Bash.sh" interactive="cloudshell-bash":::
+```
+
+Als u deze functie voor een bepaald codeblok wilt inschakelen, gebruikt u het kenmerk `interactive`. De beschikbare kenmerkwaarden zijn:
+
+- `cloudshell-powershell` - Hiermee schakelt u Azure PowerShell Cloud Shell in, zoals in het vorige voorbeeld
+- `cloudshell-bash` - Schakelt de Azure Cloud Shell in
+- `try-dotnet` - Hiermee schakelt u .NET proberen in
+- `try-dotnet-class` - Hiermee schakelt u .NET proberen met klasse-scaffolding in
+- `try-dotnet-method` - Hiermee schakelt u .NET proberen met methode-scaffolding in
+
+Er zijn paren van `language` en `interactive` die compatibel zijn. Als `interactive` bijvoorbeeld `try-dotnet` is, moet de taal `csharp` zijn. Op dezelfde manier werkt `cloudshell-powershell` alleen met `powershell` en `cloudshell-bash` als `bash` de taal is.
+
+Voor Azure Cloud Shell en PowerShell Cloud Shell kunnen gebruikers opdrachten uitvoeren voor enkel hun eigen Azure-account.
+
+Met [.NET proberen](https://github.com/dotnet/try) is interactieve uitvoering van .NET-code (C#) in de browser mogelijk. Voor .NET proberen zijn er drie opties voor interactiviteit: `try-dotnet`, `try-dotnet-class` en `try-dotnet-method`. U kunt deze opties gebruiken zonder extra configuratie in het codefragment. De volgende naamruimten zijn momenteel standaard beschikbaar:
+
+- System
+- System.Linq
+- System.Collections.Generic
+- System.Text
+- System.Globalization
+- System.Text.RegularExpressions
+
+Met de waarde van het `try-dotnet`-kenmerk kunnen gebruikers C#-code in de browser uitvoeren zonder de code te hoeven inpakken in aangepaste code.
+
+Voorbeeld:
+
+```md
+:::code language="csharp" source="relative/path/source.cs" interactive="try-dotnet":::
+```
+
+Met behulp van de `try-dotnet-class`-waarde wordt klasse-scaffolding toegepast op de code die wordt doorgegeven aan het interactieve onderdeel.
+
+```md
+:::code language="csharp" source="relative/path/source.cs" id="snippet-tag" interactive="try-dotnet-class":::
+```
+
+Voorbeeld:
+
+Codefragment waarop geen klasse-scaffolding is toegepast
+
+```md
+public static void Main()
+    {  
+        // Specify the data source.  
+        int[] scores = new int[] { 97, 92, 81, 60 };        // Define the query expression.
+
+        IEnumerable<int> scoreQuery =
+            from score in scores  
+            where score > 80  
+            select score;
+
+        // Execute the query.  
+        foreach (int i in scoreQuery)
+        {  
+            Console.Write(i + " ");
+        }
+    }  
+}
+```
+
+Codefragment waarop wel klasse-scaffolding is toegepast
+
+```md
+class NameOfClass {
+
+   public static void Main()
+    {
+        // Specify the data source.
+        int[] scores = new int[] { 97, 92, 81, 60 };
+
+        // Define the query expression.
+        IEnumerable<int> scoreQuery =
+            from score in scores
+            where score > 80
+            select score;
+
+        // Execute the query.
+        foreach (int i in scoreQuery)
+        {
+            Console.Write(i + " ");
+        }
+    }  
+}
+```
+
+Met behulp van de `try-dotnet-method`-waarde wordt methode-scaffolding toegepast op de code die wordt doorgegeven aan het interactieve onderdeel.
+
+```md
+:::code language="csharp" source="relative/path/source.cs" id="snippet-tag" interactive="try-dotnet-method":::
+```
+
+Voorbeeld:
+
+Codefragment waarop geen methode-scaffolding is toegepast
+
+```md
+/*Print some string in C#*/
+
+Console.WriteLine("Hello C#.);
+```
+
+Codefragment waarop wel methode-scaffolding is toegepast
+
+```md
+public static void Main(string args[]) {
+
+/*Print some string in C#*/
+
+Console.WriteLine("Hello C#.);
+}
+```
+
+#### <a name="snippet-syntax-reference"></a>Naslaginformatie over fragmentsyntaxis
+
+U kunt naar codefragmenten die in uw opslagplaats zijn opgeslagen verwijzen door de opgegeven codetaal te gebruiken. De inhoud van het opgegeven codepad wordt uitgebreid en in uw bestand opgenomen.
+
+Er gelden geen beperkingen ten aanzien van de mappenstructuur van codefragmenten. U kunt de codefragmenten beheren als normale broncode.
+
+Syntaxis:
+
+```md
+:::code language="<language>" source="<path>" <attribute>="<attribute-value>":::
+```
+
+> [!IMPORTANT]
+> Deze syntaxis is een Markdown-blokextensie. Deze moet op zijn eigen regel worden gebruikt.
+
+- `<language>` (*optioneel*)
+  - Taal van het codefragment. Zie de sectie [Ondersteunde talen](#supported-languages) verderop in dit artikel voor meer informatie.
+
+- `<path>`(*verplichte*)
+  - Relatief pad naar het bestandssysteem dat het codefragmentbestand aangeeft waarnaar moet worden verwezen.
+
+- `<attribute>`en `<attribute-value>`(*optioneel*)
+  - Worden samen gebruikt om op te geven hoe de code uit het bestand moet worden opgehaald:
+    - `range`: `1,3-5` Een bereik met regels. Dit voorbeeld bevat regels 1, 3, 4 en 5.
+    - `id`: `snippet_Create` De id van het fragment dat moet worden ingevoegd vanuit het codebestand. Deze waarde kan niet naast elkaar bestaan met een bereik.
+    - `highlight`: `2-4,6` Het bereik en/of het aantal regels dat moet worden gemarkeerd in het gegenereerde codefragment. De nummering is relatief ten opzichte van het codefragment zelf, niet het geïmporteerde bereik.
+    - `interactive`: `cloudshell-powershell`, `cloudshell-bash`, `try-dotnet`, `try-dotnet-class`, `try-dotnet-method` De waarde van de tekenreeks bepaalt welke soorten interactiviteit zijn ingeschakeld.
+
+#### <a name="supported-languages"></a>Ondersteunde talen
+
+|Name|Markdown-label|
+|-----|-------|
+|.NET Core CLI|`dotnetcli`|
+|ASP.NET met C#|`aspx-csharp`|
+|ASP.NET met VB|`aspx-vb`|
+|Azure CLI|`azurecli`|
+|Azure CLI in browser|`azurecli-interactive`|
+|Azure PowerShell in browser|`azurepowershell-interactive`|
+|AzCopy|`azcopy`|
+|Bash|`bash`|
+|C++|`cpp`|
+|C#|`csharp`|
+|C# in browser|`csharp-interactive`|
+|Console|`console`|
+|CSHTML|`cshtml`|
+|DAX|`dax`|
+|Docker|`Dockerfile`|
+|F#|`fsharp`|
+|HTML|`html`|
+|Java|`java`|
+|JavaScript|`javascript`|
+|JSON|`json`|
+|Kusto-querytaal|`kusto`|
+|Markdown|`md`|
+|Objective-C|`objc`|
+|PHP|`php`|
+|PowerShell|`powershell`|
+|Power Query M|`powerquery-m`|
+|protobuf|`protobuf`|
+|Python|`python`|
+|Ruby|`ruby`|
+|SQL|`sql`|
+|Swift|`swift`|
+|VB|`vb`|
+|XAML|`xaml`|
+|XML|`xml`|
+|YAML|`yml`|
+
+#### <a name="code-extensions"></a>Code-extensies
+
+|Name|Markdown-label|Bestandsextensie|
+|-----|-------|-----|
+|C#|csharp|.cs, .csx|
+|C++|cpp|.cpp, .h|
+|F#|fsharp|.fs|
+|Java|java|.java|
+|JavaScript|javascript|.js|
+|Python|python|.py|
+|SQL|sql|.sql|
+|VB|vb|.vb|
+|XAML|xaml|.xmal|
+|XML|xml|.xml|
 
 ## <a name="gotchas-and-troubleshooting"></a>Gotcha's en probleemoplossing
 
