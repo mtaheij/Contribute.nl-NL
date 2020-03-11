@@ -5,12 +5,12 @@ ms.topic: contributor-guide
 ms.prod: non-product-specific
 ms.custom: external-contributor-guide
 ms.date: 11/07/2018
-ms.openlocfilehash: e54ade313f026b5ea512c0f783d3f8ad83979390
-ms.sourcegitcommit: ca84e542b081e145052f38967e826f6ef25da1b2
+ms.openlocfilehash: 161f831bf3f31428f78d3a828b12b4c9ecaffb0e
+ms.sourcegitcommit: 804a99b89785e5c8f056a9da3f0fbde9f0a56a51
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 10/12/2019
-ms.locfileid: "72288353"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "78331757"
 ---
 # <a name="process-for-contributing-to-net-docs"></a>Proces voor bijdragen aan .NET-documenten
 
@@ -169,7 +169,7 @@ Met uitzondering van vermeldingen moeten alle voorbeelden vanaf de opdrachtregel
 
 ## <a name="the-c-interactive-experience"></a>De interactieve C#-ervaring
 
-Aan alle voorbeelden die in een artikel staan, wordt een [taaltag](how-to-write-use-markdown.md#code-snippets) toegevoegd om de brontaal aan te geven. Voor korte codevoorbeelden in C# kan de taaltag `csharp-interactive` worden gebruikt om een C#-voorbeeld op te geven dat in de browser wordt uitgevoerd. (Voor inlinecodevoorbeelden wordt de tag `csharp-interactive` gebruikt; voor codefragmenten die uit de bron zijn ingesloten gebruikt u de tag `code-csharp-interactive`.) Deze codevoorbeelden geven een codevenster en een uitvoervenster in het artikel weer. In het uitvoervenster wordt alle uitvoer weergegeven door het uitvoeren van de interactieve code zodra de gebruiker het voorbeeld heeft uitgevoerd.
+Aan alle voorbeelden die in een artikel staan, wordt een [taaltag](code-in-docs.md) toegevoegd om de brontaal aan te geven. Voor korte codevoorbeelden in C# kan de taaltag `csharp-interactive` worden gebruikt om een C#-voorbeeld op te geven dat in de browser wordt uitgevoerd. (Voor inlinecodevoorbeelden wordt de tag `csharp-interactive` gebruikt; voor codefragmenten die uit de bron zijn ingesloten gebruikt u de tag `code-csharp-interactive`.) Deze codevoorbeelden geven een codevenster en een uitvoervenster in het artikel weer. In het uitvoervenster wordt alle uitvoer weergegeven door het uitvoeren van de interactieve code zodra de gebruiker het voorbeeld heeft uitgevoerd.
 
 De interactieve C#-ervaring verandert de manier waarop wij met voorbeelden werken. Bezoekers kunnen het voorbeeld uitvoeren om de resultaten te zien. Aan de hand van een aantal factoren wordt bepaald of het voorbeeld of de bijbehorende tekst informatie over de uitvoer moet bevatten.
 
