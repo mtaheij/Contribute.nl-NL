@@ -5,12 +5,12 @@ ms.topic: contributor-guide
 ms.prod: non-product-specific
 ms.custom: external-contributor-guide
 ms.date: 06/30/2017
-ms.openlocfilehash: 5154b80102069f1d5526b744637f8ba854f1fe3f
-ms.sourcegitcommit: ca84e542b081e145052f38967e826f6ef25da1b2
+ms.openlocfilehash: c099a458718ade11840c314542c530dd6669402d
+ms.sourcegitcommit: 804a99b89785e5c8f056a9da3f0fbde9f0a56a51
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 10/12/2019
-ms.locfileid: "72288440"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "78331878"
 ---
 # <a name="git-and-github-essentials-for-docs"></a>Essentiële informatie over Git en GitHub voor Docs
 
@@ -61,13 +61,13 @@ Elke artikelmap bevat een submap `/media` voor de overeenkomstige mediabestanden
 
 Wanneer er herbruikbare inhoud is die wordt gedeeld door twee of meer artikelen, wordt deze inhoud opgeslagen in een submap `/includes` buiten de hoofdmap `articles`. In een Markdown-bestand waarvoor het include-bestand wordt gebruikt, wordt een overeenkomende Markdown-extensie include geplaatst op de locatie waar de verwijzing naar het include-bestand moet worden gebruikt.
 
-Bekijk [hoe u Markdown: omvat](how-to-write-use-markdown.md#include-files) gebruikt voor verdere hulp.
+Raadpleeg [Markdown-naslaginformatie: omvat](markdown-reference.md#included-markdown-files) gebruikt voor verdere hulp.
 
 ### <a name="markdown-file-template"></a>Sjabloon voor Markdown-bestanden
 
 Voor het gemak bevat de hoofdmap van elke opslagplaats meestal een sjabloon voor Markdown-bestanden met de naam `template.md`. U kunt deze sjabloon gebruiken als basis voor een nieuw artikel dat u wilt verzenden naar de opslagplaats. Het bestand bevat:
 
-- Een **koptekst met metagegevens** boven aan het bestand, afgebakend door twee regels met drie afbreekstreepjes, en verschillende labels die worden gebruikt voor het bijhouden van informatie met betrekking tot het artikel. De metagegevens van het artikel maken bepaalde functies mogelijk, zoals toekenning aan auteur, toekenning aan inzender, breadcrumbs, artikelbeschrijvingen en zoekmachineoptimalisatie. Ook worden de metagegevens gebruikt voor rapportageprocessen waarmee Microsoft de prestaties van de inhoud kan evalueren. De metagegevens zijn dus belangrijk.
+- Een **koptekst met metagegevens** boven aan het bestand, afgebakend door twee regels met drie afbreekstreepjes, en verschillende tags die worden gebruikt voor het bijhouden van informatie met betrekking tot het artikel. De metagegevens van het artikel maken bepaalde functies mogelijk, zoals toekenning aan auteur, toekenning aan inzender, breadcrumbs, artikelbeschrijvingen en zoekmachineoptimalisatie. Ook worden de metagegevens gebruikt voor rapportageprocessen waarmee Microsoft de prestaties van de inhoud kan evalueren. De metagegevens zijn dus belangrijk.
 - Een sectie met **metagegevens** met de beschrijving van de verschillende labels en waarden voor de metagegevens. Als u niet zeker weet welke waarden u moet gebruiken in de sectie voor metagegevens, kunt u de sectie leeg laten of de waarden markeren als commentaar door er een hashtag (#) voor te plaatsen. De waarden worden dan beoordeeld/voltooid door de revisor van de pull-aanvraag voor de opslagplaats.
 - Verschillende **voorbeelden van het gebruik van Markdown** voor het indelen van de elementen van een artikel.
 - Algemene **instructies voor het gebruik van Markdown-extensies** die u kunt gebruiken voor diverse waarschuwingstypen.

@@ -3,30 +3,30 @@ title: Markdown-naslaginformatie voor docs.microsoft.com
 description: Maak kennis met de Markdown-functies en -syntaxis die worden gebruikt op het Microsoft Docs-platform.
 author: meganbradley
 ms.author: mbradley
-ms.date: 05/18/2018
+ms.date: 01/30/2020
 ms.topic: contributor-guide
 ms.prod: non-product-specific
 ms.custom: external-contributor-guide
-ms.openlocfilehash: 452cbf97db748532ae2b0e09b4bb558c8f757a61
-ms.sourcegitcommit: a812d716b31084926b886b93923f9b84c9b23429
+ms.openlocfilehash: 14cc9f0912149eb342c97d0dd7d2776bd54c84e7
+ms.sourcegitcommit: 804a99b89785e5c8f056a9da3f0fbde9f0a56a51
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 12/18/2019
-ms.locfileid: "75188274"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "78331953"
 ---
-# <a name="markdown-reference"></a>Markdown-naslaginformatie
+# <a name="docs-markdown-reference"></a>Docs Markdown-naslaginformatie
 
-Markdown is een lichtgewicht opmaakcodetaal met een syntaxis voor het opmaken van platte tekst. Het Docs-platform ondersteunt de CommonMark-standaard voor Markdown, plus enkele aangepaste Markdown-extensies die zijn ontworpen om rijkere inhoud op docs.microsoft.com te bieden. Dit artikel bevat alfabetische naslaginformatie voor het gebruik van Markdown voor docs.microsoft.com.
+Dit artikel bevat alfabetische naslaginformatie voor het schrijven van Markdown voor docs.microsoft.com (Docs).
 
-U kunt voor het opstellen van Markdown elke teksteditor gebruiken. Voor elke editor die het invoegen van zowel standaard-Markdown-syntaxis als aangepaste Docs-extensies mogelijk maakt, wordt [VS Code](https://code.visualstudio.com/) met een geïnstalleerd [Docs-ontwerppakket](https://aka.ms/DocsAuthoringPack) aangeraden.
+[Markdown](https://daringfireball.net/projects/markdown/) is een lichtgewicht opmaakcodetaal met een syntaxis voor platte tekst. Docs biedt ondersteuning voor Markdown die compatibel is met [CommonMark](https://commonmark.org/) en is geparseerd via de parserengine [Markdig](https://github.com/lunet-io/markdig). Docs biedt ook ondersteuning voor aangepaste Markdown-extensies die uitgebreide inhoud op de Docs-site bieden.
 
-Docs maakt gebruik van de Markdown-engine in Markdig. U kunt het weergeven van Markdown in Markdig versus andere engines testen op [https://babelmark.github.io/](https://babelmark.github.io/).
+U kunt u elke teksteditor gebruiken voor het schrijven van Markdown, maar u kunt het beste [Visual Studio Code](https://code.visualstudio.com/) met het [Docs Authoring Pack](https://aka.ms/DocsAuthoringPack) gebruiken. Het Docs Authoring Pack bevat bewerkingsprogramma's en preview-functionaliteit waarmee u kunt zien hoe uw artikelen eruitzien zoals ze worden weergegeven op Docs.
 
 ## <a name="alerts-note-tip-important-caution-warning"></a>Waarschuwingen (Opmerking, Tip, Belangrijk, Let op, Waarschuwing)
 
-Geeft een waarschuwing voor een Docs Markdown-extensie om blokcitaten te maken die op docs.microsoft.com worden weergegeven met kleuren en pictogrammen die het belang van de inhoud aanduiden. De volgende typen waarschuwingen worden ondersteund:
+Dit zijn waarschuwingen voor een Markdown-extensie om blokcitaten te maken die op docs.microsoft.com worden weergegeven met kleuren en pictogrammen die het belang van de inhoud aanduiden. De volgende typen waarschuwingen worden ondersteund:
 
-```md
+```markdown
 > [!NOTE]
 > Information the user should notice even if skimming.
 
@@ -45,21 +45,134 @@ Geeft een waarschuwing voor een Docs Markdown-extensie om blokcitaten te maken d
 
 Deze waarschuwingen zien er op docs.microsoft.com als volgt uit:
 
-![laat zien hoe de waarschuwingen in het vorige voorbeeld eruit zien op de gepubliceerde Docs-pagina met verschillende pictogrammen en kleuren](media/alerts-rendering.png)
+> [!NOTE]
+> Information the user should notice even if skimming.
+
+> [!TIP]
+> Optional information to help a user be more successful.
+
+> [!IMPORTANT]
+> Essential information required for user success.
+
+> [!CAUTION]
+> Negative potential consequences of an action.
+
+> [!WARNING]
+> Dangerous certain consequences of an action.
+
+### <a name="angle-brackets"></a>Punthaken
+
+Als u in lopende tekst punthaken gebruikt, bijvoorbeeld om een tijdelijke aanduiding aan te geven, moet u de punthaken handmatig coderen. Anders zal Markdown deze aanzien voor HTML-code.
+
+Voorbeeld: codeer `<script name>` als `&lt;script name&gt;` of `\<script name>`.
+
+Punthaken hoeven niet te worden voorafgegaan in tekst die is opgemaakt als code in regels of in codeblokken.
+
+## <a name="apostrophes-and-quotation-marks"></a>Apostroffen en aanhalingstekens
+
+Als u tekst vanuit Word in een Markdown editor kopieert, bevat deze mogelijk gekrulde apostroffen of aanhalingstekens. Deze moeten worden gecodeerd of gewijzigd in rechte apostroffen of aanhalingstekens. Anders ziet de tekst er misschien zo uit wanneer u het bestand gaat publiceren: Itâ€™s
+
+Hieronder vindt u de codering voor de gekrulde versies van deze leestekens:
+
+- Linker dubbel aanhalingsteken (openen): `&#8220;`
+- Rechter dubbel aanhalingsteken (sluiten): `&#8221;`
+- Rechter enkel aanhalingsteken of apostrof (sluiten): `&#8217;`
+- Linker enkel aanhalingsteken (openen) (wordt zelden gebruikt): `&#8216;`
+
+## <a name="blockquotes"></a>Blokcitaten
+
+Blokcitaten worden gemaakt met het teken `>`:
+
+```md
+> This is a blockquote. It is usually rendered indented and with a different background color.
+```
+
+Het voorbeeld hierboven wordt als volgt weergegeven:
+
+> Dit is een blokcitaat. Deze wordt doorgaans ingesprongen weergegeven met een andere achtergrondkleur.
+
+## <a name="bold-and-italic-text"></a>Vetgedrukte en cursieve tekst
+
+Als u tekst als **vet** wilt opmaken, zet u de tekst tussen dubbele sterretjes:
+
+```markdown
+This text is **bold**.
+```
+
+Als u tekst als *cursief* wilt opmaken, zet u de tekst tussen enkele sterretjes:
+
+```markdown
+This text is *italic*.
+```
+
+Als u tekst als ***vet en cursief*** wilt opmaken, zet u de tekst tussen driedubbele sterretjes:
+
+```markdown
+This text is both ***bold and italic***.
+```
 
 ## <a name="code-snippets"></a>Codefragmenten
 
-U kunt codefragmenten in uw Markdown-bestanden insluiten:
+Docs Markdown ondersteunt het plaatsen van codefragmenten inline in een zin, maar ook als een afzonderlijk, 'omheind' blok tussen zinnen. Zie [Code toevoegen aan docs](code-in-docs.md)voor meer informatie.
 
-```md
-[!code-<language>[<name>](<codepath><queryoption><queryoptionvalue> "<title>")]
+## <a name="columns"></a>Kolommen
+
+Met de Markdown-extensie **kolommen** kunnen Docs-schrijvers op kolommen gebaseerde inhoudsindelingen toevoegen die flexibelere en krachtiger zijn dan normale Markdown-tabellen, die alleen geschikt zijn voor echte tabellaire gegevens. U kunt maximaal vier kolommen toevoegen en het optionele kenmerk `span` gebruiken om twee of meer kolommen samen te voegen.
+
+De syntaxis voor kolommen ziet er als volgt uit:
+
+```markdown
+:::row:::
+   :::column span="":::
+      Content...
+   :::column-end:::
+   :::column span="":::
+      More content...
+   :::column-end:::
+:::row-end:::
 ```
+
+Kolommen mogen alleen elementaire Markdown inclusief afbeeldingen bevatten. Kopteksten, tabellen, tabs en andere complexe structuren mogen niet worden gebruikt. Een rij kan geen inhoud buiten een kolom bevatten.
+
+Met de volgende Markdown maakt u bijvoorbeeld één kolom die bestaat uit twee kolombreedten en één standaardkolom (geen `span`):
+
+```markdown
+:::row:::
+   :::column span="2":::
+      **This is a 2-span column with lots of text.**
+
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec vestibulum mollis nunc
+      ornare commodo. Nullam ac metus imperdiet, rutrum justo vel, vulputate leo. Donec
+      rutrum non eros eget consectetur.
+   :::column-end:::
+   :::column span="":::
+      **This is a single-span column with an image in it.**
+
+      ![Doc.U.Ment](media/markdown-reference/document.png)
+   :::column-end:::
+:::row-end:::
+```
+
+Dit wordt weergegeven als:
+
+:::row:::
+   :::column span="2":::
+      **Dit is een kolom met twee kolombreedten met veel tekst.**
+
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec vestibulum mollis nunc ornare commodo. Nullam ac metus imperdiet, rutrum justo vel, vulputate leo. Donec rutrum non eros eget consectetur.
+   :::column-end:::
+   :::column span="":::
+      **Dit is een kolom met één kolombreedte met een afbeelding.**
+
+      ![Doc.U.Ment](media/markdown-reference/document.png)
+   :::column-end:::
+:::row-end:::
 
 ## <a name="headings"></a>Koppen
 
 Docs ondersteunt zes niveaus Markdown-koppen:
 
-```md
+```markdown
 # This is a first level heading (H1)
 
 ## This is a second level heading (H2)
@@ -70,182 +183,134 @@ Docs ondersteunt zes niveaus Markdown-koppen:
 ```
 
 - Tussen de laatste `#` en de koptekst moet een spatie staan.
-- Elk Markdown-bestand moet precies één H1 hebben.
-- De H1 moet de eerste inhoud in het bestand zijn na het YML-blok met metagegevens.
-- H2's verschijnen automatisch in het navigatiemenu aan de rechterkant van het gepubliceerde bestand. Dit geldt niet voor koppen op een lager niveau. Gebruik H2's dus strategisch om lezers te helpen door uw inhoud te navigeren.
+- Elk Markdown-bestand moet precies één H1-koptekst hebben.
+- De H1-koptekst moet de eerste inhoud in het bestand zijn na het YML-blok met metagegevens.
+- H2-kopteksten verschijnen automatisch in het navigatiemenu aan de rechterkant van het gepubliceerde bestand. Dit geldt niet voor koppen op een lager niveau. Gebruik H2's dus strategisch om lezers te helpen door uw inhoud te navigeren.
 - HMTL-koppen, zoals `<h1>`, worden niet aanbevolen en leiden in sommige gevallen tot opbouwwaarschuwingen.
-- U kunt de afzonderlijke koppen in een bestand koppelen via [bladwijzers](#bookmark-links).
+- U kunt de afzonderlijke koppen in een bestand koppelen via [bladwijzerkoppelingen](how-to-write-links.md#links-to-anchors).
 
 ## <a name="html"></a>HTML
 
-Hoewel Markdown ondersteuning biedt voor inline-HTML, wordt HTML niet aanbevolen voor het publiceren naar Docs. Bovendien leidt dit, behalve bij een beperkte lijst met waarden, tot compileerfouten of -waarschuwingen.
+Hoewel Markdown ondersteuning biedt voor inline-HTML, wordt HTML niet aanbevolen voor het publiceren naar Docs. Bovendien leidt dit, behalve bij een beperkte lijst met waarden, tot compileerfouten of -waarschuwingen. 
 
 ## <a name="images"></a>Afbeeldingen
 
-De syntaxis voor het insluiten van een afbeelding is:
+De volgende bestandstypen worden standaard voor afbeeldingen ondersteund:
 
-```md
-![[alt text]](<folderPath>)
+- .jpg
+- .png
+
+### <a name="standard-conceptual-images-default-markdown"></a>Standaard conceptuele afbeeldingen (standaard Markdown)
+
+De basis Markdown-syntaxis om een afbeelding in te sluiten is:
+
+```Markdown
+![<alt text>](<folderPath>)
 
 Example:
 ![alt text for image](../images/Introduction.png)
 ```
 
-Hierbij is `alt text` een korte beschrijving van de afbeelding en `<folder path>` een relatief pad naar de afbeelding. Voor schermlezers voor visueel gehandicapten is alternatieve tekst nodig. Dit is ook handig wanneer de afbeelding niet kan worden weergegeven door een sitebug.
+Hierbij is `<alt text>` een korte beschrijving van de afbeelding en `<folder path>` een relatief pad naar de afbeelding. Voor schermlezers voor visueel gehandicapten is alternatieve tekst nodig. Dit is ook handig wanneer de afbeelding niet kan worden weergegeven door een sitebug.
 
-Afbeeldingen moeten worden opgeslagen in een `/media`-map in uw docset. De volgende bestandstypen worden standaard voor afbeeldingen ondersteund:
+Onderstrepingstekens in alternatieve tekst worden niet correct weergegeven, tenzij u ze markeert als bijzondere tekens door ze met een backslash (`\_`) toe te voegen als voorvoegsel. Kopieer echter geen bestandsnamen om te gebruiken als alternatieve tekst. Dus in plaats van dit:
 
-- .jpg
-- .png
+```markdown
+![ADextension_2FA_Configure_Step4](./media/bogusfilename/ADextension_2FA_Configure_Step4.PNG)
+```
 
-U kunt ook ondersteuning voor andere typen afbeeldingen toevoegen door deze toe te voegen als resources aan het docfx.json-bestand<!--add link to reference when available--> voor uw doc-set.
+Schrijft u dit:
+
+```markdown
+![Active Directory extension for two-factor authentication, step 4: Configure](./media/bogusfilename/ADextension_2FA_Configure_Step4.PNG)
+```
+
+### <a name="standard-conceptual-images-docs-markdown"></a>Standaard conceptuele afbeeldingen (Docs Markdown)
+
+De aangepaste Docs-extensie `:::image:::` ondersteunt standaardafbeeldingen, complexe afbeeldingen en pictogrammen.
+
+De oudere Markdown-syntaxis kan nog worden gebruikt voor standaardafbeeldingen, maar u kunt beter gebruikmaken van de nieuwe extensie, omdat deze krachtigere functionaliteit ondersteunt, zoals het opgeven van een lokalisatiebereik dat afwijkt van het bovenliggende onderwerp. Deze geavanceerde functionaliteit wordt in de toekomst verder uitgebreid, zoals het selecteren van de gedeelde afbeeldingengalerie in plaats van het opgeven van een lokale afbeelding. De nieuwe syntaxis ziet er als volgt uit:
+
+```Markdown
+:::image type="content" source="<folderPath>" alt-text="<alt text>":::
+```
+
+Als `type="content"` (standaard), zijn zowel `source` als `alt-text` vereist.
+
+### <a name="complex-images-with-long-descriptions"></a>Complexe afbeeldingen met lange beschrijvingen
+
+U kunt deze extensie ook gebruiken om een afbeelding toe te voegen met een lange beschrijving die wordt gelezen door schermlezers, maar niet visueel wordt weergegeven op de gepubliceerde pagina. Lange beschrijvingen zijn een toegangsvereiste voor complexe afbeeldingen, zoals grafieken. De syntaxis ziet er als volgt uit:
+
+```Markdown
+:::image type="complex" source="<folderPath>" alt-text="<alt text>":::
+   <long description here>
+:::image-end:::
+```
+
+Als `type="complex"`, `source`, `alt-text`, zijn een lange beschrijving en de tag `:::image-end:::` vereist.
+
+### <a name="specifying-loc-scope"></a>Lokalisatiebereik opgeven
+
+Soms wijkt het lokalisatiebereik voor een afbeelding af van het bereik van een artikel of de module waarin de afbeelding is opgenomen. Dit kan leiden tot onjuistheden, bijvoorbeeld als een schermopname van een product per ongeluk wordt gelokaliseerd in een taal waarin het product niet beschikbaar is. Om dit te voorkomen, kunt u het optionele kenmerk `loc-scope` opgeven in afbeeldingen van het type `content` en `complex`.
+
+### <a name="icons"></a>Pictogrammen
+
+De afbeeldingsextensie biedt ondersteuning voor pictogrammen. Dit zijn decoratieve afbeeldingen die geen alternatieve tekst mogen bevatten. De syntaxis voor pictogrammen ziet er als volgt uit:
+
+```Markdown
+:::image type="icon" source="<folderPath>":::
+```
+
+Als `type="icon"`, moet alleen `source` worden opgegeven.
+
+## <a name="included-markdown-files"></a>Ingesloten Markdown-bestanden
+
+Wanneer de Markdown-bestanden moeten worden herhaald in meerdere artikelen, kunt u een Include-bestand gebruiken. Met de functie Includes kunnen Docs de verwijzing tijdens het bouwen vervangen door de inhoud van het Include-bestand. U kunt Include-bestanden op de volgende manieren gebruiken:
+
+- Inline: Een gewoon stuk tekst inline hergebruiken in een zin.
+- Blok: Een volledig Markdown-bestand als blok hergebruiken, genest in een sectie van een artikel.
+
+Een inline- of blokinsluitingsbestand is niets meer of minder dan een Markdown-bestand (.md). Deze kunnen elke geldige Markdown bevatten. Include-bestanden bevinden zich doorgaans in een submap *includes* in de hoofdmap van de opslagplaats. Als het artikel wordt gepubliceerd, wordt het ingesloten bestand vervolgens naadloos geïntegreerd.
+
+### <a name="includes-syntax"></a>Ingesloten syntaxis
+
+Een blokinsluiting wordt op een eigen regel weergegeven:
+
+```markdown
+[!INCLUDE [<title>](<filepath>)]
+```
+
+Inline-insluitingen bevinden zich in een regel:
+
+```markdown
+Text before [!INCLUDE [<title>](<filepath>)] and after.
+```
+
+waarbij `<title>` de naam van het bestand is en `<filepath>` het relatieve pad naar het bestand is. `INCLUDE` moet met een hoofdletter beginnen en er moet een spatie voor de `<title>` staan.
+
+Dit zijn de vereisten en overwegingen voor insluitingsbestanden:
+
+- Gebruik blokinsluitingen voor aanzienlijke hoeveelheden inhoud: enkele alinea’s, een gedeelde procedure of een gedeelde sectie. Gebruik deze niet voor content die minder lang is dan een zin.
+- Insluitingen worden niet weergegeven in het GitHub-weergaveoverzicht van uw artikelen, omdat ze afhankelijk zijn van Docs-extensies. Ze worden pas weergegeven na publicatie.
+- Zorg ervoor dat de tekst in een insluitingsbestand uit volledige zinnen bestaat die niet afhankelijk zijn van voorafgaande of volgende tekst in het artikel waarin naar de insluiting wordt verwezen. Als u deze richtlijn negeert, ontstaat niet te vertalen tekst in het artikel.
+- Voeg geen insluitingsbestanden in andere insluitingsbestanden in.
+- Plaats mediabestanden in een mediamap die specifiek is voor de submap met insluitingen, bijvoorbeeld de map `<repo>` */includes/media*. In de hoofdmap van de *mediamap* mogen zich geen afbeeldingen bevinden. Als de insluiting geen afbeeldingen bevat, hoeft er geen bijbehorende *mediamap* te worden gemaakt.
+- Net als bij gewone artikelen dient u geen media te delen tussen insluitingsbestanden. Gebruik een afzonderlijk bestand met een unieke naam voor elke insluiting en elk artikel. Sla het mediabestand op in de mediamap die is gekoppeld aan de insluiting.
+- Zorg ervoor dat een artikel meer inhoud bevat dan alleen een insluiting.  Insluitingen dienen als aanvulling op de inhoud in de rest van het artikel.
 
 ## <a name="links"></a>Koppelingen
 
-In de meeste gevallen gebruikt Docs standaard-Markdown-koppelingen naar andere bestanden en pagina's. De typen koppelingen worden in de onderstaande subsecties beschreven.
-
-> [!TIP]
-> Het Docs-ontwerppakket voor VS Code kan helpen relatieve koppelingen en bladwijzers correct in te voegen zonder dat u zich met paden bezig hoeft te houden.
-
-> [!IMPORTANT]
-> Neem geen codes voor landinstellingen, zoals nl-nl, in uw koppelingen naar Microsoft-sites op. Landinstellingscodes die in code zijn vastgelegd verhinderen dat gelokaliseerde inhoud wordt weergegeven. Dit leidt tot een slechte klantervaring voor gebruikers in andere regio's en brengt aanzienlijke lokalisatiekosten met zich mee. Wanneer u een URL uit een browser kopieert, wordt de landinstellingscode standaard opgenomen. U moet deze handmatig dus verwijderen wanneer u een koppeling maakt. Gebruik bijvoorbeeld:
->
-> `[Microsoft](https://www.microsoft.com)`
->
-> Niet:
->
-> `[Microsoft](https://www.microsoft.com/en-us/)`
-
-### <a name="relative-links-to-files-in-the-same-doc-set"></a>Relatieve koppelingen naar bestanden in dezelfde docset
-
-Een relatief pad is het pad naar het doelbestand ten opzichte van het huidige bestand. U kunt in Docs een relatief pad gebruiken om een koppeling naar ander bestand in dezelfde docset te maken. De syntaxis voor een relatief pad ziet er als volgt uit:
-
-```md
-[link text](../../folder/filename.md)
-```
-
-Hierbij duidt `../` één niveau hoger in de hiërarchie aan.
-
-- Het relatieve pad wordt tijdens het compileren omgezet, met inbegrip van het verwijderen van de MD-extensie.
-- U kunt ../ gebruiken om het bestand te koppelen aan een bestand in de bovenliggende map, maar dat bestand moet dan wel in dezelfde docset aanwezig zijn. U kunt ../ niet gebruiken om een bestand te koppelen aan een bestand in een andere docset-map.
-- Docs ondersteunt ook een speciale vorm van een relatief pad. Deze vorm begint met het teken ~ (bijvoorbeeld ~/foo/bar.md). Met deze syntaxis wordt een bestand ten opzichte van de hoofdmap van een docset aangegeven. Ook dit type pad wordt tijdens de build gevalideerd en omgezet.
-
-> [!IMPORTANT]
-> Neem de bestandsextensie in het relatieve pad op. Bij het compileren wordt het bestaan van het doelbestand van dat relatieve pad gevalideerd. Als het relatieve pad geen bestandsextensie bevat, wordt bij het compileren waarschijnlijk een waarschuwing of verbroken koppeling gerapporteerd. Gebruik bijvoorbeeld:
->
-> `[link text](../../folder/filename.md)`
->
-> Niet:
->
-> `[link text](../../folder/filename)`
-
-### <a name="site-relative-links-to-other-files-on-docs"></a>Sitegerelateerde koppelingen naar andere bestanden in Docs
-
-```md
-[Azure and Linux](/articles/virtual-machines/linux/overview)
-```
-
-Neem de bestandsextensie (.md) niet op. Deze koppelt naar het Linux-overzichtsbestand van buiten de Azure-docset 'articles'.
-
-### <a name="links-to-external-sites"></a>Koppelingen naar externe sites
-
-```md
-[Microsoft](https://www.microsoft.com)
-```
-
-Op URL gebaseerde koppeling naar een andere webpagina (moet https:// bevatten).
-
-### <a name="bookmark-links"></a>Bladwijzerkoppelingen
-
-Bladwijzerkoppeling naar een kop in een ander bestand in dezelfde opslagplaats. Bijvoorbeeld:
-
-```md
-[Managed Disks](../../linux/overview.md#managed-disks)
-```
-
-Bladwijzerkoppeling naar een kop in het huidige bestand:
-
-```md
-[Managed Disks](#managed-disks)
-```
-
-Gebruik een hekje `#` gevolgd door de woorden van de koptekst. De koptekst wijzigen in koppelingtekst:
-- Alleen kleine letters gebruiken
-- Leestekens verwijderen
-- Spaties vervangen door streepjes
-
-Bijvoorbeeld als de koptekstnaam "2.2 Beveiligingsproblemen" is, is de tekst van de bladwijzerkoppeling ' #22-beveiligingsproblemen'.
-
-### <a name="explicit-anchor-links"></a>Expliciete ankerkoppelingen
-
-Expliciete ankerkoppelingen die de `<a>`-HTML-tag gebruiken worden **niet vereist of aanbevolen** behalve in hub- en landingspagina's. Gebruik in algemene Markdown-bestanden bladwijzers zoals hierboven wordt beschreven. Gebruik als volgt ankers voor hub- en landingspagina's:
-
-`## <a id="AnchorText"> </a>Header text` of `## <a name="AnchorText"> </a>Header text`
-
-Gebruik de volgende syntaxis om een koppeling naar expliciete ankers te maken:
-
-```md
-To go to a section on the same page:
-[text](#AnchorText)
-
-To go to a section on another page.
-[text](FileName.md#AnchorText)
-```
-
-### <a name="xref-cross-reference-links"></a>XREF-koppelingen (kruisverwijzing)
-
-Als u in de huidige docset of andere docsets een koppeling wilt maken naar automatisch gegenereerde pagina's met API-naslaginformatie, gebruikt u XREF-koppelingen met de unieke id (UID).
-
-> [!NOTE]
-> Als u wilt verwijzen naar pagina's met API-naslaginformatie in andere docsets, moet u `xrefService`-configuratie in het `docfx.json`-bestand toevoegen.
-> ```
-> "build": {
->   ...
->   "xrefService": [ "https://xref.docs.microsoft.com/query?uid={uid}" ]
-> }
-> ```
-
-De UID is gelijk aan de volledig gekwalificeerde naam van de klasse en het lid. Als u een * toevoegt na de UID, vertegenwoordigt de koppeling een overbelastingspagina en niet een specifieke API. Gebruik bijvoorbeeld `List<T>.BinarySearch*` om een koppeling naar de pagina BinarySearch Method te maken in plaats van te koppelen naar een specifieke overbelasting zoals `List<T>.BinarySearch(T, IComparer<T>)`.
-
-Voor de syntaxis hebt u de volgende mogelijkheden:
-
-- Automatisch koppelen: `<xref:UID> or <xref:UID?displayProperty=nameWithType>`
-
-  De optionele queryparameter `displayProperty` produceert een volledig gekwalificeerde koppelingstekst. Standaard toont de koppelingstekst alleen de naam van het lid of het type.
-
-- Markdown-koppeling: `[link text](xref:UID)`
-  
-  Gebruik deze als u de weergegeven koppelingstekst wilt aanpassen.
-
-Voorbeelden:
-
-- `<xref:System.String>` wordt weergegeven als String.
-- `<xref:System.String?displayProperty=nameWithType>` wordt weergegeven als System.String.
-- `[String class](xref:System.String)` wordt weergeven als String class.
-
-Momenteel is er geen eenvoudige manier om de UID's te zoeken. <!-- ? -->De beste manier om de UID voor een API te zoeken, is om de bron van de API-pagina waaraan u wilt koppelen te bekijken en de waarde ms.assetid te vinden. Afzonderlijke overbelastingswaarden worden in de bron niet weergegeven. We werken aan een beter systeem voor de toekomst.
-
-Wanneer de UID de speciale tekens \`, \# of \* bevat, moet de waarde van de UID respectievelijk als `%60`, `%23` en `%2A` met HTML worden gecodeerd. U ziet soms haakjes in de code, maar dat is geen vereiste.
-
-Voorbeelden:
-
-- System.Threading.Tasks.Task\`1 wordt `System.Threading.Tasks.Task%601`
-- System.Exception. \#ctor wordt `System.Exception.%23ctor`
-- System.Lazy\`1.\#ctor(System.Threading.LazyThreadSafetyMode) wordt `System.Lazy%601.%23ctor%28System.Threading.LazyThreadSafetyMode%29`
-
-<!-- leave out of Contributor Guide for now
-Using XREF may require some configuration. For more information, see XREF Service.
--->
+Zie [Koppelingen in documentatie gebruiken](how-to-write-links.md) voor meer informatie over de syntaxis voor koppelingen.
 
 ## <a name="lists-numbered-bulleted-checklist"></a>Lijsten (Genummerd, Met opsommingstekens, Controlelijst)
 
 ### <a name="numbered-list"></a>Genummerde lijst
 
-Als u een genummerde lijst wilt maken, kunt u alle 1's gebruiken. Deze worden bij het publiceren weergegeven als een sequentiële lijst. Voor betere leesbaarheid van de bron kunt u uw lijsten verhogen.
+U kunt alle 1's gebruiken om een genummerde lijst te maken. De nummers worden bij het publiceren weergegeven als een sequentiële lijst in oplopende volgorde. Voor betere leesbaarheid van de bron kunt u uw lijsten handmatig verhogen.
 
 Gebruik geen letters in lijsten, ook niet in geneste lijsten. Deze worden bij het publiceren naar Docs niet goed weergegeven. Geneste lijsten die gebruikmaken van nummers, worden bij het publiceren weergegeven als kleine letters. Bijvoorbeeld:
 
-```md
+```markdown
 1. This is
 1. a parent numbered list
    1. and this is
@@ -263,9 +328,9 @@ Dit wordt weergegeven als:
 
 ### <a name="bulleted-list"></a>Lijst met opsommingstekens
 
-Als u een lijst met opsommingstekens wilt maken, gebruikt u `-` gevolgd door een spatie aan het begin van elke regel:
+Als u een lijst met opsommingstekens wilt maken, gebruikt u `-` of `*` gevolgd door een spatie aan het begin van elke regel:
 
-```md
+```markdown
 - This is
 - a parent bulleted list
   - and this is
@@ -281,18 +346,20 @@ Dit wordt weergegeven als:
   - a nested bulleted list
 - All done!
 
+Welke syntaxis u ook gebruikt, `-` of `*`, gebruik deze consistent binnen een artikel.
+
 ### <a name="checklist"></a>Controlelijst
 
-Controlelijsten zijn beschikbaar voor gebruik op (alleen) docs.microsoft.com via een aangepaste Markdown-extensie:
+Controlelijsten zijn beschikbaar voor gebruik op Docs via een aangepaste Markdown-extensie:
 
-```md
+```markdown
 > [!div class="checklist"]
 > * List item 1
 > * List item 2
 > * List item 3
 ```
 
-Dit voorbeeld wordt op docs.microsoft.com weergegeven als:
+Dit voorbeeld wordt op Docs weergegeven als:
 
 > [!div class="checklist"]
 > * List item 1
@@ -300,38 +367,89 @@ Dit voorbeeld wordt op docs.microsoft.com weergegeven als:
 > * List item 3
 
 Gebruik controlelijsten aan het begin of eind van een artikel om inhoud voor 'Wat gaat u leren' of 'Wat hebt u geleerd' samen te vatten. Voeg geen willekeurige controlelijsten ergens anders in een artikel toe.
-<!-- is this guidance still accurate? -->
 
 ## <a name="next-step-action"></a>Actie volgende stap
 
-U kunt een aangepaste extensie gebruiken om een knop voor de actie van de volgende stap toe te voegen aan pagina's op (alleen) docs.microsoft.com.
+U kunt een aangepaste extensie gebruiken om een knop voor de actie van de volgende stap toe te voegen aan Docs-pagina's.
 
 De syntaxis ziet er als volgt uit:
 
-```md
+```markdown
 > [!div class="nextstepaction"]
 > [button text](link to topic)
 ```
 
 Bijvoorbeeld:
 
-```md
+```markdown
 > [!div class="nextstepaction"]
-> [Learn about basic style](style-quick-start.md)
+> [Learn about adding code to articles](code-in-docs.md)
 ```
 
 Dit wordt weergegeven als:
 
 > [!div class="nextstepaction"]
-> [Learn about basic style](style-quick-start.md)
+> [Meer informatie over het toevoegen van code aan artikelen](code-in-docs.md)
 
 U kunt elke ondersteunde koppeling in een volgende stapactie gebruiken, met inbegrip van een Markdown-koppeling naar een andere webpagina. In de meeste gevallen is de koppeling voor de volgende actie een relatieve koppeling naar een ander bestand in dezelfde docset.
 
-## <a name="section-definition"></a>Sectiedefinitie
+## <a name="non-localized-strings"></a>Niet-gelokaliseerde tekenreeksen
 
-<!-- more info about this would be helpful! -->
-U moet mogelijk een sectie definiëren. Deze syntaxis wordt voornamelijk gebruikt voor codetabellen.
-Zie het volgende voorbeeld:
+U kunt de aangepaste Markdown-extensie `no-loc` gebruiken om tekenreeksen te identificeren van inhoud die tijdens het lokalisatieproces moeten worden genegeerd.
+
+Alle aangeroepen tekenreeksen zijn hoofdlettergevoelig. Dat wil zeggen dat de tekenreeks exact moet overeenkomen om te worden genegeerd.
+
+Als u een afzonderlijke tekenreeks als niet-lokaliseerbaar wilt markeren, gebruikt u de volgende syntaxis:
+
+```markdown
+:::no-loc text="String":::
+```
+
+In het volgende voorbeeld wordt slechts één exemplaar van `Document` genegeerd tijdens het lokalisatieproces:
+
+```markdown
+# Heading 1 of the Document
+
+Markdown content within the :::no-loc text="Document":::.  The are multiple instances of Document, document, and documents.
+```
+
+> [!NOTE]
+> Gebruik `\` om speciale tekens te escapen:
+> ```markdown
+> Lorem :::no-loc text="Find a \"Quotation\""::: Ipsum.
+> ```
+
+U kunt ook metagegevens in de YAML-header gebruiken om alle exemplaren van een tekenreeks binnen het huidige Markdown-bestand te markeren als niet-lokaliseerbaar:
+
+```yml
+author: cillroy
+no-loc: [Global, Strings, to be, Ignored]
+```
+
+> [!NOTE]
+> De metagegevens voor niet-lokaliseerbaar worden niet ondersteund als globale metagegevens in het bestand *docfx.json*. De gelokaliseerde pijplijn leest het bestand *docfx.json* niet. Daarom moeten de metagegevens voor niet-lokaliseerbaar aan elk afzonderlijk bronbestand worden toegevoegd.
+
+In het volgende voorbeeld wordt zowel in de metagegevens `title` als in de Markdown-header het woord `Document` tijdens het lokalisatieproces genegeerd.
+
+In de metagegevens `description` en de belangrijkste inhoud van Markdown wordt het woord `document` gelokaliseerd, omdat het niet begint met een hoofdletter `D`.
+
+```markdown
+---
+title: Title of the Document
+author: author-name
+description: Description for the document
+no-loc: [Title, Document]
+---
+# Heading 1 of the Document
+
+Markdown content within the document.
+```
+
+<!-- commenting out for now because no one knows what this means
+## Section definition
+
+You might need to define a section. This syntax is mostly used for code tables.
+See the following example:
 
 ````
 > [!div class="tabbedCodeSnippets" data-resources="OutlookServices.Calendar"]
@@ -343,7 +461,7 @@ Zie het volgende voorbeeld:
 > ```
 ````
 
-De eraan voorafgaande blockquote-Markdown-tekst wordt weergegeven als:
+The preceding blockquote Markdown text will be rendered as:
 > [!div class="tabbedCodeSnippets" data-resources="OutlookServices.Calendar"]
 > ```cs
 > <cs code text>
@@ -351,76 +469,99 @@ De eraan voorafgaande blockquote-Markdown-tekst wordt weergegeven als:
 > ```javascript
 > <js code text>
 > ```
+-->
 
 ## <a name="selectors"></a>Selectors
 
-<!-- could be more clear! -->
-U kunt een selector gebruiken wanneer u verschillende pagina's voor hetzelfde artikel met elkaar wilt verbinden. Lezers kunnen dan schakelen tussen die pagina's.
+Selectors zijn UI-elementen waarmee de gebruiker tussen meerdere varianten van hetzelfde artikel kan schakelen. Ze worden gebruikt in sommige docsets om verschillen in de implementatie van technologieën of platformen aan te pakken. Selectors zijn doorgaans het meest van toepassing voor onze inhoud voor mobiele platformen voor ontwikkelaars.
 
-> [!NOTE]
-> Deze extensie werkt anders tussen docs.microsoft.com en MSDN. <!-- should we keep info about MSDN? If so say how they differ?-->
+Omdat dezelfde selector Markdown in elk artikelbestand in de selector wordt geplaatst, wordt aanbevolen de selector voor uw onderwerp op te nemen in een insluitingsbestand. Deze kan vervolgens naar dit insluitingsbestand verwijzen in alle artikelbestanden waarin dezelfde selector wordt gebruikt.
+
+Er zijn twee soorten selectors, een enkelvoudige selector en een meervoudige selector.
 
 ### <a name="single-selector"></a>Single selector
 
-```
+```markdown
 > [!div class="op_single_selector"]
-> - [Universal Windows](how-to-write-use-markdown.md)
-> - [Windows Phone](how-to-write-use-markdown.md)
-> - [iOS](how-to-write-use-markdown.md)
-> - [Android](how-to-write-use-markdown.md)
-> - [Kindle](how-to-write-use-markdown.md)
-> - [Baidu](how-to-write-use-markdown.md)
-> - [Xamarin.iOS](how-to-write-use-markdown.md)
-> - [Xamarin.Android](how-to-write-use-markdown.md)
+> - [Universal Windows](../articles/notification-hubs-windows-store-dotnet-get-started/)
+> - [Windows Phone](../articles/notification-hubs-windows-phone-get-started/)
+> - [iOS](../articles/notification-hubs-ios-get-started/)
+> - [Android](../articles/notification-hubs-android-get-started/)
+> - [Kindle](../articles/notification-hubs-kindle-get-started/)
+> - [Baidu](../articles/notification-hubs-baidu-get-started/)
+> - [Xamarin.iOS](../articles/partner-xamarin-notification-hubs-ios-get-started/)
+> - [Xamarin.Android](../articles/partner-xamarin-notification-hubs-android-get-started/)
 ```
 
 ... wordt als volgt weergegeven:
 
 > [!div class="op_single_selector"]
-> - [Universal Windows](how-to-write-use-markdown.md)
-> - [Windows Phone](how-to-write-use-markdown.md)
-> - [iOS](how-to-write-use-markdown.md)
-> - [Android](how-to-write-use-markdown.md)
-> - [Kindle](how-to-write-use-markdown.md)
-> - [Baidu](how-to-write-use-markdown.md)
-> - [Xamarin.iOS](how-to-write-use-markdown.md)
-> - [Xamarin.Android](how-to-write-use-markdown.md)
+> - [Universal Windows](how-to-write-links.md)
+> - [Windows Phone](how-to-write-links.md)
+> - [iOS](how-to-write-links.md)
+> - [Android](how-to-write-links.md)
+> - [Kindle](how-to-write-links.md)
+> - [Baidu](how-to-write-links.md)
+> - [Xamarin.iOS](how-to-write-links.md)
+> - [Xamarin.Android](how-to-write-links.md)
 
 ### <a name="multi-selector"></a>Multi-selector
 
-```
+```markdown
 > [!div class="op_multi_selector" title1="Platform" title2="Backend"]
-> - [(iOS | .NET)](how-to-write-workflows-major.md)
-> - [(iOS | JavaScript)](how-to-write-workflows-major.md)
-> - [(Windows universal C# | .NET)](how-to-write-workflows-major.md)
-> - [(Windows universal C# | Javascript)](how-to-write-workflows-major.md)
-> - [(Windows Phone | .NET)](how-to-write-workflows-major.md)
-> - [(Windows Phone | Javascript)](how-to-write-workflows-major.md)
-> - [(Android | .NET)](how-to-write-workflows-major.md)
-> - [(Android | Javascript)](how-to-write-workflows-major.md)
-> - [(Xamarin iOS | Javascript)](how-to-write-workflows-major.md)
-> - [(Xamarin Android | Javascript)](how-to-write-workflows-major.md)
+> - [(iOS | .NET)](./mobile-services-dotnet-backend-ios-get-started-push.md)
+> - [(iOS | JavaScript)](./mobile-services-javascript-backend-ios-get-started-push.md)
+> - [(Windows universal C# | .NET)](./mobile-services-dotnet-backend-windows-universal-dotnet-get-started-push.md)
+> - [(Windows universal C# | Javascript)](./mobile-services-javascript-backend-windows-universal-dotnet-get-started-push.md)
+> - [(Windows Phone | .NET)](./mobile-services-dotnet-backend-windows-phone-get-started-push.md)
+> - [(Windows Phone | Javascript)](./mobile-services-javascript-backend-windows-phone-get-started-push.md)
+> - [(Android | .NET)](./mobile-services-dotnet-backend-android-get-started-push.md)
+> - [(Android | Javascript)](./mobile-services-javascript-backend-android-get-started-push.md)
+> - [(Xamarin iOS | Javascript)](./partner-xamarin-mobile-services-ios-get-started-push.md)
+> - [(Xamarin Android | Javascript)](./partner-xamarin-mobile-services-android-get-started-push.md)
 ```
 
 ... wordt als volgt weergegeven:
 
 > [!div class="op_multi_selector" title1="Platform" title2="Back-end"]
-> - [(iOS | .NET)](how-to-write-workflows-major.md)
-> - [(iOS | JavaScript)](how-to-write-workflows-major.md)
-> - [(Windows universal C# | .NET)](how-to-write-workflows-major.md)
-> - [(Windows universal C# | Javascript)](how-to-write-workflows-major.md)
-> - [(Windows Phone | .NET)](how-to-write-workflows-major.md)
-> - [(Windows Phone | Javascript)](how-to-write-workflows-major.md)
-> - [(Android | .NET)](how-to-write-workflows-major.md)
-> - [(Android | Javascript)](how-to-write-workflows-major.md)
-> - [(Xamarin iOS | Javascript)](how-to-write-workflows-major.md)
-> - [(Xamarin Android | Javascript)](how-to-write-workflows-major.md)
+> - [(iOS | .NET)](how-to-write-links.md)
+> - [(iOS | JavaScript)](how-to-write-links.md)
+> - [(Windows universal C# | .NET)](how-to-write-links.md)
+> - [(Windows universal C# | Javascript)](how-to-write-links.md)
+> - [(Windows Phone | .NET)](how-to-write-links.md)
+> - [(Windows Phone | Javascript)](how-to-write-links.md)
+> - [(Android | .NET)](how-to-write-links.md)
+> - [(Android | Javascript)](how-to-write-links.md)
+> - [(Xamarin iOS | Javascript)](how-to-write-links.md)
+> - [(Xamarin Android | Javascript)](how-to-write-links.md)
 
-## <a name="tables"></a>Tabellen
+## <a name="subscript-and-superscript"></a>Subscript en superscript
+
+Gebruik alleen subscript of superscript als dat nodig is voor de technische nauwkeurigheid, zoals bij het schrijven van wiskundige formules. Gebruik deze niet voor niet-standaardstijlen, zoals voetnoten.
+
+Gebruik HTML voor zowel subscript als superscript:
+
+```html
+Hello <sub>This is subscript!</sub>
+```
+
+Dit wordt weergegeven als:
+
+Hallo <sub>Dit is subscript!</sub>
+
+```html
+Goodbye <sup>This is superscript!</sup>
+```
+
+Dit wordt weergegeven als:
+
+Tot ziens <sup>Dit is superscript!</sup>
+
+## <a name="tables"></a>Tables
 
 De eenvoudigste manier om een tabel in Markdown te maken is gebruik te maken van pipes en regels. Als u een standaardtabel met een kop wilt maken, laat u de eerste regel volgen door een stippellijn:
 
-```md
+```markdown
 |This is   |a simple   |table header|
 |----------|-----------|------------|
 |table     |data       |here        |
@@ -434,55 +575,38 @@ Dit wordt weergegeven als:
 |table     |data       |here        |
 |it doesn't|actually   |have to line up nicely!||
 
-U kunt ook een tabel zonder kop maken. Ga bijvoorbeeld als volgt te werk om een lijst met meerdere kolommen te maken:
-
-```md
-|   |   |
-| - | - |
-| This | table |
-| has no | header |
-```
-
-Dit wordt als volgt weergegeven:
-
-|   |   |
-| - | - |
-| This | table |
-| has no | header |
-
 U kunt de kolommen uitlijnen met behulp van dubbele punten:
 
-```md
-|                  |
-|------------------|
-|    right aligned:|
-|:left aligned     |
-|:centered        :|
+```markdown
+| Fun                  | With                 | Tables          |
+| :------------------- | -------------------: |:---------------:|
+| left-aligned column  | right-aligned column | centered column |
+| $100                 | $100                 | $100            |
+| $10                  | $10                  | $10             |
+| $1                   | $1                   | $1              |
 ```
 
 Wordt weergegeven als:
 
-|                  |
-|------------------|
-|    right aligned:|
-|:left aligned     |
-|:centered        :|
+| Fun                  | With                 | Tables          |
+| :------------------- | -------------------: |:---------------:|
+| left-aligned column  | right-aligned column | centered column |
+| $100                 | $100                 | $100            |
+| $10                  | $10                  | $10             |
+| $1                   | $1                   | $1              |
 
 > [!TIP]
 > U kunt met Docs Authoring Extension voor VS Code gemakkelijk basis-Markdown-tabellen toevoegen.
 >
 > U kunt ook een [onlinegenerator voor tabellen](http://www.tablesgenerator.com/markdown_tables) gebruiken.
 
-### <a name="mx-tdbreakall"></a>mx-tdBreakAll
+### <a name="line-breaks-within-words-in-any-table-cell"></a>Regeleinden in woorden in een tabelcel
 
-> [!IMPORTANT]
-> Dit werkt alleen op de site docs.microsoft.com.
-
-Als u een tabel in Markdown maakt, kan de tabel worden uitgebreid naar het navigatievenster rechts, waardoor de tabel onleesbaar wordt. Dat is op te lossen door bij het renderen van Docs de tabel op te splitsen wanneer dat nodig is. U laat eenvoudig de tabel teruglopen met de aangepaste klasse `[!div class="mx-tdBreakAll"]`.
+Als u lange woorden in een Markdown-tabel gebruikt, kan de tabel worden uitgebreid naar het navigatievenster rechts, waardoor de tabel onleesbaar wordt. U kunt dit oplossen door toe te staan dat in de Docs-weergave automatisch regeleinden in woorden worden ingevoegd wanneer dit nodig is. U laat eenvoudig de tabel teruglopen met de aangepaste klasse `[!div class="mx-tdBreakAll"]`.
 
 Hier ziet u een Markdown-voorbeeld van een tabel met drie rijen die teruglopen door gebruik te maken van een `div` met de klassenaam `mx-tdBreakAll`.
 
-```md
+```markdown
 > [!div class="mx-tdBreakAll"]
 > |Name|Syntax|Mandatory for silent installation?|Description|
 > |-------------|----------|---------|---------|
@@ -500,84 +624,10 @@ Deze wordt als volgt weergegeven:
 > |NoRestart|/norestart|No|Suppresses any attempts to restart. By default, the UI will prompt before restart.|
 > |Help|/help|No|Provides help and quick reference. Displays the correct use of the setup command, including a list of all options and behaviors.|
 
-### <a name="mx-tdcol2breakall"></a>mx-tdCol2BreakAll
+### <a name="line-breaks-within-words-in-second-column-table-cells"></a>Regeleinden in woorden in tabelcellen in de tweede kolom
 
-> [!IMPORTANT]
-> Dit werkt alleen op de site docs.microsoft.com.
-
-Er kunnen soms hele lange woorden in de tweede kolom van een tabel staan. Om ervoor te zorgen dat lange woorden netjes worden gesplitst, kunt u de klasse `mx-tdCol2BreakAll` toepassen met behulp van de `div`-wrapper-syntaxis zoals eerder besproken.
+Mogelijk wilt u dat regeleinden in woorden alleen automatisch in de tweede kolom van een tabel worden ingevoegd. Als u de regeleinden wilt beperken tot de tweede kolom, past u de klasse `mx-tdCol2BreakAll` toe met behulp van de `div`-wrappersyntaxis, zoals eerder besproken.
 
 ### <a name="html-tables"></a>HTML-tabellen
 
 HTML-tabellen worden niet aanbevolen voor docs.microsoft.com. Ze kunnen niet door mensen worden gelezen in de bron. Dit is wel een basisprincipe van Markdown.
-
-<!--If you use HTML tables and your Markdown is not being rendered between the two tables, you need to add a closing `br` tag after the closing `table` tag.
-
-![break HTML tables](media/break-tables.png)
--->
-
-## <a name="videos"></a>Video's
-
-### <a name="embedding-videos-into-a-markdown-page"></a>Video's insluiten op een Markdown-pagina
-
-Momenteel biedt Docs ondersteuning voor video's die zijn gepubliceerd op een van de volgende drie locaties:
-
-- YouTube
-- Channel 9
-- Het eigen One Player-systeem van Microsoft
-
-U kunt een video insluiten met de volgende syntaxis zodat Docs de video kan weergeven.
-
-```md
-> [!VIDEO <embedded_video_link>]
-```
-
-Voorbeeld:
-
-```md
-> [!VIDEO https://channel9.msdn.com/Series/Youve-Got-Key-Values-A-Redis-Jump-Start/03/player]
-
-> [!VIDEO https://www.youtube.com/embed/iAtwVM-Z7rY]
-
-> [!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RE1XVQS]
-```
-
-... wordt weergegeven als:
-
-```html
-<iframe src="https://channel9.msdn.com/Series/Youve-Got-Key-Values-A-Redis-Jump-Start/03/player" width="640" height="320" allowFullScreen="true" frameBorder="0"></iframe>
-
-<iframe src="https://www.youtube-nocookie.com/embed/iAtwVM-Z7rY" width="640" height="320" allowFullScreen="true" frameBorder="0"></iframe>
-<iframe src="https://www.microsoft.com/en-us/videoplayer/embed/RE1XVQS" width="640" height="320" allowFullScreen="true" frameBorder="0"></iframe>
-```
-
-En deze wordt als volgt weergegeven op gepubliceerde pagina's:
-
-> [!VIDEO https://channel9.msdn.com/Series/Youve-Got-Key-Values-A-Redis-Jump-Start/03/player]
-
-> [!VIDEO https://www.youtube.com/embed/iAtwVM-Z7rY]
-
-> [!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RE1XVQS]
-
-> [!IMPORTANT]
-> De URL van de CH9-video moet beginnen met `https` en eindigen met `/player`. Anders wordt de hele pagina en niet alleen de video ingesloten.
-
-### <a name="uploading-new-videos"></a>Nieuwe video's uploaden
-
-Alle nieuwe video's moeten worden geüpload met het volgende proces:
-
-1. Neem deel aan de groep **docs_video_users** op IDWEB.
-1. Ga naar https://aka.ms/VideoUploadRequest en vul de gegevens voor uw video in. Het volgende is nodig (geen van deze items is zichtbaar voor het publiek):
-    1. Een titel voor uw video.
-    1. Een lijst met producten/services waarop uw video betrekking heeft.
-    1. De doelpagina of (als u de pagina nog niet hebt) de docset waarop uw video wordt gehost.
-    1. Een koppeling naar het MP4-bestand voor uw video (als u geen locatie hebt waar het bestand kan worden geplaatst, kunt u het tijdelijk hier plaatsen:   `\\scratch2\scratch\apex`). MP4-bestanden moeten 720p of hoger zijn.
-    1. Een beschrijving van de video.
-1. Verzend dat item (sla het op).
-1. De video wordt binnen twee werkdagen geüpload. De koppeling die u voor het insluiten nodig hebt, wordt in het werkitem geplaatst en deze wordt *terug naar u* omgezet.
-1. Nadat u de videokoppeling hebt vastgelegd, sluit u het werkitem.
-1. De videokoppeling kan vervolgens aan uw bericht worden toegevoegd met deze syntaxis:
-
-   ```md
-   > [!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RE1XVQS]
-   ```

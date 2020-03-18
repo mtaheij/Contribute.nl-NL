@@ -5,12 +5,12 @@ ms.topic: contributor-guide
 ms.prod: non-product-specific
 ms.custom: external-contributor-guide
 ms.date: 08/30/2017
-ms.openlocfilehash: 997f313e94e4858f37501736c1ec0be2fa8fd552
-ms.sourcegitcommit: a812d716b31084926b886b93923f9b84c9b23429
+ms.openlocfilehash: 5231b68f04caa94d3ff2ff26afc38e3218ca06b8
+ms.sourcegitcommit: 804a99b89785e5c8f056a9da3f0fbde9f0a56a51
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 12/18/2019
-ms.locfileid: "75188239"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "78331901"
 ---
 # <a name="github-contribution-workflow-for-major-or-long-running-changes"></a>GitHub-bijdragewerkstroom voor belangrijke of langdurige wijzigingen
 
@@ -110,4 +110,4 @@ U bent nu terug in een nieuwe vertakking en u bent al aardig op weg om een belan
 
 Dat is alles. U hebt een bijdrage geleverd aan inhoud voor docs.microsoft.com.
 
-- Ga verder naar het artikel [Belangrijke aspecten van het schrijven](how-to-write-use-markdown.md) voor meer informatie over onderwerpen als Markdown en de syntaxis van Markdown-extensies.
+- Ga verder naar het artikel [Markdown-naslaginformatie](markdown-reference.md) voor meer informatie over onderwerpen als Markdown en de syntaxis van Markdown-extensies.

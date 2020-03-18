@@ -14,18 +14,40 @@
       href: how-to-write-workflows-major.md
 - name: Essentials voor schrijven
   items:
-    - name: Markdown
-      href: how-to-write-use-markdown.md
     - name: Markdown-naslaginformatie
       href: markdown-reference.md
+      displayName: alerts notes tips important caution warnings apostrophes quotation marks quotes blockquotes bold italic code snippets columns headings html images includes links lists bullets bulleted checklist numbered next steps button localize non-localized section selector superscript subscript table tables tabs tabbed videos icons
     - name: Snel aan de slag met stijl en toon
       href: style-quick-start.md
     - name: Stijlgids
       href: /style-guide/
+    - name: Code toevoegen aan artikelen
+      href: code-in-docs.md
+      displayName: 'backtick, code blocks, inline code blocks, repo snippet reference, !code-, interactive code snippets, programming languages, languages, code extensions, extensions'
+    - name: Tekst opmaken
+      href: text-formatting-guidelines.md
     - name: Koppelingen
       href: how-to-write-links.md
     - name: Docs Authoring Pack
-      href: how-to-write-docs-auth-pack.md
+      items:
+        - name: Overzicht
+          href: how-to-write-docs-auth-pack.md
+        - name: Functies
+          items:
+            - name: Voltooiing van Dev Lang
+              href: docs-authoring/dev-lang-completion.md
+            - name: Afbeeldingscompressie
+              href: docs-authoring/image-compression.md
+            - name: Updates van metagegevens
+              href: docs-authoring/metadata-updates.md
+            - name: Markdown-tabellen opnieuw opmaken
+              href: docs-authoring/reformat-table.md
+            - name: Slimme aanhalingstekens vervangen
+              href: docs-authoring/smart-quote-replacement.md
+            - name: Sorteringen omleiden
+              href: docs-authoring/sort-redirects.md
+            - name: Sorteringen selecteren
+              href: docs-authoring/sort-selection.md
 - name: Richtlijnen voor specifieke documentatiesets
   items:
     - name: .NET-documenten

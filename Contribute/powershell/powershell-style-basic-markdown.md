@@ -7,12 +7,12 @@ ms.custom: external-contributor-guide
 author: sdwheeler
 ms.author: sewhee
 ms.date: 10/09/2019
-ms.openlocfilehash: e7ee9295794adfde78a2d500f0de3309dd3c821a
-ms.sourcegitcommit: ca84e542b081e145052f38967e826f6ef25da1b2
+ms.openlocfilehash: 073a44240b1aa4baa9e655dab069097d21cdd66d
+ms.sourcegitcommit: 804a99b89785e5c8f056a9da3f0fbde9f0a56a51
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 10/12/2019
-ms.locfileid: "72290352"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "78331924"
 ---
 # <a name="markdown-style-guide-for-powershell-docs"></a>Markdown-stijlgids voor PowerShell-Docs
 
@@ -59,7 +59,7 @@ Over het algemeen kunnen verwijzingen naar ‘Windows PowerShell’ in documenta
 
 ## <a name="basic-markdown-gfm-and-special-characters"></a>Elementaire Markdown, GFM en speciale tekens
 
-U kunt de basisbeginselen van Markdown, GitHub Flavored Markdown (GFM) en OPS-specifieke extensies leren in de algemene artikelen over [Markdown](../how-to-write-use-markdown.md) en [naslaginformatie over Markdown](../markdown-reference.md).
+U kunt de basisbeginselen van Markdown, GitHub Flavored Markdown (GFM) en OPS-specifieke extensies leren in het artikel [Markdown-naslaginformatie](../markdown-reference.md).
 
 Markdown maakt gebruik van speciale tekens, zoals \*, \` en \# voor opmaak. Als u een van deze tekens in uw inhoud wilt opnemen, moet u een van de volgende stappen ondernemen:
 

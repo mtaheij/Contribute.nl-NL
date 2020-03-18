@@ -7,12 +7,12 @@ ms.custom: external-contributor-guide
 author: jasonwhowell
 ms.author: jasonh
 ms.date: 04/30/2018
-ms.openlocfilehash: 24d47c4e094c318be75a27dbaaec11d8ead94452
-ms.sourcegitcommit: ca84e542b081e145052f38967e826f6ef25da1b2
+ms.openlocfilehash: ba7e511d756f43acfa5cfbbd228f793d7fbce727
+ms.sourcegitcommit: 804a99b89785e5c8f056a9da3f0fbde9f0a56a51
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 10/12/2019
-ms.locfileid: "72288550"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "78331855"
 ---
 # <a name="install-content-authoring-tools"></a>Hulpprogramma's installeren om inhoud aan te passen
 
@@ -49,7 +49,7 @@ Markdown is een eenvoudige opmaaktaal die gemakkelijk is te lezen en te leren. D
 
 Markdown-tekst wordt opgeslagen in bestanden met de extensie .md.
 
-De artikelen [Markdown gebruiken voor het schrijven van documenten](how-to-write-use-markdown.md) en [Markdown-naslaginformatie voor OPS](markdown-reference.md). bevatten aanvullende informatie over het schrijven met Markdown, waaronder de basisprincipes van Markdown en de functies die worden ondersteund door de aangepaste Markdown-extensies van Open Publishing Services (OPS).
+Het artikel [Markdown-naslaginformatie](markdown-reference.md) bevat aanvullende informatie over het schrijven met Markdown, waaronder de basisprincipes van Markdown en de functies die worden ondersteund door de aangepaste Markdown-extensies van Open Publishing Services (OPS).
 
 ## <a name="visual-studio-code"></a>Visual Studio Code
 

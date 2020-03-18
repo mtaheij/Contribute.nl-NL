@@ -5,12 +5,12 @@ ms.topic: contributor-guide
 ms.prod: non-product-specific
 ms.custom: external-contributor-guide
 ms.date: 11/07/2018
-ms.openlocfilehash: 998ebf90c8a162451dd4ca2e7c8a55833ed9d408
-ms.sourcegitcommit: ca84e542b081e145052f38967e826f6ef25da1b2
+ms.openlocfilehash: 8d4d8c572435b9261038017c04dcad78ec83fe67
+ms.sourcegitcommit: 804a99b89785e5c8f056a9da3f0fbde9f0a56a51
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 10/12/2019
-ms.locfileid: "72288380"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "78331740"
 ---
 # <a name="metadata-and-markdown-template-for-net-docs"></a>Sjabloon voor metagegevens en Markdown voor .NET-documenten
 
@@ -43,7 +43,7 @@ Er zijn andere metagegevens aan elk artikel toegevoegd, maar wij passen gewoonli
 
 ## <a name="basic-markdown-gfm-and-special-characters"></a>Elementaire Markdown, GFM en speciale tekens
 
-U kunt de basisbeginselen van Markdown, GitHub Flavored Markdown (GFM) en OPS-specifieke extensies leren in de algemene artikelen over [Markdown](how-to-write-use-markdown.md) en [naslaginformatie over Markdown](markdown-reference.md).
+U kunt de basisbeginselen van Markdown, GitHub Flavored Markdown (GFM) en OPS-specifieke extensies leren in het artikel [Markdown-naslaginformatie](markdown-reference.md).
 
 Markdown maakt gebruik van speciale tekens, zoals \*, \` en \# voor opmaak. Als u een van deze tekens in uw inhoud wilt opnemen, moet u een van de volgende stappen ondernemen:
 
@@ -126,7 +126,7 @@ Als u een koppeling wilt maken naar een algemeen type, zoals [System.Collections
 
 ## <a name="code"></a>Code
 
-De beste manier om code in te voegen is fragmenten van een werkend voorbeeld in te voegen. Maak uw voorbeeld op basis van de instructies in het artikel [Bijdragen aan .NET](dotnet-contribute-process.md#contributing-to-samples). De basisregels voor het invoegen van code bevinden zich in de algemene richtlijnen voor [code](how-to-write-use-markdown.md#code-snippets).
+De beste manier om code in te voegen is fragmenten van een werkend voorbeeld in te voegen. Maak uw voorbeeld op basis van de instructies in het artikel [Bijdragen aan .NET](dotnet-contribute-process.md#contributing-to-samples). De basisregels voor het invoegen van code bevinden zich in de algemene richtlijnen voor [code](code-in-docs.md).
 
 U kunt de code invoegen met behulp van de volgende syntaxis:
 
@@ -145,7 +145,7 @@ U kunt de code invoegen met behulp van de volgende syntaxis:
 
 * `<queryoption>`( *optioneel*)
   * Deze worden gebruikt om op te geven hoe de code uit het bestand moet worden opgehaald:
-    * `#`:  `#{tagname}` (naam van de tag) *of* `#L{startlinenumber}-L{endlinenumber}` (regelbereik).
+    * `#`: `#{tagname}` (naam van de tag) *of* `#L{startlinenumber}-L{endlinenumber}` (regelbereik).
     Wij ontmoedigen het gebruik van regelnummers, omdat deze zeer foutgevoelig zijn. Het gebruik van een tagnaam geniet de voorkeur voor de verwijzing naar codefragmenten. Gebruik zinvolle tagnamen. (Veel codefragmenten zijn vanuit een eerder platform gemigreerd en de tags hebben namen zoals `Snippet1`, `Snippet2` enzovoort. Die praktijk is veel moeilijker aan te houden.)
     * `range`: `?range=1,3-5` Een bereik met regels. Dit voorbeeld bevat regels 1, 3, 4 en 5.
 
