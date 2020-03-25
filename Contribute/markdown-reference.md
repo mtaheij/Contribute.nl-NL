@@ -7,12 +7,12 @@ ms.date: 01/30/2020
 ms.topic: contributor-guide
 ms.prod: non-product-specific
 ms.custom: external-contributor-guide
-ms.openlocfilehash: 14cc9f0912149eb342c97d0dd7d2776bd54c84e7
-ms.sourcegitcommit: 804a99b89785e5c8f056a9da3f0fbde9f0a56a51
+ms.openlocfilehash: c1568264c687ebaf26048f5432fdea7d5132c012
+ms.sourcegitcommit: 216ef77ca2cd1eeb31c6c89d96778b178fc0d540
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "78331953"
+ms.lasthandoff: 03/21/2020
+ms.locfileid: "80070080"
 ---
 # <a name="docs-markdown-reference"></a>Docs Markdown-naslaginformatie
 
@@ -627,6 +627,19 @@ Deze wordt als volgt weergegeven:
 ### <a name="line-breaks-within-words-in-second-column-table-cells"></a>Regeleinden in woorden in tabelcellen in de tweede kolom
 
 Mogelijk wilt u dat regeleinden in woorden alleen automatisch in de tweede kolom van een tabel worden ingevoegd. Als u de regeleinden wilt beperken tot de tweede kolom, past u de klasse `mx-tdCol2BreakAll` toe met behulp van de `div`-wrappersyntaxis, zoals eerder besproken.
+
+### <a name="data-matrix-tables"></a>Gegevensmatrixtabellen
+
+Een gegevensmatrixtabel bevat zowel een header als een gewogen eerste kolom, waardoor linksboven een matrix met een lege cel wordt gemaakt. Docs heeft aangepaste Markdown voor gegevensmatrixtabellen:
+
+```md
+|                  |Header 1 |Header 2|
+|------------------|---------|--------|
+|**First column A**|Cell 1A  |Cell 2A |
+|**First column B**|Cell 1B  |Cell 2B |
+```
+
+Elke vermelding in de eerste kolom moet dik worden gedrukt (`**bold**`), anders zijn de tabellen niet toegankelijk voor schermlezers of geldig voor Docs.
 
 ### <a name="html-tables"></a>HTML-tabellen
 
