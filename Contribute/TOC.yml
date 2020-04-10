@@ -53,28 +53,16 @@
     - name: .NET-documenten
       items:
         - name: Uitleg over het bijdragen aan .NET-documenten
-          href: dotnet-contribute.md
-        - name: Bijdragen aan .NET-documenten
-          href: dotnet-contribute-process.md
+          href: dotnet/dotnet-contribute.md
+        - name: Roadmap van labels en projecten
+          href: dotnet/labels-projects.md
         - name: Stijlconventies voor .NET-documenten
-          href: dotnet-style-guide.md
+          href: dotnet/dotnet-style-guide.md
         - name: Vorm- en toonrichtlijnen
-          href: dotnet-voice-tone.md
+          href: dotnet/dotnet-voice-tone.md
         - name: Beoordelingsproces pull-aanvraag
-          href: dotnet-pr-review.md
-    - name: Powershell-Docs
-      items:
-        - name: Een bijdrage leveren aan PowerShell-documentatie
-          href: powershell\powershell-contribute.md
-        - name: Proces voor het bijdragen aan PowerShell
-          href: powershell\powershell-contribute-process.md
-        - name: Snelstartgids voor het schrijven van PowerShell-artikelen
-          href: powershell\powershell-style-basic-markdown.md
-        - name: Stijlgids voor PowerShell-voorbeeldscript
-          href: powershell\powershell-style-code.md
-        - name: Stijlgids voor PowerShell-cmdlets
-          href: powershell\powershell-style-reference.md
-        - name: Een pull-aanvraag verzenden voor PowerShell
-          href: powershell\powershell-pull-requests.md
+          href: dotnet/dotnet-pr-review.md
+    - name: PowerShell-Docs
+      href: powershell-overview.md
 - name: Aanvullende bronnen
   href: additional-resources.md

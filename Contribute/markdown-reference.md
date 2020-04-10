@@ -3,16 +3,16 @@ title: Markdown-naslaginformatie voor docs.microsoft.com
 description: Maak kennis met de Markdown-functies en -syntaxis die worden gebruikt op het Microsoft Docs-platform.
 author: meganbradley
 ms.author: mbradley
-ms.date: 01/30/2020
+ms.date: 03/31/2020
 ms.topic: contributor-guide
 ms.prod: non-product-specific
 ms.custom: external-contributor-guide
-ms.openlocfilehash: c1568264c687ebaf26048f5432fdea7d5132c012
-ms.sourcegitcommit: 216ef77ca2cd1eeb31c6c89d96778b178fc0d540
+ms.openlocfilehash: f0aed4ebb57ee1ce34f55d9085bab718fd4511cb
+ms.sourcegitcommit: 5ef2dc72e2ff8bddf873415a3f4b816eb16029dd
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 03/21/2020
-ms.locfileid: "80070080"
+ms.lasthandoff: 04/03/2020
+ms.locfileid: "80624735"
 ---
 # <a name="docs-markdown-reference"></a>Docs Markdown-naslaginformatie
 
@@ -70,7 +70,7 @@ Punthaken hoeven niet te worden voorafgegaan in tekst die is opgemaakt als code 
 
 ## <a name="apostrophes-and-quotation-marks"></a>Apostroffen en aanhalingstekens
 
-Als u tekst vanuit Word in een Markdown editor kopieert, bevat deze mogelijk gekrulde apostroffen of aanhalingstekens. Deze moeten worden gecodeerd of gewijzigd in rechte apostroffen of aanhalingstekens. Anders ziet de tekst er misschien zo uit wanneer u het bestand gaat publiceren: Itâ€™s
+Als u tekst vanuit Word in een Markdown editor kopieert, bevat deze mogelijk gekrulde apostroffen of aanhalingstekens. Deze moeten worden gecodeerd of gewijzigd in rechte apostroffen of aanhalingstekens. Anders ziet de tekst er misschien zo uit wanneer u het bestand gaat publiceren: Itâ&euro;&trade;s
 
 Hieronder vindt u de codering voor de gekrulde versies van deze leestekens:
 
@@ -187,11 +187,11 @@ Docs ondersteunt zes niveaus Markdown-koppen:
 - De H1-koptekst moet de eerste inhoud in het bestand zijn na het YML-blok met metagegevens.
 - H2-kopteksten verschijnen automatisch in het navigatiemenu aan de rechterkant van het gepubliceerde bestand. Dit geldt niet voor koppen op een lager niveau. Gebruik H2's dus strategisch om lezers te helpen door uw inhoud te navigeren.
 - HMTL-koppen, zoals `<h1>`, worden niet aanbevolen en leiden in sommige gevallen tot opbouwwaarschuwingen.
-- U kunt de afzonderlijke koppen in een bestand koppelen via [bladwijzerkoppelingen](how-to-write-links.md#links-to-anchors).
+- U kunt de afzonderlijke koppen in een bestand koppelen via [bladwijzerkoppelingen](how-to-write-links.md#explicit-anchor-links).
 
 ## <a name="html"></a>HTML
 
-Hoewel Markdown ondersteuning biedt voor inline-HTML, wordt HTML niet aanbevolen voor het publiceren naar Docs. Bovendien leidt dit, behalve bij een beperkte lijst met waarden, tot compileerfouten of -waarschuwingen. 
+Hoewel Markdown ondersteuning biedt voor inline-HTML, wordt HTML niet aanbevolen voor het publiceren naar Docs. Bovendien leidt dit, behalve bij een beperkte lijst met waarden, tot compileerfouten of -waarschuwingen.
 
 ## <a name="images"></a>Afbeeldingen
 
