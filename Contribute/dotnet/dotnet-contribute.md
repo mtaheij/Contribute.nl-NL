@@ -5,12 +5,12 @@ ms.topic: contributor-guide
 ms.prod: non-product-specific
 ms.custom: external-contributor-guide
 ms.date: 11/07/2018
-ms.openlocfilehash: d52d681987e26fddc89a33075b3d35279608ac04
-ms.sourcegitcommit: bf2f4c7d9050b480d4db306df19d4c9f8714eff0
+ms.openlocfilehash: d97d72e8458a53ab11b01cbd4bb5df3b8458b048
+ms.sourcegitcommit: cfba5ad25b898bfed76046126ce8ff4871910701
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 04/07/2020
-ms.locfileid: "80759577"
+ms.lasthandoff: 04/22/2020
+ms.locfileid: "81784316"
 ---
 # <a name="learn-how-to-contribute-to-the-net-docs-repositories"></a>Ontdek hoe u kunt bijdragen aan opslagplaatsen voor .NET-documenten
 
@@ -203,6 +203,10 @@ De interactieve C#-ervaring verandert de manier waarop wij met voorbeelden werke
 
 > [!NOTE]
 > U merkt wellicht dat een in aantal onderwerpen op dit moment niet alle richtlijnen worden gevolgd die hierin zijn opgegeven. We werken aan consistentie voor de hele site. Controleer de lijst met [openstaande actie-items](https://github.com/dotnet/docs/issues?q=is%3Aopen+is%3Aissue+label%3A%22%3Abookmark_tabs%3A+Information+Architecture%22) die we momenteel voor dat specifieke doel volgen.
+
+### <a name="contributing-to-international-content"></a>Bijdragen aan internationale inhoud   
+
+Bijdragen voor inhoud die is vertaald met behulp van machinevertaling (MT; Machine Translation), worden momenteel niet geaccepteerd. Om de kwaliteit van MT-inhoud te verbeteren, zijn we overgegaan naar een engine voor neurale machinevertaling (NMT; Neural MT). We accepteren en stimuleren bijdragen voor door de mensen vertaalde inhoud (HT; Human Translated), die wordt gebruikt voor het trainen van de engine voor neurale machinevertaling. Na verloop van tijd kunnen bijdragen aan HT-inhoud de kwaliteit van zowel HT als MT verbeteren. Onderwerpen waarop MT is toegepast, bevatten een disclaimer waarin wordt aangegeven dat delen van het onderwerp MT-inhoud kunnen bevatten. Tevens is de knop **Bewerken** niet beschikbaar omdat bewerken is uitgeschakeld.   
 
 ## <a name="contributor-license-agreement"></a>Licentieovereenkomst voor bijdragers
 

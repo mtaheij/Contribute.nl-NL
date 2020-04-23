@@ -7,12 +7,12 @@ ms.date: 02/19/2019
 ms.topic: contributor-guide
 ms.prod: non-product-specific
 ms.custom: external-contributor-guide
-ms.openlocfilehash: 3efe66a71a4a61b84ff513a6253777cb2d21bc9e
-ms.sourcegitcommit: ca84e542b081e145052f38967e826f6ef25da1b2
+ms.openlocfilehash: 95dadff41bb31e0b34ee34f85ae47708297954f1
+ms.sourcegitcommit: cfba5ad25b898bfed76046126ce8ff4871910701
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 10/12/2019
-ms.locfileid: "72288647"
+ms.lasthandoff: 04/22/2020
+ms.locfileid: "81784281"
 ---
 # <a name="microsoft-docs-contributor-guide-overview"></a>Gids voor inzenders van Microsoft Docs: overzicht
 
@@ -68,7 +68,7 @@ Voor kleinere of incidentele wijzigingen kunt u het beste de bewerkingservaring 
 > Als deze functie is ingeschakeld, kunt u een artikel in **elke taal** bewerken. Afhankelijk van het soort bewerking gebeurt dan het volgende:
 > 1. elke taalkundige wijziging die is doorgevoerd, helpt ook bij het verbeteren van onze Machine Translation-engine
 > 2. elke bewerking waardoor de inhoud van een artikel significant wordt gewijzigd, wordt intern verwerkt om een wijziging in hetzelfde artikel in het Engels te verzenden. Op deze manier wordt de wijziging, indien goedgekeurd, in alle talen gelokaliseerd.
-> Uw voorgestelde wijzigingen beïnvloeden artikelen dus niet alleen positief in uw eigen taal, maar in alle beschikbare talen.
+> Uw voorgestelde wijzigingen beïnvloeden artikelen niet alleen positief in uw eigen taal, maar in alle beschikbare talen.
 
 ## <a name="review-open-prs"></a>Openstaande PR's controleren
 
