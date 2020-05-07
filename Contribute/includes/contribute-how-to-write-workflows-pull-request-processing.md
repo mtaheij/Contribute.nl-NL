@@ -1,3 +1,11 @@
+---
+ms.openlocfilehash: 9cb0ba651d40d2834081d32443a8fd2b1152003d
+ms.sourcegitcommit: cfba5ad25b898bfed76046126ce8ff4871910701
+ms.translationtype: HT
+ms.contentlocale: nl-NL
+ms.lasthandoff: 05/04/2020
+ms.locfileid: "53285957"
+---
 ## <a name="pull-request-processing"></a>Verwerking van pull-aanvragen
 
 In de vorige sectie werd uitgelegd hoe u voorgestelde wijzigingen kunt indienen door deze in een nieuwe pull-aanvraag te bundelen die wordt toegevoegd aan de wachtrij voor pull-aanvragen in de doelopslagplaats. Met een pull-aanvraag wordt het samenwerkingsmodel van GitHub ingeschakeld door de wijzigingen uit uw werkvertakking te 'trekken' (pull) en samen te voegen met een andere vertakking. Die andere vertakking is meestal de standaard 'hoofdvertakking' in de hoofdopslagplaats.

@@ -8,10 +8,10 @@ author: jasonwhowell
 ms.author: jasonh
 ms.date: 04/30/2018
 ms.openlocfilehash: ba7e511d756f43acfa5cfbbd228f793d7fbce727
-ms.sourcegitcommit: 804a99b89785e5c8f056a9da3f0fbde9f0a56a51
+ms.sourcegitcommit: cfba5ad25b898bfed76046126ce8ff4871910701
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 03/05/2020
+ms.lasthandoff: 05/04/2020
 ms.locfileid: "78331855"
 ---
 # <a name="install-content-authoring-tools"></a>Hulpprogramma's installeren om inhoud aan te passen
@@ -41,7 +41,7 @@ Volg de installatie- en configuratie-instructies voor de client van uw keuze.
 
 In het volgende artikel [stelt u een Git-opslagplaats in](get-started-setup-local.md).
 
-   Extra Git-resources zijn hier beschikbaar: [Git-terminologie](https://help.github.com/articles/github-glossary) | [Basisprincipes van Git](https://git-scm.com/book/en/v2/Getting-Started-Git-Basics) | [Git en GitHub leren gebruiken](https://help.github.com/articles/good-resources-for-learning-git-and-github/)
+   Aanvullende Git-bronnen vindt u hier: [Git terminology](https://help.github.com/articles/github-glossary) (Git-terminologie) | [Git basics](https://git-scm.com/book/en/v2/Getting-Started-Git-Basics) (Grondbeginselen van Git) | [Learning Git and GitHub](https://help.github.com/articles/good-resources-for-learning-git-and-github/) (Git en GitHub onder de knie krijgen)
 
 ## <a name="understand-markdown-editors"></a>Inzicht in Markdown-editors
 

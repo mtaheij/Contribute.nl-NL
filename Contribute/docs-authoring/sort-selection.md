@@ -7,17 +7,17 @@ ms.topic: contributor-guide
 ms.date: 03/03/2020
 ms.author: dapine
 ms.openlocfilehash: b4bd1761dc1bd9326275f011bb1935f6b695404d
-ms.sourcegitcommit: dbc2c48194e29bfa0c88d33f50f94b9ee26be2da
+ms.sourcegitcommit: cfba5ad25b898bfed76046126ce8ff4871910701
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 03/05/2020
+ms.lasthandoff: 05/04/2020
 ms.locfileid: "78336745"
 ---
-# <a name="sort-selection"></a>Selectie sorteren
+# <a name="sort-selection"></a>Sorteringen selecteren
 
 [!INCLUDE [markdown-extension](includes/markdown-extension.md)]
 
-## <a name="summary"></a>Overzicht
+## <a name="summary"></a>Samenvatting
 
 Wanneer u een selectie hebt gemaakt, worden in een Markdown-bestand ( *\*.md*) twee contextmenuopdrachten voor sorteren weergegeven. Klik met de rechtermuisknop op de geselecteerde tekst om het contextmenu te openen. U ziet iets wat vergelijkbaar is met de volgende menuopdrachten:
 

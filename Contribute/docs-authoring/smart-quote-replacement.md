@@ -7,10 +7,10 @@ ms.topic: contributor-guide
 ms.date: 03/03/2020
 ms.author: dapine
 ms.openlocfilehash: 048f244324d7dde540c78e6631ccb5abbed3e431
-ms.sourcegitcommit: dbc2c48194e29bfa0c88d33f50f94b9ee26be2da
+ms.sourcegitcommit: cfba5ad25b898bfed76046126ce8ff4871910701
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 03/05/2020
+ms.lasthandoff: 05/04/2020
 ms.locfileid: "78336699"
 ---
 # <a name="smart-quote-replacement"></a>Slimme aanhalingstekens vervangen
@@ -30,7 +30,7 @@ Wanneer u bijvoorbeeld werkt aan Microsoft Word-documenten, hebt u wellicht wel 
 | Enkel aanhalingsteken links  | `\u2018` | `‘`         | `'`         |
 | Enkel aanhalingsteken rechts | `\u2019` | `’`         | `'`         |
 
-Wanneer u in een Markdown-bestand ( *\*.md*) tekst plakt of wanneer u inhoud bijwerkt: met deze functie wordt de inhoud actief geëvalueerd en worden waarden automatisch dienovereenkomstig vervangen.
+Wanneer u in een Markdown-bestand (*\*.md*) tekst plakt of wanneer u inhoud bijwerkt: met deze functie wordt de inhoud actief geëvalueerd en worden waarden automatisch dienovereenkomstig vervangen.
 
 > [!NOTE]
 > Met de functie voor het vervangen van een slim aanhalingsteken worden ook andere tekens vervangen, zoals, maar niet beperkt tot; (`©, ™, ®, •`, subscript- en superscripttekens). Dit is handig wanneer u tekst uit Word-documenten plakt.

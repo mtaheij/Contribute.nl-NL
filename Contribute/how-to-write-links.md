@@ -8,10 +8,10 @@ author: gewarren
 ms.author: gewarren
 ms.date: 03/31/2020
 ms.openlocfilehash: ca29d4b9e81f8af3b680367b210bd1734860687d
-ms.sourcegitcommit: 5ef2dc72e2ff8bddf873415a3f4b816eb16029dd
+ms.sourcegitcommit: cfba5ad25b898bfed76046126ce8ff4871910701
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 04/03/2020
+ms.lasthandoff: 05/04/2020
 ms.locfileid: "80624748"
 ---
 # <a name="use-links-in-documentation"></a>Koppelingen in documentatie gebruiken
@@ -253,7 +253,7 @@ Algemene typen zijn typen als `System.Collections.Generic.List<T>`. Als u naar d
 
 `https://docs.microsoft.com/dotnet/api/system.collections.generic.list-1`
 
-Als u een koppeling wilt maken naar een algemeen type zoals **List\<T >** , codeert u het accent grave-teken **\`** als **%60**, zoals wordt weergegeven in het volgende voorbeeld:
+Als u een koppeling wilt maken naar een algemeen type zoals **List\<T >**, codeert u het accent grave-teken **\`** als **%60**, zoals wordt weergegeven in het volgende voorbeeld:
 
 ```markdown
 <xref:System.Collections.Generic.List%601>

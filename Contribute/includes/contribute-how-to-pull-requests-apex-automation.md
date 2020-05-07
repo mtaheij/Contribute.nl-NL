@@ -1,9 +1,9 @@
 ---
 ms.openlocfilehash: b64e8dd4c62ca05b6e04ef404ebf98a618d0171e
-ms.sourcegitcommit: 2563918217ba0760a4f3877af2272a0a4b2c3052
+ms.sourcegitcommit: cfba5ad25b898bfed76046126ce8ff4871910701
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 05/30/2019
+ms.lasthandoff: 05/04/2020
 ms.locfileid: "66391263"
 ---
 Door middel van automatisering van opmerkingen kunnen gebruikers op leesniveau (gebruikers die geen schrijfmachtigingen in een opslagplaats hebben) een actie op schrijfniveau uitvoeren door het desbetreffende label aan een pull-aanvraag (PR) toe te wijzen. Als u in een opslagplaats werkt waar automatisering van opmerkingen is geïmplementeerd, gebruikt u de hashtag-opmerkingen in de volgende tabel om labels toe te wijzen of te wijzigen, of een pull-aanvraag te sluiten. Microsoft-medewerkers krijgen ook via e-mail een melding over het controleren en goedkeuren van openbare opslagplaats-PR's als er wijzigingen worden voorgesteld voor artikelen waarvan u de auteur bent.

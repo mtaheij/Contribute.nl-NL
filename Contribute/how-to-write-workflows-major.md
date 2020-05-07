@@ -6,10 +6,10 @@ ms.prod: non-product-specific
 ms.custom: external-contributor-guide
 ms.date: 08/30/2017
 ms.openlocfilehash: 5231b68f04caa94d3ff2ff26afc38e3218ca06b8
-ms.sourcegitcommit: 804a99b89785e5c8f056a9da3f0fbde9f0a56a51
+ms.sourcegitcommit: cfba5ad25b898bfed76046126ce8ff4871910701
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 03/05/2020
+ms.lasthandoff: 05/04/2020
 ms.locfileid: "78331901"
 ---
 # <a name="github-contribution-workflow-for-major-or-long-running-changes"></a>GitHub-bijdragewerkstroom voor belangrijke of langdurige wijzigingen
@@ -17,7 +17,7 @@ ms.locfileid: "78331901"
 > [!IMPORTANT]
 > Op alle opslagplaatsen die naar docs.microsoft.com publiceren, is de [Microsoft Open Source-gedragscode](https://opensource.microsoft.com/codeofconduct/) of de [.NET Foundation-gedragscode](https://dotnetfoundation.org/code-of-conduct) van toepassing. Zie [Veelgestelde vragen over de gedragscode](https://opensource.microsoft.com/codeofconduct/faq/) voor meer informatie. Of neem contact op via [opencode@microsoft.com](mailto:opencode@microsoft.com) of [conduct@dotnetfoundation.org](mailto:conduct@dotnetfoundation.org) als u vragen of opmerkingen hebt.<br>
 >
-> Kleine correcties of verduidelijkingen voor de documentatie en codevoorbeelden in de openbare opslagplaatsen vallen onder de [gebruiksvoorwaarden van docs.microsoft.com](https://docs.microsoft.com/legal/termsofuse). Bij nieuwe inhoud of belangrijke wijzigingen wordt een opmerking gegenereerd in de pull-aanvraag, waarin u wordt gevraagd een online Contribution License Agreement (CLA) in te dienen als u geen werknemer van Microsoft bent. U moet het onlineformulier invullen voordat uw pull-aanvraag kan worden samengevoegd.
+> Kleine correcties of verduidelijkingen voor de documentatie en codevoorbeelden in de openbare opslagplaatsen vallen onder de [gebruiksvoorwaarden van docs.microsoft.com](https://docs.microsoft.com/legal/termsofuse). Bij nieuwe inhoud of belangrijke wijzigingen wordt een opmerking gegenereerd in de pull-aanvraag, waarin u wordt gevraagd om een online Contribution License Agreement (CLA) in te dienen als u geen werknemer van Microsoft bent. U moet het onlineformulier invullen voordat uw pull-aanvraag kan worden samengevoegd.
 
 ## <a name="overview"></a>Overzicht
 
@@ -31,7 +31,7 @@ Voorbeelden van dergelijke bijdragen zijn:
 
 Bekijk voordat u aan de slag gaat eerst enkele Git-/GitHub-termen en -monikers die in deze werkstroom worden gebruikt. U hoeft deze nu nog niet te begrijpen. U maakt eerst kennis met de termen en kunt dan deze sectie raadplegen als u een definitie wilt controleren.
 
-| Name | Beschrijving |
+| Naam | Beschrijving |
 |-----------|-------------|
 |fork|Wordt doorgaans als zelfstandig naamwoord gebruikt bij verwijzing naar een kopie van een GitHub-hoofdopslagplaats. Een fork is in feite gewoon een opslagplaats. Het is echter een bijzondere opslagplaats in de zin dat GitHub een verbinding in stand houdt met de bovenliggende of hoofdopslagplaats. Soms wordt de term gebruikt als werkwoord. In het Nederlands wordt hiervoor het werkwoord splitsen gebruikt, bijvoorbeeld "U moet de opslagplaats eerst splitsen."|
 |remote|Een benoemde verbinding naar een externe opslagplaats, bijvoorbeeld de origin of upstream remote. In Git wordt hiernaar verwezen als remote, omdat deze wordt gebruikt om te verwijzen naar een opslagplaats die wordt gehost op een andere computer. In deze werkstroom is een remote altijd een GitHub-opslagplaats.|
