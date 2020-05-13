@@ -5,12 +5,12 @@ ms.topic: contributor-guide
 ms.prod: non-product-specific
 ms.custom: external-contributor-guide
 ms.date: 11/07/2018
-ms.openlocfilehash: d97d72e8458a53ab11b01cbd4bb5df3b8458b048
-ms.sourcegitcommit: cfba5ad25b898bfed76046126ce8ff4871910701
+ms.openlocfilehash: 948c96a63754566fc73e54c722998739984977d6
+ms.sourcegitcommit: 43a4f52ab827a7cf4609cc592483595efde3ceae
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 05/04/2020
-ms.locfileid: "81784316"
+ms.lasthandoff: 05/12/2020
+ms.locfileid: "83203051"
 ---
 # <a name="learn-how-to-contribute-to-the-net-docs-repositories"></a>Ontdek hoe u kunt bijdragen aan opslagplaatsen voor .NET-documenten
 
@@ -69,7 +69,11 @@ Voor kleine wijzigingen leest u de instructies voor bewerkingen in GitHub op de 
 
 Als het een nieuw onderwerp is, kunt u dit [sjabloonbestand](dotnet-style-guide.md) als beginpunt gebruiken. Dit bestand bevat de schrijfrichtlijnen en uitleg over de metagegevens die voor elk artikel zijn vereist, zoals informatie over de auteur.
 
-Navigeer naar de map die overeenkomt met de locatie in de inhoudsopgave die u in stap 1 voor uw artikel hebt bepaald. Die map bevat de Markdown-bestanden voor alle artikelen in dat hoofdstuk. Maak indien nodig een nieuwe map waarin u de bestanden voor uw inhoud plaatst. Het hoofdartikel voor dat hoofdstuk heet *index.md*. Voor afbeeldingen en andere statische resources maakt u de submap **media** in de map waarin uw artikel staat, als deze submap nog niet is gemaakt. Maak in de map **media** een submap met de naam van het artikel (met uitzondering van het indexbestand). Voorbeeldcode moet in de opslagplaats `dotnet/samples` staan, zoals beschreven in de sectie over [voorbeelden](#contributing-to-samples).
+Navigeer naar de map die overeenkomt met de locatie in de inhoudsopgave die u in stap 1 voor uw artikel hebt bepaald. Die map bevat de Markdown-bestanden voor alle artikelen in dat hoofdstuk. Maak indien nodig een nieuwe map waarin u de bestanden voor uw inhoud plaatst. Het hoofdartikel voor dat hoofdstuk heet *index.md*.
+
+Voor afbeeldingen en andere statische resources maakt u de submap **media** in de map waarin uw artikel staat, als deze submap nog niet is gemaakt. Maak in de map **media** een submap met de naam van het artikel (met uitzondering van het indexbestand). 
+
+Maak voor **codefragmenten** een submap met de naam **fragmenten** in de map met uw artikel als deze submap nog niet bestaat. In de meeste gevallen hebt u codefragmenten voor alle drie de belangrijkste .NET-talen: C#, F# en Visual Basic. Maak in dat geval submappen met de naam **csharp**, **fsharp**en **vb** voor elk van de drie projecten. Gebruik voor de eenvoud de map **fragmenten** voor uw project in de handleidingen voor C# , F# en Visual Basic. Deze ruimten bevatten doorgaans fragmenten voor één taal. Codefragmenten zijn kleine, gerichte codevoorbeelden die de concepten demonstreren die in een artikel worden besproken. Grotere programma's, bedoeld voor het downloaden en verkennen, moeten zich in de opslagplaats [dotnet/samples](https://github.com/dotnet/samples) bevinden. In de sectie [Bijdragen aan voorbeelden](#contributing-to-samples) zijn volledige voorbeelden opgenomen.
 
 Volg de juiste Markdown-syntaxis. Voor voorbeelden van algemene syntaxis raadpleegt u het [sjabloon en Markdown-cheatsheet](dotnet-style-guide.md).
 
@@ -83,6 +87,24 @@ Volg de juiste Markdown-syntaxis. Voor voorbeelden van algemene syntaxis raadple
           /media
             /porting-overview
                 portability_report.png
+          /snippets
+            /porting-overview
+              /csharp
+                porting.csproj
+                porting-overview.cs
+                Program.cs
+              /fsharp
+                porting.fsproj
+                porting-overview.fs
+                Program.fs
+               /vb
+                porting.vbproj
+                porting-overview.vb
+                Program.vb
+
+De structuur die hierboven wordt weergegeven, bevat één afbeelding, *portability_report.png*, en drie codeprojecten die **codefragmenten** uit het artikel *porting-overview.md* bevatten. Een toegestane alternatieve structuur bevat één project per taal met daarin alle fragmenten voor alle artikelen in die map. Dit alternatief is gebruikt in de taalverwijzingsgebieden omdat er zeer kleine fragmenten worden gebruikt om de taalsyntaxis te demonstreren. Voor andere gebieden wordt dit afgeraden.
+
+Om historische redenen zijn veel van de opgenomen fragmenten opgeslagen in de map */samples* in de opslagplaats *dotnet/docs*. Als u belangrijke wijzigingen in een artikel aanbrengt, moeten deze fragmenten naar de nieuwe structuur worden verplaatst. Verplaats fragmenten niet voor kleine wijzigingen.
 
 **Stap 4:** Dien een PR (Pull Request - pull-aanvraag) in van uw vertakking naar de hoofdvertakking.
 
@@ -105,16 +127,14 @@ We pushen regelmatig alle commits van de hoofdvertakking naar de livevertakking;
 
 In de opslagplaats [dotnet/voorbeelden](https://github.com/dotnet/samples) staat alle voorbeeldcode die deel uitmaakt van onderwerpen in de .NET-documentatie. Er zijn diverse projecten die in submappen zijn onderverdeeld. Deze submappen zijn op vergelijkbare wijze ingericht als de documenten voor .NET.
 
-We maken het volgende onderscheid voor code die in onze opslagplaats aanwezig is:
+We maken het volgende onderscheid voor code die in onze inhoud ondersteunt:
 
 - Voorbeelden: lezers kunnen de voorbeelden downloaden en uitvoeren. Alle voorbeelden moeten volledige toepassingen of bibliotheken zijn. In het geval het voorbeeld een bibliotheek maakt, moet deze eenheidstesten of een toepassing bevatten waarmee lezers de code kunnen uitvoeren. Vaak wordt meer dan één technologie, functie of toolkit gebruikt. Het readme.md-bestand voor elk voorbeeld verwijst naar het artikel zodat u meer kunt lezen over de concepten die in de voorbeelden worden gegeven.
 - Codefragmenten: hiermee geeft u uitleg over een kleiner concept of een kleinere taak. U kunt ermee compileren, maar ze zijn niet bedoeld om als complete toepassing te gebruiken. Ze moeten wel op de goede manier worden uitgevoerd, maar ze zijn geen voorbeeldtoepassing voor een typisch scenario. In plaats daarvan zijn ze ontworpen om zo klein mogelijk te zijn om één concept of functie uit te leggen. Deze fragmenten moeten niet langer zijn dan één scherm met code.
 
-Alle code bevindt zich in de opslagplaats [dotnet/voorbeelden](https://github.com/dotnet/samples). We werken aan de ontwikkeling van een model waarin de structuur van onze map met voorbeelden overeenkomt met de structuur van onze map met documenten. We volgen de volgende standaarden:
+De voorbeelden bevinden zich in de opslagplaats [dotnet/samples](https://github.com/dotnet/samples). We werken aan de ontwikkeling van een model waarin de structuur van onze map met voorbeelden overeenkomt met de structuur van onze map met documenten. We volgen de volgende standaarden:
 
-- De map *codefragmenten* op het hoogste niveau bevat codefragmenten voor kleine, doelgerichte voorbeelden.
-- Er worden API-verwijzingsvoorbeelden in een map geplaatst volgens dit patroon: *snippets/\<language>/api/\<namespace>/\<apiname>* .
-- Andere mappen op het hoogste niveau komen overeen met de mappen op het hoogste niveau in de opslagplaats *documenten*. De opslagplaats Documenten bevat bijvoorbeeld de map *machine learning/zelfstudies* en de voorbeelden voor zelfstudies over machine learning bevinden zich in de map *voorbeelden/machine learning/zelfstudies*.
+- Mappen op het hoogste niveau komen overeen met de mappen op het hoogste niveau in de opslagplaats *documenten*. De opslagplaats Documenten bevat bijvoorbeeld de map *machine learning/zelfstudies* en de voorbeelden voor zelfstudies over machine learning bevinden zich in de map *voorbeelden/machine learning/zelfstudies*.
 
 Daarnaast moeten alle voorbeelden in de mappen *kern* en *standaard* worden ontwikkeld en uitgevoerd op alle platformen die door .NET Core worden ondersteund. Dit zal door ons CI-ontwikkelingssysteem worden afgedwongen. De map *framework* op het hoogste niveau bevat voorbeelden die alleen in Windows worden ontwikkeld en gevalideerd.
 
@@ -126,7 +146,9 @@ Elk volledige voorbeeld dat u maakt, moet een *readme.md*-bestand bevatten. Dit 
 
 Uw onderwerp bevat ook koppelingen naar het voorbeeld. Geef een directe koppeling op naar de map van het voorbeeld op GitHub.
 
-### <a name="writing-a-new-snippet-or-sample"></a>Een nieuw codefragment of voorbeeld schrijven
+### <a name="writing-a-new-sample"></a>Een nieuw voorbeeld schrijven
+
+Voorbeelden zijn volledige programma's en bibliotheken die zijn bedoeld om te worden gedownload. Ze zijn mogelijk klein in omvang, maar illustreren concepten op een manier waarop mensen hun eigen programma’s kunnen verkennen en experimenteren. De richtlijnen voor voorbeelden zorgen dat lezers ze kunnen downloaden en verkennen. Bekijk de [Parallel LINQ](https://github.com/dotnet/samples/tree/master/csharp/parallel/PLINQ)-voorbeelden (PLINQ) als voorbeeld van elk van de richtlijnen.
 
 1. Uw voorbeeld **moet deel uitmaken van een project dat kan worden ontwikkeld**. De projecten moeten waar mogelijk worden ontwikkeld op alle platformen die door .NET Core worden ondersteund, met uitzondering van voorbeelden die functies of hulpprogramma's aangeven die specifiek bij een platform horen.
 
@@ -179,7 +201,29 @@ U kunt .NET Core-codefragmenten of -voorbeelden bouwen met behulp van de .NET Co
 
 3. Voeg een readme.md-bestand toe aan de hoofdmap van uw voorbeeld.
 
-   Dit bestand moet een korte beschrijving van de code bevatten en mensen verwijzen naar het artikel waarin het voorbeeld wordt genoemd.
+   Dit bestand moet een korte beschrijving van de code bevatten en mensen verwijzen naar het artikel waarin het voorbeeld wordt genoemd. De bovenkant van *readme.md* moet de metagegevens bevatten die nodig zijn voor de [voorbeeldenbrowser](https://docs.microsoft.com/samples). Het headerblok moet de volgende velden bevatten:
+
+   ```yml
+   ---
+   name: "really cool sample"
+   description: "Learn everything about this really cool sample."
+   page_type: sample
+   languages:
+     - csharp
+     - fsharp
+     - vbnet
+   products:
+     - dotnet-core
+     - dotnet
+     - dotnet-standard
+     - aspnet
+     - aspnet-core
+     - ef-core
+   ---
+   ```
+
+   - De verzameling `languages` moet alleen de talen bevatten die beschikbaar zijn voor uw voorbeeld.
+   - De verzameling `products` moet alleen de producten bevatten die relevant zijn voor uw voorbeeld.
 
 Met uitzondering van vermeldingen moeten alle voorbeelden vanaf de opdrachtregel worden gebouwd op platformen die door .NET Core worden ondersteund. Er zijn een aantal voorbeelden die specifiek bedoeld zijn voor Visual Studio en waarvoor Visual Studio 2017 of hoger is vereist. Daarnaast bevatten enkele voorbeelden platformspecifieke functies. Hiervoor is het specifieke platform vereist. Voor andere voorbeelden en codefragmenten is het .NET Framework vereist. Deze worden uitgevoerd op Windows-platformen en hiervoor is het Developer Pack voor de beoogde Framework-versie vereist.
 
@@ -204,9 +248,9 @@ De interactieve C#-ervaring verandert de manier waarop wij met voorbeelden werke
 > [!NOTE]
 > U merkt wellicht dat een in aantal onderwerpen op dit moment niet alle richtlijnen worden gevolgd die hierin zijn opgegeven. We werken aan consistentie voor de hele site. Controleer de lijst met [openstaande actie-items](https://github.com/dotnet/docs/issues?q=is%3Aopen+is%3Aissue+label%3A%22%3Abookmark_tabs%3A+Information+Architecture%22) die we momenteel voor dat specifieke doel volgen.
 
-### <a name="contributing-to-international-content"></a>Bijdragen aan internationale inhoud   
+### <a name="contributing-to-international-content"></a>Bijdragen aan internationale inhoud
 
-Bijdragen voor inhoud die is vertaald met behulp van machinevertaling (MT; Machine Translation), worden momenteel niet geaccepteerd. Om de kwaliteit van MT-inhoud te verbeteren, zijn we overgegaan naar een engine voor neurale machinevertaling (NMT; Neural MT). We accepteren en stimuleren bijdragen voor door de mensen vertaalde inhoud (HT; Human Translated), die wordt gebruikt voor het trainen van de engine voor neurale machinevertaling. Na verloop van tijd kunnen bijdragen aan HT-inhoud de kwaliteit van zowel HT als MT verbeteren. Onderwerpen waarop MT is toegepast, bevatten een disclaimer waarin wordt aangegeven dat delen van het onderwerp MT-inhoud kunnen bevatten. Tevens is de knop **Bewerken** niet beschikbaar omdat bewerken is uitgeschakeld.   
+Bijdragen voor inhoud die is vertaald met behulp van machinevertaling (MT; Machine Translation), worden momenteel niet geaccepteerd. Om de kwaliteit van MT-inhoud te verbeteren, zijn we overgegaan naar een engine voor neurale machinevertaling (NMT; Neural MT). We accepteren en stimuleren bijdragen voor door de mensen vertaalde inhoud (HT; Human Translated), die wordt gebruikt voor het trainen van de engine voor neurale machinevertaling. Na verloop van tijd kunnen bijdragen aan HT-inhoud de kwaliteit van zowel HT als MT verbeteren. Onderwerpen waarop MT is toegepast, bevatten een disclaimer waarin wordt aangegeven dat delen van het onderwerp MT-inhoud kunnen bevatten. Tevens is de knop **Bewerken** niet beschikbaar omdat bewerken is uitgeschakeld.
 
 ## <a name="contributor-license-agreement"></a>Licentieovereenkomst voor bijdragers
 
