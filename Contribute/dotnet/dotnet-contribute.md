@@ -4,13 +4,13 @@ description: In dit artikel wordt de procedure beschreven voor het bijdragen aan
 ms.topic: contributor-guide
 ms.prod: non-product-specific
 ms.custom: external-contributor-guide
-ms.date: 11/07/2018
-ms.openlocfilehash: 948c96a63754566fc73e54c722998739984977d6
-ms.sourcegitcommit: 43a4f52ab827a7cf4609cc592483595efde3ceae
+ms.date: 05/14/2020
+ms.openlocfilehash: c4382a66035a10debb2a0aa05f61c549a3f97ee6
+ms.sourcegitcommit: 300ce72ffc8596213e82ae511b1b314c850841c9
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 05/12/2020
-ms.locfileid: "83203051"
+ms.lasthandoff: 05/14/2020
+ms.locfileid: "83404138"
 ---
 # <a name="learn-how-to-contribute-to-the-net-docs-repositories"></a>Ontdek hoe u kunt bijdragen aan opslagplaatsen voor .NET-documenten
 
@@ -73,7 +73,7 @@ Navigeer naar de map die overeenkomt met de locatie in de inhoudsopgave die u in
 
 Voor afbeeldingen en andere statische resources maakt u de submap **media** in de map waarin uw artikel staat, als deze submap nog niet is gemaakt. Maak in de map **media** een submap met de naam van het artikel (met uitzondering van het indexbestand). 
 
-Maak voor **codefragmenten** een submap met de naam **fragmenten** in de map met uw artikel als deze submap nog niet bestaat. In de meeste gevallen hebt u codefragmenten voor alle drie de belangrijkste .NET-talen: C#, F# en Visual Basic. Maak in dat geval submappen met de naam **csharp**, **fsharp**en **vb** voor elk van de drie projecten. Gebruik voor de eenvoud de map **fragmenten** voor uw project in de handleidingen voor C# , F# en Visual Basic. Deze ruimten bevatten doorgaans fragmenten voor één taal. Codefragmenten zijn kleine, gerichte codevoorbeelden die de concepten demonstreren die in een artikel worden besproken. Grotere programma's, bedoeld voor het downloaden en verkennen, moeten zich in de opslagplaats [dotnet/samples](https://github.com/dotnet/samples) bevinden. In de sectie [Bijdragen aan voorbeelden](#contributing-to-samples) zijn volledige voorbeelden opgenomen.
+Maak voor **codefragmenten** een submap met de naam **fragmenten** in de map met uw artikel als deze submap nog niet bestaat.  Maak in de map **fragmenten** een submap met de artikelnaam. In de meeste gevallen hebt u codefragmenten voor alle drie de belangrijkste .NET-talen: C#, F# en Visual Basic. Maak in dat geval submappen met de naam **csharp**, **fsharp**en **vb** voor elk van de drie projecten. Gebruik voor de eenvoud de map **fragmenten** voor uw project in de handleidingen voor C# , F# en Visual Basic. Deze ruimten bevatten doorgaans fragmenten voor één taal. Codefragmenten zijn kleine, gerichte codevoorbeelden die de concepten demonstreren die in een artikel worden besproken. Grotere programma's, bedoeld voor het downloaden en verkennen, moeten zich in de opslagplaats [dotnet/samples](https://github.com/dotnet/samples) bevinden. In de sectie [Bijdragen aan voorbeelden](#contributing-to-samples) zijn volledige voorbeelden opgenomen.
 
 Volg de juiste Markdown-syntaxis. Voor voorbeelden van algemene syntaxis raadpleegt u het [sjabloon en Markdown-cheatsheet](dotnet-style-guide.md).
 
