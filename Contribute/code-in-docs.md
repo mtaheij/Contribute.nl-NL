@@ -7,12 +7,12 @@ ms.date: 03/03/2020
 ms.prod: non-product-specific
 ms.topic: contributor-guide
 ms.custom: external-contributor-guide
-ms.openlocfilehash: 4aa34196f59a69651dd19add35a0351dd9b5d59b
-ms.sourcegitcommit: cfba5ad25b898bfed76046126ce8ff4871910701
+ms.openlocfilehash: 4e57af6a1fe9a9d3799f09cb04f3bd3f0b9b712d
+ms.sourcegitcommit: 59e77d2fb9c38cccbacde9d2a7df61ae58c38fa4
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 05/04/2020
-ms.locfileid: "78336473"
+ms.lasthandoff: 06/04/2020
+ms.locfileid: "84421040"
 ---
 # <a name="how-to-include-code-in-docs"></a>Code opnemen in docs-artikelen
 
@@ -378,12 +378,14 @@ Syntaxis:
   * Relatief pad naar het bestandssysteem dat het codefragmentbestand aangeeft waarnaar moet worden verwezen.
 
 * `<attribute>`en `<attribute-value>`(*optioneel*)
-  * Worden samen gebruikt om op te geven hoe de code uit het bestand moet worden opgehaald en hoe deze moet worden weergegeven:
-    * `range`: `1,3-5` Een bereik met regels. Dit voorbeeld bevat regels 1, 3, 4 en 5.
-    * `id`: `snippet_Create` De id van het fragment dat moet worden ingevoegd vanuit het codebestand. Deze waarde kan niet naast elkaar bestaan met een bereik.
-    * `highlight`: `2-4,6` Het bereik en/of het aantal regels dat moet worden gemarkeerd in het gegenereerde codefragment. De nummering is relatief ten opzichte van de weergegeven regels (zoals opgegeven met een bereik of id), niet voor het bestand.
-    * `interactive`: `cloudshell-powershell`, `cloudshell-bash`, `try-dotnet`, `try-dotnet-class`, `try-dotnet-method` De waarde van de tekenreeks bepaalt welke soorten interactiviteit zijn ingeschakeld.
-    * Zie de [DocFX-richtlijnen](https://dotnet.github.io/docfx/spec/docfx_flavored_markdown.html#tag-name-representation-in-code-snippet-source-file) voor details over weergave van tagnamen in bronbestanden van codefragmenten per taal.
+
+  Worden samen gebruikt om op te geven hoe de code uit het bestand moet worden opgehaald en hoe deze moet worden weergegeven:
+
+  * `range`: `1,3-5` Een bereik met regels. Dit voorbeeld bevat regels 1, 3, 4 en 5.
+  * `id`: `snippet_Create` De id van het fragment dat moet worden ingevoegd vanuit het codebestand. Deze waarde kan niet naast elkaar bestaan met een bereik.
+  * `highlight`: `2-4,6` Het bereik en/of het aantal regels dat moet worden gemarkeerd in het gegenereerde codefragment. De nummering is relatief ten opzichte van de weergegeven regels (zoals opgegeven met een bereik of id), niet voor het bestand.
+  * `interactive`: `cloudshell-powershell`, `cloudshell-bash`, `try-dotnet`, `try-dotnet-class`, `try-dotnet-method` De waarde van de tekenreeks bepaalt welke soorten interactiviteit zijn ingeschakeld.
+  * Zie de [DocFX-richtlijnen](https://dotnet.github.io/docfx/spec/docfx_flavored_markdown.html#tag-name-representation-in-code-snippet-source-file) voor details over weergave van tagnamen in bronbestanden van codefragmenten per taal.
 
 ## <a name="supported-languages"></a>Ondersteunde talen
 
