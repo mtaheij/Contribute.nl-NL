@@ -7,12 +7,12 @@ ms.custom: external-contributor-guide
 author: gewarren
 ms.author: gewarren
 ms.date: 03/31/2020
-ms.openlocfilehash: ca29d4b9e81f8af3b680367b210bd1734860687d
-ms.sourcegitcommit: cfba5ad25b898bfed76046126ce8ff4871910701
+ms.openlocfilehash: 94ba4cefd9aff70b38502aa397a3761127c8089f
+ms.sourcegitcommit: 9852045bac75fd5d90c0ffc88d2a17dd45ba015f
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 05/04/2020
-ms.locfileid: "80624748"
+ms.lasthandoff: 06/19/2020
+ms.locfileid: "85107109"
 ---
 # <a name="use-links-in-documentation"></a>Koppelingen in documentatie gebruiken
 
@@ -185,9 +185,9 @@ Voor de syntaxis hebt u de volgende mogelijkheden:
 
 Voorbeelden:
 
-- **\<xref:System.String>** weergegeven als <xref:System.String>
+- **\<xref:System.String>** wordt weergegeven als <xref:System.String>
 
-- **\<xref:System.String?displayProperty=nameWithType>** weergegeven als <xref:System.String?displayProperty=nameWithType>
+- **\<xref:System.String?displayProperty=nameWithType>** wordt weergegeven als <xref:System.String?displayProperty=nameWithType>
 
 - **\[String class](xref:System.String)** weergegeven als [String class](xref:System.String).
 
@@ -241,7 +241,7 @@ Bekijk een volledige lijst met [percentagecodes](https://en.wikipedia.org/wiki/P
 
 Voorbeelden van codering:
 
-- `System.Threading.Tasks.Task``1` wordt als `System.Threading.Tasks.Task%601` gecodeerd (zie sectie [ over algemene typen](#generic-types))
+- ``System.Threading.Tasks.Task`1`` wordt als `System.Threading.Tasks.Task%601` gecodeerd (zie sectie [ over algemene typen](#generic-types))
 
 - `System.Exception.#ctor` wordt gecodeerd als `System.Exception.%23ctor`
 
@@ -253,7 +253,7 @@ Algemene typen zijn typen als `System.Collections.Generic.List<T>`. Als u naar d
 
 `https://docs.microsoft.com/dotnet/api/system.collections.generic.list-1`
 
-Als u een koppeling wilt maken naar een algemeen type zoals **List\<T >**, codeert u het accent grave-teken **\`** als **%60**, zoals wordt weergegeven in het volgende voorbeeld:
+Als u een koppeling wilt maken naar een algemeen type zoals **List\<T>** , codeert u het accent grave-teken **\`** als **%60**, zoals wordt weergegeven in het volgende voorbeeld:
 
 ```markdown
 <xref:System.Collections.Generic.List%601>

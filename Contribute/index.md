@@ -3,16 +3,16 @@ title: 'Gids voor inzenders van Microsoft Docs: overzicht'
 description: In deze gids wordt beschreven hoe u kunt bijdragen aan de Microsoft-documentatiesite docs.microsoft.com.
 author: billwagner
 ms.author: wiwagn
-ms.date: 02/19/2019
+ms.date: 06/23/2020
 ms.topic: contributor-guide
 ms.prod: non-product-specific
 ms.custom: external-contributor-guide
-ms.openlocfilehash: 95dadff41bb31e0b34ee34f85ae47708297954f1
-ms.sourcegitcommit: cfba5ad25b898bfed76046126ce8ff4871910701
+ms.openlocfilehash: 084da0320514b3a4551ce130d8d17e3040a35f29
+ms.sourcegitcommit: 6a7c9b5e9538ed588bd2da772ae319c09e545a74
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 05/04/2020
-ms.locfileid: "81784281"
+ms.lasthandoff: 06/23/2020
+ms.locfileid: "85279342"
 ---
 # <a name="microsoft-docs-contributor-guide-overview"></a>Gids voor inzenders van Microsoft Docs: overzicht
 
@@ -35,7 +35,7 @@ De gebruikerservaring op [docs.microsoft.com](https://docs.microsoft.com) is rec
 
 Met snelle bewerkingen wordt het proces voor het rapporteren en herstellen van kleine fouten en weglatingen in documenten gestroomlijnd. Ondanks alle moeite kunnen er _toch_ kleine grammatica- en spelfouten in onze gepubliceerde documenten opduiken. U kunt fouten rapporteren door een probleemmelding te maken. Als deze optie beschikbaar is, kunt u problemen echter ook melden via een pull-aanvraag. Dat is sneller en eenvoudiger.
 
-1. Op sommige documentatiepagina's kunt u rechtstreeks in de browser inhoud bewerken. Als dat het geval is, wordt de knop **Bewerken** weergegeven. Zie het voorbeeld hieronder. Wanneer u op de knop **Bewerken** klikt, gaat u naar het bronbestand op GitHub. Als u de knop **Bewerken** (potloodpictogram zonder tekst) niet ziet, betekent dit dat de documentatiepagina niet kan worden gewijzigd.
+1. Op sommige documentatiepagina's kunt u rechtstreeks in de browser inhoud bewerken. Als dat het geval is, wordt de knop **Bewerken** weergegeven. Zie het voorbeeld hieronder. Wanneer u op de knop **Bewerken** klikt, gaat u naar het bronbestand op GitHub. Als u de knop **Bewerken** niet ziet, betekent dit dat de documentatiepagina niet kan worden gewijzigd.
 
    ![Locatie van de koppeling Bewerken](./media/index/edit-article.png)
 
