@@ -52,11 +52,11 @@
   items:
     - name: .NET-documenten
       items:
-        - name: Uitleg over het bijdragen aan .NET-documenten
+        - name: Hoe kunt u bijdragen
           href: dotnet/dotnet-contribute.md
         - name: Roadmap van labels en projecten
           href: dotnet/labels-projects.md
-        - name: Stijlconventies voor .NET-documenten
+        - name: Stijlconventies
           href: dotnet/dotnet-style-guide.md
         - name: Vorm- en toonrichtlijnen
           href: dotnet/dotnet-voice-tone.md
