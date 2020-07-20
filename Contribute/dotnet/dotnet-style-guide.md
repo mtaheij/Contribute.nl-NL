@@ -5,18 +5,18 @@ ms.topic: contributor-guide
 ms.prod: non-product-specific
 ms.custom: external-contributor-guide
 ms.date: 11/07/2018
-ms.openlocfilehash: a520112cd77f4c4807e7719c2c4dbd43a762f062
-ms.sourcegitcommit: cfba5ad25b898bfed76046126ce8ff4871910701
+ms.openlocfilehash: 926516895798757bde0861a345e0b5d0f95218a4
+ms.sourcegitcommit: 5f5fc0fc2ff64610cc19a4b40cb3313adbc152cd
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 05/04/2020
-ms.locfileid: "80759542"
+ms.lasthandoff: 07/13/2020
+ms.locfileid: "86290906"
 ---
 # <a name="metadata-and-markdown-template-for-net-docs"></a>Sjabloon voor metagegevens en Markdown voor .NET-documenten
 
-Deze dotnet/docs-sjabloon bevat voorbeelden van Markdown-syntaxis, maar ook aanwijzingen voor het instellen van metagegevens.
+Deze dotnet/docs-sjabloon bevat voorbeelden van Markdown-syntaxis en aanwijzingen voor het instellen van metagegevens.
 
-Wanneer u een Markdown-bestand maakt, dient u de opgenomen sjabloon naar een nieuw bestand te kopiëren, de metagegevens in te vullen zoals hierna is aangegeven en de kop H1 boven de titel van het artikel te zetten.
+Wanneer u een Markdown-bestand maakt, moet u de opgenomen sjabloon naar een nieuw bestand kopiëren, de metagegevens invullen zoals hierna is aangegeven en de kop H1 boven de titel van het artikel zetten.
 
 ## <a name="metadata"></a>Metagegevens
 
@@ -47,7 +47,7 @@ U kunt de basisbeginselen van Markdown, GitHub Flavored Markdown (GFM) en OPS-sp
 
 Markdown maakt gebruik van speciale tekens, zoals \*, \` en \# voor opmaak. Als u een van deze tekens in uw inhoud wilt opnemen, moet u een van de volgende stappen ondernemen:
 
-- Plaats een backslash vóór een speciaal teken om deze als escape-teken te gebruiken (bijvoorbeeld `\*` vóór een \*)
+- Plaats een backslash vóór een speciaal teken om deze als escape-teken te gebruiken (bijvoorbeeld `\*` voor een \*).
 - Gebruik de [HTML-entiteitscode](http://www.ascii.cl/htmlcodes.htm) voor het teken (bijvoorbeeld `&#42;` vóór een &#42;).
 
 ## <a name="file-names"></a>Bestandsnamen
@@ -67,11 +67,14 @@ Gebruik zinnen met hoofdletters. Begin het eerste woord van een koptekst altijd 
 
 ## <a name="text-styling"></a>Tekststijl
 
-*Cursief* Gebruik deze stijl voor bestanden, mappen, paden (voor lange items, op hun eigen regel gesplitst), nieuwe termen.
+*Cursief*\
+Gebruik deze stijl voor bestanden, mappen, paden (voor lange items, op hun eigen regel gesplitst), nieuwe termen.
 
-**Vet** Gebruik deze stijl voor elementen in de gebruikersinterface.
+**Vet**\
+Gebruik deze stijl voor elementen in de gebruikersinterface.
 
-`Code` U kunt deze gebruiken voor inline-code, sleutelwoorden voor de taal, NuGet-pakketnamen, opdrachten in opdrachtregels, databasetabel- en kolomnamen en URL's waarvan u niet wilt dat erop geklikt kan worden.
+`Code`\
+U kunt deze stijl gebruiken voor inline-code, sleutelwoorden voor de taal, NuGet-pakketnamen, opdrachten in opdrachtregels, databasetabel- en kolomnamen en URL's waarvan u niet wilt dat erop kan worden geklikt.
 
 ## <a name="links"></a>Koppelingen
 
@@ -79,7 +82,7 @@ Raadpleeg het algemene artikel over [Koppelingen](../how-to-write-links.md) voor
 
 Het .NET-documententeam maakt gebruik van de volgende conventies:
 
-- In de meeste gevallen gebruiken we de relatieve koppelingen en ontmoedigen het gebruik van `~/` in koppelingen, omdat relatieve koppelingen worden opgehaald in de bron op GitHub. Steeds wanneer wij echter een koppeling maken naar een bestand in een afhankelijke opslagplaats, gebruiken wij het `~/`-teken om het pad op te geven. Aangezien de bestanden in de afhankelijke opslagplaats zich op een andere locatie bevinden in GitHub, worden de koppelingen niet correct opgehaald met relatieve koppelingen, ongeacht de wijze waarop deze zijn geschreven.
+- In de meeste gevallen gebruiken we de relatieve koppelingen en ontmoedigen het gebruik van `~/` in koppelingen, omdat relatieve koppelingen worden opgehaald in de bron op GitHub. Wanneer we echter een koppeling maken naar een bestand in een afhankelijke opslagplaats, gebruiken we het `~/`-teken om het pad op te geven. Aangezien de bestanden in de afhankelijke opslagplaats zich op een andere locatie bevinden in GitHub, worden de koppelingen niet correct opgehaald met relatieve koppelingen, ongeacht de wijze waarop deze zijn geschreven.
 - De specificaties voor de computertaal C# en taal de Visual Basic zijn in de .NET-documenten opgenomen door de bron in te voegen vanuit de taalopslagplaatsen. De Markdown-bronnen worden beheerd in de opslagplaatsen [csharplang](https://github.com/dotnet/csharplang) en [vblang](https://github.com/dotnet/vblang).
 
 Koppelingen naar specificaties moeten verwijzen naar de bronmappen waarin die specificaties zijn opgenomen. Voor C# is dit **~/_csharplang/spec** en voor Visual Basic is dit **~/_vblang/spec**, zoals in het volgende voorbeeld:
@@ -120,13 +123,13 @@ U kunt de UID's opzoeken van typen, evenals een lijst van overbelaste leden of e
 
 Als u een \* (of `%2A`) toevoegt na de UID, geeft de koppeling de overbelastingspagina aan en niet een specifieke API. U kunt dat bijvoorbeeld gebruiken wanneer u op een generieke manier wilt koppelen aan de pagina [List\<T>.BinarySearch Method](https://docs.microsoft.com/dotnet/api/system.collections.generic.list-1.binarysearch) in plaats van specifieke overbelasting zoals [List\<T>.BinarySearch(T, IComparer\<T>)](https://docs.microsoft.com/dotnet/api/system.collections.generic.list-1.binarysearch#System_Collections_Generic_List_1_BinarySearch__0_). U kunt tevens met \* een koppeling maken met een lidpagina wanneer het lid niet overbelast is; zo hoeft u geen parameterlijst in de UID op te nemen.
 
-Als u een koppeling wilt maken met een overbelasting van een specifieke methode, moet u de volledig gekwalificeerde typenaam van alle parameters van de methode opnemen. Zo bevat \<xref:System.DateTime.ToString> een koppeling naar de parameterloze methode [DateTime.ToString](https://docs.microsoft.com/dotnet/api/system.datetime.tostring#System_DateTime_ToString) terwijl \<xref:System.DateTime.ToString(System.String,System.IFormatProvider)> een koppeling bevat naar de methode [DateTime.ToString(String,IFormatProvider)](https://docs.microsoft.com/dotnet/api/system.datetime.tostring#System_DateTime_ToString_System_String_System_IFormatProvider_).
+Als u een koppeling wilt maken met een overbelasting van een specifieke methode, moet u de volledig gekwalificeerde typenaam van alle parameters van de methode opnemen. Zo wordt \<xref:System.DateTime.ToString> gekoppeld aan de parameterloze methode [DateTime.ToString](https://docs.microsoft.com/dotnet/api/system.datetime.tostring#System_DateTime_ToString), terwijl \<xref:System.DateTime.ToString(System.String,System.IFormatProvider)> wordt gekoppeld aan de methode [DateTime.ToString(String,IFormatProvider)](https://docs.microsoft.com/dotnet/api/system.datetime.tostring#System_DateTime_ToString_System_String_System_IFormatProvider_).
 
 Als u een koppeling wilt maken naar een algemeen type, zoals [System.Collections.Generic.List\<T>](https://docs.microsoft.com/dotnet/api/system.collections.generic.list-1), moet u het teken \` (`%60`) gebruiken, gevolgd door het aantal algemene parametertypen. Zo bevat `<xref:System.Nullable%601>` een koppeling met het type [System.Nullable\<T>](https://docs.microsoft.com/dotnet/api/system.nullable-1), terwijl `<xref:System.Func%602>` een koppeling bevat met de gemachtigde [System.Func\<T,TResult>](https://docs.microsoft.com/dotnet/api/system.func-2).
 
 ## <a name="code"></a>Code
 
-De beste manier om code in te voegen is fragmenten van een werkend voorbeeld in te voegen. Maak uw voorbeeld op basis van de instructies in het artikel [Bijdragen aan .NET](dotnet-contribute.md#contributing-to-samples). De basisregels voor het invoegen van code bevinden zich in de algemene richtlijnen voor [code](../code-in-docs.md).
+De beste manier om code in te voegen is fragmenten van een werkend voorbeeld in te voegen. Maak uw voorbeeld op basis van de instructies in het artikel [Bijdragen aan .NET](dotnet-contribute.md#contribute-to-samples). De basisregels voor het invoegen van code bevinden zich in de algemene richtlijnen voor [code](../code-in-docs.md).
 
 U kunt de code invoegen met behulp van de volgende syntaxis:
 
