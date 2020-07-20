@@ -5,12 +5,12 @@ ms.topic: contributor-guide
 ms.prod: non-product-specific
 ms.custom: external-contributor-guide
 ms.date: 05/14/2020
-ms.openlocfilehash: c4382a66035a10debb2a0aa05f61c549a3f97ee6
-ms.sourcegitcommit: 300ce72ffc8596213e82ae511b1b314c850841c9
+ms.openlocfilehash: fa905d17a39b5fa7737e06fce38659b7e1563635
+ms.sourcegitcommit: 5f5fc0fc2ff64610cc19a4b40cb3313adbc152cd
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 05/14/2020
-ms.locfileid: "83404138"
+ms.lasthandoff: 07/13/2020
+ms.locfileid: "86290952"
 ---
 # <a name="learn-how-to-contribute-to-the-net-docs-repositories"></a>Ontdek hoe u kunt bijdragen aan opslagplaatsen voor .NET-documenten
 
@@ -20,7 +20,7 @@ Dit document gaat over de procedure voor het bijdragen aan artikelen en codevoor
 
 De .NET-documentatiesite is samengesteld uit meerdere opslagplaatsen:
 
-- [Conceptuele .NET-artikelen](https://github.com/dotnet/docs)
+- [Conceptuele .NET-artikelen en codefragmenten](https://github.com/dotnet/docs)
 - [Codevoorbeelden en -fragmenten](https://github.com/dotnet/samples)
 - [API-verwijzing .NET Standard, .NET Core, .NET Framework](https://github.com/dotnet/dotnet-api-docs)
 - [SDK-verwijzing .NET Compiler Platform](https://github.com/dotnet/roslyn-api-docs)
@@ -36,30 +36,26 @@ We stellen bijdragen vanuit de community aan documenten zeer op prijs. De volgen
 - **DOEN**: volg deze instructies en de richtlijnen voor [stijl en stem](dotnet-voice-tone.md).
 - **DOEN**: gebruik het [sjabloonbestand](dotnet-style-guide.md) als beginpunt van uw werk.
 - **DOEN**: maak een aparte vertakking van uw fork voordat u aan de artikelen gaat werken.
-- **DOEN**: volg de [GitHub Flow-workflow](https://guides.github.com/introduction/flow/).
+- **DOEN**: volg de [GitHub-stroom](https://guides.github.com/introduction/flow/).
 - **DOEN**: plaats regelmatig blogs en tweets (of wat u maar wilt) over uw bijdragen.
 
 Volg deze richtlijnen zodat we allemaal een betere ervaring hebben.
 
 ## <a name="make-a-contribution-to-net-docs"></a>Een bijdrage leveren aan .NET-documenten
 
-**Stap 1:** Sla deze stap over als u alleen kleine wijzigingen wilt aanbrengen. Als u nieuwe inhoud wilt gaan schrijven of bestaande inhoud grondig wilt reviseren, opent u een [actie-item](https://github.com/dotnet/docs/issues) waarin u beschrijft wat u wilt doen.
-
-De inhoud in de map met **documenten** is in secties onderverdeeld. Deze secties vindt u terug in de inhoudsopgave. Definieer de locatie van het onderwerp in de inhoudsopgave. Krijg feedback over uw voorstel.
+**Stap 1:** Als u nieuwe inhoud wilt gaan schrijven of bestaande inhoud grondig wilt reviseren, opent u een [actie-item](https://github.com/dotnet/docs/issues) waarin u beschrijft wat u wilt doen. De inhoud in de map met **documenten** is in secties onderverdeeld. Deze secties vindt u terug in de inhoudsopgave. Definieer de locatie van het onderwerp in de inhoudsopgave. Krijg feedback over uw voorstel.
 
 -of-
 
-U kunt ook een van de bestaande actie-items kiezen waarvoor bijdragen uit de community kunnen worden geleverd. Onder [Projecten voor bijdragers uit de .NET-community](https://github.com/dotnet/docs/projects/35) staan veel van de actie-items die voor bijdragers uit de community beschikbaar zijn. Afhankelijk van uw interesse en mate van betrokkenheid kunt u actie-items kiezen in de volgende categorieën:
+Kies een bestaand probleem en los het op. Of bekijk onze lijst met [openstaande problemen](https://github.com/dotnet/docs/issues) en werk vrijwillig aan een van de actie-items waarin u geïnteresseerd bent:
 
-- **Onderhoud**. Deze categorie bevat redelijk eenvoudige bijdragen, zoals het herstellen van gebroken of onjuiste koppelingen, het toevoegen van ontbrekende codevoorbeelden of het oplossen van problemen met beperkte inhoud. In enkele gevallen gaat het bij deze actie-items om een groot aantal bestanden. In dat geval moet u ons, voor u begint, laten weten waaraan u wilt werken. Voeg een opmerking toe aan het actie-item om ons te melden dat u hieraan werkt.
+- Filter op de label [goed-eerste-probleem](https://github.com/dotnet/docs/labels/good-first-issue) voor een goed eerste probleem om op te lossen.
+- Filter op het label [up-for-grabs](https://github.com/dotnet/docs/labels/up-for-grabs) voor problemen die geschikt zijn voor een bijdrage aan de community. Deze problemen vereisen doorgaans minimale context.
+- Ervaren inzenders kunnen elk probleem aanpakken.
 
-- **Updates van de inhoud**. Gezien de grote omvang van de documentenset kan inhoud eenvoudig verouderd raken, waardoor revisie is vereist. Daarnaast kunnen, om tal van redenen, twee of zelfs drie exemplaren van hetzelfde inhoudsitem bestaan. Wanneer u inhoud bijwerkt, moet u ervoor zorgen dat afzonderlijke onderwerpen actueel zijn of inhoud in een functiegebied reviseren, om dubbele items te vermijden en ervoor te zorgen dat alle unieke inhoud in de kleinere documentenset wordt bewaard.
+Wanneer u een dergelijk probleem vindt, voegt u een opmerking toe om te vragen of dit probleem openstaat.
 
-- **Nieuwe inhoud schrijven**. Als u uw eigen onderwerp wilt schrijven, vindt u bij deze actie-items een aantal onderwerpen die we graag aan onze documentenset willen toevoegen. Wel willen we graag dat u ons informeert voordat u aan een onderwerp gaat werken. Als u een onderwerp wilt gaan schrijven dat niet in de lijst staat, kunt u een actie-item openen.
-
-Of bekijk onze lijst met [openstaande actie-items](https://github.com/dotnet/docs/issues) en werk vrijwillig aan een van de actie-items waarin u geïnteresseerd bent. We gebruiken het label [up-for-grabs](https://github.com/dotnet/docs/labels/up-for-grabs) (beschikbaar) om actie-items te taggen waaraan de community een bijdrage kan leveren. Voor dergelijke actie-items is vaak maar minimale context nodig. Ze zijn zeer geschikt voor gebruikers die voor de eerste keer aan een actie-item werken. We stimuleren ervaren bijdragers in onze community om naar actie-items te kijken die mogelijk interessant voor hen zijn. Wanneer u een dergelijk actie-item vindt, voegt u een opmerking toe om te vragen of dit item openstaat.
-
-Zodra u een taak hebt gekozen om aan te werken, volgt u de instructies om [aan de slag](../get-started-setup-github.md) te gaan om een GitHub-account te maken en uw omgeving in te stellen.
+Zodra u een taak hebt gekozen om aan te werken, volgt u de instructies bij [get-started](../get-started-setup-github.md) om een GitHub-account te maken en uw omgeving in te stellen.
 
 **Stap 2:** Maak waar nodig forks van de opslagplaatsen `/dotnet/docs`, `dotnet/samples`, `dotnet/dotnet-api-docs`, `dotnet/roslyn-api-docs` of `dotnet/ml-api-docs` en maak een vertakking voor uw wijzigingen.
 
@@ -67,40 +63,19 @@ Voor kleine wijzigingen leest u de instructies voor bewerkingen in GitHub op de 
 
 **Stap 3:** Breng de wijzigingen in deze nieuwe vertakking aan.
 
-Als het een nieuw onderwerp is, kunt u dit [sjabloonbestand](dotnet-style-guide.md) als beginpunt gebruiken. Dit bestand bevat de schrijfrichtlijnen en uitleg over de metagegevens die voor elk artikel zijn vereist, zoals informatie over de auteur.
+Als het een nieuw onderwerp is, kunt u dit [sjabloonbestand](dotnet-style-guide.md) als beginpunt gebruiken. Dit bestand bevat de schrijfrichtlijnen en uitleg over de metagegevens die voor elk artikel zijn vereist, zoals informatie over de auteur. Zie [Markdown-referentie](../markdown-reference.md) voor meer informatie over de Markdown-syntaxis die wordt gebruikt op de website docs.microsoft.com.
 
 Navigeer naar de map die overeenkomt met de locatie in de inhoudsopgave die u in stap 1 voor uw artikel hebt bepaald. Die map bevat de Markdown-bestanden voor alle artikelen in dat hoofdstuk. Maak indien nodig een nieuwe map waarin u de bestanden voor uw inhoud plaatst. Het hoofdartikel voor dat hoofdstuk heet *index.md*.
 
-Voor afbeeldingen en andere statische resources maakt u de submap **media** in de map waarin uw artikel staat, als deze submap nog niet is gemaakt. Maak in de map **media** een submap met de naam van het artikel (met uitzondering van het indexbestand). 
+Voor afbeeldingen en andere statische resources maakt u de submap **media** in de map waarin uw artikel staat, als deze submap nog niet is gemaakt. Maak in de map **media** een submap met de naam van het artikel (met uitzondering van het indexbestand).
 
-Maak voor **codefragmenten** een submap met de naam **fragmenten** in de map met uw artikel als deze submap nog niet bestaat.  Maak in de map **fragmenten** een submap met de artikelnaam. In de meeste gevallen hebt u codefragmenten voor alle drie de belangrijkste .NET-talen: C#, F# en Visual Basic. Maak in dat geval submappen met de naam **csharp**, **fsharp**en **vb** voor elk van de drie projecten. Gebruik voor de eenvoud de map **fragmenten** voor uw project in de handleidingen voor C# , F# en Visual Basic. Deze ruimten bevatten doorgaans fragmenten voor één taal. Codefragmenten zijn kleine, gerichte codevoorbeelden die de concepten demonstreren die in een artikel worden besproken. Grotere programma's, bedoeld voor het downloaden en verkennen, moeten zich in de opslagplaats [dotnet/samples](https://github.com/dotnet/samples) bevinden. In de sectie [Bijdragen aan voorbeelden](#contributing-to-samples) zijn volledige voorbeelden opgenomen.
+Maak voor **codefragmenten** een submap met de naam **fragmenten** in de map met uw artikel als deze submap nog niet bestaat. Maak in de map **fragmenten** een submap met de artikelnaam. In de meeste gevallen hebt u codefragmenten voor alle drie de belangrijkste .NET-talen: C#, F# en Visual Basic. Maak in dat geval submappen met de naam **csharp**, **fsharp**en **vb** voor elk van de drie projecten. Als u een fragment maakt voor een artikel onder de mappen [docs/csharp](https://github.com/dotnet/docs/tree/master/docs/csharp), [docs/fsharp](https://github.com/dotnet/docs/tree/master/docs/fsharp) of [docs/visual-basic](https://github.com/dotnet/docs/tree/master/docs/visual-basic), is het fragment slechts in één taal, zodat u de taalsubmap kunt weglaten.
 
-Volg de juiste Markdown-syntaxis. Voor voorbeelden van algemene syntaxis raadpleegt u het [sjabloon en Markdown-cheatsheet](dotnet-style-guide.md).
+Codefragmenten zijn kleine, gerichte codevoorbeelden die de concepten demonstreren die in een artikel worden besproken. Grotere programma's, bedoeld voor downloaden en verkennen, moeten zich in de opslagplaats [dotnet/samples](https://github.com/dotnet/samples) bevinden. In de sectie [Bijdragen aan voorbeelden](#contribute-to-samples) zijn volledige voorbeelden opgenomen.
 
-## <a name="example-structure"></a>Voorbeeldstructuur
+## <a name="example-folder-structure"></a>Voorbeeld van mapstructuur
 
-    docs
-      /about
-      /core
-        /porting
-          porting-overview.md
-          /media
-            /porting-overview
-                portability_report.png
-          /snippets
-            /porting-overview
-              /csharp
-                porting.csproj
-                porting-overview.cs
-                Program.cs
-              /fsharp
-                porting.fsproj
-                porting-overview.fs
-                Program.fs
-               /vb
-                porting.vbproj
-                porting-overview.vb
-                Program.vb
+docs /about /core /porting porting-overview.md /media /porting-overview portability_report.png /snippets /porting-overview /csharp porting.csproj porting-overview.cs Program.cs /fsharp porting.fsproj porting-overview.fs Program.fs /vb porting.vbproj porting-overview.vb Program.vb
 
 De structuur die hierboven wordt weergegeven, bevat één afbeelding, *portability_report.png*, en drie codeprojecten die **codefragmenten** uit het artikel *porting-overview.md* bevatten. Een toegestane alternatieve structuur bevat één project per taal met daarin alle fragmenten voor alle artikelen in die map. Dit alternatief is gebruikt in de taalverwijzingsgebieden omdat er zeer kleine fragmenten worden gebruikt om de taalsyntaxis te demonstreren. Voor andere gebieden wordt dit afgeraden.
 
@@ -111,7 +86,7 @@ Om historische redenen zijn veel van de opgenomen fragmenten opgeslagen in de ma
 > [!IMPORTANT]
 > De functionaliteit [automatisering van commentaar](../how-to-write-workflows-major.md#review-and-sign-off) is op dit moment in geen enkele .NET-documentenopslagplaats beschikbaar. Leden van het .NET-documententeam zullen uw pull-aanvraag beoordelen en samenvoegen.
 
-Per aanvraag mag per keer één actie-item worden behandeld. Met de aanvraag kunnen een of meerdere bestanden worden aangepast. Als u oplossingen van meerdere problemen in verschillende bestanden wilt aanpakken, kunt u beter afzonderlijke pull-aanvragen gebruiken. Als u niet alleen markdown bijwerkt maar ook voorbeelden maakt, moet u een afzonderlijke pull-aanvraag voor voorbeelden maken.
+Per aanvraag mag per keer één actie-item worden behandeld. Met de aanvraag kunnen een of meerdere bestanden worden aangepast. Als u oplossingen van meerdere problemen in verschillende bestanden wilt aanpakken, kunt u beter afzonderlijke pull-aanvragen gebruiken. Als u niet alleen Markdown bijwerkt maar ook voorbeelden maakt, moet u een afzonderlijke pull-aanvraag voor voorbeelden maken.
 
 Als u met uw pull-aanvraag een bestaand probleem oplost, voegt u het trefwoord `Fixes #Issue_Number` toe aan het Commit-bericht of de beschrijving van de pull-aanvraag. Op die manier wordt het actie-item automatisch afgesloten zodra de pull-aanvraag is samengevoegd. Zie [Actie-items afsluiten via Commit-berichten](https://help.github.com/articles/closing-issues-via-commit-messages/) voor meer informatie.
 
@@ -121,11 +96,9 @@ Het .NET-team beoordeelt uw pull-aanvraag en laat u weten of er andere updates/w
 
 De onderhoudsmedewerkers voegen uw pull-aanvraag samen met de hoofdvertakking zodra feedback is toegepast en uw wijziging is goedgekeurd.
 
-We pushen regelmatig alle commits van de hoofdvertakking naar de livevertakking; u kunt uw bijdrage dan live bekijken op https://docs.microsoft.com/dotnet/. Normaalgesproken publiceren we deze elke werkdag. Door onderhoudswerkzaamheden wordt de publicatie mogelijk enkele dagen vertraagd.
+We pushen regelmatig alle commits van de hoofdvertakking naar de livevertakking; u kunt uw bijdrage dan live bekijken op https://docs.microsoft.com/dotnet/. Normaalgesproken publiceren we deze elke werkdag.
 
-## <a name="contributing-to-samples"></a>Bijdragen aan voorbeelden
-
-In de opslagplaats [dotnet/voorbeelden](https://github.com/dotnet/samples) staat alle voorbeeldcode die deel uitmaakt van onderwerpen in de .NET-documentatie. Er zijn diverse projecten die in submappen zijn onderverdeeld. Deze submappen zijn op vergelijkbare wijze ingericht als de documenten voor .NET.
+## <a name="contribute-to-samples"></a>Bijdragen aan voorbeelden
 
 We maken het volgende onderscheid voor code die in onze inhoud ondersteunt:
 
@@ -146,7 +119,7 @@ Elk volledige voorbeeld dat u maakt, moet een *readme.md*-bestand bevatten. Dit 
 
 Uw onderwerp bevat ook koppelingen naar het voorbeeld. Geef een directe koppeling op naar de map van het voorbeeld op GitHub.
 
-### <a name="writing-a-new-sample"></a>Een nieuw voorbeeld schrijven
+### <a name="write-a-new-sample"></a>Een nieuw voorbeeld schrijven
 
 Voorbeelden zijn volledige programma's en bibliotheken die zijn bedoeld om te worden gedownload. Ze zijn mogelijk klein in omvang, maar illustreren concepten op een manier waarop mensen hun eigen programma’s kunnen verkennen en experimenteren. De richtlijnen voor voorbeelden zorgen dat lezers ze kunnen downloaden en verkennen. Bekijk de [Parallel LINQ](https://github.com/dotnet/samples/tree/master/csharp/parallel/PLINQ)-voorbeelden (PLINQ) als voorbeeld van elk van de richtlijnen.
 
@@ -154,7 +127,7 @@ Voorbeelden zijn volledige programma's en bibliotheken die zijn bedoeld om te wo
 
 2. Uw voorbeeld moet, met het oog op consistentie, aan de [corefx-coderingsstijl](https://github.com/dotnet/corefx/blob/master/Documentation/coding-guidelines/coding-style.md) voldoen.
 
-    - Daarnaast kunt u beter `static`-methoden gebruiken in plaats van de instantiemethoden wanneer u iets wilt tonen waarvoor het niet nodig is om een nieuw object te instantiëren.
+   Daarnaast kunt u beter `static`-methoden gebruiken in plaats van de instantiemethoden wanneer u iets wilt tonen waarvoor het niet nodig is om een nieuw object te instantiëren.
 
 3. Uw voorbeeld moet over **de juiste verwerking van uitzonderingen** beschikken. Alle uitzonderingen moeten kunnen worden verwerkt die zich in de context van het voorbeeld kunnen voordoen. Een voorbeeld waarmee bijvoorbeeld de methode [Console.ReadLine](https://docs.microsoft.com/dotnet/api/system.console.readline) wordt aangeroepen om gebruikersinvoer op te halen, moet de juiste verwerking van uitzonderingen gebruiken wanneer een ingevoerde tekenreeks als argument naar een methode wordt doorgestuurd. Als uw voorbeeld verwacht dat een methode-aanroep zal mislukken, moet de resulterende uitzondering ook worden verwerkt. Verwerk altijd de specifieke uitzonderingen die de methode opwerpt en niet de uitzonderingen uit de basisklasse zoals [Exception](https://docs.microsoft.com/dotnet/api/system.exception) of [SystemException](https://docs.microsoft.com/dotnet/api/system.systemexception).
 

@@ -5,16 +5,16 @@ ms.topic: contributor-guide
 ms.prod: non-product-specific
 ms.custom: external-contributor-guide
 ms.date: 11/07/2018
-ms.openlocfilehash: 4108019ac50d703c6dd509eca7a6394cc1c9dc18
-ms.sourcegitcommit: cfba5ad25b898bfed76046126ce8ff4871910701
+ms.openlocfilehash: 49b0e60ec9f4368bf50317dfe4a6b17bd30a82a5
+ms.sourcegitcommit: 5f5fc0fc2ff64610cc19a4b40cb3313adbc152cd
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 05/04/2020
-ms.locfileid: "80625184"
+ms.lasthandoff: 07/13/2020
+ms.locfileid: "86290814"
 ---
 # <a name="voice-and-tone-guidelines"></a>Vorm- en toonrichtlijnen
 
-Allerlei soorten mensen, onder wie IT-professionals en -ontwikkelaars, lezen uw documenten om .NET te leren kennen en te gebruiken bij hun dagelijkse werkzaamheden. Uw doel is om geweldige documentatie te maken die lezers helpen bij hun reis. Onze richtlijnen helpen daarbij. Onze stijlgids bevat de volgende aanbevelingen:
+Allerlei mensen, onder wie IT-professionals en -ontwikkelaars, lezen de .NET-documenten om .NET te leren en te gebruiken bij hun dagelijkse werkzaamheden. Uw doel is om geweldige documentatie te maken die lezers helpen bij hun reis. Onze richtlijnen helpen daarbij. Onze stijlgids bevat de volgende aanbevelingen:
 
 U kunt voorbeelden van elk ervan bekijken bij het lezen van deze stijlgids. We hebben deze gids volgens onze eigen richtlijnen geschreven om een voorbeeld te geven dat u kunt volgen bij het schrijven van documentatie voor . NET. We geven ook tegenvoorbeelden, zodat u kunt zien hoe artikelen eruitzien als u onze richtlijnen niet volgt.
 
@@ -34,7 +34,7 @@ De eerste alinea hierboven is geschreven in spreektaal, zoals we aanbevelen. De 
 
 ### <a name="appropriate-style"></a>Gewenste stijl
 
-Schrijf uw artikelen alsof u rechtstreeks tegen de lezer praat. Zorg dat u de tweede persoon vaak gebruikt (zoals ik net in deze twee zinnen heb gedaan). Dit betekent niet dat u altijd het woord 'u' moet gebruiken. Richt u wel rechtstreeks tot de lezer. Doe dat door de gebiedende wijs te gebruiken. Vertel wat u de lezer wilt leren.
+Schrijf uw artikelen alsof u rechtstreeks tegen de lezer praat. Gebruik vaak de tweede persoon (zoals ik net in deze twee zinnen heb gedaan). Dit betekent niet dat u altijd het woord 'u' moet gebruiken. Richt u wel rechtstreeks tot de lezer. Doe dat door de gebiedende wijs te gebruiken. Vertel wat u de lezer wilt leren.
 
 ### <a name="inappropriate-style"></a>Ongewenste stijl
 

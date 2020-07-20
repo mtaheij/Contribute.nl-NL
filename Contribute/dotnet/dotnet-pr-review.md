@@ -4,23 +4,23 @@ description: Bij .NET-docs is de webhook voor samenvoegingen van pull-aanvragen 
 ms.topic: contributor-guide
 ms.prod: non-product-specific
 ms.custom: external-contributor-guide
-ms.date: 01/04/2019
-ms.openlocfilehash: 80877a93dc410454c939bcd5be5588861682ed11
-ms.sourcegitcommit: cfba5ad25b898bfed76046126ce8ff4871910701
+ms.date: 06/24/2020
+ms.openlocfilehash: 7a494b00c05251e70b74d874d13653db9ba9f6e9
+ms.sourcegitcommit: 5f5fc0fc2ff64610cc19a4b40cb3313adbc152cd
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 05/04/2020
-ms.locfileid: "80625115"
+ms.lasthandoff: 07/13/2020
+ms.locfileid: "86290975"
 ---
 # <a name="pull-request-review-process-for-the-net-docs-repositories"></a>Beoordelingsproces voor pull-aanvragen voor de opslagplaatsen van .NET-docs
 
-In veel opslagplaatsen zijn webhooks voor samenvoegingen van pull-aanvragen, die automatisch kleine pull-aanvragen samenvoegen, niet ingeschakeld. In dit artikel wordt het controleproces voor pull-aanvragen beschreven voor deze opslagplaatsen. Het controleproces voor pull-aanvragen is ontworpen voor deze doeleinden:
+Sommige opslagplaatsen, waaronder de .NET-opslagplaatsen, hebben de webhook PR Merger niet ingeschakeld, die automatisch kleine pull-aanvragen samenvoegt. In dit artikel wordt het controleproces voor pull-aanvragen beschreven voor deze opslagplaatsen. Het controleproces voor pull-aanvragen is ontworpen voor deze doeleinden:
 
-1. Het publiceren van inhoud van hoge kwaliteit afkomstig van onze teams, productteamleden en communityleden.
-1. Het tijdig geven van consistente feedback aan auteurs waarop zij actie kunnen ondernemen.
-1. Het op gang brengen van een gesprek tussen auteurs en reviewers.
+- Het publiceren van inhoud van hoge kwaliteit afkomstig van onze teams, productteamleden en communityleden.
+- Het tijdig geven van consistente feedback aan auteurs waarop zij actie kunnen ondernemen.
+- Het op gang brengen van een gesprek tussen auteurs en reviewers.
 
-De processen blijven zich ontwikkelen naarmate teams worden vernieuwd en het platform wordt uitgebreid.
+De processen blijven zich ontwikkelen naarmate teams innoveren en het platform wordt uitgebreid.
 
 ## <a name="reviewers"></a>Reviewers
 
@@ -34,7 +34,7 @@ Beoordelingen volgen een van de drie paden op basis van de pull-aanvraag:
 
 - **Kleine pull-aanvragen**: bij kleine pull-aanvragen gaat het om één bugfix, zoals een schrijffout, een verbroken koppeling, kleine codewijzigingen of soortgelijke wijzigingen.
 - **Grote bijdragen**: grote bijdragen zijn belangrijke bewerkingen van een bestaand artikel, nieuwe artikelen, of bewerkingen van een aantal artikelen.
-- **Wordt aan gewerkt**: auteurs kunnen een beoordeling aanvragen voor een artikel waar nog aan wordt gewerkt door een pull-aanvraag te openen met het label [WIP] in de titel. De tag WIP is een afkorting van 'Work in Progress' (wordt aan gewerkt). 
+- **Work in progress (WIP)** - Auteurs kunnen een pull-aanvraag maken die is gemarkeerd als nog niet gereed voor beoordeling door een *concept* van een pull-aanvraag te openen.
 
 De verwerking via bot voor de Licentieovereenkomst voor bijdragers (CLA) is een goede richtlijn voor het verschil tussen kleine en grote bijdragen. Pull-aanvragen waarvoor de CLA niet hoeft te worden ondertekend, zijn meestal klein. Pull-aanvragen waarvoor de CLA wel moet worden ondertekend, zijn meestal groot.
 
@@ -58,15 +58,13 @@ Leden van het inhoudsteam beoordelen de pull-aanvraag en verzenden de beoordelin
 
 Als voor de bewerkingen een technische beoordeling is vereist, vraagt de reviewer van het inhoudsteam een beoordeling aan bij het juiste lid van het productteam.
 
-### <a name="review-wip-pull-requests"></a>Pull-aanvragen voor WIP beoordelen
+### <a name="review-draft-pull-requests"></a>Concepten van pull-aanvragen beoordelen
 
-Nieuwe auteurs willen mogelijk graag al vroeg in het proces feedback ontvangen. Ze kunnen een pull-aanvraag openen door het label [WIP] toe te voegen aan de titel. In een opmerking kunnen ze een vroege beoordeling aanvragen.
-
-Deze vroege beoordelingen zijn niet zo grondig als een volledige beoordeling van een pull-aanvraag. Het inhoudsteam plaatst opmerkingen, maar keurt niets goed en vraagt geen wijzigingen aan met behulp van de beoordelingsfunctie van GitHub. Deze vroege beoordelingen zijn gericht op de structuur van het artikel: de grote lijnen, de algemene inhoud en de voorbeelden. Deze beoordelingen omvatten geen grondige controle van de grammatica en juiste koppelingen.
+U wilt mogelijk al vroeg in het proces feedback ontvangen. Open een concept van een pull-aanvraag en voeg een opmerking waarvoor een vroege beoordeling is vereist. Deze vroege beoordelingen zijn gericht op de structuur van het artikel: de grote lijnen, de algemene inhoud en de voorbeelden. Deze beoordelingen omvatten geen grondige controle van de grammatica en juiste koppelingen.
 
 ## <a name="respond-to-reviews"></a>Reageren op beoordelingen
 
-De auteur werkt de pull-aanvraag bij als antwoord op de opmerkingen, waarbij elke verwerkte opmerking wordt gemarkeerd met de reactie +1 om aan te geven dat deze is verwerkt. Als de auteur het niet eens is met een opmerking, of de opmerking op een andere manier verwerkt, voegt hij of zij een opmerking toe waarin dit wordt uitgelegd.
+De auteur werkt de pull-aanvraag bij als antwoord op de opmerkingen, waarbij elke verwerkte opmerking wordt gemarkeerd met de reactie +1 om aan te geven dat deze is verwerkt. Als de auteur het niet eens is met de opmerking of de opmerking in een andere pull-aanvraag verwerkt, voegt de auteur een opmerking toe waarin deze wijziging wordt uitgelegd.
 
 De auteur @-mentions de oorspronkelijke reviewer in een opmerking om een nieuwe beoordeling aan te vragen. 
 
