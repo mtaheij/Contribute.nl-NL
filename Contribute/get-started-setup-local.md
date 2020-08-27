@@ -7,12 +7,12 @@ ms.custom: external-contributor-guide
 author: jasonwhowell
 ms.author: jasonh
 ms.date: 01/18/2018
-ms.openlocfilehash: e73c60c439285f901c5c83e538f8971d795bd6c4
-ms.sourcegitcommit: cfba5ad25b898bfed76046126ce8ff4871910701
+ms.openlocfilehash: 60da6e3d5db1486025643d5a5030402a5f2987d3
+ms.sourcegitcommit: 0d49b27c43974f6fecf4c92a659ec3c44ca55f7c
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 05/04/2020
-ms.locfileid: "72288607"
+ms.lasthandoff: 08/25/2020
+ms.locfileid: "88799793"
 ---
 # <a name="set-up-git-repository-locally-for-documentation"></a>Een lokale Git-opslagplaats voor documentatie instellen
 
@@ -133,7 +133,7 @@ Als u de recentste versie van Git voor Windows hebt geïnstalleerd en de standaa
 ## <a name="configure-remote-upstream"></a>Externe upstream configureren
 Nadat u de opslagplaats hebt gekloond, stelt u externe alleen-lezenverbinding in met de hoofdopslagplaats. Deze heeft de naam **upstream**. U gebruikt de upstream-URL om uw lokale opslagplaats gesynchroniseerd te houden met de recentste wijzigingen van anderen. De opdracht **git remote** wordt gebruikt om de configuratiewaarde in te stellen. Gebruik de opdracht **fetch** om de vertakkingsinformatie op te halen van de upstreamopslagplaats.
 
-1. Als u **Git Credential Manager** gebruikt, gebruikt u de volgende opdrachten. Vervang de tijdelijke aanduidingen \<repo\> en \<organisation\>.
+1. Als u **Git Credential Manager** gebruikt, gebruikt u de volgende opdrachten. Vervang de tijdelijke aanduidingen \<repo\> en \<organization\> .
    ```bash
    cd <repo>
    git remote add upstream https://github.com/<organization>/<repo>.git

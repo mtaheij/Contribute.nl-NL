@@ -5,12 +5,12 @@ ms.topic: contributor-guide
 ms.prod: non-product-specific
 ms.custom: external-contributor-guide
 ms.date: 05/14/2020
-ms.openlocfilehash: d1631f34ef9a3ceb10178792842421376fea97b0
-ms.sourcegitcommit: 3774d06ddc1f92b2bdb4c1d8babbd18357229298
+ms.openlocfilehash: 810a1335bf3c93b79952c701c44470d3e72fb124
+ms.sourcegitcommit: 940c84d6bc23a8fbec780244563af188d2620ed1
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 07/28/2020
-ms.locfileid: "87264804"
+ms.lasthandoff: 08/20/2020
+ms.locfileid: "88668638"
 ---
 # <a name="learn-how-to-contribute-to-the-net-docs-repositories"></a>Ontdek hoe u kunt bijdragen aan opslagplaatsen voor .NET-documenten
 
@@ -100,6 +100,9 @@ docs
             Program.vb
 ```
 
+> [!NOTE]
+> De taalmappen onder snippets zijn niet nodig in het gedeelte van het taalgebied. Daar wordt uitgegaan van één taal.
+
 De structuur die hierboven wordt weergegeven, bevat één afbeelding, *portability_report.png*, en drie codeprojecten die **codefragmenten** uit het artikel *porting-overview.md* bevatten. Een toegestane alternatieve structuur bevat één project per taal met daarin alle fragmenten voor alle artikelen in die map. Dit alternatief is gebruikt in de taalverwijzingsgebieden omdat er zeer kleine fragmenten worden gebruikt om de taalsyntaxis te demonstreren. Voor andere gebieden wordt dit afgeraden.
 
 Om historische redenen zijn veel van de opgenomen fragmenten opgeslagen in de map */samples* in de opslagplaats *dotnet/docs*. Als u belangrijke wijzigingen in een artikel aanbrengt, moeten deze fragmenten naar de nieuwe structuur worden verplaatst. Verplaats fragmenten niet voor kleine wijzigingen.
@@ -154,14 +157,6 @@ Voorbeelden zijn volledige programma's en bibliotheken die zijn bedoeld om te wo
 
 3. Uw voorbeeld moet over **de juiste verwerking van uitzonderingen** beschikken. Alle uitzonderingen moeten kunnen worden verwerkt die zich in de context van het voorbeeld kunnen voordoen. Een voorbeeld waarmee bijvoorbeeld de methode [Console.ReadLine](https://docs.microsoft.com/dotnet/api/system.console.readline) wordt aangeroepen om gebruikersinvoer op te halen, moet de juiste verwerking van uitzonderingen gebruiken wanneer een ingevoerde tekenreeks als argument naar een methode wordt doorgestuurd. Als uw voorbeeld verwacht dat een methode-aanroep zal mislukken, moet de resulterende uitzondering ook worden verwerkt. Verwerk altijd de specifieke uitzonderingen die de methode opwerpt en niet de uitzonderingen uit de basisklasse zoals [Exception](https://docs.microsoft.com/dotnet/api/system.exception) of [SystemException](https://docs.microsoft.com/dotnet/api/system.systemexception).
 
-4. Als u met uw voorbeeld een zelfstandig pakket bouwt, moet u, naast de runtimes die door uw voorbeeld worden gebruikt, ook de runtimes opgeven die door ons CI-ontwikkelingssysteem worden gebruikt:
-    - `win7-x64`
-    - `win8-x64`
-    - `win81-x64`
-    - `ubuntu.16.04-x64`
-
-Op korte termijn zal er een CI-systeem beschikbaar zijn om deze projecten te ontwikkelen.
-
 U maakt als volgt een voorbeeld:
 
 1. Meld een [actie-item](https://github.com/dotnet/docs/issues) aan of voeg commentaar toe aan een bestaand actie-item waaraan u werkt.
@@ -186,12 +181,13 @@ U kunt .NET Core-codefragmenten of -voorbeelden bouwen met behulp van de .NET Co
 
 1. Ga naar de map met voorbeelden en bouw uw voorbeeld om op fouten te controleren:
 
-    ```console
+    ```dotnetcli
     dotnet build
     ```
+
 2. Voer uw voorbeeld uit:
 
-    ```console
+    ```dotnetcli
     dotnet run
     ```
 
