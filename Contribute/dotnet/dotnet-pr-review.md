@@ -5,12 +5,12 @@ ms.topic: contributor-guide
 ms.prod: non-product-specific
 ms.custom: external-contributor-guide
 ms.date: 06/24/2020
-ms.openlocfilehash: 7a494b00c05251e70b74d874d13653db9ba9f6e9
-ms.sourcegitcommit: 5f5fc0fc2ff64610cc19a4b40cb3313adbc152cd
+ms.openlocfilehash: b2c0cbb0ed72948ba49a7456e16df5659057f5e6
+ms.sourcegitcommit: 56505b3f7e670f6387d2c919f0326e9f4c571c8a
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 07/13/2020
-ms.locfileid: "86290975"
+ms.lasthandoff: 08/31/2020
+ms.locfileid: "89201122"
 ---
 # <a name="pull-request-review-process-for-the-net-docs-repositories"></a>Beoordelingsproces voor pull-aanvragen voor de opslagplaatsen van .NET-docs
 
@@ -61,6 +61,10 @@ Als voor de bewerkingen een technische beoordeling is vereist, vraagt de reviewe
 ### <a name="review-draft-pull-requests"></a>Concepten van pull-aanvragen beoordelen
 
 U wilt mogelijk al vroeg in het proces feedback ontvangen. Open een concept van een pull-aanvraag en voeg een opmerking waarvoor een vroege beoordeling is vereist. Deze vroege beoordelingen zijn gericht op de structuur van het artikel: de grote lijnen, de algemene inhoud en de voorbeelden. Deze beoordelingen omvatten geen grondige controle van de grammatica en juiste koppelingen.
+
+## <a name="explain-suggestions"></a>Uitlegsuggesties
+
+Met GitHub kunt u opmerkingen invoeren in drievoudige blokken van type `suggestion` die worden weergegeven als differentieel en kunnen worden samengevoegd door op een knop te klikken. Op korte regels laat GitHub de wijzigingen goed zien. Op langere regels, zoals een lange paragraaf in een regel tekst, laat GitHub de wijzigingen niet zien. Wanneer u een suggestie invoert voor een lange regel, moet u kijken of uw wijzigingen duidelijk zijn gemarkeerd. Als de wijzigingen niet zijn gemarkeerd, moet u opmerkingen buiten het suggestieblok opnemen waarin u uitlegt wat u hebt veranderd. Zonder een uitleg is het vaak tijdrovend voor volgende reviewers of de auteur om erachter te komen wat de wijzigingen zijn.
 
 ## <a name="respond-to-reviews"></a>Reageren op beoordelingen
 
