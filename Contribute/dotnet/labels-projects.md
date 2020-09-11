@@ -1,22 +1,22 @@
 ---
-title: Roadmap van labels en projecten
-description: In dit artikel wordt uitgelegd hoe labels en projecten worden gebruikt in de dotnet/docs-opslagplaats.
+title: Roadmap voor labels, projecten en mijlpalen
+description: In dit artikel wordt uitgelegd hoe labels, projecten en mijlpalen worden gebruikt in de dotnet/docs-opslagplaats.
 ms.topic: contributor-guide
 ms.prod: non-product-specific
 ms.custom: external-contributor-guide
-ms.date: 03/24/2020
-ms.openlocfilehash: 0dcac28db04378730b186c0f23064c1433d9f80e
-ms.sourcegitcommit: cfba5ad25b898bfed76046126ce8ff4871910701
+ms.date: 08/06/2020
+ms.openlocfilehash: b8e9f2a33f9b4a8025aa36a890bff1017cf132c6
+ms.sourcegitcommit: abcc67cb3ec1f635a6374d7c47a4831e3eee9050
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 05/04/2020
-ms.locfileid: "80760371"
+ms.lasthandoff: 09/08/2020
+ms.locfileid: "89559258"
 ---
-# <a name="labels-and-projects-roadmap"></a>Roadmap van labels en projecten
+# <a name="labels-projects-and-milestones-roadmap"></a>Roadmap voor labels, projecten en mijlpalen
 
-Het team voor .NET-docs maakt uitgebreid gebruik van [GitHub-labels](https://github.com/dotnet/docs/labels) om ons werk te organiseren. Door te filteren op combinaties van labels kunnen we ons snel richten op gedeelten van belang op de website van [.NET docs](https://docs.microsoft.com/dotnet).
+Het team voor .NET-docs maakt uitgebreid gebruik van [GitHub-labels](https://github.com/dotnet/docs/labels) om ons werk te organiseren. Door te filteren op combinaties van labels kunnen we ons snel richten op gedeelten van belang op de website van [.NET docs](https://docs.microsoft.com/dotnet). We kunnen bijvoorbeeld alle open `P1`-problemen met prioriteit één openen met een query bij [is:issue is:open label:":books: Area - .NET Architecture Guide"](https://github.com/dotnet/docs/issues?q=is%3Aissue+is%3Aopen+label%3A%22%3Abooks%3A+Area+-+.NET+Architecture+Guide%22).
 
-We gebruiken ook [GitHub-projecten](https://github.com/dotnet/docs/projects) om sprints en andere doelgerichte EPICS te organiseren.
+We gebruiken [GitHub-projecten](https://github.com/dotnet/docs/projects) om sprints en andere doelgerichte EPICS te organiseren. We gebruiken ook [GitHub-mijlpalen](https://github.com/dotnet/docs/milestones) om het werk bij te houden. Het beste is om projecten te zien voor planning (problemen) en mijlpalen voor werk (pull-aanvragen).
 
 Deze roadmap biedt uitleg over hoe we deze organisatieprogramma's gebruiken en beschikt over koppelingen naar handige filters waarmee we interessegebieden kunnen vinden.
 
@@ -28,7 +28,7 @@ We gebruiken labels om op verschillende manieren problemen te classificeren:
 
 - [.NET-gidsen](#find-a-single-net-guide) en [gedeelten van een gids](#search-one-section-of-a-guide).
 - [Doelrelease](#releases)
-- [Prioriteit](#priority)
+- [Priority](#priority)
 
 U kunt een label van elke set (gids, release, prioriteit) combineren om voor een beperkte focus te zorgen waarmee u problemen kunt vinden waaraan u wilt werken.
 
@@ -47,7 +47,7 @@ De e-books over architectuur worden aangeduid met het voorvoegsel `:book: guide`
 - [gRPC](https://github.com/dotnet/docs/labels/%3Abook%3A%20guide%20-%20gRPC)
 - [Modernizing w/ Windows containers](https://github.com/dotnet/docs/labels/%3Abook%3A%20guide%20-%20Modernizing%20w%2F%20Windows%20containers)
 - [.NET Microservices](https://github.com/dotnet/docs/labels/%3Abook%3A%20guide%20-%20.NET%20Microservices)
-- [Serverless apps](https://github.com/dotnet/docs/labels/%3Abook%3A%20guide%20-%20Serverless%20apps)
+- [Serverloze apps](https://github.com/dotnet/docs/labels/%3Abook%3A%20guide%20-%20Serverless%20apps)
 
 Deze labelstijl wordt ook toegepast op de [ontwerprichtlijnen van Framework](https://github.com/dotnet/docs/labels/%3Abook%3A%20guide%20-%20Framework%20Design%20Guidelines). Dit gebied heeft hetzelfde labelontwerp, maar pull-aanvragen van de community worden afgeraden. Dit materiaal wordt herdrukt met toestemming en mag niet worden bewerkt.
 
@@ -55,7 +55,7 @@ Deze labelstijl wordt ook toegepast op de [ontwerprichtlijnen van Framework](htt
 
 Elke .NET-gids wordt vermeld met het voorvoegsel `:books: Area` en heeft een donkerblauwe achtergrond. Hier worden actuele problemen gefilterd voor alle .NET-gidsen.
 
-- [API Reference](https://github.com/dotnet/docs/labels/%3Abooks%3A%20Area%20-%20API%20Reference)
+- [Naslaginformatie voor API](https://github.com/dotnet/docs/labels/%3Abooks%3A%20Area%20-%20API%20Reference)
 - [Azure .NET SDK](https://github.com/dotnet/docs/labels/%3Abooks%3A%20Area%20-%20Azure%20.NET%20SDk)
 - [C# Guide](https://github.com/dotnet/docs/labels/%3Abooks%3A%20Area%20-%20C%23%20Guide)
 - [Desktop Guide](https://github.com/dotnet/docs/labels/%3Abooks%3A%20Area%20-%20Desktop%20Guide)
@@ -114,10 +114,10 @@ Problemen met een label voor een specifieke release worden vermeld met het voorv
 
 Prioritaire labels worden alle `P` gevolgd door één cijfer. Lagere waarden geven een hogere prioriteit aan:
 
-- P0
-- P1
-- P2
-- P3
+- P0 - Geeft problemen of pull-aanvragen weer met een kritieke prioriteit
+- P1 - Hoge prioriteit
+- P2 - Gemiddelde prioriteit
+- P3 - Lage prioriteit
 
 ### <a name="what-about-the-other-labels"></a>Hoe zit het met de andere labels?
 
@@ -125,7 +125,15 @@ Er zijn veel andere labels waarmee de inhoudsteams verschillende classificaties 
 
 ## <a name="projects"></a>Projecten
 
+Projecten zijn bedoeld voor planningsdoeleinden, waar werk met prioriteit wordt geautomatiseerd in een Kanbanbord. Projecten mogen altijd alleen GitHub-problemen bevatten, _geen_ pull-aanvragen. Projecten verschillen van mijlpalen, omdat mijlpalen alleen pull-aanvragen kunnen bevatten.
+
 We gebruiken projecten op twee manieren:
 
-- Month YYYY-projecttypen: Dit zijn scrumborden voor het maandelijkse werkplan.
+- `Month YYYY`-projecttypen: Dit zijn kanbanborden voor het maandelijkse werkplan.
+  - Voorbeelden, [juli 2020](https://github.com/dotnet/docs/projects/103), [augustus 2020](https://github.com/dotnet/docs/projects/117) enzovoorts.
 - Langlopende EPICS: Deze worden gebruikt om taken doelgericht te organiseren, wanneer het werk wordt uitgevoerd over meerdere maanden.
+  - Voorbeelden: [.NET 5 Wave - Reorganization](https://github.com/dotnet/docs/projects/105), [.NET Languages (.NET 5 wave) ](https://github.com/dotnet/docs/projects/106) enzovoorts.
+
+## <a name="milestones"></a>Mijlpalen
+
+Mijlpalen volgen doorgaans dezelfde naamconventies van projecten `Month YYYY`, maar ze verschillen van projecten. We gebruiken mijlpalen om voltooid werk bij te houden. Mijlpalen mogen _geen_ problemen (mogelijk werk) bevatten, maar alleen pull-aanvragen. De huidige mijlpaal wordt automatisch toegepast op nieuwe pull-aanvragen.
