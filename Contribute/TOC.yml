@@ -54,7 +54,7 @@
       items:
         - name: Hoe kunt u bijdragen
           href: dotnet/dotnet-contribute.md
-        - name: Roadmap van labels en projecten
+        - name: 'Roadmap voor labels, projecten en mijlpalen'
           href: dotnet/labels-projects.md
         - name: Stijlconventies
           href: dotnet/dotnet-style-guide.md
