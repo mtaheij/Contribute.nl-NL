@@ -5,12 +5,12 @@ ms.topic: contributor-guide
 ms.prod: non-product-specific
 ms.custom: external-contributor-guide
 ms.date: 11/07/2018
-ms.openlocfilehash: 926516895798757bde0861a345e0b5d0f95218a4
-ms.sourcegitcommit: 5f5fc0fc2ff64610cc19a4b40cb3313adbc152cd
+ms.openlocfilehash: 15288ccb1831e994fd078f47788ad4c2f502775c
+ms.sourcegitcommit: 92d06515af1d9d0e5abf632fc3b6425c487174d5
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 07/13/2020
-ms.locfileid: "86290906"
+ms.lasthandoff: 09/21/2020
+ms.locfileid: "90837207"
 ---
 # <a name="metadata-and-markdown-template-for-net-docs"></a>Sjabloon voor metagegevens en Markdown voor .NET-documenten
 
@@ -129,48 +129,9 @@ Als u een koppeling wilt maken naar een algemeen type, zoals [System.Collections
 
 ## <a name="code"></a>Code
 
-De beste manier om code in te voegen is fragmenten van een werkend voorbeeld in te voegen. Maak uw voorbeeld op basis van de instructies in het artikel [Bijdragen aan .NET](dotnet-contribute.md#contribute-to-samples). De basisregels voor het invoegen van code bevinden zich in de algemene richtlijnen voor [code](../code-in-docs.md).
+De beste manier om code in te voegen is fragmenten van een werkend voorbeeld in te voegen. Maak uw voorbeeld op basis van de instructies in het artikel [Bijdragen aan .NET](dotnet-contribute.md#contribute-to-samples). Wanneer u fragmenten uit volledige programma's invoegt, zorgt dit ervoor dat alle code via ons CI-systeem (Continue integratie) gaat. Als u echter iets moet weergeven wat voor compilatietijd- of runtimefouten zorgt, kunt u codeblokken in regels gebruiken.
 
-U kunt de code invoegen met behulp van de volgende syntaxis:
-
-```markdown
-[!code-<language>[<name>](<pathToFile><queryoption><queryoptionvalue>)]
-```
-
-* `-<language>` (*optioneel*, maar *wel aanbevolen*)
-  * Taal van het codefragment waarnaar wordt verwezen.
-
-* `<name>`( *optioneel*)
-  * Naam van het codefragment. Deze heeft geen invloed op het HTML-resultaat, maar u kunt deze gebruiken om de leesbaarheid van uw Markdown-bron te verbeteren.
-
-* `<pathToFile>`(*verplichte*)
-  * Relatief pad naar het bestandssysteem dat het codefragmentbestand aangeeft waarnaar moet worden verwezen. Dit kan ingewikkeld worden vanwege de verschillende opslagplaatsen waaruit de .NET-documentenset bestaat. De .NET-voorbeelden bevinden zich in de dotnet/voorbeelden-opslagplaats. Alle paden van fragmenten zouden beginnen met `~/samples`, waarbij de rest van het pad het pad naar de bron is vanuit de hoofdmap van die opslagplaats.
-
-* `<queryoption>`( *optioneel*)
-  * Deze worden gebruikt om op te geven hoe de code uit het bestand moet worden opgehaald:
-    * `#`: `#{tagname}` (naam van de tag) *of* `#L{startlinenumber}-L{endlinenumber}` (regelbereik).
-    Wij ontmoedigen het gebruik van regelnummers, omdat deze zeer foutgevoelig zijn. Het gebruik van een tagnaam geniet de voorkeur voor de verwijzing naar codefragmenten. Gebruik zinvolle tagnamen. (Veel codefragmenten zijn vanuit een eerder platform gemigreerd en de tags hebben namen zoals `Snippet1`, `Snippet2` enzovoort. Die praktijk is veel moeilijker aan te houden.)
-    * `range`: `?range=1,3-5` Een bereik met regels. Dit voorbeeld bevat regels 1, 3, 4 en 5.
-
-Wij raden aan om voor zover mogelijk de optie van tagnamen te gebruiken. De tagnaam is de naam van een regio of een commentaar bij code in de in de broncode aanwezige notatie `Snippettagname`. In het volgende voorbeeld is te zien hoe u kunt verwijzen naar de tagnaam `BasicThrow`:
-
-```markdown
-[!code-csharp[csrefKeyword#1](~/samples/snippets/snippets/csharp/language-reference/operators/ConditionalExamples.csConditionalRef)]
-```
-
-Het relatieve pad naar de bron in de opslagplaats **dotnet/voorbeelden** volgt het pad `~/samples`.
-
-En u kunt zien hoe de tags van de fragmenten in [dit bronbestand](https://github.com/dotnet/samples/blob/master/snippets/csharp/language-reference/operators/ConditionalExamples.cs) zijn gestructureerd. Zie de [DocFX-richtlijnen](https://dotnet.github.io/docfx/spec/docfx_flavored_markdown.html#tag-name-representation-in-code-snippet-source-file) voor details over weergave van tagnamen in bronbestanden van codefragmenten per taal.
-
-In het volgende voorbeeld is de code te zien die in alle drie .NET-talen is ingevoegd:
-
-```markdown
-[!code-fsharp[ToPigLatin](../../../samples/snippets/fsharp/getting-started/pig-latin.fs#L1-L14)]
- [!code-csharp[ADCreateDomain#2](../../../samples/snippets/csharp/VS_Snippets_CLR/ADCreateDomain/CS/source2.cs#2)]
- [!code-vb[ADCreateDomain#2](../../../samples/snippets/visualbasic/VS_Snippets_CLR/ADCreateDomain/VB/source2.vb#2)]
-```
-
-Wanneer u fragmenten uit volledige programma's invoegt, zorgt dit ervoor dat alle code via ons CI-systeem (Continue integratie) gaat. Als u echter iets moet weergeven wat voor compilatietijd- of runtimefouten zorgt, kunt u codeblokken in regels gebruiken.
+Voor meer informatie over de Markdown-syntaxis om code in docs weer te geven, raadpleegt u [Code in opnemen in docs-artikelen](../code-in-docs.md).
 
 ## <a name="images"></a>Afbeeldingen
 
