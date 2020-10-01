@@ -69,7 +69,7 @@ Een persoonlijke fork is vereist omdat alle hoofdopslagplaatsen voor documentati
 
    ![Voorbeeld van een GitHub-profiel](./media/contribute-get-started-setup-local/fork.png)
 
-2. Wanneer u hierom wordt gevraagd, selecteert u de tegel voor uw GitHub-account als de doellocatie waar de fork moet worden gemaakt. Hiermee wordt binnen uw GitHub-account een kopie gemaakt van de opslagplaats, ook wel een fork genoemd.
+2. Wanneer u hierom wordt gevraagd, selecteert u de afbeelding voor uw GitHub-account als de doellocatie waar de fork moet worden gemaakt. Hiermee wordt binnen uw GitHub-account een kopie gemaakt van de opslagplaats, ook wel een fork genoemd.
 
 ## <a name="choose-a-local-folder"></a>Lokale map kiezen
 Maak een lokale map waarin u de lokale kopie van de opslagplaats wilt opslaan. Sommige opslagplaatsen kunnen erg groot zijn; bijvoorbeeld tot wel 5 GB voor Azure-documenten. Kies een locatie met beschikbare schijfruimte.
