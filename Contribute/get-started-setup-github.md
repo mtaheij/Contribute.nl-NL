@@ -18,7 +18,7 @@ ms.locfileid: "72288386"
 
 Als u wilt bijdragen aan technische inhoud van Docs, moet u een eigen GitHub-account maken. Het goede nieuws is dat u deze stappen gewoonlijk maar één keer hoeft uit te voeren.
 
-### <a name="1-create-a-github-account-and-set-up-your-profile"></a>1. Ee GitHub-account maken en uw profiel instellen
+### <a name="1-create-a-github-account-and-set-up-your-profile"></a>1. Een GitHub-account maken en uw profiel instellen
 
 Als u nog geen account hebt, moet u een [GitHub-account maken](https://github.com/join). Geef eventuele lidmaatschappen op in uw GitHub-profiel. Bijdragen aan [docs.microsoft.com](https://docs.microsoft.com) tellen mee om in aanmerking te komen voor de [MVP award](https://mvp.microsoft.com). Als u uw lidmaatschappen opgeeft, kunnen we een volledig profiel van al uw activiteiten samenstellen.
 
